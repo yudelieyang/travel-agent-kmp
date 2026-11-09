@@ -78,4 +78,29 @@ class P3DisplayTest {
         val savings = compose.onNodeWithText("saved $77.00").getUnclippedBoundsInRoot()
         assertFalse(status.left < savings.right && status.right > savings.left && status.top < savings.bottom && status.bottom > savings.top, "Status and savings overlap at 1.3× font scale")
     }
+    @Test fun largeFontRepairHeadingsDoNotOverlap() {
+        val run = runWithBudget(350)
+        compose.setContent {
+            val density = LocalDensity.current.density
+            CompositionLocalProvider(LocalDensity provides Density(density, 1.3f)) {
+                TravelTheme(dark = false) { Box(Modifier.size(360.dp, 900.dp)) { RepairPage(run, {}) } }
+            }
+        }
+        val day = compose.onNodeWithText("Day").getUnclippedBoundsInRoot()
+        val before = compose.onNodeWithText("Before").getUnclippedBoundsInRoot()
+        val after = compose.onNodeWithText("After").getUnclippedBoundsInRoot()
+        assertFalse(day.right > before.left || before.right > after.left, "Repair table headings overlap at 1.3× font scale")
+    }
+    @Test fun largeFontClarificationQuestionDoesNotOverlapInput() {
+        val run = TravelEngine().run("Plan a trip to Boston.")
+        compose.setContent {
+            val density = LocalDensity.current.density
+            CompositionLocalProvider(LocalDensity provides Density(density, 1.3f)) {
+                TravelTheme(dark = false) { Box(Modifier.size(360.dp, 900.dp)) { ClarificationPage(run, {}, {}) } }
+            }
+        }
+        val question = compose.onNodeWithText("For how many days, or on which start and end dates?").getUnclippedBoundsInRoot()
+        val input = compose.onNode(hasSetTextAction()).getUnclippedBoundsInRoot()
+        assertFalse(question.bottom > input.top, "Clarification question overlaps input at 1.3× font scale")
+    }
 }
