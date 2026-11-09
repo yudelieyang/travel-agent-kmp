@@ -42,3 +42,11 @@
 只读调用 `DeterministicTestPlanner.plan`：酒店总额 `760.0`、4 天、1 人时，酒店请求的 `max_price` 为 `253.33333333333334`。只读调用本地快照、确定性 `TravelService.plan`：Austin 修复预设成功，初始 `394.0`、最终 `317.0`、公开 `savings=77.0`。没有调用 LLM 或网络，也没有修改 Python 仓库。
 
 `money()` 量化后转 float 再经 `str(float)` 输入 Decimal，和直接保持 BigDecimal 虽常在当前 fixtures 相同，不能假设对所有输入严格等价。高精度输入、binary64 边界、量化后 float 表示以及 `round` 的行为需要明确方案和针对性测试。`savings` 属于原公开响应但不属于现有 e2e repair 投影；`max_price` 属于公开工具记录但同样不在现有 e2e 投影。请确定移植范围与如何生成符合 Python 的数值表示后再继续；本次没有实现 `pyFloat` 或 P1b 引擎。
+
+## D7 补充审计：负零与除数
+
+在 `golden-v1` 的 `backend/app` 中检索 `copysign`、`atan2`、`signbit`、`is_signed`、`as_tuple`、`signum`、`nextafter`、`frexp`、浮点打包和 `.hex()`，没有发现匹配；并检查确定性金额计算和预算相关源码，未发现以其他方式读取零符号。可选 LLM 和评测指标不属于该确定性路径。
+
+确定性金额路径唯一除法是 `planner.py:hotel_price_ceiling:139`：分母是整数人数乘以整数住宿晚数，不由预算值计算。Python 要求人数字段至少为 1，并在晚数小于 1 时返回 `None`，因此合法请求不会以零作除数。独立验证 `1.0 / 0.0` 和 `1.0 / -0.0` 均为 Python `ZeroDivisionError`；Kotlin `pyFloatHotelCeiling` 对零分母显式抛 `ArithmeticException`，而实际状态机同样在零晚时不调用它。测试分别覆盖这两层行为。
+
+D1 按新版规则使用非 NaN 的 IEEE 754 数值相等；`-0.0` 与 `+0.0` 相等。`TravelEngineTest.signedZeroBudgetAndDivisionByZero` 固定预算输入负零后 Python/Kotlin 数值相同但符号位不同的例外。`MoneyFormatting` 对 Double 先取其精确十进制并按 HALF_EVEN 舍入，对 BigDecimal 直接舍入，再把显示为负零的情况统一为 `0.00`；当前占位 UI 不显示金额，P3 应使用该格式化入口。
