@@ -121,6 +121,7 @@ fun placesForDay(run: EngineRun, day: DayPlan): List<TravelOption> {
     val padPixels = with(LocalDensity.current) { 24.dp.toPx() }
     val measurer = rememberTextMeasurer()
     val fonts = LocalTravelFonts.current
+    val labelStyle = TextStyle(fontFamily = fonts.body, fontSize = 10.sp, lineHeight = 12.sp, letterSpacing = 0.sp)
     fun positions(width: Float, height: Float): List<Offset> {
         if (points.isEmpty()) return emptyList()
         val lat = points.map { it.latitude!! }.average()
@@ -143,14 +144,14 @@ fun placesForDay(run: EngineRun, day: DayPlan): List<TravelOption> {
     }
     val labels = mutableListOf<androidx.compose.ui.geometry.Rect>()
     positions(bounds.width.toFloat(), bounds.height.toFloat()).forEachIndexed { index, point ->
-        val measurement = measurer.measure(points[index].name, style = TextStyle(fontFamily = fonts.body, fontSize = 10.sp, letterSpacing = 0.sp))
+        val measurement = measurer.measure(points[index].name, style = labelStyle)
         val width = measurement.size.width.toFloat(); val height = measurement.size.height.toFloat()
         val x = (point.x + padPixels * .3f).takeIf { it + width <= bounds.width } ?: (point.x - width - padPixels * .3f)
         val y = (point.y - height - padPixels * .2f).coerceIn(0f, (bounds.height - height).coerceAtLeast(0f))
         val rect = androidx.compose.ui.geometry.Rect(x, y, x + width, y + height)
         if (bounds.width > 0 && x >= 0 && rect.right <= bounds.width && labels.none { it.overlaps(rect) }) {
             labels.add(rect)
-            Text(points[index].name, Modifier.offset { IntOffset(x.toInt(), y.toInt()) }.background(c.mapGround), color = c.text, fontSize = 10.sp, maxLines = 1)
+            Text(points[index].name, Modifier.offset { IntOffset(x.toInt(), y.toInt()) }.background(c.mapGround), color = c.text, style = labelStyle, maxLines = 1)
         }
     }
     }
