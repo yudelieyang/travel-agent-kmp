@@ -1,0 +1,51 @@
+{
+  "coverage": {
+    "evidence": [],
+    "needs_llm": false,
+    "reasons": [],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 0,
+      "resolved_constraints": 0
+    }
+  },
+  "id": "SEM200-104",
+  "query": "Try to keep lodging roughly $560 total in Seattle.",
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Seattle",
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [
+      "around usd 560"
+    ],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": [
+        {
+          "category": "HOTEL",
+          "value": "around usd 560"
+        }
+      ]
+    },
+    "specific_preferences": [
+      {
+        "category": "HOTEL",
+        "value": "around usd 560"
+      }
+    ],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

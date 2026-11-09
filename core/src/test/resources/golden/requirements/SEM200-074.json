@@ -1,0 +1,68 @@
+{
+  "coverage": {
+    "evidence": [
+      "I like"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "UNRESOLVED_REQUIREMENT_CLAUSE"
+    ],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 2,
+      "resolved_constraints": 2
+    }
+  },
+  "id": "SEM200-074",
+  "query": "Washington DC trip must stay under $1,360, hotel total must stay under $540, and I like parks.",
+  "requirements": {
+    "budget_amount": "1360.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Washington DC",
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [
+      "parks"
+    ],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "Washington DC trip must stay under $1,360",
+          "strength": "HARD",
+          "value": "1360.0"
+        },
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "HOTEL_TOTAL",
+          "source_text": "hotel total must stay under $540 ,",
+          "strength": "HARD",
+          "value": "540.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

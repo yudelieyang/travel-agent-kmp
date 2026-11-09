@@ -1,0 +1,12 @@
+export const presets = [
+  { id: 'snapshot', label: 'Real Snapshot Trip', context: 'Offline · Boston', purpose: 'Real POIs → plan → validate', description: 'Start here: frozen OpenStreetMap attractions, hotels, and restaurants flow through deterministic planning and validation.', query: 'Plan a 2-day trip to Boston for 1 traveler under $500 total.', availability: 'Offline' },
+  { id: 'repair', label: 'Bounded Budget Repair', context: 'Offline · Austin', purpose: 'Fail → repair once → revalidate', description: 'A genuine hard-budget violation triggers exactly one lower-cost repair attempt, followed by deterministic revalidation.', query: 'Please build a three-day trip to Austin for one traveler. My total budget is $350.', availability: 'Offline' },
+  { id: 'deterministic', label: 'Preference Matching', context: 'Offline · Columbus', purpose: 'Hard constraints + preferences', description: 'Two hard budgets and two soft preferences flow through candidate ranking and validation.', query: 'Plan a 3-day trip to Columbus for 1 traveler under $900 total. Hotel spending must not exceed $400. I like zoos and fried chicken.', availability: 'Offline' },
+  { id: 'ambiguity', label: 'Ambiguity Boundary', context: 'Optional live · Boston', purpose: 'Quarantine unclear scope', description: 'Hybrid mode can propose semantics for an unclear hotel amount while the deterministic boundary prevents an unsafe hard constraint.', query: 'Plan a 3-day trip to Boston for 1 traveler. I want a $240 hotel in Boston.', availability: 'Optional live' },
+  { id: 'correction', label: 'Correction Safety', context: 'Optional live · Boston', purpose: 'Latest local correction wins safely', description: 'Extractor v3 targets a local monetary correction; the merge keeps deterministic facts authoritative and rejects unsafe conflicts.', query: 'Plan a 3-day trip to Boston for 1 traveler. Hotel spending for the whole trip must stay under $575. Sorry, revise lodging to $525.', availability: 'Optional live' },
+  { id: 'tradeoff', label: 'Tradeoff Boundary', context: 'Optional live · Boston', purpose: 'Clarify conditional intent', description: 'Conditional priorities are surfaced as ambiguity instead of being flattened into independent promises.', query: 'Plan a 3-day trip to Boston for 1 traveler. Spend more on the Boston hotel if it is downtown, but keep the whole trip below $1,300.', availability: 'Optional live' },
+] as const
+
+export function findScenario(query: string) {
+  return presets.find(scenario => scenario.query === query) ?? null
+}

@@ -1,0 +1,45 @@
+{
+  "coverage": {
+    "evidence": [
+      "No luxury hotels in Miami"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "UNREPRESENTED_NEGATION"
+    ],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 0,
+      "resolved_constraints": 0
+    }
+  },
+  "id": "SEM200-158",
+  "query": "No luxury hotels in Miami.",
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [
+      "avoid luxury"
+    ],
+    "currency": "USD",
+    "destination": "Miami",
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

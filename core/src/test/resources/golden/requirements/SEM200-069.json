@@ -1,0 +1,68 @@
+{
+  "coverage": {
+    "evidence": [
+      "Museums please"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "UNRESOLVED_REQUIREMENT_CLAUSE"
+    ],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 2,
+      "resolved_constraints": 2
+    }
+  },
+  "id": "SEM200-069",
+  "query": "Seattle: hotel under $725 total; total trip under $1,880. Museums please.",
+  "requirements": {
+    "budget_amount": "1880.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Seattle",
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [
+      "museums"
+    ],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "HOTEL_TOTAL",
+          "source_text": "Seattle: hotel under $725  total",
+          "strength": "HARD",
+          "value": "725.0"
+        },
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "total trip under $1,880",
+          "strength": "HARD",
+          "value": "1880.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

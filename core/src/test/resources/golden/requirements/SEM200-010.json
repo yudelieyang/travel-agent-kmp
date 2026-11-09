@@ -1,0 +1,53 @@
+{
+  "coverage": {
+    "evidence": [],
+    "needs_llm": false,
+    "reasons": [],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 0,
+      "resolved_constraints": 0
+    }
+  },
+  "id": "SEM200-010",
+  "query": "Los Angeles for 2 days, and I like art museums.",
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Los Angeles",
+    "duration_days": 2,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [
+      "museums",
+      "art",
+      "art museums"
+    ],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": [
+        {
+          "category": "ACTIVITY",
+          "value": "art museums"
+        }
+      ]
+    },
+    "specific_preferences": [
+      {
+        "category": "ACTIVITY",
+        "value": "art museums"
+      }
+    ],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

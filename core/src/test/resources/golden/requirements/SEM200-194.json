@@ -1,0 +1,55 @@
+{
+  "coverage": {
+    "evidence": [
+      "wash dc accomodation total under 620, all trip under 1350"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "MONETARY_SEMANTIC_GAP"
+    ],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 2,
+      "resolved_constraints": 1
+    }
+  },
+  "id": "SEM200-194",
+  "query": "wash dc accomodation total under 620, all trip under 1350",
+  "requirements": {
+    "budget_amount": "1350.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": null,
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "wash dc accomodation total under 620, all trip under 1350",
+          "strength": "HARD",
+          "value": "1350.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

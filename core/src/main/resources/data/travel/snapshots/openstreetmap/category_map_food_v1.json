@@ -1,0 +1,25 @@
+{
+  "version": "osm_food_v1",
+  "provider_mapping": {
+    "amenity=restaurant": {
+      "internal_category": "food",
+      "provider_label": "Restaurant"
+    }
+  },
+  "cuisine_normalization": {
+    "source_tag": "cuisine",
+    "split_on": ";",
+    "steps": ["trim", "lowercase", "deduplicate_preserving_order"],
+    "missing_value": "omit",
+    "display_separator": ", "
+  },
+  "planner_tag_policy": {
+    "source": "legacy_fixture_by_internal_id",
+    "not_openstreetmap_facts": true,
+    "by_internal_id": {
+      "bos-f1": ["vegetarian", "vegan"],
+      "bos-f2": ["vegetarian"],
+      "bos-f3": ["seafood"]
+    }
+  }
+}

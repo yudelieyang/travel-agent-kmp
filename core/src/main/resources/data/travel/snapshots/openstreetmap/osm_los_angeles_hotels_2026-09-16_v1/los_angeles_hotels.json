@@ -1,0 +1,93 @@
+{
+  "snapshot_version": "osm_los_angeles_hotels_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T21:35:56.264551Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-07-28T02:16:18Z",
+  "record_count": 3,
+  "category_map_version": "osm_hotel_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Los Angeles",
+      "state": "CA",
+      "candidates": {
+        "hotel": [
+          {
+            "id": "lax-h1",
+            "provider_place_id": "way/427817639",
+            "name": "DoubleTree by Hilton Hotel Los Angeles Downtown",
+            "address": "120 South Los Angeles Street, Los Angeles CA 90012",
+            "latitude": 34.0505303,
+            "longitude": -118.2426654,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 112,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "budget",
+              "central"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "lax-h2",
+            "provider_place_id": "way/43342001",
+            "name": "Fairmont Century Plaza",
+            "address": "2025 Avenue of the Stars, Los Angeles CA 90067",
+            "latitude": 34.0575083,
+            "longitude": -118.4157229,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 152,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "quiet"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "lax-h3",
+            "provider_place_id": "node/9774638782",
+            "name": "H Hotel Los Angeles, Curio Collection by Hilton",
+            "address": "6151 West Century Boulevard, Los Angeles CA 90045",
+            "latitude": 33.946053,
+            "longitude": -118.392718,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 265,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "luxury",
+              "central"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

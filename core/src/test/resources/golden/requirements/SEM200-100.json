@@ -1,0 +1,74 @@
+{
+  "coverage": {
+    "evidence": [
+      "hotel should be $640",
+      "Sorry, hotel should be $640"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "AMBIGUOUS_SCOPE",
+      "CORRECTION_TARGET_UNRESOLVED"
+    ],
+    "signals": {
+      "blocking_ambiguities": 1,
+      "monetary_expressions": 3,
+      "resolved_constraints": 2
+    }
+  },
+  "id": "SEM200-100",
+  "query": "Whole trip under $1,600; hotel under $700 total. Sorry, hotel should be $640.",
+  "requirements": {
+    "budget_amount": "1600.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": null,
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [
+        {
+          "level": "BLOCKING",
+          "reason": "Hotel amount does not specify a hard limit or a nightly/total policy",
+          "source_text": "hotel should be $640"
+        }
+      ],
+      "constraints": [
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "Whole trip under $1,600",
+          "strength": "HARD",
+          "value": "1600.0"
+        },
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "HOTEL_TOTAL",
+          "source_text": "hotel under $700  total",
+          "strength": "HARD",
+          "value": "700.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

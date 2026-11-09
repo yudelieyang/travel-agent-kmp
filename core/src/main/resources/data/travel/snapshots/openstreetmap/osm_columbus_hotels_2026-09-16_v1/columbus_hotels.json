@@ -1,0 +1,90 @@
+{
+  "snapshot_version": "osm_columbus_hotels_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T15:22:28.3875787Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-09-16T15:18:20Z",
+  "record_count": 4,
+  "category_map_version": "osm_hotel_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Columbus",
+      "state": "OH",
+      "candidates": {
+        "hotel": [
+          {
+            "id": "cmh-h1",
+            "provider_place_id": "way/717324868",
+            "name": "Days Inn by Wyndham Columbus Fairgrounds",
+            "address": "1700 Clara Avenue, Columbus, OH 43211",
+            "latitude": 39.9998016,
+            "longitude": -82.9857381,
+            "provider_category_ids": ["tourism=hotel"],
+            "provider_category_labels": ["Hotel"],
+            "price": 82,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": ["budget", "central"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "cmh-h2",
+            "provider_place_id": "way/474605329",
+            "name": "Holiday Inn Express",
+            "address": "650 South High Street, Columbus, OH 43215",
+            "latitude": 39.9488541,
+            "longitude": -82.9973137,
+            "provider_category_ids": ["tourism=hotel"],
+            "provider_category_labels": ["Hotel"],
+            "price": 105,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": ["quiet", "neighborhood"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "cmh-h3",
+            "provider_place_id": "node/4685223268",
+            "name": "Hampton Inn & Suites Columbus Downtown",
+            "address": "501 North High Street, Columbus, OH 43215",
+            "latitude": 39.9724764,
+            "longitude": -83.002876,
+            "provider_category_ids": ["tourism=hotel"],
+            "provider_category_labels": ["Hotel"],
+            "price": 135,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": ["central"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "cmh-h4",
+            "provider_place_id": "node/1376126720",
+            "name": "The Westin Great Southern Columbus",
+            "address": "310 South High Street, Columbus, OH 43215",
+            "latitude": 39.9558079,
+            "longitude": -82.999124,
+            "provider_category_ids": ["tourism=hotel"],
+            "provider_category_labels": ["Hotel"],
+            "price": 190,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": ["luxury", "quiet"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

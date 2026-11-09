@@ -1,0 +1,41 @@
+{
+  "coverage": {
+    "evidence": [],
+    "needs_llm": false,
+    "reasons": [],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 0,
+      "resolved_constraints": 0
+    }
+  },
+  "id": "SEM200-184",
+  "query": "Washington DC: visit 2 museums at 10 AM after a 3-day stay.",
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Washington DC",
+    "duration_days": 3,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [
+      "museums"
+    ],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "snapshot_version": "osm_new_york_city_attractions_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T15:49:46.679364Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-09-16T15:46:55Z",
+  "record_count": 3,
+  "category_map_version": "osm_attractions_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "New York City",
+      "state": "NY",
+      "candidates": {
+        "attractions": [
+          {
+            "id": "nyc-a1",
+            "provider_place_id": "way/278033604",
+            "name": "9/11 Memorial & Museum",
+            "address": "180 Greenwich Street, New York NY 10007",
+            "latitude": 40.711456,
+            "longitude": -74.0127418,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 25,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "museums",
+              "art"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "nyc-a2",
+            "provider_place_id": "way/388436810",
+            "name": "American Museum of Natural History",
+            "address": "200 Central Park West, New York NY 10024",
+            "latitude": 40.7810986,
+            "longitude": -73.974211,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 30,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "museums",
+              "history"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "nyc-a3",
+            "provider_place_id": "way/266887857",
+            "name": "Asia Society",
+            "address": "725 Park Avenue, New York NY 10021",
+            "latitude": 40.7698384,
+            "longitude": -73.9642913,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 0,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "parks"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

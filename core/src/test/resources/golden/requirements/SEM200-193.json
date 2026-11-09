@@ -1,0 +1,62 @@
+{
+  "coverage": {
+    "evidence": [],
+    "needs_llm": false,
+    "reasons": [],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 2,
+      "resolved_constraints": 2
+    }
+  },
+  "id": "SEM200-193",
+  "query": "vegas 2 day, trip max 1400, hotel max 550 totl",
+  "requirements": {
+    "budget_amount": "1400.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Las Vegas",
+    "duration_days": 2,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "vegas 2 day, trip max 1400",
+          "strength": "HARD",
+          "value": "1400.0"
+        },
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "HOTEL_TOTAL",
+          "source_text": "hotel max 550  totl",
+          "strength": "HARD",
+          "value": "550.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

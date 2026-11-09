@@ -1,0 +1,67 @@
+{
+  "coverage": {
+    "evidence": [
+      "hotel around $6"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "UNRESOLVED_REQUIREMENT_CLAUSE"
+    ],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 0,
+      "resolved_constraints": 1
+    }
+  },
+  "id": "SEM200-199",
+  "query": "Seattle hotel around $600 total, but the whole trip cannot exceed $1,500.",
+  "requirements": {
+    "budget_amount": "1500.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Seattle",
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [
+      "around usd 600"
+    ],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "the whole trip cannot exceed $1,500",
+          "strength": "HARD",
+          "value": "1500.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": [
+        {
+          "category": "HOTEL",
+          "value": "around usd 600"
+        }
+      ]
+    },
+    "specific_preferences": [
+      {
+        "category": "HOTEL",
+        "value": "around usd 600"
+      }
+    ],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

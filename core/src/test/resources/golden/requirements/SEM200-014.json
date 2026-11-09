@@ -1,0 +1,45 @@
+{
+  "coverage": {
+    "evidence": [
+      "I enjoy"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "UNRESOLVED_REQUIREMENT_CLAUSE"
+    ],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 0,
+      "resolved_constraints": 0
+    }
+  },
+  "id": "SEM200-014",
+  "query": "Boston for 3 days. I enjoy walking.",
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Boston",
+    "duration_days": 3,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [
+      "walking"
+    ],
+    "travelers": null
+  }
+}

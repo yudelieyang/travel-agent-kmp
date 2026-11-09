@@ -1,0 +1,103 @@
+{
+  "snapshot_version": "osm_san_francisco_food_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T21:29:14.446788Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-06-01T08:52:28Z",
+  "record_count": 3,
+  "category_map_version": "osm_food_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "San Francisco",
+      "state": "CA",
+      "candidates": {
+        "food": [
+          {
+            "id": "sfo-f1",
+            "provider_place_id": "node/3380825006",
+            "name": "A16",
+            "address": "2355 Chestnut Street, San Francisco CA 94123",
+            "latitude": 37.7999597,
+            "longitude": -122.442104,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "cuisine=italian"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Cuisine: Italian"
+            ],
+            "price": 20,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": [
+              "local",
+              "casual"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "sfo-f2",
+            "provider_place_id": "node/2653235898",
+            "name": "Greens Restaurant",
+            "address": "2 Marina Boulevard, San Francisco CA 94123",
+            "latitude": 37.806886,
+            "longitude": -122.4322073,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "diet:vegetarian=only",
+              "diet:vegan=yes"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Vegetarian only",
+              "Vegan options"
+            ],
+            "price": 22,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": [
+              "vegetarian",
+              "vegan"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "sfo-f3",
+            "provider_place_id": "node/317081652",
+            "name": "John's Grill Live Jazz",
+            "address": "63 Ellis Street, San Francisco CA 94102",
+            "latitude": 37.7854639,
+            "longitude": -122.4071525,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "cuisine=steak",
+              "cuisine=seafood"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Cuisine: Steak",
+              "Cuisine: Seafood"
+            ],
+            "price": 38,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": [
+              "seafood"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "budget": null,
+  "candidates": [],
+  "clarification_question": "For how many days, or on which start and end dates?",
+  "itinerary": null,
+  "missing_fields": [
+    "duration"
+  ],
+  "query": "Plan a trip to Boston.",
+  "repair": null,
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Boston",
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  },
+  "status": "needs_clarification",
+  "validation": {
+    "outcome": "not_performed",
+    "performed": false,
+    "reason": "not_reached",
+    "violations": []
+  },
+  "warnings": []
+}

@@ -1,0 +1,185 @@
+{
+  "manifest_version": "osm_us_migrations_v5",
+  "routes": [
+    {
+      "city": "Boston",
+      "category": "attractions",
+      "snapshot": "osm_boston_attractions_2026-09-16_v1/boston_attractions.json"
+    },
+    {
+      "city": "Boston",
+      "category": "hotel",
+      "snapshot": "osm_boston_hotels_2026-09-16_v1/boston_hotels.json"
+    },
+    {
+      "city": "Boston",
+      "category": "food",
+      "snapshot": "osm_boston_food_2026-09-16_v1/boston_food.json"
+    },
+    {
+      "city": "Austin",
+      "category": "attractions",
+      "snapshot": "osm_austin_attractions_2026-09-16_v1/austin_attractions.json"
+    },
+    {
+      "city": "Austin",
+      "category": "hotel",
+      "snapshot": "osm_austin_hotels_2026-09-16_v1/austin_hotels.json"
+    },
+    {
+      "city": "Austin",
+      "category": "food",
+      "snapshot": "osm_austin_food_2026-09-16_v1/austin_food.json"
+    },
+    {
+      "city": "Columbus",
+      "category": "attractions",
+      "snapshot": "osm_columbus_attractions_2026-09-16_v1/columbus_attractions.json"
+    },
+    {
+      "city": "Columbus",
+      "category": "hotel",
+      "snapshot": "osm_columbus_hotels_2026-09-16_v1/columbus_hotels.json"
+    },
+    {
+      "city": "Columbus",
+      "category": "food",
+      "snapshot": "osm_columbus_food_2026-09-16_v1/columbus_food.json"
+    },
+    {
+      "city": "New York City",
+      "category": "attractions",
+      "snapshot": "osm_new_york_city_attractions_2026-09-16_v1/new_york_city_attractions.json"
+    },
+    {
+      "city": "New York City",
+      "category": "hotel",
+      "snapshot": "osm_new_york_city_hotels_2026-09-16_v1/new_york_city_hotels.json"
+    },
+    {
+      "city": "New York City",
+      "category": "food",
+      "snapshot": "osm_new_york_city_food_2026-09-16_v1/new_york_city_food.json"
+    },
+    {
+      "city": "Chicago",
+      "category": "attractions",
+      "snapshot": "osm_chicago_attractions_2026-09-16_v1/chicago_attractions.json"
+    },
+    {
+      "city": "Chicago",
+      "category": "hotel",
+      "snapshot": "osm_chicago_hotels_2026-09-16_v1/chicago_hotels.json"
+    },
+    {
+      "city": "Chicago",
+      "category": "food",
+      "snapshot": "osm_chicago_food_2026-09-16_v1/chicago_food.json"
+    },
+    {
+      "city": "Washington DC",
+      "category": "attractions",
+      "snapshot": "osm_washington_dc_attractions_2026-09-16_v1/washington_dc_attractions.json"
+    },
+    {
+      "city": "Washington DC",
+      "category": "hotel",
+      "snapshot": "osm_washington_dc_hotels_2026-09-16_v1/washington_dc_hotels.json"
+    },
+    {
+      "city": "Washington DC",
+      "category": "food",
+      "snapshot": "osm_washington_dc_food_2026-09-16_v1/washington_dc_food.json"
+    },
+    {
+      "city": "Miami",
+      "category": "attractions",
+      "snapshot": "osm_miami_attractions_2026-09-16_v1/miami_attractions.json"
+    },
+    {
+      "city": "Miami",
+      "category": "hotel",
+      "snapshot": "osm_miami_hotels_2026-09-16_v1/miami_hotels.json"
+    },
+    {
+      "city": "Miami",
+      "category": "food",
+      "snapshot": "osm_miami_food_2026-09-16_v1/miami_food.json"
+    },
+    {
+      "city": "Denver",
+      "category": "attractions",
+      "snapshot": "osm_denver_attractions_2026-09-16_v1/denver_attractions.json"
+    },
+    {
+      "city": "Denver",
+      "category": "hotel",
+      "snapshot": "osm_denver_hotels_2026-09-16_v1/denver_hotels.json"
+    },
+    {
+      "city": "Denver",
+      "category": "food",
+      "snapshot": "osm_denver_food_2026-09-16_v1/denver_food.json"
+    },
+    {
+      "city": "Seattle",
+      "category": "attractions",
+      "snapshot": "osm_seattle_attractions_2026-09-16_v1/seattle_attractions.json"
+    },
+    {
+      "city": "Seattle",
+      "category": "hotel",
+      "snapshot": "osm_seattle_hotels_2026-09-16_v1/seattle_hotels.json"
+    },
+    {
+      "city": "Seattle",
+      "category": "food",
+      "snapshot": "osm_seattle_food_2026-09-16_v1/seattle_food.json"
+    },
+    {
+      "city": "San Francisco",
+      "category": "attractions",
+      "snapshot": "osm_san_francisco_attractions_2026-09-16_v1/san_francisco_attractions.json"
+    },
+    {
+      "city": "San Francisco",
+      "category": "hotel",
+      "snapshot": "osm_san_francisco_hotels_2026-09-16_v1/san_francisco_hotels.json"
+    },
+    {
+      "city": "San Francisco",
+      "category": "food",
+      "snapshot": "osm_san_francisco_food_2026-09-16_v1/san_francisco_food.json"
+    },
+    {
+      "city": "Los Angeles",
+      "category": "attractions",
+      "snapshot": "osm_los_angeles_attractions_2026-09-16_v1/los_angeles_attractions.json"
+    },
+    {
+      "city": "Los Angeles",
+      "category": "hotel",
+      "snapshot": "osm_los_angeles_hotels_2026-09-16_v1/los_angeles_hotels.json"
+    },
+    {
+      "city": "Los Angeles",
+      "category": "food",
+      "snapshot": "osm_los_angeles_food_2026-09-16_v1/los_angeles_food.json"
+    },
+    {
+      "city": "Las Vegas",
+      "category": "attractions",
+      "snapshot": "osm_las_vegas_attractions_2026-09-16_v1/las_vegas_attractions.json"
+    },
+    {
+      "city": "Las Vegas",
+      "category": "hotel",
+      "snapshot": "osm_las_vegas_hotels_2026-09-16_v1/las_vegas_hotels.json"
+    },
+    {
+      "city": "Las Vegas",
+      "category": "food",
+      "snapshot": "osm_las_vegas_food_2026-09-16_v1/las_vegas_food.json"
+    }
+  ]
+}

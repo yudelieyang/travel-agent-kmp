@@ -1,0 +1,68 @@
+{
+  "coverage": {
+    "evidence": [
+      "Quiet hotel"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "UNRESOLVED_REQUIREMENT_CLAUSE"
+    ],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 2,
+      "resolved_constraints": 2
+    }
+  },
+  "id": "SEM200-072",
+  "query": "New York City: whole trip under $2,350. Quiet hotel, under $990 total.",
+  "requirements": {
+    "budget_amount": "2350.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "New York City",
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [
+      "quiet"
+    ],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "New York City: whole trip under $2,350",
+          "strength": "HARD",
+          "value": "2350.0"
+        },
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "HOTEL_TOTAL",
+          "source_text": "Quiet hotel, under $990  total",
+          "strength": "HARD",
+          "value": "990.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

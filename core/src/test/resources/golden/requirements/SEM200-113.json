@@ -1,0 +1,41 @@
+{
+  "coverage": {
+    "evidence": [],
+    "needs_llm": false,
+    "reasons": [],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 0,
+      "resolved_constraints": 0
+    }
+  },
+  "id": "SEM200-113",
+  "query": "A Miami trip near $1,050 total would be nice.",
+  "requirements": {
+    "budget_amount": "1050.0",
+    "budget_constraint_strength": "SOFT",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [
+      "approximate budget"
+    ],
+    "currency": "USD",
+    "destination": null,
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "coverage": {
+    "evidence": [
+      "I like"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "UNRESOLVED_REQUIREMENT_CLAUSE"
+    ],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 0,
+      "resolved_constraints": 0
+    }
+  },
+  "id": "SEM200-147",
+  "query": "I like fried chicken, art museums, and coffee shops in Chicago.",
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Chicago",
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [
+      "fried chicken",
+      "coffee shops in chicago"
+    ],
+    "hotel_preferences": [],
+    "interests": [
+      "museums",
+      "art",
+      "food",
+      "art museums"
+    ],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": [
+        {
+          "category": "FOOD",
+          "value": "fried chicken"
+        },
+        {
+          "category": "ACTIVITY",
+          "value": "art museums"
+        },
+        {
+          "category": "FOOD",
+          "value": "coffee shops in chicago"
+        }
+      ]
+    },
+    "specific_preferences": [
+      {
+        "category": "FOOD",
+        "value": "fried chicken"
+      },
+      {
+        "category": "ACTIVITY",
+        "value": "art museums"
+      },
+      {
+        "category": "FOOD",
+        "value": "coffee shops in chicago"
+      }
+    ],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

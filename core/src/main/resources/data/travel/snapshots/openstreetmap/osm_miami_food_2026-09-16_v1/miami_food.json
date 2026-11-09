@@ -1,0 +1,103 @@
+{
+  "snapshot_version": "osm_miami_food_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T20:53:44.854681Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-05-06T03:25:00Z",
+  "record_count": 3,
+  "category_map_version": "osm_food_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Miami",
+      "state": "FL",
+      "candidates": {
+        "food": [
+          {
+            "id": "mia-f1",
+            "provider_place_id": "node/1576341770",
+            "name": "Versailles Restaurant",
+            "address": "3555 Southwest 8th Street, Miami FL 33135",
+            "latitude": 25.7649886,
+            "longitude": -80.2527677,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "cuisine=cuban",
+              "cuisine=latin_american",
+              "cuisine=sandwich"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Cuisine: Cuban",
+              "Cuisine: Latin American",
+              "Cuisine: Sandwich"
+            ],
+            "price": 16,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": [
+              "cuban",
+              "local"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "mia-f2",
+            "provider_place_id": "node/8713382843",
+            "name": "305 Pizza",
+            "address": "151 Northwest 24th Street, Miami FL 33127",
+            "latitude": 25.7999652,
+            "longitude": -80.1981994,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "cuisine=pizza"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Cuisine: Pizza"
+            ],
+            "price": 19,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": [
+              "vegetarian",
+              "vegan"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "mia-f3",
+            "provider_place_id": "node/13461562301",
+            "name": "Amazonico",
+            "address": "800 Brickell Avenue, Miami FL 33131",
+            "latitude": 25.7660427,
+            "longitude": -80.1911693,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "cuisine=international"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Cuisine: International"
+            ],
+            "price": 34,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": [
+              "seafood"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

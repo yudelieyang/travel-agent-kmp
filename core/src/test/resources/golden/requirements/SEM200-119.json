@@ -1,0 +1,49 @@
+{
+  "coverage": {
+    "evidence": [
+      "I can spend $550  on the hotel in Seattle"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "AMBIGUOUS_SCOPE"
+    ],
+    "signals": {
+      "blocking_ambiguities": 1,
+      "monetary_expressions": 0,
+      "resolved_constraints": 0
+    }
+  },
+  "id": "SEM200-119",
+  "query": "I can spend $550 on the hotel in Seattle.",
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Seattle",
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [
+        {
+          "level": "BLOCKING",
+          "reason": "Hotel amount does not specify a hard limit or a nightly/total policy",
+          "source_text": "I can spend $550  on the hotel in Seattle"
+        }
+      ],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

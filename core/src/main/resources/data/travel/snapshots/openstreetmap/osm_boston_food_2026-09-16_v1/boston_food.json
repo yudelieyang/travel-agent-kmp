@@ -1,0 +1,93 @@
+{
+  "snapshot_version": "osm_boston_food_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T12:07:21.4405410Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-09-16T12:04:06Z",
+  "record_count": 3,
+  "category_map_version": "osm_food_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Boston",
+      "state": "MA",
+      "candidates": {
+        "food": [
+          {
+            "id": "bos-f1",
+            "provider_place_id": "node/12663666560",
+            "name": "Aceituna Grill",
+            "address": "267 Newbury Street, Boston, MA 02116",
+            "latitude": 42.3495341,
+            "longitude": -71.0834556,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "cuisine=mediterranean",
+              "diet:vegetarian=yes",
+              "diet:vegan=yes"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Cuisine: Mediterranean",
+              "Vegetarian options",
+              "Vegan options"
+            ],
+            "price": 16,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": ["vegetarian", "vegan"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "bos-f2",
+            "provider_place_id": "node/7775144117",
+            "name": "India Quality",
+            "address": "484 Commonwealth Avenue, Boston, MA 02215",
+            "latitude": 42.3485475,
+            "longitude": -71.0942315,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "cuisine=indian",
+              "diet:vegetarian=yes",
+              "diet:vegan=yes"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Cuisine: Indian",
+              "Vegetarian options",
+              "Vegan options"
+            ],
+            "price": 20,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": ["vegetarian"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "bos-f3",
+            "provider_place_id": "node/4418932490",
+            "name": "Atlantic Fish",
+            "address": "761 Boylston Street, Boston, MA 02116",
+            "latitude": 42.3492931,
+            "longitude": -71.0811812,
+            "provider_category_ids": ["amenity=restaurant", "cuisine=seafood"],
+            "provider_category_labels": ["Restaurant", "Cuisine: Seafood"],
+            "price": 30,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": ["seafood"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

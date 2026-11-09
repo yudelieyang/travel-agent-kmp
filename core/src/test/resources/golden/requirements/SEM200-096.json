@@ -1,0 +1,72 @@
+{
+  "coverage": {
+    "evidence": [
+      "Adjust hotel only: $380"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "AMBIGUOUS_SCOPE"
+    ],
+    "signals": {
+      "blocking_ambiguities": 1,
+      "monetary_expressions": 2,
+      "resolved_constraints": 2
+    }
+  },
+  "id": "SEM200-096",
+  "query": "Keep the whole trip below $1,100 and accommodation below $420 total. Adjust hotel only: $380.",
+  "requirements": {
+    "budget_amount": "1100.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": null,
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [
+        {
+          "level": "BLOCKING",
+          "reason": "Hotel amount does not specify a hard limit or a nightly/total policy",
+          "source_text": "Adjust hotel only: $380"
+        }
+      ],
+      "constraints": [
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "Keep the whole trip below $1,100",
+          "strength": "HARD",
+          "value": "1100.0"
+        },
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "HOTEL_TOTAL",
+          "source_text": "accommodation below $420  total",
+          "strength": "HARD",
+          "value": "420.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": "osm_hotel_v1",
+  "provider_mapping": {
+    "tourism=hotel": {
+      "internal_category": "hotel",
+      "provider_label": "Hotel"
+    }
+  },
+  "planner_tag_policy": {
+    "source": "legacy_fixture_by_internal_id",
+    "not_openstreetmap_facts": true,
+    "by_internal_id": {
+      "bos-h1": ["central", "budget"],
+      "bos-h2": ["quiet"],
+      "bos-h3": ["central", "luxury"]
+    }
+  }
+}

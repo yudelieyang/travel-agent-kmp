@@ -1,0 +1,73 @@
+{
+  "snapshot_version": "osm_austin_hotels_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T14:54:27.8734226Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-09-16T14:52:01Z",
+  "record_count": 3,
+  "category_map_version": "osm_hotel_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Austin",
+      "state": "TX",
+      "candidates": {
+        "hotel": [
+          {
+            "id": "aus-h1",
+            "provider_place_id": "node/12577833089",
+            "name": "Hilton Austin",
+            "address": "500 East 4th Street, Austin, TX 78701",
+            "latitude": 30.2652582,
+            "longitude": -97.73806,
+            "provider_category_ids": ["tourism=hotel"],
+            "provider_category_labels": ["Hotel"],
+            "price": 88,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": ["budget", "central"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "aus-h2",
+            "provider_place_id": "way/104137285",
+            "name": "Hyatt Regency Austin",
+            "address": "208 Barton Springs Road, Austin, TX 78704",
+            "latitude": 30.2607066,
+            "longitude": -97.7467623,
+            "provider_category_ids": ["tourism=hotel"],
+            "provider_category_labels": ["Hotel"],
+            "price": 120,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": ["quiet"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "aus-h3",
+            "provider_place_id": "way/134807221",
+            "name": "Four Seasons Hotel Austin",
+            "address": "98 San Jacinto Blvd, Austin, TX 78701",
+            "latitude": 30.2616262,
+            "longitude": -97.7422786,
+            "provider_category_ids": ["tourism=hotel"],
+            "provider_category_labels": ["Hotel"],
+            "price": 205,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": ["luxury", "central"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

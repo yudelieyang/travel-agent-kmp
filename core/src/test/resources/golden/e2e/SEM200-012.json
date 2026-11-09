@@ -1,0 +1,646 @@
+{
+  "budget": {
+    "basis": "per_traveler",
+    "breakdown": {
+      "attractions": "55.0",
+      "food": "279.0",
+      "hotel": "360.0",
+      "transport": "0.0"
+    },
+    "budget_scope": "UNKNOWN",
+    "comparison_cost": null,
+    "currency": "USD",
+    "estimated_total_cost": "694.0",
+    "limit_currency": "USD",
+    "per_traveler_cost": "694.0",
+    "provided_limit": null,
+    "remaining_budget": null,
+    "travelers": null,
+    "warnings": [
+      "Traveler count is unspecified: costs are per traveler, not a group total."
+    ],
+    "within_budget": null
+  },
+  "candidates": [
+    {
+      "alternatives": [],
+      "category": "attractions",
+      "selected": [
+        {
+          "address": "725 Park Avenue, New York NY 10021",
+          "category": "attractions",
+          "city": "New York City",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-a3",
+          "image_url": null,
+          "latitude": 40.7698384,
+          "longitude": -73.9642913,
+          "name": "Asia Society",
+          "preference_matches": [],
+          "price": "0.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/266887857",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:49:46.679364Z",
+          "snapshot_version": "osm_new_york_city_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NY",
+          "tags": [
+            "parks"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "180 Greenwich Street, New York NY 10007",
+          "category": "attractions",
+          "city": "New York City",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-a1",
+          "image_url": null,
+          "latitude": 40.711456,
+          "longitude": -74.0127418,
+          "name": "9/11 Memorial & Museum",
+          "preference_matches": [],
+          "price": "25.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/278033604",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:49:46.679364Z",
+          "snapshot_version": "osm_new_york_city_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NY",
+          "tags": [
+            "museums",
+            "art"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "200 Central Park West, New York NY 10024",
+          "category": "attractions",
+          "city": "New York City",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-a2",
+          "image_url": null,
+          "latitude": 40.7810986,
+          "longitude": -73.974211,
+          "name": "American Museum of Natural History",
+          "preference_matches": [],
+          "price": "30.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/388436810",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:49:46.679364Z",
+          "snapshot_version": "osm_new_york_city_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NY",
+          "tags": [
+            "museums",
+            "history"
+          ],
+          "unit": "per_person_visit"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "address": "96 Wythe Avenue, Brooklyn NY 11249",
+          "category": "hotel",
+          "city": "New York City",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-h2",
+          "image_url": null,
+          "latitude": 40.7216247,
+          "longitude": -73.9588729,
+          "name": "Arlo Williamsburg",
+          "preference_matches": [],
+          "price": "150.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/280122409",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:51:37.765105Z",
+          "snapshot_version": "osm_new_york_city_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NY",
+          "tags": [
+            "quiet"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "46 Nevins Street, Brooklyn NY 11217",
+          "category": "hotel",
+          "city": "New York City",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-h3",
+          "image_url": null,
+          "latitude": 40.6876437,
+          "longitude": -73.9818254,
+          "name": "EVEN Hotel",
+          "preference_matches": [],
+          "price": "250.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/575449026",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:51:37.765105Z",
+          "snapshot_version": "osm_new_york_city_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NY",
+          "tags": [
+            "central",
+            "luxury"
+          ],
+          "unit": "per_person_night"
+        }
+      ],
+      "category": "hotel",
+      "selected": [
+        {
+          "address": "231 Hudson Street, New York NY 10013",
+          "category": "hotel",
+          "city": "New York City",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-h1",
+          "image_url": null,
+          "latitude": 40.7244314,
+          "longitude": -74.0082488,
+          "name": "Arlo Soho",
+          "preference_matches": [],
+          "price": "120.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/320487241",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:51:37.765105Z",
+          "snapshot_version": "osm_new_york_city_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NY",
+          "tags": [
+            "central",
+            "budget"
+          ],
+          "unit": "per_person_night"
+        }
+      ]
+    },
+    {
+      "alternatives": [],
+      "category": "food",
+      "selected": [
+        {
+          "address": "290 8th Avenue, New York NY 10001",
+          "category": "food",
+          "city": "New York City",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-f1",
+          "image_url": null,
+          "latitude": 40.7462748,
+          "longitude": -73.9975223,
+          "name": "Anixi Mediterranean Vegan Restaurant",
+          "preference_matches": [],
+          "price": "18.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=mediterranean",
+            "diet:vegetarian=yes",
+            "diet:vegan=only"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Mediterranean",
+            "Vegetarian options",
+            "Vegan only"
+          ],
+          "provider_place_id": "node/11088424818",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:53:05.592174Z",
+          "snapshot_version": "osm_new_york_city_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NY",
+          "tags": [
+            "vegetarian",
+            "vegan"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "65 East 55th Street, New York NY 10022",
+          "category": "food",
+          "city": "New York City",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-f2",
+          "image_url": null,
+          "latitude": 40.7607818,
+          "longitude": -73.9721848,
+          "name": "Aquavit",
+          "preference_matches": [],
+          "price": "22.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=scandinavian"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Scandinavian"
+          ],
+          "provider_place_id": "node/3213784371",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:53:05.592174Z",
+          "snapshot_version": "osm_new_york_city_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NY",
+          "tags": [
+            "vegetarian"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "49 West 64th Street, New York NY 10023",
+          "category": "food",
+          "city": "New York City",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-f3",
+          "image_url": null,
+          "latitude": 40.7720849,
+          "longitude": -73.9813978,
+          "name": "Atlantic Grill",
+          "preference_matches": [],
+          "price": "35.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=seafood"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Seafood"
+          ],
+          "provider_place_id": "node/2744875804",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:53:05.592174Z",
+          "snapshot_version": "osm_new_york_city_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NY",
+          "tags": [
+            "seafood"
+          ],
+          "unit": "per_person_meal"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "category": "transport",
+          "city": "New York City",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-t2",
+          "image_url": null,
+          "name": "Mock Transit Day Allowance",
+          "preference_matches": [],
+          "price": "12.0",
+          "rating": 4.5,
+          "review_count": 2400,
+          "source": "controlled_mock_fixture",
+          "state": "NY",
+          "tags": [
+            "public transit"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "New York City",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-t3",
+          "image_url": null,
+          "name": "Mock Taxi Day Allowance",
+          "preference_matches": [],
+          "price": "50.0",
+          "rating": 4.0,
+          "review_count": 710,
+          "source": "controlled_mock_fixture",
+          "state": "NY",
+          "tags": [
+            "taxi"
+          ],
+          "unit": "per_person_day"
+        }
+      ],
+      "category": "transport",
+      "selected": [
+        {
+          "category": "transport",
+          "city": "New York City",
+          "currency": "USD",
+          "description": null,
+          "destination": "New York City",
+          "id": "nyc-t1",
+          "image_url": null,
+          "name": "Mock Walking Allowance",
+          "preference_matches": [],
+          "price": "0.0",
+          "rating": null,
+          "review_count": null,
+          "source": "controlled_mock_fixture",
+          "state": "NY",
+          "tags": [
+            "walking"
+          ],
+          "unit": "per_person_day"
+        }
+      ]
+    }
+  ],
+  "clarification_question": null,
+  "itinerary": {
+    "currency": "USD",
+    "daily_plan": [
+      {
+        "activities": [
+          {
+            "category": "attractions",
+            "estimated_cost": "0.0",
+            "name": "Asia Society"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "18.0",
+            "name": "Anixi Mediterranean Vegan Restaurant (breakfast)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "18.0",
+            "name": "Anixi Mediterranean Vegan Restaurant (lunch)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "18.0",
+            "name": "Anixi Mediterranean Vegan Restaurant (dinner)"
+          },
+          {
+            "category": "transport",
+            "estimated_cost": "0.0",
+            "name": "Mock Walking Allowance"
+          },
+          {
+            "category": "hotel",
+            "estimated_cost": "120.0",
+            "name": "Arlo Soho"
+          }
+        ],
+        "day_number": 1,
+        "estimated_cost": "174.0"
+      },
+      {
+        "activities": [
+          {
+            "category": "attractions",
+            "estimated_cost": "25.0",
+            "name": "9/11 Memorial & Museum"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "22.0",
+            "name": "Aquavit (breakfast)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "22.0",
+            "name": "Aquavit (lunch)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "22.0",
+            "name": "Aquavit (dinner)"
+          },
+          {
+            "category": "transport",
+            "estimated_cost": "0.0",
+            "name": "Mock Walking Allowance"
+          },
+          {
+            "category": "hotel",
+            "estimated_cost": "120.0",
+            "name": "Arlo Soho"
+          }
+        ],
+        "day_number": 2,
+        "estimated_cost": "211.0"
+      },
+      {
+        "activities": [
+          {
+            "category": "attractions",
+            "estimated_cost": "30.0",
+            "name": "American Museum of Natural History"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "35.0",
+            "name": "Atlantic Grill (breakfast)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "35.0",
+            "name": "Atlantic Grill (lunch)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "35.0",
+            "name": "Atlantic Grill (dinner)"
+          },
+          {
+            "category": "transport",
+            "estimated_cost": "0.0",
+            "name": "Mock Walking Allowance"
+          },
+          {
+            "category": "hotel",
+            "estimated_cost": "120.0",
+            "name": "Arlo Soho"
+          }
+        ],
+        "day_number": 3,
+        "estimated_cost": "255.0"
+      },
+      {
+        "activities": [
+          {
+            "category": "attractions",
+            "estimated_cost": "0.0",
+            "name": "Asia Society"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "18.0",
+            "name": "Anixi Mediterranean Vegan Restaurant (breakfast)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "18.0",
+            "name": "Anixi Mediterranean Vegan Restaurant (lunch)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "18.0",
+            "name": "Anixi Mediterranean Vegan Restaurant (dinner)"
+          },
+          {
+            "category": "transport",
+            "estimated_cost": "0.0",
+            "name": "Mock Walking Allowance"
+          }
+        ],
+        "day_number": 4,
+        "estimated_cost": "54.0"
+      }
+    ],
+    "days": 4,
+    "destination": "New York City",
+    "estimated_total_cost": "694.0",
+    "warnings": [
+      "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+      "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+      "Small mock dataset: some attractions repeat across days.",
+      "Traveler count is unspecified: costs are per traveler, not a group total."
+    ]
+  },
+  "missing_fields": [],
+  "query": "New York City, 4 days, two of us.",
+  "repair": null,
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "New York City",
+    "duration_days": 4,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  },
+  "status": "success",
+  "validation": {
+    "outcome": "passed",
+    "performed": true,
+    "reason": null,
+    "violations": []
+  },
+  "warnings": [
+    "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+    "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+    "Small mock dataset: some attractions repeat across days.",
+    "Traveler count is unspecified: costs are per traveler, not a group total."
+  ]
+}

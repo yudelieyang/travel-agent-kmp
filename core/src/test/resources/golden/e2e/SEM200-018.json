@@ -1,0 +1,544 @@
+{
+  "budget": {
+    "basis": "per_traveler",
+    "breakdown": {
+      "attractions": "0.0",
+      "food": "48.0",
+      "hotel": "0.0",
+      "transport": "10.0"
+    },
+    "budget_scope": "UNKNOWN",
+    "comparison_cost": null,
+    "currency": "USD",
+    "estimated_total_cost": "58.0",
+    "limit_currency": "USD",
+    "per_traveler_cost": "58.0",
+    "provided_limit": null,
+    "remaining_budget": null,
+    "travelers": null,
+    "warnings": [
+      "Traveler count is unspecified: costs are per traveler, not a group total."
+    ],
+    "within_budget": null
+  },
+  "candidates": [
+    {
+      "alternatives": [
+        {
+          "address": "2121 Children's Museum Drive, Denver CO 80211",
+          "category": "attractions",
+          "city": "Denver",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-a2",
+          "image_url": null,
+          "latitude": 39.7486538,
+          "longitude": -105.017044,
+          "name": "Children’s Museum of Denver at Marsico Campus",
+          "preference_matches": [],
+          "price": "17.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "node/366396449",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:54:14.818687Z",
+          "snapshot_version": "osm_denver_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CO",
+          "tags": [
+            "museums",
+            "history"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "1727 Tremont Place, Denver CO 80202",
+          "category": "attractions",
+          "city": "Denver",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-a1",
+          "image_url": null,
+          "latitude": 39.7446273,
+          "longitude": -104.9879622,
+          "name": "American Museum of Western Art",
+          "preference_matches": [],
+          "price": "21.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "node/366396461",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:54:14.818687Z",
+          "snapshot_version": "osm_denver_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CO",
+          "tags": [
+            "museums",
+            "art"
+          ],
+          "unit": "per_person_visit"
+        }
+      ],
+      "category": "attractions",
+      "selected": [
+        {
+          "address": "1250 Bannock Street, Denver CO 80204",
+          "category": "attractions",
+          "city": "Denver",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-a3",
+          "image_url": null,
+          "latitude": 39.7362967,
+          "longitude": -104.9898418,
+          "name": "Clyfford Still Museum",
+          "preference_matches": [],
+          "price": "0.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/315709021",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:54:14.818687Z",
+          "snapshot_version": "osm_denver_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CO",
+          "tags": [
+            "parks",
+            "outdoors"
+          ],
+          "unit": "per_person_visit"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "address": "1420 Stout Street, Denver CO 80202",
+          "category": "hotel",
+          "city": "Denver",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-h1",
+          "image_url": null,
+          "latitude": 39.7441238,
+          "longitude": -104.9947666,
+          "name": "Embassy Suites by Hilton Denver Downtown Convention Center",
+          "preference_matches": [],
+          "price": "92.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/114312226",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:01:20.038615Z",
+          "snapshot_version": "osm_denver_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CO",
+          "tags": [
+            "budget",
+            "central"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "1701 California Street, Denver CO 80202",
+          "category": "hotel",
+          "city": "Denver",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-h2",
+          "image_url": null,
+          "latitude": 39.7471695,
+          "longitude": -104.9904675,
+          "name": "Hilton Denver City Center",
+          "preference_matches": [],
+          "price": "128.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/53085855",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:01:20.038615Z",
+          "snapshot_version": "osm_denver_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CO",
+          "tags": [
+            "quiet"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "7800 East Tufts Avenue, Denver CO 80237",
+          "category": "hotel",
+          "city": "Denver",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-h3",
+          "image_url": null,
+          "latitude": 39.6303737,
+          "longitude": -104.8989435,
+          "name": "Hyatt Regency Denver Tech Center",
+          "preference_matches": [],
+          "price": "215.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/558417129",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:01:20.038615Z",
+          "snapshot_version": "osm_denver_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CO",
+          "tags": [
+            "luxury",
+            "central"
+          ],
+          "unit": "per_person_night"
+        }
+      ],
+      "category": "hotel",
+      "selected": []
+    },
+    {
+      "alternatives": [
+        {
+          "address": "2233 Larimer Street, Denver CO 80205",
+          "category": "food",
+          "city": "Denver",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-f2",
+          "image_url": null,
+          "latitude": 39.7554154,
+          "longitude": -104.989695,
+          "name": "La Diabla Pozole Y Mezcal",
+          "preference_matches": [],
+          "price": "18.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=mexican"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Mexican"
+          ],
+          "provider_place_id": "node/11916986269",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:15:33.645616Z",
+          "snapshot_version": "osm_denver_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CO",
+          "tags": [
+            "vegetarian",
+            "vegan"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "3350 Brighton Boulevard, Denver CO 80216",
+          "category": "food",
+          "city": "Denver",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-f3",
+          "image_url": null,
+          "latitude": 39.768623,
+          "longitude": -104.97988,
+          "name": "Acorn",
+          "preference_matches": [],
+          "price": "29.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=american",
+            "diet:vegetarian=limited",
+            "diet:vegan=no"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: American",
+            "Vegetarian options",
+            "Vegan options"
+          ],
+          "provider_place_id": "node/3039100985",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:15:33.645616Z",
+          "snapshot_version": "osm_denver_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CO",
+          "tags": [
+            "grilled",
+            "local"
+          ],
+          "unit": "per_person_meal"
+        }
+      ],
+      "category": "food",
+      "selected": [
+        {
+          "address": "1000 Osage Street, Denver CO 80204",
+          "category": "food",
+          "city": "Denver",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-f1",
+          "image_url": null,
+          "latitude": 39.7322529,
+          "longitude": -105.0051124,
+          "name": "Buckhorn Exchange",
+          "preference_matches": [],
+          "price": "16.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=steak_house"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Steak House"
+          ],
+          "provider_place_id": "node/519549594",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:15:33.645616Z",
+          "snapshot_version": "osm_denver_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CO",
+          "tags": [
+            "local",
+            "casual"
+          ],
+          "unit": "per_person_meal"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "category": "transport",
+          "city": "Denver",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-t1",
+          "image_url": null,
+          "name": "Mock Walking Allowance",
+          "preference_matches": [],
+          "price": "0.0",
+          "rating": null,
+          "review_count": null,
+          "source": "controlled_mock_fixture",
+          "state": "CO",
+          "tags": [
+            "walking"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Denver",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-t3",
+          "image_url": null,
+          "name": "Mock Taxi Day Allowance",
+          "preference_matches": [],
+          "price": "43.0",
+          "rating": 4.1,
+          "review_count": 340,
+          "source": "controlled_mock_fixture",
+          "state": "CO",
+          "tags": [
+            "taxi"
+          ],
+          "unit": "per_person_day"
+        }
+      ],
+      "category": "transport",
+      "selected": [
+        {
+          "category": "transport",
+          "city": "Denver",
+          "currency": "USD",
+          "description": null,
+          "destination": "Denver",
+          "id": "den-t2",
+          "image_url": null,
+          "name": "Mock Rail Day Allowance",
+          "preference_matches": [
+            "public transit"
+          ],
+          "price": "10.0",
+          "rating": 4.3,
+          "review_count": 780,
+          "source": "controlled_mock_fixture",
+          "state": "CO",
+          "tags": [
+            "public transit"
+          ],
+          "unit": "per_person_day"
+        }
+      ]
+    }
+  ],
+  "clarification_question": null,
+  "itinerary": {
+    "currency": "USD",
+    "daily_plan": [
+      {
+        "activities": [
+          {
+            "category": "attractions",
+            "estimated_cost": "0.0",
+            "name": "Clyfford Still Museum"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "16.0",
+            "name": "Buckhorn Exchange (breakfast)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "16.0",
+            "name": "Buckhorn Exchange (lunch)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "16.0",
+            "name": "Buckhorn Exchange (dinner)"
+          },
+          {
+            "category": "transport",
+            "estimated_cost": "10.0",
+            "name": "Mock Rail Day Allowance"
+          }
+        ],
+        "day_number": 1,
+        "estimated_cost": "58.0"
+      }
+    ],
+    "days": 1,
+    "destination": "Denver",
+    "estimated_total_cost": "58.0",
+    "warnings": [
+      "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+      "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+      "Traveler count is unspecified: costs are per traveler, not a group total."
+    ]
+  },
+  "missing_fields": [],
+  "query": "Denver for one day; public transit is preferred.",
+  "repair": null,
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Denver",
+    "duration_days": 1,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [
+      "public transit"
+    ],
+    "travelers": null
+  },
+  "status": "success",
+  "validation": {
+    "outcome": "passed",
+    "performed": true,
+    "reason": null,
+    "violations": []
+  },
+  "warnings": [
+    "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+    "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+    "Traveler count is unspecified: costs are per traveler, not a group total."
+  ]
+}

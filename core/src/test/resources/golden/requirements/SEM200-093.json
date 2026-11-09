@@ -1,0 +1,55 @@
+{
+  "coverage": {
+    "evidence": [
+      "sorry, make the trip $1,600"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "CORRECTION_TARGET_UNRESOLVED"
+    ],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 2,
+      "resolved_constraints": 1
+    }
+  },
+  "id": "SEM200-093",
+  "query": "Trip ceiling $1,800 and lodging ceiling $750 total; sorry, make the trip $1,600.",
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": null,
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "HOTEL_TOTAL",
+          "source_text": "sorry, make the trip $1,600",
+          "strength": "HARD",
+          "value": "1600.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

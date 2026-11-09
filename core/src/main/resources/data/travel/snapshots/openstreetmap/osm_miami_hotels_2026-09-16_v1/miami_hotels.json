@@ -1,0 +1,93 @@
+{
+  "snapshot_version": "osm_miami_hotels_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T20:49:27.691559Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-07-24T11:04:51Z",
+  "record_count": 3,
+  "category_map_version": "osm_hotel_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Miami",
+      "state": "FL",
+      "candidates": {
+        "hotel": [
+          {
+            "id": "mia-h1",
+            "provider_place_id": "way/468023519",
+            "name": "Doubletree by Hilton Grand Hotel Biscayne Bay",
+            "address": "1717 North Bayshore Drive, Miami FL 33132-1180",
+            "latitude": 25.7915535,
+            "longitude": -80.1862338,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 105,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "budget",
+              "central"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "mia-h2",
+            "provider_place_id": "way/467892170",
+            "name": "Eurostars Langford",
+            "address": "121 Southeast 1st Street, Miami FL 33131",
+            "latitude": 25.7736361,
+            "longitude": -80.1914075,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 145,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "quiet"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "mia-h3",
+            "provider_place_id": "way/300241285",
+            "name": "Four Seasons Hotel Miami",
+            "address": "1435 Brickell Avenue, Miami FL 33131",
+            "latitude": 25.7589918,
+            "longitude": -80.1920516,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 260,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "luxury",
+              "central"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

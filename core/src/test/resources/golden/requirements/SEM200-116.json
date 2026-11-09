@@ -1,0 +1,49 @@
+{
+  "coverage": {
+    "evidence": [
+      "I want a $240  hotel in Boston"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "AMBIGUOUS_SCOPE"
+    ],
+    "signals": {
+      "blocking_ambiguities": 1,
+      "monetary_expressions": 0,
+      "resolved_constraints": 0
+    }
+  },
+  "id": "SEM200-116",
+  "query": "I want a $240 hotel in Boston.",
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Boston",
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [
+        {
+          "level": "BLOCKING",
+          "reason": "Hotel amount does not specify a hard limit or a nightly/total policy",
+          "source_text": "I want a $240  hotel in Boston"
+        }
+      ],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

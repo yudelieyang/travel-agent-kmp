@@ -1,0 +1,94 @@
+{
+  "snapshot_version": "osm_chicago_attractions_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T15:53:51.367411Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-07-15T15:22:01Z",
+  "record_count": 3,
+  "category_map_version": "osm_attractions_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Chicago",
+      "state": "IL",
+      "candidates": {
+        "attractions": [
+          {
+            "id": "chi-a1",
+            "provider_place_id": "node/5169949885",
+            "name": "American Writers Museum",
+            "address": "180 North Michigan Avenue, Chicago IL 60601",
+            "latitude": 41.8855608,
+            "longitude": -87.6249909,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 24,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "museums",
+              "art"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "chi-a2",
+            "provider_place_id": "way/210698577",
+            "name": "A. Philip Randolph Pullman Porter Museum",
+            "address": "10406 South Maryland Avenue, Chicago IL 60628",
+            "latitude": 41.7053741,
+            "longitude": -87.6030693,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 18,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "museums",
+              "history"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "chi-a3",
+            "provider_place_id": "way/163573566",
+            "name": "Balzekas Museum of Lithuanian Culture",
+            "address": "6500 South Pulaski Road, Chicago IL 60629",
+            "latitude": 41.7746301,
+            "longitude": -87.7229824,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 0,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "parks",
+              "walking"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

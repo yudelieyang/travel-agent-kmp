@@ -1,0 +1,93 @@
+{
+  "snapshot_version": "osm_las_vegas_hotels_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T21:46:59.617302Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-09-16T21:43:50Z",
+  "record_count": 3,
+  "category_map_version": "osm_hotel_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Las Vegas",
+      "state": "NV",
+      "candidates": {
+        "hotel": [
+          {
+            "id": "las-h1",
+            "provider_place_id": "way/461103845",
+            "name": "La Quinta Inn & Suites",
+            "address": "9570 West Sahara Avenue, Las Vegas NV 89117",
+            "latitude": 36.1455019,
+            "longitude": -115.303275,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 78,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "budget",
+              "central"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "las-h2",
+            "provider_place_id": "node/13770197469",
+            "name": "AC Hotel by Marriott Las Vegas Symphony Park",
+            "address": "330 South Grand Central Parkway, Las Vegas NV 89106",
+            "latitude": 36.1695277,
+            "longitude": -115.1533783,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 118,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "quiet"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "las-h3",
+            "provider_place_id": "way/463007736",
+            "name": "Best Western Plus Las Vegas West",
+            "address": "8669 West Sahara Avenue, Las Vegas NV 89117",
+            "latitude": 36.1425967,
+            "longitude": -115.2807125,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 235,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "luxury",
+              "central"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

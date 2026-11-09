@@ -1,0 +1,95 @@
+{
+  "snapshot_version": "osm_washington_dc_attractions_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T20:41:30.641736Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-05-06T03:25:00Z",
+  "record_count": 3,
+  "category_map_version": "osm_attractions_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Washington DC",
+      "state": "DC",
+      "candidates": {
+        "attractions": [
+          {
+            "id": "wdc-a1",
+            "provider_place_id": "node/3688609913",
+            "name": "America's Islamic Heritage Museum",
+            "address": "2315 Martin Luther King Junior Avenue Southeast, Washington DC 20020",
+            "latitude": 38.8632003,
+            "longitude": -76.9918493,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 0,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "museums",
+              "history"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "wdc-a2",
+            "provider_place_id": "way/42341486",
+            "name": "Arts and Industries Building",
+            "address": "900 Jefferson Drive Southwest, Washington DC 20560",
+            "latitude": 38.8881834,
+            "longitude": -77.0244785,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 0,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "museums",
+              "art"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "wdc-a3",
+            "provider_place_id": "node/4806102794",
+            "name": "DAR Museum",
+            "address": "1776 D Street Northwest, Washington DC 20006",
+            "latitude": 38.8939474,
+            "longitude": -77.0399678,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 0,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "parks",
+              "history",
+              "walking"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "snapshot_version": "osm_columbus_attractions_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T15:20:11.5140859Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-09-16T15:17:18Z",
+  "record_count": 5,
+  "category_map_version": "osm_attractions_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Columbus",
+      "state": "OH",
+      "candidates": {
+        "attractions": [
+          {
+            "id": "cmh-a1",
+            "provider_place_id": "way/32873150",
+            "name": "COSI",
+            "address": "333 West Broad Street, Columbus, OH 43215",
+            "latitude": 39.959665,
+            "longitude": -83.006595,
+            "provider_category_ids": ["tourism=museum"],
+            "provider_category_labels": ["Museum"],
+            "price": 22,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": ["zoo", "animals", "family"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "cmh-a2",
+            "provider_place_id": "way/293476179",
+            "name": "Columbus Museum of Art",
+            "address": "480 East Broad Street, Columbus, OH 43215",
+            "latitude": 39.9644285,
+            "longitude": -82.987752,
+            "provider_category_ids": ["tourism=museum"],
+            "provider_category_labels": ["Museum"],
+            "price": 28,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": ["zoo", "animals", "outdoors"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "cmh-a3",
+            "provider_place_id": "way/835107792",
+            "name": "Ohio History Center",
+            "address": "800 E. 17th Avenue, Columbus, OH 43211",
+            "latitude": 40.0050452,
+            "longitude": -82.9876307,
+            "provider_category_ids": ["tourism=museum"],
+            "provider_category_labels": ["Museum"],
+            "price": 18,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": ["zoo", "animals", "family"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "cmh-a4",
+            "provider_place_id": "way/570391114",
+            "name": "National Veterans Memorial and Museum",
+            "address": "300 West Broad Street, Columbus, OH 43215",
+            "latitude": 39.9619805,
+            "longitude": -83.0080526,
+            "provider_category_ids": ["tourism=museum"],
+            "provider_category_labels": ["Museum"],
+            "price": 20,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": ["zoo", "science", "museums"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "cmh-a5",
+            "provider_place_id": "way/224492486",
+            "name": "Scioto Audubon Metro Park",
+            "address": "400 Whittier Street, Columbus, OH",
+            "latitude": 39.9470771,
+            "longitude": -83.0065835,
+            "provider_category_ids": ["leisure=park"],
+            "provider_category_labels": ["Park"],
+            "price": 0,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": ["zoo", "parks", "walking"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

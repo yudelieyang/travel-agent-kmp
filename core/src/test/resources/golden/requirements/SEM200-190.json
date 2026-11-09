@@ -1,0 +1,62 @@
+{
+  "coverage": {
+    "evidence": [],
+    "needs_llm": false,
+    "reasons": [],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 0,
+      "resolved_constraints": 0
+    }
+  },
+  "id": "SEM200-190",
+  "query": "denver 3 days i like zoo and fried chiken",
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Denver",
+    "duration_days": 3,
+    "end_date": null,
+    "food_preferences": [
+      "fried chiken"
+    ],
+    "hotel_preferences": [],
+    "interests": [
+      "zoo",
+      "food"
+    ],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": [
+        {
+          "category": "ACTIVITY",
+          "value": "zoo"
+        },
+        {
+          "category": "FOOD",
+          "value": "fried chiken"
+        }
+      ]
+    },
+    "specific_preferences": [
+      {
+        "category": "ACTIVITY",
+        "value": "zoo"
+      },
+      {
+        "category": "FOOD",
+        "value": "fried chiken"
+      }
+    ],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

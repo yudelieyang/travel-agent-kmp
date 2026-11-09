@@ -1,0 +1,18 @@
+{
+  "version": "osm_attractions_v1",
+  "internal_category": "attractions",
+  "mappings": {
+    "tourism=museum": {
+      "provider_label": "Museum",
+      "internal_tags": ["museums"]
+    },
+    "tourism=aquarium": {
+      "provider_label": "Aquarium",
+      "internal_tags": ["aquarium"]
+    },
+    "leisure=park": {
+      "provider_label": "Park",
+      "internal_tags": ["parks"]
+    }
+  }
+}

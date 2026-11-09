@@ -1,0 +1,99 @@
+{
+  "snapshot_version": "osm_washington_dc_food_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T20:44:10.974804Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-09-16T20:41:48Z",
+  "record_count": 3,
+  "category_map_version": "osm_food_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Washington DC",
+      "state": "DC",
+      "candidates": {
+        "food": [
+          {
+            "id": "wdc-f1",
+            "provider_place_id": "node/3261823930",
+            "name": "Bistrot du Coin",
+            "address": "1738 Connecticut Avenue Northwest, Washington DC 20009-1103",
+            "latitude": 38.9137931,
+            "longitude": -77.046129,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "cuisine=french"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Cuisine: French"
+            ],
+            "price": 18,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": [
+              "vegetarian",
+              "vegan"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "wdc-f2",
+            "provider_place_id": "node/3832550822",
+            "name": "Blue Duck Tavern",
+            "address": "1201 24th Street Northwest, Washington DC 20037",
+            "latitude": 38.9055325,
+            "longitude": -77.0511634,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "cuisine=american"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Cuisine: American"
+            ],
+            "price": 24,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": [
+              "grilled",
+              "local"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "wdc-f3",
+            "provider_place_id": "node/6299710951",
+            "name": "Bresca",
+            "address": "1906 14th Street Northwest, Washington DC 20009",
+            "latitude": 38.9157574,
+            "longitude": -77.0321871,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "cuisine=french"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Cuisine: French"
+            ],
+            "price": 33,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": [
+              "seafood"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

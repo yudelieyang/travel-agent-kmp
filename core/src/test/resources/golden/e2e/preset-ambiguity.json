@@ -1,0 +1,612 @@
+{
+  "budget": {
+    "basis": "group",
+    "breakdown": {
+      "attractions": "35.0",
+      "food": "198.0",
+      "hotel": "200.0",
+      "transport": "0.0"
+    },
+    "budget_scope": "UNKNOWN",
+    "comparison_cost": null,
+    "currency": "USD",
+    "estimated_total_cost": "433.0",
+    "limit_currency": "USD",
+    "per_traveler_cost": "433.0",
+    "provided_limit": null,
+    "remaining_budget": null,
+    "travelers": 1,
+    "warnings": [],
+    "within_budget": null
+  },
+  "candidates": [
+    {
+      "alternatives": [],
+      "category": "attractions",
+      "selected": [
+        {
+          "address": "4 Charles Street, Boston, MA 02116",
+          "category": "attractions",
+          "city": "Boston",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-a3",
+          "image_url": null,
+          "latitude": 42.3540568,
+          "longitude": -71.069998,
+          "name": "Boston Public Garden",
+          "preference_matches": [],
+          "price": "0.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "leisure=park"
+          ],
+          "provider_category_labels": [
+            "Park"
+          ],
+          "provider_place_id": "way/23787885",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+          "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "MA",
+          "tags": [
+            "parks"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "1 Central Wharf, Boston, MA 02110",
+          "category": "attractions",
+          "city": "Boston",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-a2",
+          "image_url": null,
+          "latitude": 42.3591988,
+          "longitude": -71.0493558,
+          "name": "New England Aquarium",
+          "preference_matches": [],
+          "price": "15.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=aquarium"
+          ],
+          "provider_category_labels": [
+            "Aquarium"
+          ],
+          "provider_place_id": "way/29660091",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+          "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "MA",
+          "tags": [
+            "aquarium"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "25 Evans Way, Boston, MA 02115",
+          "category": "attractions",
+          "city": "Boston",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-a1",
+          "image_url": null,
+          "latitude": 42.3382381,
+          "longitude": -71.0990448,
+          "name": "Isabella Stewart Gardner Museum",
+          "preference_matches": [],
+          "price": "20.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/29650851",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+          "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "MA",
+          "tags": [
+            "museums"
+          ],
+          "unit": "per_person_visit"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "address": "370 Commonwealth Avenue, Boston, MA 02115",
+          "category": "hotel",
+          "city": "Boston",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-h2",
+          "image_url": null,
+          "latitude": 42.3486873,
+          "longitude": -71.0887471,
+          "name": "The Eliot Hotel",
+          "preference_matches": [],
+          "price": "130.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "node/2350330785",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+          "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "MA",
+          "tags": [
+            "quiet"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "200 Boylston Street, Boston, MA 02116",
+          "category": "hotel",
+          "city": "Boston",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-h3",
+          "image_url": null,
+          "latitude": 42.3520527,
+          "longitude": -71.0683352,
+          "name": "Four Seasons Hotel Boston",
+          "preference_matches": [],
+          "price": "220.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "relation/63916",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+          "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "MA",
+          "tags": [
+            "central",
+            "luxury"
+          ],
+          "unit": "per_person_night"
+        }
+      ],
+      "category": "hotel",
+      "selected": [
+        {
+          "address": "70 Rowes Wharf, Boston, MA 02110",
+          "category": "hotel",
+          "city": "Boston",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-h1",
+          "image_url": null,
+          "latitude": 42.3566602,
+          "longitude": -71.0503163,
+          "name": "Boston Harbor Hotel",
+          "preference_matches": [],
+          "price": "100.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "node/1325873780",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+          "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "MA",
+          "tags": [
+            "central",
+            "budget"
+          ],
+          "unit": "per_person_night"
+        }
+      ]
+    },
+    {
+      "alternatives": [],
+      "category": "food",
+      "selected": [
+        {
+          "address": "267 Newbury Street, Boston, MA 02116",
+          "category": "food",
+          "city": "Boston",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-f1",
+          "image_url": null,
+          "latitude": 42.3495341,
+          "longitude": -71.0834556,
+          "name": "Aceituna Grill",
+          "preference_matches": [],
+          "price": "16.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=mediterranean",
+            "diet:vegetarian=yes",
+            "diet:vegan=yes"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Mediterranean",
+            "Vegetarian options",
+            "Vegan options"
+          ],
+          "provider_place_id": "node/12663666560",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+          "snapshot_version": "osm_boston_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "MA",
+          "tags": [
+            "vegetarian",
+            "vegan"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "484 Commonwealth Avenue, Boston, MA 02215",
+          "category": "food",
+          "city": "Boston",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-f2",
+          "image_url": null,
+          "latitude": 42.3485475,
+          "longitude": -71.0942315,
+          "name": "India Quality",
+          "preference_matches": [],
+          "price": "20.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=indian",
+            "diet:vegetarian=yes",
+            "diet:vegan=yes"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Indian",
+            "Vegetarian options",
+            "Vegan options"
+          ],
+          "provider_place_id": "node/7775144117",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+          "snapshot_version": "osm_boston_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "MA",
+          "tags": [
+            "vegetarian"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "761 Boylston Street, Boston, MA 02116",
+          "category": "food",
+          "city": "Boston",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-f3",
+          "image_url": null,
+          "latitude": 42.3492931,
+          "longitude": -71.0811812,
+          "name": "Atlantic Fish",
+          "preference_matches": [],
+          "price": "30.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=seafood"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Seafood"
+          ],
+          "provider_place_id": "node/4418932490",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+          "snapshot_version": "osm_boston_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "MA",
+          "tags": [
+            "seafood"
+          ],
+          "unit": "per_person_meal"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "category": "transport",
+          "city": "Boston",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-t2",
+          "image_url": null,
+          "name": "Mock Transit Day Allowance",
+          "preference_matches": [],
+          "price": "10.0",
+          "rating": 4.4,
+          "review_count": 900,
+          "source": "controlled_mock_fixture",
+          "state": "MA",
+          "tags": [
+            "public transit"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Boston",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-t3",
+          "image_url": null,
+          "name": "Mock Taxi Day Allowance",
+          "preference_matches": [],
+          "price": "45.0",
+          "rating": 4.1,
+          "review_count": 330,
+          "source": "controlled_mock_fixture",
+          "state": "MA",
+          "tags": [
+            "taxi"
+          ],
+          "unit": "per_person_day"
+        }
+      ],
+      "category": "transport",
+      "selected": [
+        {
+          "category": "transport",
+          "city": "Boston",
+          "currency": "USD",
+          "description": null,
+          "destination": "Boston",
+          "id": "bos-t1",
+          "image_url": null,
+          "name": "Mock Walking Allowance",
+          "preference_matches": [],
+          "price": "0.0",
+          "rating": null,
+          "review_count": null,
+          "source": "controlled_mock_fixture",
+          "state": "MA",
+          "tags": [
+            "walking"
+          ],
+          "unit": "per_person_day"
+        }
+      ]
+    }
+  ],
+  "clarification_question": null,
+  "itinerary": {
+    "currency": "USD",
+    "daily_plan": [
+      {
+        "activities": [
+          {
+            "category": "attractions",
+            "estimated_cost": "0.0",
+            "name": "Boston Public Garden"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "16.0",
+            "name": "Aceituna Grill (breakfast)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "16.0",
+            "name": "Aceituna Grill (lunch)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "16.0",
+            "name": "Aceituna Grill (dinner)"
+          },
+          {
+            "category": "transport",
+            "estimated_cost": "0.0",
+            "name": "Mock Walking Allowance"
+          },
+          {
+            "category": "hotel",
+            "estimated_cost": "100.0",
+            "name": "Boston Harbor Hotel"
+          }
+        ],
+        "day_number": 1,
+        "estimated_cost": "148.0"
+      },
+      {
+        "activities": [
+          {
+            "category": "attractions",
+            "estimated_cost": "15.0",
+            "name": "New England Aquarium"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "20.0",
+            "name": "India Quality (breakfast)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "20.0",
+            "name": "India Quality (lunch)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "20.0",
+            "name": "India Quality (dinner)"
+          },
+          {
+            "category": "transport",
+            "estimated_cost": "0.0",
+            "name": "Mock Walking Allowance"
+          },
+          {
+            "category": "hotel",
+            "estimated_cost": "100.0",
+            "name": "Boston Harbor Hotel"
+          }
+        ],
+        "day_number": 2,
+        "estimated_cost": "175.0"
+      },
+      {
+        "activities": [
+          {
+            "category": "attractions",
+            "estimated_cost": "20.0",
+            "name": "Isabella Stewart Gardner Museum"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "30.0",
+            "name": "Atlantic Fish (breakfast)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "30.0",
+            "name": "Atlantic Fish (lunch)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "30.0",
+            "name": "Atlantic Fish (dinner)"
+          },
+          {
+            "category": "transport",
+            "estimated_cost": "0.0",
+            "name": "Mock Walking Allowance"
+          }
+        ],
+        "day_number": 3,
+        "estimated_cost": "110.0"
+      }
+    ],
+    "days": 3,
+    "destination": "Boston",
+    "estimated_total_cost": "433.0",
+    "warnings": [
+      "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+      "Quote convention: three meals/day and days minus one lodging nights; prices per person."
+    ]
+  },
+  "missing_fields": [],
+  "query": "Plan a 3-day trip to Boston for 1 traveler. I want a $240 hotel in Boston.",
+  "repair": null,
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Boston",
+    "duration_days": 3,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [
+        {
+          "level": "BLOCKING",
+          "reason": "Hotel amount does not specify a hard limit or a nightly/total policy",
+          "source_text": "I want a $240  hotel in Boston"
+        }
+      ],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": 1
+  },
+  "status": "success",
+  "validation": {
+    "outcome": "passed",
+    "performed": true,
+    "reason": null,
+    "violations": []
+  },
+  "warnings": [
+    "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+    "Quote convention: three meals/day and days minus one lodging nights; prices per person."
+  ]
+}

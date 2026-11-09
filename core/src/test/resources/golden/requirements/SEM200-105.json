@@ -1,0 +1,55 @@
+{
+  "coverage": {
+    "evidence": [
+      "not a strict cap"
+    ],
+    "needs_llm": true,
+    "reasons": [
+      "MONETARY_SEMANTIC_GAP"
+    ],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 0,
+      "resolved_constraints": 1
+    }
+  },
+  "id": "SEM200-105",
+  "query": "About $1,100 total is my target for Denver, not a strict cap.",
+  "requirements": {
+    "budget_amount": "1100.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": null,
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "About $1,100  total is my target for Denver, not a strict cap",
+          "strength": "HARD",
+          "value": "1100.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  }
+}

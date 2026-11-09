@@ -1,0 +1,946 @@
+{
+  "budget": {
+    "basis": "group",
+    "breakdown": {
+      "attractions": "38.0",
+      "food": "141.0",
+      "hotel": "164.0",
+      "transport": "0.0"
+    },
+    "budget_scope": "TOTAL_TRIP",
+    "comparison_cost": "343.0",
+    "currency": "USD",
+    "estimated_total_cost": "343.0",
+    "limit_currency": "USD",
+    "per_traveler_cost": "343.0",
+    "provided_limit": "900.0",
+    "remaining_budget": "557.0",
+    "travelers": 1,
+    "warnings": [],
+    "within_budget": true
+  },
+  "candidates": [
+    {
+      "alternatives": [
+        {
+          "address": "333 West Broad Street, Columbus, OH 43215",
+          "category": "attractions",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-a1",
+          "image_url": null,
+          "latitude": 39.959665,
+          "longitude": -83.006595,
+          "name": "COSI",
+          "preference_matches": [
+            "zoo"
+          ],
+          "price": "22.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/32873150",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:20:11.514085Z",
+          "snapshot_version": "osm_columbus_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "zoo",
+            "animals",
+            "family"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "480 East Broad Street, Columbus, OH 43215",
+          "category": "attractions",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-a2",
+          "image_url": null,
+          "latitude": 39.9644285,
+          "longitude": -82.987752,
+          "name": "Columbus Museum of Art",
+          "preference_matches": [
+            "zoo"
+          ],
+          "price": "28.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/293476179",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:20:11.514085Z",
+          "snapshot_version": "osm_columbus_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "zoo",
+            "animals",
+            "outdoors"
+          ],
+          "unit": "per_person_visit"
+        }
+      ],
+      "category": "attractions",
+      "selected": [
+        {
+          "address": "400 Whittier Street, Columbus, OH",
+          "category": "attractions",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-a5",
+          "image_url": null,
+          "latitude": 39.9470771,
+          "longitude": -83.0065835,
+          "name": "Scioto Audubon Metro Park",
+          "preference_matches": [
+            "zoo"
+          ],
+          "price": "0.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "leisure=park"
+          ],
+          "provider_category_labels": [
+            "Park"
+          ],
+          "provider_place_id": "way/224492486",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:20:11.514085Z",
+          "snapshot_version": "osm_columbus_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "zoo",
+            "parks",
+            "walking"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "800 E. 17th Avenue, Columbus, OH 43211",
+          "category": "attractions",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-a3",
+          "image_url": null,
+          "latitude": 40.0050452,
+          "longitude": -82.9876307,
+          "name": "Ohio History Center",
+          "preference_matches": [
+            "zoo"
+          ],
+          "price": "18.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/835107792",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:20:11.514085Z",
+          "snapshot_version": "osm_columbus_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "zoo",
+            "animals",
+            "family"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "300 West Broad Street, Columbus, OH 43215",
+          "category": "attractions",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-a4",
+          "image_url": null,
+          "latitude": 39.9619805,
+          "longitude": -83.0080526,
+          "name": "National Veterans Memorial and Museum",
+          "preference_matches": [
+            "zoo"
+          ],
+          "price": "20.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/570391114",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:20:11.514085Z",
+          "snapshot_version": "osm_columbus_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "zoo",
+            "science",
+            "museums"
+          ],
+          "unit": "per_person_visit"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "address": "650 South High Street, Columbus, OH 43215",
+          "category": "hotel",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-h2",
+          "image_url": null,
+          "latitude": 39.9488541,
+          "longitude": -82.9973137,
+          "name": "Holiday Inn Express",
+          "preference_matches": [],
+          "price": "105.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/474605329",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:22:28.387578Z",
+          "snapshot_version": "osm_columbus_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "quiet",
+            "neighborhood"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "501 North High Street, Columbus, OH 43215",
+          "category": "hotel",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-h3",
+          "image_url": null,
+          "latitude": 39.9724764,
+          "longitude": -83.002876,
+          "name": "Hampton Inn & Suites Columbus Downtown",
+          "preference_matches": [],
+          "price": "135.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "node/4685223268",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:22:28.387578Z",
+          "snapshot_version": "osm_columbus_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "central"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "310 South High Street, Columbus, OH 43215",
+          "category": "hotel",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-h4",
+          "image_url": null,
+          "latitude": 39.9558079,
+          "longitude": -82.999124,
+          "name": "The Westin Great Southern Columbus",
+          "preference_matches": [],
+          "price": "190.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "node/1376126720",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:22:28.387578Z",
+          "snapshot_version": "osm_columbus_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "luxury",
+            "quiet"
+          ],
+          "unit": "per_person_night"
+        }
+      ],
+      "category": "hotel",
+      "selected": [
+        {
+          "address": "1700 Clara Avenue, Columbus, OH 43211",
+          "category": "hotel",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-h1",
+          "image_url": null,
+          "latitude": 39.9998016,
+          "longitude": -82.9857381,
+          "name": "Days Inn by Wyndham Columbus Fairgrounds",
+          "preference_matches": [],
+          "price": "82.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/717324868",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:22:28.387578Z",
+          "snapshot_version": "osm_columbus_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "budget",
+            "central"
+          ],
+          "unit": "per_person_night"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "address": "1132 West Henderson Road, Columbus, OH 43220",
+          "category": "food",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-f4",
+          "image_url": null,
+          "latitude": 40.0535621,
+          "longitude": -83.0506175,
+          "name": "CM Chicken",
+          "preference_matches": [
+            "fried chicken"
+          ],
+          "price": "18.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=korean",
+            "cuisine=chicken"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Korean",
+            "Cuisine: Chicken"
+          ],
+          "provider_place_id": "node/9993723530",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+          "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "fried chicken",
+            "casual"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "1717 Northwest Boulevard",
+          "category": "food",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-f3",
+          "image_url": null,
+          "latitude": 39.9932641,
+          "longitude": -83.0421042,
+          "name": "The Crispy Coop",
+          "preference_matches": [
+            "fried chicken"
+          ],
+          "price": "20.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=chicken",
+            "cuisine=american"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Chicken",
+            "Cuisine: American"
+          ],
+          "provider_place_id": "node/8561182617",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+          "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "fried chicken",
+            "casual"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "7370P Sawmill Road, Columbus, OH 43235",
+          "category": "food",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-f5",
+          "image_url": null,
+          "latitude": 40.1162563,
+          "longitude": -83.090071,
+          "name": "OX-B's",
+          "preference_matches": [
+            "fried chicken"
+          ],
+          "price": "26.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=chicken"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Chicken"
+          ],
+          "provider_place_id": "node/14093010165",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+          "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "fried chicken",
+            "local"
+          ],
+          "unit": "per_person_meal"
+        }
+      ],
+      "category": "food",
+      "selected": [
+        {
+          "address": "1247 North High Street, Columbus, OH 43201",
+          "category": "food",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-f1",
+          "image_url": null,
+          "latitude": 39.9878053,
+          "longitude": -83.0058345,
+          "name": "Jerky's Jamaican Grill",
+          "preference_matches": [
+            "fried chicken"
+          ],
+          "price": "14.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=jamaican",
+            "cuisine=caribbean",
+            "cuisine=african",
+            "cuisine=american",
+            "cuisine=pasta",
+            "cuisine=chicken",
+            "cuisine=fried_chicken",
+            "cuisine=curry",
+            "cuisine=jerk",
+            "cuisine=jerk_chicken",
+            "cuisine=curry_goat"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Jamaican",
+            "Cuisine: Caribbean",
+            "Cuisine: African",
+            "Cuisine: American",
+            "Cuisine: Pasta",
+            "Cuisine: Chicken",
+            "Cuisine: Fried Chicken",
+            "Cuisine: Curry",
+            "Cuisine: Jerk",
+            "Cuisine: Jerk Chicken",
+            "Cuisine: Curry Goat"
+          ],
+          "provider_place_id": "node/8343623182",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+          "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "fried chicken",
+            "comfort food"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "2973 North High Street, Columbus, OH 43202",
+          "category": "food",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-f6",
+          "image_url": null,
+          "latitude": 40.0226892,
+          "longitude": -83.0141229,
+          "name": "BonChon Chicken",
+          "preference_matches": [
+            "fried chicken"
+          ],
+          "price": "16.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=burger",
+            "cuisine=chicken"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Burger",
+            "Cuisine: Chicken"
+          ],
+          "provider_place_id": "way/512159964",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+          "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "fried chicken",
+            "casual"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "1053 East Main Street, Columbus, OH 43205",
+          "category": "food",
+          "city": "Columbus",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-f2",
+          "image_url": null,
+          "latitude": 39.957716,
+          "longitude": -82.9711763,
+          "name": "Feed Me! Sandwich Kings!",
+          "preference_matches": [
+            "fried chicken"
+          ],
+          "price": "17.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=sandwich",
+            "cuisine=burger",
+            "cuisine=chicken",
+            "cuisine=american",
+            "cuisine=fish_and_chips",
+            "cuisine=drinks",
+            "cuisine=coffee_shop",
+            "cuisine=fries"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Sandwich",
+            "Cuisine: Burger",
+            "Cuisine: Chicken",
+            "Cuisine: American",
+            "Cuisine: Fish and Chips",
+            "Cuisine: Drinks",
+            "Cuisine: Coffee Shop",
+            "Cuisine: Fries"
+          ],
+          "provider_place_id": "node/8481484417",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+          "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "OH",
+          "tags": [
+            "fried chicken",
+            "market"
+          ],
+          "unit": "per_person_meal"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "category": "transport",
+          "city": "Columbus",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-t2",
+          "image_url": null,
+          "name": "Mock Bus Day Allowance",
+          "preference_matches": [],
+          "price": "8.0",
+          "rating": 4.1,
+          "review_count": 410,
+          "source": "controlled_mock_fixture",
+          "state": "OH",
+          "tags": [
+            "public transit"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Columbus",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-t3",
+          "image_url": null,
+          "name": "Mock Rideshare Day Allowance",
+          "preference_matches": [],
+          "price": "38.0",
+          "rating": 4.2,
+          "review_count": 280,
+          "source": "controlled_mock_fixture",
+          "state": "OH",
+          "tags": [
+            "taxi"
+          ],
+          "unit": "per_person_day"
+        }
+      ],
+      "category": "transport",
+      "selected": [
+        {
+          "category": "transport",
+          "city": "Columbus",
+          "currency": "USD",
+          "description": null,
+          "destination": "Columbus",
+          "id": "cmh-t1",
+          "image_url": null,
+          "name": "Mock Walking Allowance",
+          "preference_matches": [],
+          "price": "0.0",
+          "rating": null,
+          "review_count": null,
+          "source": "controlled_mock_fixture",
+          "state": "OH",
+          "tags": [
+            "walking"
+          ],
+          "unit": "per_person_day"
+        }
+      ]
+    }
+  ],
+  "clarification_question": null,
+  "itinerary": {
+    "currency": "USD",
+    "daily_plan": [
+      {
+        "activities": [
+          {
+            "category": "attractions",
+            "estimated_cost": "0.0",
+            "name": "Scioto Audubon Metro Park"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "14.0",
+            "name": "Jerky's Jamaican Grill (breakfast)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "14.0",
+            "name": "Jerky's Jamaican Grill (lunch)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "14.0",
+            "name": "Jerky's Jamaican Grill (dinner)"
+          },
+          {
+            "category": "transport",
+            "estimated_cost": "0.0",
+            "name": "Mock Walking Allowance"
+          },
+          {
+            "category": "hotel",
+            "estimated_cost": "82.0",
+            "name": "Days Inn by Wyndham Columbus Fairgrounds"
+          }
+        ],
+        "day_number": 1,
+        "estimated_cost": "124.0"
+      },
+      {
+        "activities": [
+          {
+            "category": "attractions",
+            "estimated_cost": "18.0",
+            "name": "Ohio History Center"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "16.0",
+            "name": "BonChon Chicken (breakfast)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "16.0",
+            "name": "BonChon Chicken (lunch)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "16.0",
+            "name": "BonChon Chicken (dinner)"
+          },
+          {
+            "category": "transport",
+            "estimated_cost": "0.0",
+            "name": "Mock Walking Allowance"
+          },
+          {
+            "category": "hotel",
+            "estimated_cost": "82.0",
+            "name": "Days Inn by Wyndham Columbus Fairgrounds"
+          }
+        ],
+        "day_number": 2,
+        "estimated_cost": "148.0"
+      },
+      {
+        "activities": [
+          {
+            "category": "attractions",
+            "estimated_cost": "20.0",
+            "name": "National Veterans Memorial and Museum"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "17.0",
+            "name": "Feed Me! Sandwich Kings! (breakfast)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "17.0",
+            "name": "Feed Me! Sandwich Kings! (lunch)"
+          },
+          {
+            "category": "food",
+            "estimated_cost": "17.0",
+            "name": "Feed Me! Sandwich Kings! (dinner)"
+          },
+          {
+            "category": "transport",
+            "estimated_cost": "0.0",
+            "name": "Mock Walking Allowance"
+          }
+        ],
+        "day_number": 3,
+        "estimated_cost": "71.0"
+      }
+    ],
+    "days": 3,
+    "destination": "Columbus",
+    "estimated_total_cost": "343.0",
+    "warnings": [
+      "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+      "Quote convention: three meals/day and days minus one lodging nights; prices per person."
+    ]
+  },
+  "missing_fields": [],
+  "query": "Plan a 3-day trip to Columbus for 1 traveler under $900 total. Hotel spending must not exceed $400. I like zoos and fried chicken.",
+  "repair": null,
+  "requirements": {
+    "budget_amount": "900.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Columbus",
+    "duration_days": 3,
+    "end_date": null,
+    "food_preferences": [
+      "fried chicken"
+    ],
+    "hotel_preferences": [],
+    "interests": [
+      "zoo",
+      "food"
+    ],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "Plan a 3-day trip to Columbus for 1 traveler under $900  total",
+          "strength": "HARD",
+          "value": "900.0"
+        },
+        {
+          "confidence": 1.0,
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "HOTEL_TOTAL",
+          "source_text": "Hotel spending must not exceed $400",
+          "strength": "HARD",
+          "value": "400.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": [
+        {
+          "category": "ACTIVITY",
+          "value": "zoo"
+        },
+        {
+          "category": "FOOD",
+          "value": "fried chicken"
+        }
+      ]
+    },
+    "specific_preferences": [
+      {
+        "category": "ACTIVITY",
+        "value": "zoo"
+      },
+      {
+        "category": "FOOD",
+        "value": "fried chicken"
+      }
+    ],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": 1
+  },
+  "status": "success",
+  "validation": {
+    "outcome": "passed",
+    "performed": true,
+    "reason": null,
+    "violations": []
+  },
+  "warnings": [
+    "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+    "Quote convention: three meals/day and days minus one lodging nights; prices per person."
+  ]
+}

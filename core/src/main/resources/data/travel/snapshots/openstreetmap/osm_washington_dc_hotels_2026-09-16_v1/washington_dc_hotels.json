@@ -1,0 +1,93 @@
+{
+  "snapshot_version": "osm_washington_dc_hotels_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T20:43:55.938690Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-09-16T20:40:45Z",
+  "record_count": 3,
+  "category_map_version": "osm_hotel_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Washington DC",
+      "state": "DC",
+      "candidates": {
+        "hotel": [
+          {
+            "id": "wdc-h1",
+            "provider_place_id": "way/740826352",
+            "name": "Conrad Hotel Washington DC",
+            "address": "950 New York Avenue Northwest, Washington DC 20001",
+            "latitude": 38.9012767,
+            "longitude": -77.0253663,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 110,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "budget",
+              "central"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "wdc-h2",
+            "provider_place_id": "way/55327039",
+            "name": "Courtyard Washington, DC Dupont Circle",
+            "address": "1733 N Street Northwest, Washington DC 20036",
+            "latitude": 38.9074198,
+            "longitude": -77.0397084,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 155,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "quiet"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "wdc-h3",
+            "provider_place_id": "way/48041504",
+            "name": "Grand Hyatt Washington",
+            "address": "1000 H Street Northwest, Washington DC 20001",
+            "latitude": 38.8993407,
+            "longitude": -77.0264883,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 240,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "luxury",
+              "central"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

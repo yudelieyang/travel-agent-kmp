@@ -1,0 +1,94 @@
+{
+  "snapshot_version": "osm_miami_attractions_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T20:48:26.525766Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-09-16T20:45:51Z",
+  "record_count": 3,
+  "category_map_version": "osm_attractions_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Miami",
+      "state": "FL",
+      "candidates": {
+        "attractions": [
+          {
+            "id": "mia-a1",
+            "provider_place_id": "way/648249520",
+            "name": "HistoryMiami Museum",
+            "address": "101 West Flagler Street, Miami FL 33130",
+            "latitude": 25.7745642,
+            "longitude": -80.1965921,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 23,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "museums",
+              "art"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "mia-a2",
+            "provider_place_id": "way/319426548",
+            "name": "Patricia and Phillip Frost Museum of Science",
+            "address": "1101 Biscayne Boulevard, Miami FL 33132",
+            "latitude": 25.785299,
+            "longitude": -80.1877391,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 16,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "museums",
+              "history"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "mia-a3",
+            "provider_place_id": "way/484587327",
+            "name": "Pérez Art Museum Miami",
+            "address": "1103 Biscayne Boulevard, Miami FL 33132",
+            "latitude": 25.7860342,
+            "longitude": -80.1863239,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 0,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "parks",
+              "walking"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

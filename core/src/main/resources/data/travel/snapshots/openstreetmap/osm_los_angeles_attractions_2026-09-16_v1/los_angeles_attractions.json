@@ -1,0 +1,95 @@
+{
+  "snapshot_version": "osm_los_angeles_attractions_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T21:34:48.409659Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-07-24T11:04:51Z",
+  "record_count": 3,
+  "category_map_version": "osm_attractions_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Los Angeles",
+      "state": "CA",
+      "candidates": {
+        "attractions": [
+          {
+            "id": "lax-a1",
+            "provider_place_id": "way/913293590",
+            "name": "Academy Museum of Motion Pictures",
+            "address": "6067 Wilshire Boulevard, Los Angeles CA 90036",
+            "latitude": 34.0636022,
+            "longitude": -118.3608216,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 25,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "museums",
+              "art"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "lax-a2",
+            "provider_place_id": "node/368174050",
+            "name": "Autry Museum of the American West",
+            "address": "4700 Western Heritage Way, Los Angeles CA 90027",
+            "latitude": 34.1483813,
+            "longitude": -118.2817076,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 27,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "museums",
+              "history",
+              "film"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "lax-a3",
+            "provider_place_id": "way/407373715",
+            "name": "California Science Center",
+            "address": "700 Exposition Park Drive, Los Angeles CA 90037",
+            "latitude": 34.0159714,
+            "longitude": -118.2864729,
+            "provider_category_ids": [
+              "tourism=museum"
+            ],
+            "provider_category_labels": [
+              "Museum"
+            ],
+            "price": 0,
+            "currency": "USD",
+            "unit": "per_person_visit",
+            "tags": [
+              "parks",
+              "outdoors"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "snapshot_version": "osm_austin_food_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T14:55:27.4559314Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-09-16T14:53:01Z",
+  "record_count": 3,
+  "category_map_version": "osm_food_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Austin",
+      "state": "TX",
+      "candidates": {
+        "food": [
+          {
+            "id": "aus-f1",
+            "provider_place_id": "way/802335915",
+            "name": "Veracruz All Natural",
+            "address": "2505 Webberville Road, Austin, TX 78702",
+            "latitude": 30.2630626,
+            "longitude": -97.7137458,
+            "provider_category_ids": ["amenity=restaurant", "cuisine=mexican"],
+            "provider_category_labels": ["Restaurant", "Cuisine: Mexican"],
+            "price": 14,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": ["tacos", "local"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "aus-f2",
+            "provider_place_id": "way/382491308",
+            "name": "Bouldin Creek Cafe",
+            "address": "1900 South 1st Street, Austin, TX 78704",
+            "latitude": 30.2464901,
+            "longitude": -97.7568002,
+            "provider_category_ids": [
+              "amenity=restaurant",
+              "diet:vegetarian=only",
+              "diet:vegan=yes"
+            ],
+            "provider_category_labels": [
+              "Restaurant",
+              "Vegetarian only",
+              "Vegan options"
+            ],
+            "price": 18,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": ["vegetarian", "vegan"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "aus-f3",
+            "provider_place_id": "way/382368408",
+            "name": "Franklin Barbecue",
+            "address": "900 East 11th Street, Austin, TX 78702",
+            "latitude": 30.2701634,
+            "longitude": -97.7312704,
+            "provider_category_ids": ["amenity=restaurant", "cuisine=barbecue"],
+            "provider_category_labels": ["Restaurant", "Cuisine: Barbecue"],
+            "price": 27,
+            "currency": "USD",
+            "unit": "per_person_meal",
+            "tags": ["barbecue", "local"],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

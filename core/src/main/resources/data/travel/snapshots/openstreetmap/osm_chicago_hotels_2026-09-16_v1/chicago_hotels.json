@@ -1,0 +1,93 @@
+{
+  "snapshot_version": "osm_chicago_hotels_2026-09-16_v1",
+  "snapshot_fetched_at": "2026-09-16T20:37:50.069047Z",
+  "provider": "openstreetmap",
+  "source": "real_snapshot",
+  "provider_data_timestamp": "2026-09-16T20:35:40Z",
+  "record_count": 3,
+  "category_map_version": "osm_hotel_v1",
+  "cost_method_version": "phase_o_v1",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL",
+  "cities": [
+    {
+      "city": "Chicago",
+      "state": "IL",
+      "candidates": {
+        "hotel": [
+          {
+            "id": "chi-h1",
+            "provider_place_id": "way/401244510",
+            "name": "Hotel Riu Plaza Chicago",
+            "address": "150 East Ontario Street, Chicago IL 60611",
+            "latitude": 41.8935944,
+            "longitude": -87.6232845,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 95,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "budget",
+              "central"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "chi-h2",
+            "provider_place_id": "way/235920251",
+            "name": "Hyatt Regency Chicago",
+            "address": "151 East Wacker Drive, Chicago IL 60601",
+            "latitude": 41.8874924,
+            "longitude": -87.6222342,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 135,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "quiet"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          },
+          {
+            "id": "chi-h3",
+            "provider_place_id": "way/330535225",
+            "name": "London House Chicago",
+            "address": "85 East Wacker Drive, Chicago IL 60601",
+            "latitude": 41.8877548,
+            "longitude": -87.625305,
+            "provider_category_ids": [
+              "tourism=hotel"
+            ],
+            "provider_category_labels": [
+              "Hotel"
+            ],
+            "price": 225,
+            "currency": "USD",
+            "unit": "per_person_night",
+            "tags": [
+              "luxury",
+              "central"
+            ],
+            "cost_origin": "planner_estimate",
+            "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+            "cost_version": "phase_o_v1"
+          }
+        ]
+      }
+    }
+  ]
+}

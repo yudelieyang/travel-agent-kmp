@@ -1,0 +1,3542 @@
+{
+  "cases": [
+    {
+      "expected": {
+        "destination": "Boston",
+        "duration_days": 2,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 1
+      },
+      "id": "SEM200-001",
+      "input": "Please plan a 2-day visit to Boston for one traveler."
+    },
+    {
+      "expected": {
+        "destination": "Chicago",
+        "duration_days": 5,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 2
+      },
+      "id": "SEM200-002",
+      "input": "Chicago for 5 days with 2 travelers, please."
+    },
+    {
+      "expected": {
+        "destination": "Miami",
+        "duration_days": 4,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-003",
+      "input": "I would like a 4-day trip to Miami."
+    },
+    {
+      "expected": {
+        "destination": "Seattle",
+        "duration_days": 3,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 1
+      },
+      "id": "SEM200-004",
+      "input": "Just me in Seattle for 3 days."
+    },
+    {
+      "expected": {
+        "destination": "Denver",
+        "duration_days": 6,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 4
+      },
+      "id": "SEM200-005",
+      "input": "Plan 6 days in Denver for 4 people."
+    },
+    {
+      "expected": {
+        "destination": "Austin",
+        "duration_days": 1,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 2
+      },
+      "id": "SEM200-006",
+      "input": "A 1-day Austin getaway for 2 travelers."
+    },
+    {
+      "expected": {
+        "destination": "Washington DC",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "parks"
+          }
+        ]
+      },
+      "id": "SEM200-007",
+      "input": "I want to visit parks in Washington DC."
+    },
+    {
+      "expected": {
+        "destination": "Columbus",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "zoo"
+          }
+        ]
+      },
+      "id": "SEM200-008",
+      "input": "Find me zoos in Columbus."
+    },
+    {
+      "expected": {
+        "destination": "San Francisco",
+        "duration_days": 3,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "FOOD",
+            "value": "seafood"
+          }
+        ]
+      },
+      "id": "SEM200-009",
+      "input": "Three days in San Francisco; I enjoy seafood."
+    },
+    {
+      "expected": {
+        "destination": "Los Angeles",
+        "duration_days": 2,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "art museums"
+          }
+        ]
+      },
+      "id": "SEM200-010",
+      "input": "Los Angeles for 2 days, and I like art museums."
+    },
+    {
+      "expected": {
+        "destination": "Las Vegas",
+        "duration_days": 7,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 3
+      },
+      "id": "SEM200-011",
+      "input": "Plan a 7-day trip to Las Vegas for 3 travelers."
+    },
+    {
+      "expected": {
+        "destination": "New York City",
+        "duration_days": 4,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 2
+      },
+      "id": "SEM200-012",
+      "input": "New York City, 4 days, two of us."
+    },
+    {
+      "expected": {
+        "destination": "Chicago",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "FOOD",
+            "value": "fried chicken"
+          }
+        ]
+      },
+      "id": "SEM200-013",
+      "input": "I like fried chicken in Chicago."
+    },
+    {
+      "expected": {
+        "destination": "Boston",
+        "duration_days": 3,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "TRANSPORT",
+            "value": "walking"
+          }
+        ]
+      },
+      "id": "SEM200-014",
+      "input": "Boston for 3 days. I enjoy walking."
+    },
+    {
+      "expected": {
+        "destination": "Columbus",
+        "duration_days": 5,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 5
+      },
+      "id": "SEM200-015",
+      "input": "Please arrange 5 days in Columbus for a family of 5."
+    },
+    {
+      "expected": {
+        "destination": "Seattle",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "FOOD",
+            "value": "coffee shops"
+          }
+        ]
+      },
+      "id": "SEM200-016",
+      "input": "I want coffee shops in Seattle."
+    },
+    {
+      "expected": {
+        "destination": "Miami",
+        "duration_days": 2,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 3
+      },
+      "id": "SEM200-017",
+      "input": "Visit Miami for 2 days with 3 people."
+    },
+    {
+      "expected": {
+        "destination": "Denver",
+        "duration_days": 1,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "TRANSPORT",
+            "value": "public transit"
+          }
+        ]
+      },
+      "id": "SEM200-018",
+      "input": "Denver for one day; public transit is preferred."
+    },
+    {
+      "expected": {
+        "destination": "Austin",
+        "duration_days": 4,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 2
+      },
+      "id": "SEM200-019",
+      "input": "Plan 4 days in Austin for 2 travelers."
+    },
+    {
+      "expected": {
+        "destination": "San Francisco",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "museums"
+          }
+        ]
+      },
+      "id": "SEM200-020",
+      "input": "I want to visit museums in San Francisco."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 875
+          }
+        ],
+        "destination": "Boston",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-021",
+      "input": "Keep the total cost of my Boston trip under $875."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1250
+          }
+        ],
+        "destination": "Chicago",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-022",
+      "input": "For Chicago, the whole trip must stay below $1,250."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 760
+          }
+        ],
+        "destination": "Miami",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-023",
+      "input": "No more than $760 total for a Miami vacation."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1480
+          }
+        ],
+        "destination": "Seattle",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-024",
+      "input": "The entire Seattle trip cannot exceed $1,480."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1050
+          }
+        ],
+        "destination": "Denver",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-025",
+      "input": "Cap the trip at $1,050 in Denver."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 990
+          }
+        ],
+        "destination": "Austin",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-026",
+      "input": "I can't go above $990 for the whole trip to Austin."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1600
+          }
+        ],
+        "destination": "New York City",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-027",
+      "input": "Please keep everything within $1,600 for New York City."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 2000
+          }
+        ],
+        "destination": "Las Vegas",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-028",
+      "input": "My absolute ceiling for the full Las Vegas trip is $2,000."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1175
+          }
+        ],
+        "destination": "Washington DC",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-029",
+      "input": "The trip budget for Washington DC is $1,175 maximum."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 845
+          }
+        ],
+        "destination": "Columbus",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-030",
+      "input": "Do not let the total trip go over $845 in Columbus."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1900
+          }
+        ],
+        "destination": "San Francisco",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-031",
+      "input": "For San Francisco, stay under $1,900 total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 720
+          }
+        ],
+        "destination": "Boston",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-032",
+      "input": "I only have $720 for the entire trip to Boston."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1330
+          }
+        ],
+        "destination": "Chicago",
+        "duration_days": 2,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-033",
+      "input": "Trip max $1,330 for two days in Chicago."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1010
+          }
+        ],
+        "destination": "Miami",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-034",
+      "input": "The total for Miami has to stay at or below $1,010."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1550
+          }
+        ],
+        "destination": "Seattle",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-035",
+      "input": "Keep the full trip below $1,550; Seattle is the destination."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 680
+          }
+        ],
+        "destination": "Denver",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-036",
+      "input": "My trip budget must not exceed $680 for Denver."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1240
+          }
+        ],
+        "destination": "Austin",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-037",
+      "input": "Austin: no more than $1,240 for the whole trip."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1800
+          }
+        ],
+        "destination": "New York City",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-038",
+      "input": "Budget the total New York City trip at $1,800 or less."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1470
+          }
+        ],
+        "destination": "Las Vegas",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-039",
+      "input": "Las Vegas trip, maximum total spend: $1,470."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1095
+          }
+        ],
+        "destination": "Washington DC",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-040",
+      "input": "For Washington DC, keep the trip under $1,095—not a penny more."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 430
+          }
+        ],
+        "destination": "Boston",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-041",
+      "input": "In Boston, hotel spending must stay under $430 total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 610
+          }
+        ],
+        "destination": "Chicago",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-042",
+      "input": "Lodging total for Chicago cannot exceed $610."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 525
+          }
+        ],
+        "destination": "Miami",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-043",
+      "input": "No more than $525 total for accommodation in Miami."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 690
+          }
+        ],
+        "destination": "Seattle",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-044",
+      "input": "The hotel must stay below $690 total in Seattle."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 475
+          }
+        ],
+        "destination": "Denver",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-045",
+      "input": "Cap my Denver hotel bill at $475 total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 560
+          }
+        ],
+        "destination": "Austin",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-046",
+      "input": "Austin lodging cannot go above $560 in total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 820
+          }
+        ],
+        "destination": "New York City",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-047",
+      "input": "Keep hotel spending within $820 total for New York City."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 740
+          }
+        ],
+        "destination": "Las Vegas",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-048",
+      "input": "For Las Vegas, the accommodation total must not exceed $740."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 380
+          }
+        ],
+        "destination": "Washington DC",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-049",
+      "input": "Hotel total max $380 in Washington DC."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 900
+          }
+        ],
+        "destination": "San Francisco",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-050",
+      "input": "My San Francisco hotel must cost at most $900 total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 360
+          }
+        ],
+        "destination": "Boston",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-051",
+      "input": "Boston lodging spending has an absolute ceiling of $360 total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 585
+          }
+        ],
+        "destination": "Chicago",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-052",
+      "input": "In Chicago, spend no more than $585 on the hotel total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 410
+          }
+        ],
+        "destination": "Miami",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-053",
+      "input": "Accommodation in Miami: under $410 total, please."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 635
+          }
+        ],
+        "destination": "Seattle",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-054",
+      "input": "Do not let Seattle hotel spending exceed $635 total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 710
+          }
+        ],
+        "destination": "Denver",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-055",
+      "input": "Denver hotel, total maximum $710."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1300
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 520
+          }
+        ],
+        "destination": "Boston",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-056",
+      "input": "Boston total trip under $1,300; hotel total under $520."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1550
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 640
+          }
+        ],
+        "destination": "Chicago",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-057",
+      "input": "Hotel spending in Chicago must stay below $640 total, while the whole trip cannot exceed $1,550."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1120
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 430
+          }
+        ],
+        "destination": "Miami",
+        "duration_days": 3,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "parks"
+          }
+        ]
+      },
+      "id": "SEM200-058",
+      "input": "Miami, 3 days: total max $1,120. I like parks. Lodging total max $430."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1700
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 760
+          }
+        ],
+        "destination": "Seattle",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-059",
+      "input": "Keep the entire Seattle trip within $1,700, and keep accommodation within $760 total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1260
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 550
+          }
+        ],
+        "destination": "Denver",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-060",
+      "input": "Denver hotel total: no more than $550. Whole trip: no more than $1,260."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 980
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 390
+          }
+        ],
+        "destination": "Austin",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-061",
+      "input": "For Austin\ntrip budget under $980 total\nhotel budget under $390 total"
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 2100
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 950
+          }
+        ],
+        "destination": "New York City",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-062",
+      "input": "New York City: cap the whole trip at $2,100; hotel spending cannot exceed $950 total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1650
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 680
+          }
+        ],
+        "destination": "Las Vegas",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-063",
+      "input": "Las Vegas hotel must stay below $680 total. Also, the total trip must stay below $1,650."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1420
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 610
+          }
+        ],
+        "destination": "Washington DC",
+        "duration_days": 4,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-064",
+      "input": "Washington DC for 4 days, total under $1,420, with a hotel total under $610."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 2200
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1020
+          }
+        ],
+        "destination": "San Francisco",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "FOOD",
+            "value": "seafood"
+          }
+        ]
+      },
+      "id": "SEM200-065",
+      "input": "I enjoy seafood. San Francisco trip maximum is $2,200; accommodation maximum is $1,020 total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1450
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 600
+          }
+        ],
+        "destination": "Boston",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 2
+      },
+      "id": "SEM200-066",
+      "input": "Boston, 2 travelers. Keep everything under $1,450 and the lodging total under $600."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1520
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 590
+          }
+        ],
+        "destination": "Chicago",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-067",
+      "input": "Trip budget: $1,520 maximum for Chicago. Hotel total: $590 maximum."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1050
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 470
+          }
+        ],
+        "destination": "Miami",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-068",
+      "input": "In Miami, no more than $1,050 for the full trip and no more than $470 for lodging total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1880
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 725
+          }
+        ],
+        "destination": "Seattle",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "museums"
+          }
+        ]
+      },
+      "id": "SEM200-069",
+      "input": "Seattle: hotel under $725 total; total trip under $1,880. Museums please."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1180
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 460
+          }
+        ],
+        "destination": "Denver",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-070",
+      "input": "Hotel total cannot exceed $460 in Denver; the trip total cannot exceed $1,180."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1110
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 440
+          }
+        ],
+        "destination": "Austin",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-071",
+      "input": "Austin has a $1,110 total-trip ceiling, plus a $440 hotel-total ceiling."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 2350
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 990
+          }
+        ],
+        "destination": "New York City",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "quiet hotel"
+          }
+        ]
+      },
+      "id": "SEM200-072",
+      "input": "New York City: whole trip under $2,350. Quiet hotel, under $990 total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1740
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 710
+          }
+        ],
+        "destination": "Las Vegas",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-073",
+      "input": "Las Vegas total $1,740 max; hotel spending $710 max total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 1360
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 540
+          }
+        ],
+        "destination": "Washington DC",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "parks"
+          }
+        ]
+      },
+      "id": "SEM200-074",
+      "input": "Washington DC trip must stay under $1,360, hotel total must stay under $540, and I like parks."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "operator": "LTE",
+            "scope": "TOTAL_TRIP",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 2050
+          },
+          {
+            "operator": "LTE",
+            "scope": "HOTEL_TOTAL",
+            "strength": "HARD",
+            "supported_for_execution": true,
+            "value": 880
+          }
+        ],
+        "destination": "San Francisco",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-075",
+      "input": "San Francisco: no more than $2,050 overall; lodging no more than $880 total."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1100
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-076",
+      "input": "The total trip budget is $1,400. Actually, make that $1,100."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 500
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-077",
+      "input": "Hotel total max $650; change it to $500."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1000
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-078",
+      "input": "Keep the whole trip under $1,250. Sorry, I meant $1,000."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 610
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-079",
+      "input": "Lodging total under $720; make that $610 instead."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1450
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-080",
+      "input": "Trip budget $1,650 maximum. No, use $1,450 for the total trip."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 530
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-081",
+      "input": "Hotel spending cannot exceed $580 total. Actually, $530."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 840
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-082",
+      "input": "My whole-trip cap is $900; change that to $840."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 430
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-083",
+      "input": "Accommodation total must stay under $470. Make it $430."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1200
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-084",
+      "input": "Total trip max $1,350. Instead, cap the trip at $1,200."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 700
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-085",
+      "input": "Hotel total $800 maximum; sorry, make that $700."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1090
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "museums"
+          }
+        ]
+      },
+      "id": "SEM200-086",
+      "input": "The full trip must stay below $1,090. Actually, I prefer museums."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 600
+          }
+        ],
+        "duration_days": 4,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-087",
+      "input": "Hotel under $600 total. Make it a 4-day trip."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1500
+          }
+        ],
+        "destination": "Chicago",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-088",
+      "input": "Trip total under $1,500. Change the destination to Chicago."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 450
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "downtown"
+          }
+        ]
+      },
+      "id": "SEM200-089",
+      "input": "Lodging must stay below $450 total. I'd rather stay downtown."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1300
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "FOOD",
+            "value": "seafood"
+          }
+        ]
+      },
+      "id": "SEM200-090",
+      "input": "The trip maximum is $1,300. Actually, I want seafood."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1280
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 620
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-091",
+      "input": "Total trip max $1,500; hotel total max $620. Actually make the total $1,280."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1250
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 480
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-092",
+      "input": "Hotel total under $540. Whole trip under $1,250. Change the hotel to $480."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1600
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 750
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-093",
+      "input": "Trip ceiling $1,800 and lodging ceiling $750 total; sorry, make the trip $1,600."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1700
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 590
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-094",
+      "input": "Hotel max $690 total; total trip max $1,700. Instead, hotel max $590."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1200
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 500
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-095",
+      "input": "The total is capped at $1,350. Hotel total is capped at $500. Change total to $1,200 only."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1100
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 380
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-096",
+      "input": "Keep the whole trip below $1,100 and accommodation below $420 total. Adjust hotel only: $380."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1750
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 850
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-097",
+      "input": "Trip max $2,000, hotel max $850 total. Actually change the total trip to $1,750."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 980
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 400
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-098",
+      "input": "Lodging must not exceed $460 total; entire trip must not exceed $980. Make lodging $400 instead."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1300
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 600
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-099",
+      "input": "Total trip: $1,450 maximum. Hotel: $600 total maximum. No, use $1,300 for the trip."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1600
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 640
+          }
+        ],
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-100",
+      "input": "Whole trip under $1,600; hotel under $700 total. Sorry, hotel should be $640."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-101",
+      "input": "Around $980 total would be comfortable for Boston."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-102",
+      "input": "I would prefer to stay near $1,300 for the whole Chicago trip."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "around usd 420"
+          }
+        ]
+      },
+      "id": "SEM200-103",
+      "input": "Miami hotel around $420 total would be ideal."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "around usd 560"
+          }
+        ]
+      },
+      "id": "SEM200-104",
+      "input": "Try to keep lodging roughly $560 total in Seattle."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-105",
+      "input": "About $1,100 total is my target for Denver, not a strict cap."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-106",
+      "input": "Ideally the Austin trip is under about $950."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "around usd 700"
+          }
+        ]
+      },
+      "id": "SEM200-107",
+      "input": "I can spend roughly $700 on a New York City hotel total."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "around usd 640"
+          }
+        ]
+      },
+      "id": "SEM200-108",
+      "input": "Keep the Las Vegas hotel near $640 total if possible."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-109",
+      "input": "Washington DC should come to about $1,250 overall."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "around usd 850"
+          }
+        ]
+      },
+      "id": "SEM200-110",
+      "input": "San Francisco lodging around $850 total is fine."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-111",
+      "input": "I only want to spend like $900 total in Boston."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "around usd 510"
+          }
+        ]
+      },
+      "id": "SEM200-112",
+      "input": "For Chicago, hotel spending of about $510 total is preferred."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-113",
+      "input": "A Miami trip near $1,050 total would be nice."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "around usd 630"
+          }
+        ]
+      },
+      "id": "SEM200-114",
+      "input": "Seattle accommodation roughly $630 total, please."
+    },
+    {
+      "expected": {
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-115",
+      "input": "Denver total under $1,200 would be ideal, though flexible."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "forbidden_constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 240
+          }
+        ],
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-116",
+      "input": "I want a $240 hotel in Boston."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "forbidden_constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 375
+          }
+        ],
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-117",
+      "input": "My hotel budget is $375 for Chicago."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-118",
+      "input": "$480 for lodging in Miami."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-119",
+      "input": "I can spend $550 on the hotel in Seattle."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-120",
+      "input": "Denver hotel budget: $460."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-121",
+      "input": "Reserve a $315 accommodation in Austin."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-122",
+      "input": "A $700 place to stay in New York City is okay."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-123",
+      "input": "Hotel money is $430 in Las Vegas."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-124",
+      "input": "Washington DC lodging for $390, please."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "forbidden_constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 820
+          }
+        ],
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-125",
+      "input": "I need a $820 hotel in San Francisco."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-126",
+      "input": "A hotel price of $290 for Boston."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-127",
+      "input": "Chicago accommodation costs $510 in my plan."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-128",
+      "input": "Can you find Miami lodging at $405?"
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-129",
+      "input": "Seattle hotel: $660."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "AMBIGUOUS_MONETARY_SCOPE"
+        ]
+      },
+      "id": "SEM200-130",
+      "input": "For Denver I can do a $350 hotel."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "FOOD_TOTAL",
+            "value": 260
+          }
+        ],
+        "unsupported_scopes": [
+          "FOOD_TOTAL"
+        ]
+      },
+      "id": "SEM200-131",
+      "input": "Food must stay below $260 in Boston."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "TRANSPORT_TOTAL",
+            "value": 140
+          }
+        ],
+        "unsupported_scopes": [
+          "TRANSPORT_TOTAL"
+        ]
+      },
+      "id": "SEM200-132",
+      "input": "Chicago transportation cannot exceed $140."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "ATTRACTIONS_TOTAL",
+            "value": 190
+          }
+        ],
+        "unsupported_scopes": [
+          "ATTRACTIONS_TOTAL"
+        ]
+      },
+      "id": "SEM200-133",
+      "input": "Activities in Miami must cost no more than $190."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "HOTEL_PER_NIGHT",
+            "value": 210
+          }
+        ],
+        "unsupported_scopes": [
+          "HOTEL_PER_NIGHT"
+        ]
+      },
+      "id": "SEM200-134",
+      "input": "Seattle hotel must stay under $210 per night."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "FOOD_TOTAL",
+            "value": 310
+          }
+        ],
+        "unsupported_scopes": [
+          "FOOD_TOTAL"
+        ]
+      },
+      "id": "SEM200-135",
+      "input": "No more than $310 for restaurants in Denver."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "TRANSPORT_TOTAL",
+            "value": 95
+          }
+        ],
+        "unsupported_scopes": [
+          "TRANSPORT_TOTAL"
+        ]
+      },
+      "id": "SEM200-136",
+      "input": "Austin transit spending must stay under $95."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "ATTRACTIONS_TOTAL",
+            "value": 275
+          }
+        ],
+        "unsupported_scopes": [
+          "ATTRACTIONS_TOTAL"
+        ]
+      },
+      "id": "SEM200-137",
+      "input": "Attractions for New York City cannot exceed $275."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "HOTEL_PER_NIGHT",
+            "value": 180
+          }
+        ],
+        "unsupported_scopes": [
+          "HOTEL_PER_NIGHT"
+        ]
+      },
+      "id": "SEM200-138",
+      "input": "Las Vegas accommodation must be under $180 per night."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "FOOD_TOTAL",
+            "value": 230
+          }
+        ],
+        "unsupported_scopes": [
+          "FOOD_TOTAL"
+        ]
+      },
+      "id": "SEM200-139",
+      "input": "Washington DC meal budget must not exceed $230."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "TRANSPORT_TOTAL",
+            "value": 120
+          }
+        ],
+        "unsupported_scopes": [
+          "TRANSPORT_TOTAL"
+        ]
+      },
+      "id": "SEM200-140",
+      "input": "Keep transport below $120 in San Francisco."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "ATTRACTIONS_TOTAL",
+            "value": 160
+          }
+        ],
+        "unsupported_scopes": [
+          "ATTRACTIONS_TOTAL"
+        ]
+      },
+      "id": "SEM200-141",
+      "input": "Boston museum tickets must stay below $160."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "HOTEL_PER_NIGHT",
+            "value": 155
+          }
+        ],
+        "unsupported_scopes": [
+          "HOTEL_PER_NIGHT"
+        ]
+      },
+      "id": "SEM200-142",
+      "input": "Chicago hotel is capped at $155 per night."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "FOOD_TOTAL",
+            "value": 290
+          }
+        ],
+        "unsupported_scopes": [
+          "FOOD_TOTAL"
+        ]
+      },
+      "id": "SEM200-143",
+      "input": "Food in Miami: $290 maximum."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "TRANSPORT_TOTAL",
+            "value": 210
+          }
+        ],
+        "unsupported_scopes": [
+          "TRANSPORT_TOTAL"
+        ]
+      },
+      "id": "SEM200-144",
+      "input": "Denver flights and transport must stay under $210."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "ATTRACTIONS_TOTAL",
+            "value": 145
+          }
+        ],
+        "unsupported_scopes": [
+          "ATTRACTIONS_TOTAL"
+        ]
+      },
+      "id": "SEM200-145",
+      "input": "Austin activities max $145."
+    },
+    {
+      "expected": {
+        "allowed_grounded_additions": {
+          "preferences": true
+        },
+        "destination": "Boston",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "zoo"
+          },
+          {
+            "category": "ACTIVITY",
+            "value": "parks"
+          },
+          {
+            "category": "FOOD",
+            "value": "seafood"
+          }
+        ]
+      },
+      "id": "SEM200-146",
+      "input": "Boston: zoos, parks, and seafood please."
+    },
+    {
+      "expected": {
+        "allowed_grounded_additions": {
+          "preferences": true
+        },
+        "destination": "Chicago",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "FOOD",
+            "value": "fried chicken"
+          },
+          {
+            "category": "ACTIVITY",
+            "value": "art museums"
+          },
+          {
+            "category": "FOOD",
+            "value": "coffee shops"
+          }
+        ]
+      },
+      "id": "SEM200-147",
+      "input": "I like fried chicken, art museums, and coffee shops in Chicago."
+    },
+    {
+      "expected": {
+        "allowed_grounded_additions": {
+          "preferences": true
+        },
+        "destination": "Miami",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "quiet hotel"
+          },
+          {
+            "category": "ACTIVITY",
+            "value": "parks"
+          }
+        ]
+      },
+      "id": "SEM200-148",
+      "input": "Miami should have a quiet hotel and nearby parks."
+    },
+    {
+      "expected": {
+        "allowed_grounded_additions": {
+          "preferences": true
+        },
+        "destination": "Seattle",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "FOOD",
+            "value": "seafood"
+          },
+          {
+            "category": "FOOD",
+            "value": "coffee shops"
+          },
+          {
+            "category": "ACTIVITY",
+            "value": "art museums"
+          }
+        ]
+      },
+      "id": "SEM200-149",
+      "input": "In Seattle I want seafood, coffee shops, and art museums."
+    },
+    {
+      "expected": {
+        "allowed_grounded_additions": {
+          "preferences": true
+        },
+        "destination": "Denver",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "downtown hotel"
+          },
+          {
+            "category": "TRANSPORT",
+            "value": "public transit"
+          },
+          {
+            "category": "ACTIVITY",
+            "value": "museums"
+          }
+        ]
+      },
+      "id": "SEM200-150",
+      "input": "Denver: downtown hotel, public transit, and museums."
+    },
+    {
+      "expected": {
+        "allowed_grounded_additions": {
+          "preferences": true
+        },
+        "destination": "Austin",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "parks"
+          },
+          {
+            "category": "FOOD",
+            "value": "fried chicken"
+          },
+          {
+            "category": "TRANSPORT",
+            "value": "walking"
+          }
+        ]
+      },
+      "id": "SEM200-151",
+      "input": "For Austin, I enjoy parks, fried chicken, and walking."
+    },
+    {
+      "expected": {
+        "allowed_grounded_additions": {
+          "preferences": true
+        },
+        "destination": "New York City",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "quiet hotel"
+          },
+          {
+            "category": "FOOD",
+            "value": "seafood"
+          },
+          {
+            "category": "ACTIVITY",
+            "value": "zoo"
+          }
+        ]
+      },
+      "id": "SEM200-152",
+      "input": "New York City needs a quiet hotel, seafood, and zoos."
+    },
+    {
+      "expected": {
+        "allowed_grounded_additions": {
+          "preferences": true
+        },
+        "destination": "Las Vegas",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "parks"
+          },
+          {
+            "category": "FOOD",
+            "value": "coffee shops"
+          },
+          {
+            "category": "TRANSPORT",
+            "value": "public transit"
+          }
+        ]
+      },
+      "id": "SEM200-153",
+      "input": "Las Vegas: parks, coffee shops, and public transit are important."
+    },
+    {
+      "expected": {
+        "allowed_grounded_additions": {
+          "preferences": true
+        },
+        "destination": "Washington DC",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "museums"
+          },
+          {
+            "category": "FOOD",
+            "value": "seafood"
+          },
+          {
+            "category": "HOTEL",
+            "value": "downtown hotel"
+          }
+        ]
+      },
+      "id": "SEM200-154",
+      "input": "Washington DC, please include museums, seafood, and a downtown hotel."
+    },
+    {
+      "expected": {
+        "allowed_grounded_additions": {
+          "preferences": true
+        },
+        "destination": "San Francisco",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "zoo"
+          },
+          {
+            "category": "FOOD",
+            "value": "fried chicken"
+          },
+          {
+            "category": "HOTEL",
+            "value": "quiet hotel"
+          }
+        ]
+      },
+      "id": "SEM200-155",
+      "input": "San Francisco with zoos, fried chicken, and a quiet hotel."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "EXCLUSION"
+        ]
+      },
+      "id": "SEM200-156",
+      "input": "Boston is fine, but do not include zoos."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "EXCLUSION"
+        ]
+      },
+      "id": "SEM200-157",
+      "input": "I do not care about nightlife in Chicago."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "EXCLUSION"
+        ]
+      },
+      "id": "SEM200-158",
+      "input": "No luxury hotels in Miami."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "EXCLUSION"
+        ]
+      },
+      "id": "SEM200-159",
+      "input": "Avoid expensive restaurants in Seattle."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "EXCLUSION"
+        ]
+      },
+      "id": "SEM200-160",
+      "input": "I don't need museums in Denver."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "EXCLUSION"
+        ]
+      },
+      "id": "SEM200-161",
+      "input": "Please exclude parks from the Austin plan."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "EXCLUSION"
+        ]
+      },
+      "id": "SEM200-162",
+      "input": "No seafood for New York City."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "EXCLUSION"
+        ]
+      },
+      "id": "SEM200-163",
+      "input": "Don't schedule a casino in Las Vegas."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "EXCLUSION"
+        ]
+      },
+      "id": "SEM200-164",
+      "input": "Washington DC, no crowded hotel areas."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "EXCLUSION"
+        ]
+      },
+      "id": "SEM200-165",
+      "input": "San Francisco without tourist-trap restaurants."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1300
+          }
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "TRADEOFF"
+        ]
+      },
+      "id": "SEM200-166",
+      "input": "Spend more on the Boston hotel if it is downtown, but keep the whole trip below $1,300."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "TRADEOFF"
+        ]
+      },
+      "id": "SEM200-167",
+      "input": "Save on food in Chicago so we can spend more on activities."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "TRADEOFF"
+        ]
+      },
+      "id": "SEM200-168",
+      "input": "Prioritize hotel quality over restaurants for Miami."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1800
+          }
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "TRADEOFF"
+        ]
+      },
+      "id": "SEM200-169",
+      "input": "I would pay more for a better Seattle location, while keeping total trip under $1,800."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "TRADEOFF"
+        ]
+      },
+      "id": "SEM200-170",
+      "input": "For Denver, choose a cheaper hotel only if museums remain easy to reach."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "TRADEOFF"
+        ]
+      },
+      "id": "SEM200-171",
+      "input": "Austin food can be simpler if the hotel is closer to downtown."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 2100
+          }
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "TRADEOFF"
+        ]
+      },
+      "id": "SEM200-172",
+      "input": "I value location over room size in New York City, up to a total of $2,100."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "TRADEOFF"
+        ]
+      },
+      "id": "SEM200-173",
+      "input": "Spend less on shows in Las Vegas so the hotel can be nicer."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "TRADEOFF"
+        ]
+      },
+      "id": "SEM200-174",
+      "input": "Pay extra for a quiet Washington DC hotel if it cuts commute time."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "TRADEOFF"
+        ]
+      },
+      "id": "SEM200-175",
+      "input": "For San Francisco, prioritize seafood over attractions if choices conflict."
+    },
+    {
+      "expected": {
+        "destination": "Boston",
+        "duration_days": 3,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 2
+      },
+      "id": "SEM200-176",
+      "input": "Boston for 3 days with 2 travelers; visit 2 museums."
+    },
+    {
+      "expected": {
+        "destination": "Chicago",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-177",
+      "input": "Chicago hotel should be 4-star; breakfast is at 9 AM."
+    },
+    {
+      "expected": {
+        "destination": "Miami",
+        "duration_days": 5,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-178",
+      "input": "Miami for 5 days: see 3 parks and 2 museums."
+    },
+    {
+      "expected": {
+        "destination": "Seattle",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-179",
+      "input": "Seattle route includes Route 66 and a 4-star hotel."
+    },
+    {
+      "expected": {
+        "destination": "Denver",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false,
+        "travelers": 2
+      },
+      "id": "SEM200-180",
+      "input": "Denver, 2 travelers, 3 restaurants, and a 7 PM dinner."
+    },
+    {
+      "expected": {
+        "destination": "Austin",
+        "duration_days": 4,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-181",
+      "input": "Austin for 4 days; I want 5 attractions."
+    },
+    {
+      "expected": {
+        "destination": "New York City",
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-182",
+      "input": "New York City: 2 adults, a 3-star hotel, and 9 AM coffee."
+    },
+    {
+      "expected": {
+        "destination": "Las Vegas",
+        "duration_days": 1,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-183",
+      "input": "Las Vegas for 1 day, with 4 shows on the itinerary."
+    },
+    {
+      "expected": {
+        "destination": "Washington DC",
+        "duration_days": 3,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-184",
+      "input": "Washington DC: visit 2 museums at 10 AM after a 3-day stay."
+    },
+    {
+      "expected": {
+        "destination": "San Francisco",
+        "duration_days": 6,
+        "expected_runtime_llm_need": false,
+        "needs_llm": false
+      },
+      "id": "SEM200-185",
+      "input": "San Francisco for 6 days, in a 4-star hotel near Route 101."
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 470
+          }
+        ],
+        "destination": "Boston",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true
+      },
+      "id": "SEM200-186",
+      "input": "hotel money should not more then 470 total in Boston"
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1180
+          }
+        ],
+        "destination": "Chicago",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true
+      },
+      "id": "SEM200-187",
+      "input": "whole Chicago trip cost less 1180 pls"
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 390
+          }
+        ],
+        "destination": "Miami",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true
+      },
+      "id": "SEM200-188",
+      "input": "miami hotel 390 not 490 make it max total"
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1500
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 600
+          }
+        ],
+        "destination": "Seattle",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true
+      },
+      "id": "SEM200-189",
+      "input": "seattle trip budgt under 1500 and hotel 600 total"
+    },
+    {
+      "expected": {
+        "destination": "Denver",
+        "duration_days": 3,
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "preferences": [
+          {
+            "category": "ACTIVITY",
+            "value": "zoo"
+          },
+          {
+            "category": "FOOD",
+            "value": "fried chicken"
+          }
+        ]
+      },
+      "id": "SEM200-190",
+      "input": "denver 3 days i like zoo and fried chiken"
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1100
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 430
+          }
+        ],
+        "destination": "Austin",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true
+      },
+      "id": "SEM200-191",
+      "input": "austin all trip no more 1100; lodge total no more 430"
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1900
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 780
+          }
+        ],
+        "destination": "New York City",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true
+      },
+      "id": "SEM200-192",
+      "input": "nyc hotel money cant above 780 total and trip 1900 max"
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1400
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 550
+          }
+        ],
+        "destination": "Las Vegas",
+        "duration_days": 2,
+        "expected_runtime_llm_need": true,
+        "needs_llm": true
+      },
+      "id": "SEM200-193",
+      "input": "vegas 2 day, trip max 1400, hotel max 550 totl"
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1350
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 620
+          }
+        ],
+        "destination": "Washington DC",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true
+      },
+      "id": "SEM200-194",
+      "input": "wash dc accomodation total under 620, all trip under 1350"
+    },
+    {
+      "expected": {
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 2050
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 800
+          }
+        ],
+        "destination": "San Francisco",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true
+      },
+      "id": "SEM200-195",
+      "input": "san fran hotel shud be 800 total max; trip 2050 max"
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1200
+          }
+        ],
+        "destination": "Boston",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "HOTEL_RATING"
+        ]
+      },
+      "id": "SEM200-196",
+      "input": "Boston trip max $1,200. Hotel rating at least 4 stars."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1400
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 500
+          }
+        ],
+        "destination": "Chicago",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_constraints": [
+          {
+            "scope": "FOOD_TOTAL",
+            "strength": "SOFT",
+            "value": 90
+          }
+        ],
+        "unsupported_scopes": [
+          "FOOD_TOTAL"
+        ]
+      },
+      "id": "SEM200-197",
+      "input": "Chicago hotel total max $500. Dinner around $90. Whole trip max $1,400."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1100
+          },
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 450
+          }
+        ],
+        "destination": "Miami",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "NUMERIC_SCOPE_BOUNDARY"
+        ]
+      },
+      "id": "SEM200-198",
+      "input": "Miami total trip under $1,100. Visit 3 museums. Hotel total under $450."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "constraints": [
+          {
+            "scope": "TOTAL_TRIP",
+            "value": 1500
+          }
+        ],
+        "destination": "Seattle",
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "preferences": [
+          {
+            "category": "HOTEL",
+            "value": "around usd 600"
+          }
+        ],
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "HARD_SOFT_BOUNDARY"
+        ]
+      },
+      "id": "SEM200-199",
+      "input": "Seattle hotel around $600 total, but the whole trip cannot exceed $1,500."
+    },
+    {
+      "expected": {
+        "ambiguity_levels": [
+          "BLOCKING"
+        ],
+        "constraints": [
+          {
+            "scope": "HOTEL_TOTAL",
+            "value": 900
+          }
+        ],
+        "destination": "San Francisco",
+        "duration_days": 4,
+        "expected_runtime_llm_need": true,
+        "needs_llm": true,
+        "requires_clarification": true,
+        "unsupported_semantics": [
+          "CORRECTION_SCOPE_BOUNDARY"
+        ]
+      },
+      "id": "SEM200-200",
+      "input": "San Francisco hotel total max $900; actually make the trip 4 days, not $900."
+    }
+  ],
+  "version": "hybrid_semantics_200_v1"
+}

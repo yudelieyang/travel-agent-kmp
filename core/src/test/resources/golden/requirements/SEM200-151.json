@@ -1,0 +1,56 @@
+{
+  "coverage": {
+    "evidence": [],
+    "needs_llm": false,
+    "reasons": [],
+    "signals": {
+      "blocking_ambiguities": 0,
+      "monetary_expressions": 0,
+      "resolved_constraints": 0
+    }
+  },
+  "id": "SEM200-151",
+  "query": "For Austin, I enjoy parks, fried chicken, and walking.",
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": null,
+    "duration_days": null,
+    "end_date": null,
+    "food_preferences": [
+      "fried chicken"
+    ],
+    "hotel_preferences": [],
+    "interests": [
+      "parks",
+      "food"
+    ],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": [
+        {
+          "category": "FOOD",
+          "value": "fried chicken"
+        }
+      ]
+    },
+    "specific_preferences": [
+      {
+        "category": "FOOD",
+        "value": "fried chicken"
+      }
+    ],
+    "start_date": null,
+    "transport_preferences": [
+      "walking"
+    ],
+    "travelers": null
+  }
+}

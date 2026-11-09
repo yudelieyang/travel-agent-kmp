@@ -1,0 +1,312 @@
+{
+  "dataset": "us_controlled_demo_v1",
+  "source": "controlled_mock_fixture",
+  "cities": [
+    {
+      "city": "Boston", "state": "MA", "aliases": ["Boston, MA", "Boston Massachusetts"],
+      "candidates": {
+        "attractions": [
+          {"id":"bos-a1","name":"Mock Harbor Art Museum","price":20,"unit":"per_person_visit","tags":["museums","art"],"rating":4.6,"review_count":820,"description":"Controlled demo museum candidate."},
+          {"id":"bos-a2","name":"Mock Boston History Museum","price":15,"unit":"per_person_visit","tags":["museums","history"],"rating":4.5,"review_count":640},
+          {"id":"bos-a3","name":"Mock Common Park","price":0,"unit":"per_person_visit","tags":["parks"],"rating":4.7,"review_count":1100}
+        ],
+        "hotel": [
+          {"id":"bos-h1","name":"Mock Harbor Lodge","price":100,"unit":"per_person_night","tags":["central","budget"],"rating":4.2,"review_count":410},
+          {"id":"bos-h2","name":"Mock Garden House","price":130,"unit":"per_person_night","tags":["quiet"],"rating":4.4,"review_count":275},
+          {"id":"bos-h3","name":"Mock Bay Hotel","price":220,"unit":"per_person_night","tags":["central","luxury"],"rating":4.7,"review_count":520}
+        ],
+        "food": [
+          {"id":"bos-f1","name":"Mock Garden Cafe","price":16,"unit":"per_person_meal","tags":["vegetarian","vegan"],"rating":4.3,"review_count":190},
+          {"id":"bos-f2","name":"Mock Common Kitchen","price":20,"unit":"per_person_meal","tags":["vegetarian"],"rating":4.4,"review_count":245},
+          {"id":"bos-f3","name":"Mock Wharf Table","price":30,"unit":"per_person_meal","tags":["seafood"],"rating":4.6,"review_count":510}
+        ],
+        "transport": [
+          {"id":"bos-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"bos-t2","name":"Mock Transit Day Allowance","price":10,"unit":"per_person_day","tags":["public transit"],"rating":4.4,"review_count":900},
+          {"id":"bos-t3","name":"Mock Taxi Day Allowance","price":45,"unit":"per_person_day","tags":["taxi"],"rating":4.1,"review_count":330}
+        ]
+      }
+    },
+    {
+      "city": "New York City", "state": "NY", "aliases": ["NYC", "New York", "New York, NY", "New York City, NY"],
+      "candidates": {
+        "attractions": [
+          {"id":"nyc-a1","name":"Mock City Art Museum","price":25,"unit":"per_person_visit","tags":["museums","art"],"rating":4.7,"review_count":2100},
+          {"id":"nyc-a2","name":"Mock History Museum","price":30,"unit":"per_person_visit","tags":["museums","history"],"rating":4.6,"review_count":1750},
+          {"id":"nyc-a3","name":"Mock Riverside Park","price":0,"unit":"per_person_visit","tags":["parks"],"rating":4.8,"review_count":3200}
+        ],
+        "hotel": [
+          {"id":"nyc-h1","name":"Mock Midtown Lodge","price":120,"unit":"per_person_night","tags":["central","budget"],"rating":4.1,"review_count":780},
+          {"id":"nyc-h2","name":"Mock Garden Inn","price":150,"unit":"per_person_night","tags":["quiet"],"rating":4.3,"review_count":460},
+          {"id":"nyc-h3","name":"Mock Skyline Hotel","price":250,"unit":"per_person_night","tags":["central","luxury"],"rating":4.7,"review_count":990}
+        ],
+        "food": [
+          {"id":"nyc-f1","name":"Mock Green Kitchen","price":18,"unit":"per_person_meal","tags":["vegetarian","vegan"],"rating":4.5,"review_count":620},
+          {"id":"nyc-f2","name":"Mock Market Cafe","price":22,"unit":"per_person_meal","tags":["vegetarian"],"rating":4.3,"review_count":480},
+          {"id":"nyc-f3","name":"Mock Harbor Table","price":35,"unit":"per_person_meal","tags":["seafood"],"rating":4.6,"review_count":850}
+        ],
+        "transport": [
+          {"id":"nyc-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"nyc-t2","name":"Mock Transit Day Allowance","price":12,"unit":"per_person_day","tags":["public transit"],"rating":4.5,"review_count":2400},
+          {"id":"nyc-t3","name":"Mock Taxi Day Allowance","price":50,"unit":"per_person_day","tags":["taxi"],"rating":4.0,"review_count":710}
+        ]
+      }
+    },
+    {
+      "city": "Columbus", "state": "OH", "aliases": ["Columbus, OH", "Columbus Ohio"],
+      "candidates": {
+        "attractions": [
+          {"id":"cmh-a1","name":"Mock Riverside Zoo","price":22,"unit":"per_person_visit","tags":["zoo","animals","family"],"rating":4.8,"review_count":1320},
+          {"id":"cmh-a2","name":"Mock Conservation Safari","price":28,"unit":"per_person_visit","tags":["zoo","animals","outdoors"],"rating":4.6,"review_count":740},
+          {"id":"cmh-a3","name":"Mock Discovery Animal Center","price":18,"unit":"per_person_visit","tags":["zoo","animals","family"],"rating":4.4,"review_count":390},
+          {"id":"cmh-a4","name":"Mock Zoo Science Hall","price":20,"unit":"per_person_visit","tags":["zoo","science","museums"],"rating":4.5,"review_count":610},
+          {"id":"cmh-a5","name":"Mock Zoo River Trail","price":0,"unit":"per_person_visit","tags":["zoo","parks","walking"],"rating":4.6,"review_count":880}
+        ],
+        "hotel": [
+          {"id":"cmh-h1","name":"Mock Capital Budget Lodge","price":82,"unit":"per_person_night","tags":["budget","central"],"rating":4.1,"review_count":330},
+          {"id":"cmh-h2","name":"Mock German Village Inn","price":105,"unit":"per_person_night","tags":["quiet","neighborhood"],"rating":4.5,"review_count":470},
+          {"id":"cmh-h3","name":"Mock Arena District Hotel","price":135,"unit":"per_person_night","tags":["central"],"rating":4.4,"review_count":590},
+          {"id":"cmh-h4","name":"Mock Scioto Luxury House","price":190,"unit":"per_person_night","tags":["luxury","quiet"],"rating":4.7,"review_count":260}
+        ],
+        "food": [
+          {"id":"cmh-f1","name":"Mock Buckeye Fried Chicken","price":14,"unit":"per_person_meal","tags":["fried chicken","comfort food"],"rating":4.7,"review_count":860},
+          {"id":"cmh-f2","name":"Mock North Market Chicken","price":17,"unit":"per_person_meal","tags":["fried chicken","market"],"rating":4.5,"review_count":620},
+          {"id":"cmh-f3","name":"Mock Village Crispy Chicken","price":20,"unit":"per_person_meal","tags":["fried chicken","casual"],"rating":4.6,"review_count":510},
+          {"id":"cmh-f4","name":"Mock Short North Chicken Basket","price":18,"unit":"per_person_meal","tags":["fried chicken","casual"],"rating":4.4,"review_count":360},
+          {"id":"cmh-f5","name":"Mock Scioto Chicken Table","price":26,"unit":"per_person_meal","tags":["fried chicken","local"],"rating":4.5,"review_count":445},
+          {"id":"cmh-f6","name":"Mock Capital Chicken Sandwich","price":16,"unit":"per_person_meal","tags":["fried chicken","casual"],"rating":4.3,"review_count":295}
+        ],
+        "transport": [
+          {"id":"cmh-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"cmh-t2","name":"Mock Bus Day Allowance","price":8,"unit":"per_person_day","tags":["public transit"],"rating":4.1,"review_count":410},
+          {"id":"cmh-t3","name":"Mock Rideshare Day Allowance","price":38,"unit":"per_person_day","tags":["taxi"],"rating":4.2,"review_count":280}
+        ]
+      }
+    },
+    {
+      "city": "Chicago", "state": "IL", "aliases": ["Chicago, IL", "Chicago Illinois"],
+      "candidates": {
+        "attractions": [
+          {"id":"chi-a1","name":"Mock Lakeside Art Hall","price":24,"unit":"per_person_visit","tags":["museums","art"],"rating":4.7,"review_count":1400},
+          {"id":"chi-a2","name":"Mock City History Center","price":18,"unit":"per_person_visit","tags":["museums","history"],"rating":4.5,"review_count":790},
+          {"id":"chi-a3","name":"Mock Lakefront Park","price":0,"unit":"per_person_visit","tags":["parks","walking"],"rating":4.8,"review_count":2100}
+        ],
+        "hotel": [
+          {"id":"chi-h1","name":"Mock Loop Budget Lodge","price":95,"unit":"per_person_night","tags":["budget","central"],"rating":4.1,"review_count":560},
+          {"id":"chi-h2","name":"Mock Lakeside Inn","price":135,"unit":"per_person_night","tags":["quiet"],"rating":4.4,"review_count":430},
+          {"id":"chi-h3","name":"Mock Magnificent Hotel","price":225,"unit":"per_person_night","tags":["luxury","central"],"rating":4.7,"review_count":840}
+        ],
+        "food": [
+          {"id":"chi-f1","name":"Mock Deep Dish Kitchen","price":19,"unit":"per_person_meal","tags":["pizza","local"],"rating":4.6,"review_count":970},
+          {"id":"chi-f2","name":"Mock Green Loop Cafe","price":17,"unit":"per_person_meal","tags":["vegetarian","vegan"],"rating":4.4,"review_count":410},
+          {"id":"chi-f3","name":"Mock Lake Table","price":31,"unit":"per_person_meal","tags":["seafood"],"rating":4.5,"review_count":530}
+        ],
+        "transport": [
+          {"id":"chi-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"chi-t2","name":"Mock Rail Day Allowance","price":10,"unit":"per_person_day","tags":["public transit"],"rating":4.4,"review_count":1500},
+          {"id":"chi-t3","name":"Mock Taxi Day Allowance","price":44,"unit":"per_person_day","tags":["taxi"],"rating":4.0,"review_count":390}
+        ]
+      }
+    },
+    {
+      "city": "Washington DC", "state": "DC", "aliases": ["Washington, DC", "Washington D.C.", "Washington D.C", "DC", "District of Columbia"],
+      "candidates": {
+        "attractions": [
+          {"id":"wdc-a1","name":"Mock National History Hall","price":0,"unit":"per_person_visit","tags":["museums","history"],"rating":4.8,"review_count":2400},
+          {"id":"wdc-a2","name":"Mock Capital Art Gallery","price":0,"unit":"per_person_visit","tags":["museums","art"],"rating":4.7,"review_count":1850},
+          {"id":"wdc-a3","name":"Mock Monument Garden","price":0,"unit":"per_person_visit","tags":["parks","history","walking"],"rating":4.8,"review_count":3100}
+        ],
+        "hotel": [
+          {"id":"wdc-h1","name":"Mock District Lodge","price":110,"unit":"per_person_night","tags":["budget","central"],"rating":4.1,"review_count":510},
+          {"id":"wdc-h2","name":"Mock Capitol Garden Inn","price":155,"unit":"per_person_night","tags":["quiet"],"rating":4.4,"review_count":480},
+          {"id":"wdc-h3","name":"Mock Federal Hotel","price":240,"unit":"per_person_night","tags":["luxury","central"],"rating":4.7,"review_count":720}
+        ],
+        "food": [
+          {"id":"wdc-f1","name":"Mock District Greens","price":18,"unit":"per_person_meal","tags":["vegetarian","vegan"],"rating":4.4,"review_count":430},
+          {"id":"wdc-f2","name":"Mock Capital Grill Counter","price":24,"unit":"per_person_meal","tags":["grilled","local"],"rating":4.5,"review_count":590},
+          {"id":"wdc-f3","name":"Mock Potomac Table","price":33,"unit":"per_person_meal","tags":["seafood"],"rating":4.6,"review_count":680}
+        ],
+        "transport": [
+          {"id":"wdc-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"wdc-t2","name":"Mock Metro Day Allowance","price":11,"unit":"per_person_day","tags":["public transit"],"rating":4.5,"review_count":1700},
+          {"id":"wdc-t3","name":"Mock Taxi Day Allowance","price":46,"unit":"per_person_day","tags":["taxi"],"rating":4.0,"review_count":420}
+        ]
+      }
+    },
+    {
+      "city": "Miami", "state": "FL", "aliases": ["Miami, FL", "Miami Florida"],
+      "candidates": {
+        "attractions": [
+          {"id":"mia-a1","name":"Mock Coastal Art Museum","price":23,"unit":"per_person_visit","tags":["museums","art"],"rating":4.6,"review_count":910},
+          {"id":"mia-a2","name":"Mock Bay History Center","price":16,"unit":"per_person_visit","tags":["museums","history"],"rating":4.4,"review_count":520},
+          {"id":"mia-a3","name":"Mock Palm Park","price":0,"unit":"per_person_visit","tags":["parks","walking"],"rating":4.7,"review_count":1300}
+        ],
+        "hotel": [
+          {"id":"mia-h1","name":"Mock Downtown Budget Lodge","price":105,"unit":"per_person_night","tags":["budget","central"],"rating":4.0,"review_count":470},
+          {"id":"mia-h2","name":"Mock Palm Garden Inn","price":145,"unit":"per_person_night","tags":["quiet"],"rating":4.3,"review_count":390},
+          {"id":"mia-h3","name":"Mock Ocean Luxury Hotel","price":260,"unit":"per_person_night","tags":["luxury","central"],"rating":4.7,"review_count":920}
+        ],
+        "food": [
+          {"id":"mia-f1","name":"Mock Calle Cafe","price":16,"unit":"per_person_meal","tags":["cuban","local"],"rating":4.6,"review_count":770},
+          {"id":"mia-f2","name":"Mock Palm Greens","price":19,"unit":"per_person_meal","tags":["vegetarian","vegan"],"rating":4.4,"review_count":380},
+          {"id":"mia-f3","name":"Mock Ocean Table","price":34,"unit":"per_person_meal","tags":["seafood"],"rating":4.7,"review_count":880}
+        ],
+        "transport": [
+          {"id":"mia-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"mia-t2","name":"Mock Transit Day Allowance","price":9,"unit":"per_person_day","tags":["public transit"],"rating":4.1,"review_count":620},
+          {"id":"mia-t3","name":"Mock Taxi Day Allowance","price":48,"unit":"per_person_day","tags":["taxi"],"rating":4.0,"review_count":350}
+        ]
+      }
+    },
+    {
+      "city": "Austin", "state": "TX", "aliases": ["Austin, TX", "Austin Texas"],
+      "candidates": {
+        "attractions": [
+          {"id":"aus-a1","name":"Mock Texas Art Hall","price":19,"unit":"per_person_visit","tags":["museums","art"],"rating":4.6,"review_count":720},
+          {"id":"aus-a2","name":"Mock Music History Center","price":17,"unit":"per_person_visit","tags":["museums","history","music"],"rating":4.5,"review_count":610},
+          {"id":"aus-a3","name":"Mock Springs Park","price":5,"unit":"per_person_visit","tags":["parks","outdoors"],"rating":4.8,"review_count":1600}
+        ],
+        "hotel": [
+          {"id":"aus-h1","name":"Mock Downtown Budget Lodge","price":88,"unit":"per_person_night","tags":["budget","central"],"rating":4.1,"review_count":440},
+          {"id":"aus-h2","name":"Mock Hill Garden Inn","price":120,"unit":"per_person_night","tags":["quiet"],"rating":4.4,"review_count":360},
+          {"id":"aus-h3","name":"Mock Live Music Hotel","price":205,"unit":"per_person_night","tags":["luxury","central"],"rating":4.7,"review_count":650}
+        ],
+        "food": [
+          {"id":"aus-f1","name":"Mock Taco Yard","price":14,"unit":"per_person_meal","tags":["tacos","local"],"rating":4.6,"review_count":850},
+          {"id":"aus-f2","name":"Mock Hill Country Greens","price":18,"unit":"per_person_meal","tags":["vegetarian","vegan"],"rating":4.4,"review_count":390},
+          {"id":"aus-f3","name":"Mock Smokehouse Table","price":27,"unit":"per_person_meal","tags":["barbecue","local"],"rating":4.7,"review_count":1040}
+        ],
+        "transport": [
+          {"id":"aus-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"aus-t2","name":"Mock Bus Day Allowance","price":7,"unit":"per_person_day","tags":["public transit"],"rating":4.1,"review_count":490},
+          {"id":"aus-t3","name":"Mock Rideshare Day Allowance","price":40,"unit":"per_person_day","tags":["taxi"],"rating":4.2,"review_count":310}
+        ]
+      }
+    },
+    {
+      "city": "Denver", "state": "CO", "aliases": ["Denver, CO", "Denver Colorado"],
+      "candidates": {
+        "attractions": [
+          {"id":"den-a1","name":"Mock Mountain Art Museum","price":21,"unit":"per_person_visit","tags":["museums","art"],"rating":4.6,"review_count":760},
+          {"id":"den-a2","name":"Mock Frontier History Hall","price":17,"unit":"per_person_visit","tags":["museums","history"],"rating":4.5,"review_count":540},
+          {"id":"den-a3","name":"Mock City Mountain Park","price":0,"unit":"per_person_visit","tags":["parks","outdoors"],"rating":4.8,"review_count":1450}
+        ],
+        "hotel": [
+          {"id":"den-h1","name":"Mock Union Budget Lodge","price":92,"unit":"per_person_night","tags":["budget","central"],"rating":4.1,"review_count":470},
+          {"id":"den-h2","name":"Mock Mountain Garden Inn","price":128,"unit":"per_person_night","tags":["quiet"],"rating":4.4,"review_count":405},
+          {"id":"den-h3","name":"Mock Summit Hotel","price":215,"unit":"per_person_night","tags":["luxury","central"],"rating":4.7,"review_count":690}
+        ],
+        "food": [
+          {"id":"den-f1","name":"Mock Mile High Cafe","price":16,"unit":"per_person_meal","tags":["local","casual"],"rating":4.5,"review_count":560},
+          {"id":"den-f2","name":"Mock Mountain Greens","price":18,"unit":"per_person_meal","tags":["vegetarian","vegan"],"rating":4.4,"review_count":370},
+          {"id":"den-f3","name":"Mock Alpine Table","price":29,"unit":"per_person_meal","tags":["grilled","local"],"rating":4.6,"review_count":610}
+        ],
+        "transport": [
+          {"id":"den-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"den-t2","name":"Mock Rail Day Allowance","price":10,"unit":"per_person_day","tags":["public transit"],"rating":4.3,"review_count":780},
+          {"id":"den-t3","name":"Mock Taxi Day Allowance","price":43,"unit":"per_person_day","tags":["taxi"],"rating":4.1,"review_count":340}
+        ]
+      }
+    },
+    {
+      "city": "Seattle", "state": "WA", "aliases": ["Seattle, WA", "Seattle Washington"],
+      "candidates": {
+        "attractions": [
+          {"id":"sea-a1","name":"Mock Sound Art Museum","price":24,"unit":"per_person_visit","tags":["museums","art"],"rating":4.7,"review_count":980},
+          {"id":"sea-a2","name":"Mock Northwest History Hall","price":19,"unit":"per_person_visit","tags":["museums","history"],"rating":4.5,"review_count":610},
+          {"id":"sea-a3","name":"Mock Evergreen Park","price":0,"unit":"per_person_visit","tags":["parks","outdoors"],"rating":4.8,"review_count":1720}
+        ],
+        "hotel": [
+          {"id":"sea-h1","name":"Mock Market Budget Lodge","price":108,"unit":"per_person_night","tags":["budget","central"],"rating":4.1,"review_count":530},
+          {"id":"sea-h2","name":"Mock Sound Garden Inn","price":148,"unit":"per_person_night","tags":["quiet"],"rating":4.4,"review_count":420},
+          {"id":"sea-h3","name":"Mock Skyline Hotel","price":245,"unit":"per_person_night","tags":["luxury","central"],"rating":4.7,"review_count":790}
+        ],
+        "food": [
+          {"id":"sea-f1","name":"Mock Market Chowder","price":18,"unit":"per_person_meal","tags":["seafood","local"],"rating":4.6,"review_count":890},
+          {"id":"sea-f2","name":"Mock Evergreen Kitchen","price":19,"unit":"per_person_meal","tags":["vegetarian","vegan"],"rating":4.5,"review_count":460},
+          {"id":"sea-f3","name":"Mock Sound Table","price":32,"unit":"per_person_meal","tags":["seafood"],"rating":4.7,"review_count":730}
+        ],
+        "transport": [
+          {"id":"sea-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"sea-t2","name":"Mock Transit Day Allowance","price":11,"unit":"per_person_day","tags":["public transit"],"rating":4.4,"review_count":960},
+          {"id":"sea-t3","name":"Mock Taxi Day Allowance","price":47,"unit":"per_person_day","tags":["taxi"],"rating":4.0,"review_count":370}
+        ]
+      }
+    },
+    {
+      "city": "San Francisco", "state": "CA", "aliases": ["San Francisco, CA", "San Francisco California", "SF"],
+      "candidates": {
+        "attractions": [
+          {"id":"sfo-a1","name":"Mock Bay Art Museum","price":26,"unit":"per_person_visit","tags":["museums","art"],"rating":4.7,"review_count":1250},
+          {"id":"sfo-a2","name":"Mock Cable History Hall","price":20,"unit":"per_person_visit","tags":["museums","history"],"rating":4.5,"review_count":720},
+          {"id":"sfo-a3","name":"Mock Golden Park","price":0,"unit":"per_person_visit","tags":["parks","walking"],"rating":4.8,"review_count":2300}
+        ],
+        "hotel": [
+          {"id":"sfo-h1","name":"Mock Bay Budget Lodge","price":125,"unit":"per_person_night","tags":["budget","central"],"rating":4.0,"review_count":610},
+          {"id":"sfo-h2","name":"Mock Sunset Garden Inn","price":165,"unit":"per_person_night","tags":["quiet"],"rating":4.4,"review_count":450},
+          {"id":"sfo-h3","name":"Mock Embarcadero Hotel","price":275,"unit":"per_person_night","tags":["luxury","central"],"rating":4.7,"review_count":870}
+        ],
+        "food": [
+          {"id":"sfo-f1","name":"Mock Mission Kitchen","price":20,"unit":"per_person_meal","tags":["local","casual"],"rating":4.5,"review_count":640},
+          {"id":"sfo-f2","name":"Mock Bay Greens","price":22,"unit":"per_person_meal","tags":["vegetarian","vegan"],"rating":4.5,"review_count":510},
+          {"id":"sfo-f3","name":"Mock Wharf Table","price":38,"unit":"per_person_meal","tags":["seafood"],"rating":4.7,"review_count":960}
+        ],
+        "transport": [
+          {"id":"sfo-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"sfo-t2","name":"Mock Transit Day Allowance","price":13,"unit":"per_person_day","tags":["public transit"],"rating":4.4,"review_count":1180},
+          {"id":"sfo-t3","name":"Mock Taxi Day Allowance","price":54,"unit":"per_person_day","tags":["taxi"],"rating":4.0,"review_count":410}
+        ]
+      }
+    },
+    {
+      "city": "Los Angeles", "state": "CA", "aliases": ["Los Angeles, CA", "Los Angeles California", "LA", "L.A."],
+      "candidates": {
+        "attractions": [
+          {"id":"lax-a1","name":"Mock Pacific Art Museum","price":25,"unit":"per_person_visit","tags":["museums","art"],"rating":4.6,"review_count":1150},
+          {"id":"lax-a2","name":"Mock Film History Center","price":27,"unit":"per_person_visit","tags":["museums","history","film"],"rating":4.6,"review_count":890},
+          {"id":"lax-a3","name":"Mock Canyon Park","price":0,"unit":"per_person_visit","tags":["parks","outdoors"],"rating":4.8,"review_count":1900}
+        ],
+        "hotel": [
+          {"id":"lax-h1","name":"Mock Downtown Budget Lodge","price":112,"unit":"per_person_night","tags":["budget","central"],"rating":4.0,"review_count":580},
+          {"id":"lax-h2","name":"Mock Canyon Garden Inn","price":152,"unit":"per_person_night","tags":["quiet"],"rating":4.3,"review_count":420},
+          {"id":"lax-h3","name":"Mock Pacific Luxury Hotel","price":265,"unit":"per_person_night","tags":["luxury","central"],"rating":4.7,"review_count":910}
+        ],
+        "food": [
+          {"id":"lax-f1","name":"Mock Taco Studio","price":16,"unit":"per_person_meal","tags":["tacos","local"],"rating":4.6,"review_count":920},
+          {"id":"lax-f2","name":"Mock Pacific Greens","price":21,"unit":"per_person_meal","tags":["vegetarian","vegan"],"rating":4.5,"review_count":520},
+          {"id":"lax-f3","name":"Mock Coastal Table","price":36,"unit":"per_person_meal","tags":["seafood"],"rating":4.6,"review_count":790}
+        ],
+        "transport": [
+          {"id":"lax-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"lax-t2","name":"Mock Transit Day Allowance","price":9,"unit":"per_person_day","tags":["public transit"],"rating":4.0,"review_count":690},
+          {"id":"lax-t3","name":"Mock Rideshare Day Allowance","price":55,"unit":"per_person_day","tags":["taxi"],"rating":4.1,"review_count":450}
+        ]
+      }
+    },
+    {
+      "city": "Las Vegas", "state": "NV", "aliases": ["Las Vegas, NV", "Las Vegas Nevada", "Vegas"],
+      "candidates": {
+        "attractions": [
+          {"id":"las-a1","name":"Mock Neon Art Hall","price":24,"unit":"per_person_visit","tags":["museums","art"],"rating":4.6,"review_count":940},
+          {"id":"las-a2","name":"Mock Desert History Center","price":19,"unit":"per_person_visit","tags":["museums","history"],"rating":4.5,"review_count":620},
+          {"id":"las-a3","name":"Mock Springs Preserve Park","price":12,"unit":"per_person_visit","tags":["parks","outdoors"],"rating":4.7,"review_count":1180}
+        ],
+        "hotel": [
+          {"id":"las-h1","name":"Mock Downtown Budget Lodge","price":78,"unit":"per_person_night","tags":["budget","central"],"rating":4.0,"review_count":720},
+          {"id":"las-h2","name":"Mock Desert Garden Inn","price":118,"unit":"per_person_night","tags":["quiet"],"rating":4.3,"review_count":410},
+          {"id":"las-h3","name":"Mock Strip Luxury Hotel","price":235,"unit":"per_person_night","tags":["luxury","central"],"rating":4.7,"review_count":1280}
+        ],
+        "food": [
+          {"id":"las-f1","name":"Mock Desert Cafe","price":15,"unit":"per_person_meal","tags":["local","casual"],"rating":4.4,"review_count":610},
+          {"id":"las-f2","name":"Mock Springs Greens","price":19,"unit":"per_person_meal","tags":["vegetarian","vegan"],"rating":4.4,"review_count":430},
+          {"id":"las-f3","name":"Mock Boulevard Table","price":34,"unit":"per_person_meal","tags":["grilled","luxury"],"rating":4.6,"review_count":850}
+        ],
+        "transport": [
+          {"id":"las-t1","name":"Mock Walking Allowance","price":0,"unit":"per_person_day","tags":["walking"],"rating":null,"review_count":null},
+          {"id":"las-t2","name":"Mock Transit Day Allowance","price":8,"unit":"per_person_day","tags":["public transit"],"rating":4.0,"review_count":540},
+          {"id":"las-t3","name":"Mock Taxi Day Allowance","price":49,"unit":"per_person_day","tags":["taxi"],"rating":4.1,"review_count":390}
+        ]
+      }
+    }
+  ]
+}
