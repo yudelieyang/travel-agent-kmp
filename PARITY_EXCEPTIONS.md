@@ -6,6 +6,6 @@
 
 ## Unresolved parity exceptions
 
-None established yet; P1a verification is incomplete.
+P1a verification is incomplete.
 
 - Alias lookup: input `Boſton` is normalized by Python casefold to `Boston`; current JVM loader uses lowercase and does not match it. Fixture: none; field: destination alias. Python `Boston`; Kotlin `null`. Full Unicode casefold remains unresolved.

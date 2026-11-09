@@ -14,7 +14,7 @@ class GoldenTest {
     private val json = Json { encodeDefaults = false; explicitNulls = true }
     private val root = File("src/test/resources/golden")
     @TestFactory fun fixtures(): List<DynamicTest> = listOf("e2e", "requirements").flatMap { folder ->
-        File(root, folder).listFiles()!!.filter { it.extension == "json" && it.name != "dataset-gold.json" }.sortedBy { it.name }.map { file ->
+        File(root, folder).listFiles()!!.filter { it.extension == "json" && it.name != "dataset-gold.json" && (System.getProperty("golden.fixture", "").isEmpty() || it.nameWithoutExtension == System.getProperty("golden.fixture")) }.sortedBy { it.name }.map { file ->
             DynamicTest.dynamicTest("$folder/${file.name}") {
                 val original = json.parseToJsonElement(file.readText(Charsets.UTF_8))
                 val roundtrip = if (folder == "e2e") json.parseToJsonElement(json.encodeToString(json.decodeFromJsonElement<PlanResult>(original)))

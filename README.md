@@ -8,7 +8,7 @@ The project is under construction; no planner implementation is included in P1a.
 
 ```powershell
 .\gradlew.bat :core:test
-.\gradlew.bat :core:test --tests "travel.GoldenTest.fixtureName"
+.\gradlew.bat :core:test -Pfixture=SEM200-001 --tests "travel.GoldenTest.fixtures"
 .\gradlew.bat :composeApp:run
 .\gradlew.bat :composeApp:installDebug
 .\gradlew.bat :composeApp:connectedAndroidTest
