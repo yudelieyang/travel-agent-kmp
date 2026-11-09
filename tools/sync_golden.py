@@ -38,6 +38,14 @@ def main():
             raise RuntimeError(f'SHA-256 mismatch: {path}')
     if counts != {'golden': 230, 'snapshot': 41, 'cities': 1, 'presets': 1}:
         raise RuntimeError(f'Unexpected file count: {counts}')
+    golden_dir = ROOT / 'core/src/test/resources/golden'
+    actual = sum(1 for f in golden_dir.rglob('*') if f.is_file() and f.name != 'SOURCE.txt')
+    if actual != counts['golden']:
+        raise RuntimeError(f'Unexpected destination golden file count: {actual}')
+    snapshot_dir = ROOT / 'core/src/main/resources/data/travel/snapshots/openstreetmap'
+    actual = sum(1 for f in snapshot_dir.rglob('*') if f.is_file())
+    if actual != counts['snapshot']:
+        raise RuntimeError(f'Unexpected destination snapshot file count: {actual}')
     (ROOT / 'core/src/test/resources/golden/SOURCE.txt').write_text(COMMIT + '\n', encoding='utf8', newline='\n')
     (ROOT / 'NOTICE.md').write_bytes((ROOT / 'core/src/main/resources/data/travel/snapshots/openstreetmap/NOTICE.md').read_bytes())
     print('SHA-256 verified for each copied file:', counts)

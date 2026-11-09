@@ -1,0 +1,3 @@
+/core/src/main/resources/** -text
+/core/src/test/resources/golden/** -text
+/NOTICE.md -text
