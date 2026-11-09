@@ -322,6 +322,45 @@ Python `re` 与 Java 正则的差异必须逐条处理。建议写一个小的 `
 - 截图存到 `docs/screenshots/`：手机 ①–⑥ 各一张（浅色），④ 再加一张深色；宽屏 Desktop 一张。截图从真机或 Desktop 应用实际截取，不要用预览渲染代替。
 - 对比度单元测试通过；manifest 中没有 `INTERNET` 权限。
 
+### P3.6：输入引导与失败原因说明（真机试用后补充）
+
+问题来自真机试用：(1) 输入框没有任何提示，用户不知道该写什么；(2) 输入不存在的地点（如 "wonderland"）时，只显示 "Unable to plan this request."，没有说明原因，也没有给出修正办法。对应设计稿新增两个画板：⑦ 输入引导与实时预览，⑧ 失败原因说明。
+
+**总原则：只改 UI 层，`core` 引擎和所有一致性测试不变。** 下面用到的信息全部来自引擎已有的输出（`status`、`errors`、`warnings`、`missing_fields`、`requirements`、`coverage` 的 reasons、evidence 和 signals）和城市数据表；解释文案、近似城市推荐都属于 UI 层逻辑，放在 `composeApp` 中，不进入 `core` 的 golden 比较。
+
+#### ⑦ 输入引导（首页输入卡）
+
+- **空输入状态**：placeholder 为一个完整的示例句，例如 "e.g. 3 days in Boston for 2 people, under $800 total. We like museums."；输入框下方是一排"要素"芯片：City *、Days *、Travelers、Budget、Interests（带 * 的必填项由 `missing_fields` 可能出现的值决定，请从引擎中确认，不要照抄设计稿）；再下面一行说明："* needed to plan · works offline for 12 US cities · See cities"，"See cities" 打开城市列表 bottom sheet，点击城市就插入或替换输入框中的城市。
+- **实时预览（"Understood so far"）**：用户停止输入 300ms 后，在 `Dispatchers.Default` 上调用**与正式运行相同的**需求解析和覆盖分析（只解析，不规划），把结果显示为芯片：识别成功的字段用 successContainer 加对勾；缺失的必填项用虚线描边的 muted 芯片；可选项显示 "— optional"。
+- **未知城市**：解析出了目的地，但城市数据表（含别名）中找不到时，显示 warning 芯片 "City: wonderland — not found"，并在下方展开 warningContainer 提示框："“wonderland” isn't one of the 12 cities in the offline dataset. Tap one to replace it:"，后面是城市按钮（优先列出近似匹配，见下文，没有近似匹配时列出前几个城市和 "All 12 →"）。
+- **覆盖分析提示**：coverage 报告离线解析器无法表达的内容时（`needs_llm` 为 true，或 reasons 非空），用一行 warning 文字说明哪一部分可能被忽略，引用 evidence 中的原文片段。
+- "Plan trip" 按钮只在输入为空时禁用；出现警告时**仍然可以运行**（引擎行为要与 Python 一致，由引擎给出最终结果）。
+
+#### ⑧ 失败原因说明（替换现在的 "Unable to plan this request."）
+
+先做一件事：**从 Kotlin 引擎代码中枚举所有非成功的结果**，包括每种 `status`、每种 errors 和 warnings 的消息或代码、`missing_fields` 的取值、coverage 的 reason 类型，并为每一类找一条能触发它的真实查询（用 Python 对照确认）。把这张表写进 `docs/P3_FAILURE_CATALOG.md`，汇报时附上。然后为每一类写 UI 文案，结构统一为三部分：
+
+1. **发生了什么**：warningContainer 卡片（用户输入类问题用 warning 色；error 红色只用于预算违规和引擎内部错误），包含大写类别标签、一句标题、一段解释。示例（未知城市）：标签 "Unknown destination"，标题 "We couldn't find “wonderland”"，解释 "This offline build covers 12 US cities, and “wonderland” isn't one of them — so there are no hotels, food or sights to choose from. Check the spelling, or pick a city below."
+2. **已经理解的部分**：与 ⑦ 相同的芯片行，让用户看到哪些信息已经被正确识别。
+3. **怎么修正**：针对这一类问题的具体操作。例如未知城市显示城市按钮网格（近似匹配优先，加 "Show all 12 cities"）；点击后替换查询中的城市并直接重新运行。下方是预填原查询的编辑框和 "Run again" 按钮。
+
+页面底部用小号等宽字体显示引擎原始的 status 和错误信息（"Engine details: …"），方便排错，也方便面试时演示。顶栏标题统一为 "Can't plan this yet"，不要显示未识别的地名。
+
+所有找不到具体文案的未知失败，显示通用版本："Something in this request couldn't be planned offline"，加上引擎原始信息和编辑框，**不能**只显示一句话。
+
+#### 近似城市匹配（UI 层）
+
+- 对用户输入的地名和每个城市的名称及别名，先用 `location_key` 同样的规则规范化，再计算 Damerau–Levenshtein 距离。
+- 阈值：规范化后长度 ≤ 4 时距离 ≤ 1，否则距离 ≤ 2；按距离、再按城市表顺序排序，最多取 3 个。
+- 单元测试：`Bostn`、`Chicgo`、`Mimai`（换位）能匹配到对应城市；`wonderland` 没有匹配。
+
+**验收**
+- `docs/P3_FAILURE_CATALOG.md` 列出全部失败类别，以及对应的触发查询和 UI 文案。
+- 每一类失败都有一个 Compose UI 测试，断言标题、解释文字和修正操作存在；未知城市的测试要覆盖"点击城市后自动替换并重新运行成功"。
+- 实时预览的单元测试：预览得到的 requirements 与正式运行完全相同（用 200 个 requirements fixture 中的一部分验证）。
+- core 的全部 golden 测试仍然通过，并且 `core` 模块没有改动。
+- 截图：⑦ 的空输入状态和实时预览状态，⑧ 的未知城市状态和另外任意一种失败状态。
+
 ### P4：Android 一致性、发布与文档
 
 1. Android instrumented test：在真机（iQOO 15）上运行，有条件时再加一个模拟器，运行 200 个 requirements fixture 和 28 个 e2e fixture，以及第 4 节的非 ASCII 输入集。
