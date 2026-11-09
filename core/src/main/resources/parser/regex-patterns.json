@@ -1,0 +1,1176 @@
+{
+  "source_commit": "0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd",
+  "patterns": [
+    {
+      "pattern": "(?:(?P<intro>under|below|up to|around|max(?:imum)?|at most|no more than|don't spend more than|(?:don't\\s+let\\s+(?:the\\s+)?(?:total|trip|whole\\s+trip)\\s+go\\s+over)|(?:cap\\s+(?:the\\s+)?(?:whole\\s+)?trip\\s+at)|(?:my\\s+)?(?:total\\s+)?budget(?:\\s+(?:of|is))?)\\s*)?(?:(?P<code>USD|EUR|GBP)\\s*|(?P<symbol>[$€£])\\s*)?(?P<amount>-?\\d(?:[\\d,]*\\d)?(?:\\.\\d+)?)(?P<multiplier>[kK])?\\s*(?P<currency>USD|EUR|GBP|dollars?|euros?|pounds?)?",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:403"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bi\\s+(?:also\\s+)?(?:like|enjoy|prefer|love|need)\\s+(?P<values>[^.!?;]+)",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:413"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\s*(?:,|\\b(?:and|but)\\b)\\s*",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:416"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^(?:(?:i\\s+)?(?:also\\s+)?(?:like|enjoy|prefer|love|need)\\s+|also\\s+)",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:417"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:budget|spending\\s+limit|spend|afford|under|up\\s+to|max(?:imum)?|at\\s+most|no\\s+more\\s+than|around|about)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:420"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:under|below|up\\s+to|max(?:imum)?|at\\s+most|no\\s+more\\s+than|(?:do not|don't)\\s+spend\\s+more\\s+than|spending\\s+limit|(?:do\\s+not|don't)\\s+let\\s+(?:the\\s+)?(?:total|(?:total\\s+)?trip)\\s+go\\s+over|cap\\s+(?:the\\s+)?(?:whole\\s+)?trip\\s+at|(?:total\\s+)?budget|(?:must|should)\\s+(?:not\\s+)?(?:exceed|be\\s+more\\s+than)|cannot\\s+(?:exceed|go\\s+above)|(?:absolute\\s+)?ceiling|(?:capped?|cap)(?:\\s+is)?(?:\\s+at)?|\\bwithin\\b|\\bonly\\s+have\\b)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:425"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:around|about|roughly|near|ideally|ideal|if\\s+possible|would\\s+(?:like|be\\s+ideal)|flexible)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:435"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^[A-Z]{3}$",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:71:Field",
+        "app.agent.requirements:123:Field"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(whole|entire|full)-trip\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:221"
+      ],
+      "replacements": [
+        "\\1 trip"
+      ]
+    },
+    {
+      "pattern": "\\bmore\\s+then\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:222"
+      ],
+      "replacements": [
+        "more than"
+      ]
+    },
+    {
+      "pattern": "\\b([A-Za-z])\\.([A-Za-z])\\.",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:223"
+      ],
+      "replacements": [
+        "\\1\\2"
+      ]
+    },
+    {
+      "pattern": "\\b([A-Za-z][A-Za-z ]*),\\s*([A-Z]{2})\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:224"
+      ],
+      "replacements": [
+        "\\1 \\2"
+      ]
+    },
+    {
+      "pattern": "\\b(?:to|in|visit)\\s+([A-Za-z][A-Za-z ]*?)(?=\\s+(?:under|for|with|from|on|starting|between|around|but|budget)\\b|[.,!?;]|$)",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:226"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bfrom\\s+([A-Za-z][A-Za-z ]*?)\\s+to\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:261"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?<![\\w.])(-?\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\\s*[- ]\\s*days?\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:264"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?<![\\w.])(-?\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\\s+(?:travelers?|people|persons?|adults?)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:267"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b\\d{4}-\\d{2}-\\d{2}\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:284"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bspend\\s+as\\s+much\\b[^.!?;]{0,80}\\bbudget\\s+as\\s+(?:reasonably\\s+)?possible\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:328"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "[.!?;]|\\b(?:but|however)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:340"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:maximum\\s+|total\\s+|my\\s+)?budget\\s*(?:is|=|of)?\\s*(?P<value>[A-Za-z]+)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:461"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\s*(?:per\\s+(?:person|traveler)|each)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:604"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:food|meals?|restaurants?)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:646"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:transport(?:ation)?|transit|flight)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:648"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:attractions?|activities?|museum\\s+tickets?)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:650"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:want\\s+to\\s+)?visit\\s+(?P<value>zoos?|museums?|parks?)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:725"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:walking|public transit|taxi)",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:763"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:city|urban|neighborhood)\\s+walking\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:765",
+        "app.agent.requirements:349"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:zoos?|museums?|parks?)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:767"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:hotel|lodging|accommodation)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:773"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bor\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:254"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bfamily of\\s+(-?\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:271"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bfor\\s+(-?\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)(?=\\s*(?:[.,;!?]|$|under\\b|with\\b))",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:273"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:traveling|travelling) alone\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:278"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:per (?:person|traveler)|each)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:306"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bwheelchair\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:360"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bmust\\s+.+",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:362"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:cheap|affordable)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:365"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:\\b(?:but|however)\\b|\\b(?:while|and|with)\\s+(?:the\\s+|a\\s+)?(?=(?:hotel|hotels|lodging|accommodation|food|transport|flight|attractions?|(?:whole|entire|full)\\s+trip|total)\\b)|\\band\\s+(?:would|i|spend|keep)\\b|,\\s*(?:hotel|hotels|lodging|accommodation|food|transport|flight|attractions?|while\\s+(?:the\\s+)?(?:whole|entire|full)\\s+trip|with\\s+(?:a\\s+|the\\s+)?(?:hotel|lodging|accommodation))\\b)",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:472"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bhave\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:501"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\s*(?:(?:total|maximum|ceiling)\\s*)*(?:[.;]\\s*|\\s+(?:and|but)\\s+)(?:(?:actually|sorry)(?:,\\s*)?)?\\s*(?:i\\s+meant|(?:make|change)\\s+(?:that|it|the\\s+(?:total\\s+trip|trip\\s+total|total|trip|hotel))|(?:no,\\s*)?use|instead)(?:\\s+to)?\\s*",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:590"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:hotel|hotels|lodging|accommodation)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:606",
+        "app.agent.requirements:606",
+        "app.agent.requirements:743"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bper\\s+night\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:609",
+        "app.agent.requirements:642",
+        "app.agent.requirements:752"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:total(?:\\s+budget)?|keep\\s+(?:the\\s+)?trip|(?:whole|entire|full)\\s+(?:the\\s+)?trip|everything|don't\\s+let\\s+(?:the\\s+)?(?:total|trip|whole\\s+trip)\\s+go\\s+over|do\\s+not\\s+let\\s+(?:the\\s+)?(?:total|(?:total\\s+)?trip)\\s+go\\s+over|cap\\s+(?:the\\s+)?(?:whole\\s+)?trip\\s+at|(?:the\\s+)?trip\\s+budget|(?:whole|entire|full)\\s+trip\\s+cap|(?:the\\s+)?trip\\s+(?:(?:must|has\\s+to|needs\\s+to)\\s+stay\\s+)?(?:under|below|up\\s+to|max(?:imum)?|at\\s+most|no\\s+more\\s+than|cannot\\s+exceed|can't\\s+go\\s+above)|\\btrip\\b[^.!?;]{0,40}\\b(?:cannot\\s+exceed|can't\\s+go\\s+above)\\b|\\b(?:absolute\\s+)?ceiling\\b[^.!?;]{0,40}\\btrip\\b|\\boverall\\b)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:612"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\s*(?:total|overall|for (?:the )?(?:(?:whole|entire|full) )?trip)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:624"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:hotel|lodging|accommodation)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:642",
+        "app.agent.semantic_coverage:254"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:food|cuisine|meal|dish|coffee)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:769"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:fried|grilled|baked|roasted|steamed)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:769"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\s+or\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:242"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:\\d+|-?\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\\s*-\\s*days?\\s+(?P<place>[A-Z][A-Za-z]*(?:\\s+[A-Z][A-Za-z]*)*)\\s+trip\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:246"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:somewhere|anywhere|rent|eat|stay|book)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:257"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bjust me\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:280"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bnightlife\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:357:\\bnightlife\\b"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bmeat\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:357:\\bmeat\\b"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:rent a car|rental cars?)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:357:\\b(?:rent a car|rental cars?)\\b"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bexpensive restaurants?\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:357:\\bexpensive restaurants?\\b"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\d",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:499",
+        "app.agent.requirements:504"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:for|on) (?:the )?trip\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:505"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bcan't\\s+go\\s+above\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:537"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:my\\s+)?(?:hotel|lodging|accommodation)\\s+budget\\s*(?:is|of|:)?\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:635"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bme and my partner\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:282"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:total|(?:for|on) (?:the )?(?:(?:whole|entire) )?trip)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:308"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:total budget|whole trip|entire trip)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:312"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bmuseums\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:museums"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bfood\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:food"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bparks\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:parks"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bhistory\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:history"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bart\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:art"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bquiet\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:quiet"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bcentral\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:central"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bbudget\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:budget"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bluxury\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:luxury"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bvegetarian\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:vegetarian"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bvegan\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:vegan"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bseafood\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:seafood"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bwalking\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:walking"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bpublic\\ transit\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:public transit"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\btaxi\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:taxi"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:don't|do not|no|not|avoid|without|never)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:351",
+        "app.agent.requirements:358"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:total|per\\s+night|under|below|at\\s+most|no\\s+more)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:636"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:food|meal|restaurant)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:745"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "budget hotels?",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:347"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:[$€£]\\s*\\d|\\b(?:USD|EUR|GBP)\\s+\\d)",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:38"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:if\\s+necessary|okay\\s+spending\\s+more|prioriti[sz]e\\b[^.!?;]{0,60}\\bover|rather\\s+(?:spend|pay)|(?:save|spend\\s+less)\\b[^.!?;]{0,60}\\bso\\b|(?:spend|pay)\\s+(?:a\\s+little\\s+)?(?:more|extra)\\b[^.!?;]{0,60}\\b(?:if|while)|(?:cheaper|simpler)\\b[^.!?;]{0,60}\\bif|value\\b[^.!?;]{0,60}\\bover)\\b|\\bstretch\\b[^.!?;]{0,40}\\bbudget\\b[^.!?;]{0,40}\\bif\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:39"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:if necessary|okay spending more|rather spend|rather pay)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:48"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?<![\\w])(?:[$€£]\\s*|(?:USD|EUR|GBP)\\s+)?(?P<value>\\d[\\d,]*)",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:51"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:budget|budgt|money|spend(?:ing)?|cost|trip|hotel|lodg\\w*|ac+om+odation|food|dining|restaurants?|transport|transit|flights?|airfare|activities?|attractions?|total)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:52"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:under|below|max(?:imum)?|cap(?:ped)?|ceiling|within|must|should|shud|cannot|can't|cant|no\\s+more|not\\s+more|cost\\s+less)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:57"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:actually|sorry|make|change|instead|use)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:62"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bnot\\s+(?:a\\s+)?strict\\s+cap\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:63"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:around|about|roughly|ideally|ideal|flexible|target|if\\s+possible)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:64"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:[$€£]\\s*\\d[\\d,]*[^.!?;]{0,40}\\b(?:hotel|place\\s+to\\s+stay|lodging|accommodation)\\b|\\b(?:hotel|place\\s+to\\s+stay|lodging|accommodation)\\b[^.!?;]{0,40}[$€£]\\s*\\d)",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:67"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:\\bhotel\\b[^.!?;]{0,30}\\b(?:around|about)\\b[^.!?;]{0,20}[$€£]\\s*\\d|\\b(?:around|about)\\b[^.!?;]{0,20}[$€£]\\s*\\d[^.!?;]{0,30}\\bhotel\\b)",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:72"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:(?:do\\s+not|don't)\\s+(?:include|need|schedule|care\\s+about)|(?:please\\s+)?exclude|avoid|without|no(?!\\s+more\\s+than))\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:77"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:zoos?|nightlife|luxury\\s+hotels?|restaurants?|museums?|parks?|seafood|casino|hotel\\s+areas?|attractions?|activities?)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:82"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:find\\s+me\\s+(?:zoos?|museums?|parks?)|i\\s+(?:like|enjoy|prefer|love)\\b|i\\s+want\\s+(?!to\\s+spend|\\d)|(?:public\\s+transit)\\s+is\\s+preferred|i'd\\s+rather\\s+stay|(?:zoos?|museums?|parks?)[^.!?;]{0,50}\\bplease|(?:quiet|downtown)\\s+hotel)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:87"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "[.!?;]",
+      "flags": 32,
+      "origins": [
+        "app.agent.semantic_coverage:266"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:trip|total)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:252"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b\\d[\\d,]*\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.semantic_coverage:214"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "-?\\s*days?\\b|\\s*stars?\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:243"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bnot\\s*$",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:244"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "[a-z0-9]+",
+      "flags": 32,
+      "origins": [
+        "app.tools.candidate_data:71"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^boston\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:boston"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^boston[\\s,.]+ma\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:boston ma"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^boston[\\s,.]+massachusetts\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:boston massachusetts"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^new[\\s,.]+york[\\s,.]+city\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:new york city"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^nyc\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:nyc"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^new[\\s,.]+york\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:new york"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^new[\\s,.]+york[\\s,.]+ny\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:new york ny"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^new[\\s,.]+york[\\s,.]+city[\\s,.]+ny\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:new york city ny"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^columbus\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:columbus"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^columbus[\\s,.]+oh\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:columbus oh"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^columbus[\\s,.]+ohio\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:columbus ohio"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^chicago\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:chicago"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^chicago[\\s,.]+il\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:chicago il"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^chicago[\\s,.]+illinois\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:chicago illinois"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^washington[\\s,.]+dc\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:washington dc",
+        "app.tools.candidate_data:100:alias:washington dc"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^washington[\\s,.]+d[\\s,.]+c\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:washington d c",
+        "app.tools.candidate_data:100:alias:washington d c"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^dc\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:dc"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^district[\\s,.]+of[\\s,.]+columbia\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:district of columbia"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^miami\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:miami"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^miami[\\s,.]+fl\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:miami fl"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^miami[\\s,.]+florida\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:miami florida"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^austin\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:austin"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^austin[\\s,.]+tx\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:austin tx"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^austin[\\s,.]+texas\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:austin texas"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^denver\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:denver"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^denver[\\s,.]+co\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:denver co"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^denver[\\s,.]+colorado\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:denver colorado"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^seattle\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:seattle"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^seattle[\\s,.]+wa\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:seattle wa"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^seattle[\\s,.]+washington\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:seattle washington"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^san[\\s,.]+francisco\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:san francisco"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^san[\\s,.]+francisco[\\s,.]+ca\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:san francisco ca"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^san[\\s,.]+francisco[\\s,.]+california\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:san francisco california"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^sf\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:sf"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^los[\\s,.]+angeles\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:los angeles"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^los[\\s,.]+angeles[\\s,.]+ca\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:los angeles ca"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^los[\\s,.]+angeles[\\s,.]+california\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:los angeles california"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^la\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:la"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^l[\\s,.]+a\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:l a"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^las[\\s,.]+vegas\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:las vegas"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^las[\\s,.]+vegas[\\s,.]+nv\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:las vegas nv"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^las[\\s,.]+vegas[\\s,.]+nevada\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:las vegas nevada"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^vegas\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:vegas"
+      ],
+      "replacements": []
+    }
+  ]
+}
