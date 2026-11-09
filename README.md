@@ -4,7 +4,7 @@ Offline Android and Desktop migration of the deterministic Python travel planner
 Frozen fixtures describe Python behavior, not real-world feasibility: prices are estimates,
 and opening hours and routes are not validated. OpenStreetMap attribution is in NOTICE.md.
 
-The project is under construction; no planner implementation is included in P1a.
+The deterministic P1b engine accepts structured requirements through `TravelEngine.runWithRequirements`. Natural-language parsing and the full travel UI are not yet implemented.
 
 ```powershell
 .\gradlew.bat :core:test
@@ -14,7 +14,7 @@ The project is under construction; no planner implementation is included in P1a.
 .\gradlew.bat :androidApp:connectedDebugAndroidTest
 ```
 
-Synchronize fixtures from the pinned Python tag with `python tools/sync_golden.py`.
+Synchronize fixtures from the pinned Python `golden-v1.1` tag with `python tools/sync_golden.py`.
 
 
 Android and Desktop startup show the snapshot and fixture candidate counts.
