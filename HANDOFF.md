@@ -193,26 +193,134 @@ Python `re` 与 Java 正则的差异必须逐条处理。建议写一个小的 `
 - 28 个 e2e fixture 改为从原始 `query` 开始跑完整流程，**28/28** 一致。
 - 对照报告中 Kotlin 与 Python 的 gold 符合率相同。
 
-### P3：Compose UI
+### P3：Compose UI（按已确认的设计稿实现）
 
-先读 Vue 前端的 `App.vue`、`components/`、`composables/useStagePlayback`、`OfflineRouteMap.vue`、`presets.ts`，理解现有信息结构和阶段播放节奏，再用 Compose 重新设计。目标是“一个像样的移动应用”，不是网页的逐像素复刻。
+设计稿已经确认（在 Claude 中完成，Codex 无法直接访问），本节就是完整的实现说明。设计稿使用 Austin 预算修复用例（`preset-repair.json`）的真实数据绘制；实现时所有内容都必须来自引擎输出，不能写死。
 
-页面与组件：
-1. **首页**：查询输入框，6 个预设场景卡片（标题、一句话说明），以及“离线运行、数据日期”提示。
-2. **执行页**：五阶段时间线（request、requirements、candidate retrieval、validation、repair/final）。引擎在 `Dispatchers.Default` 上一次算完，再按 `useStagePlayback` 的节奏逐阶段展开；提供“跳过动画”按钮。
-3. **需求卡片**：目的地、天数、人数、预算约束（含 HARD/SOFT、范围）、偏好、歧义提示。
-4. **候选卡片**：按类别分组，区分 selected 与 alternatives，显示价格、单位、标签、偏好匹配、数据来源（OSM 或 mock）。
-5. **验证与修复**：违规列表（actual、expected、excess）；修复前后的行程和总价对比。
-6. **每日行程与预算**：按天展开的活动列表，预算分类条形图，剩余预算。
-7. **离线示意图**：用 Canvas 画点和直线，并明确标注“示意图，不代表实际路线”。
-8. **澄清流程**：`needs_clarification` 时显示问题，允许用户修改查询后重新运行。
-9. **关于页**：OSM 署名与 ODbL 许可（来自 `NOTICE.md`）、快照抓取日期、能力边界（无营业时间、无路线、价格为估算、无实时数据）。
+开始前先读 Vue 前端的 `useStagePlayback`（播放节奏）、`presets.ts`（预设的真实标题和查询）、`OfflineRouteMap.vue`（坐标处理方式），只用来了解行为，不照搬网页布局。
 
-布局要求：手机竖屏为单栏；平板和 Desktop 宽屏为双栏（左侧时间线，右侧详情）。支持深色模式。
+#### P3.1 设计 token（放在 `composeApp/commonMain` 的 `theme/` 中，作为唯一来源）
+
+**颜色：浅色主题**
+
+| token | 值 | 用途 |
+|---|---|---|
+| background | `#F4F6F8` | 页面底色 |
+| surface | `#FFFFFF` | 卡片、输入框 |
+| border | `#DDE3E8` | 卡片描边 |
+| divider | `#EEF1F4` | 列表分隔线 |
+| inputBorder | `#CBD2D9` | 输入框描边、未完成阶段的空心圆点 |
+| segmentTrack | `#E4E8EC` | 分段切换器底槽 |
+| text | `#13202B` | 主文字 |
+| textMuted | `#52606D` | 次要文字、标签 |
+| primary / onPrimary | `#0F6E6E` / `#FFFFFF` | 主按钮、已完成阶段、链接 |
+| primaryContainer | `#DDEFEE` | “离线运行”标识底色 |
+| hero / onHero / onHeroMuted | `#13202B` / `#FFFFFF` / `#C5CED6` | 深色强调卡（精选预设、预算卡） |
+| heroAccent | `#8FD3C9` | 深色卡上的状态文字、酒店分类色 |
+| heroWarm | `#F2B66D` | 深色卡上的标签、餐饮分类色 |
+| error / errorContainer / onErrorContainer | `#B42318` / `#FDECEA` / `#7A1A12` | 违规、验证失败 |
+| success / successContainer / onSuccessContainer | `#1E7B4F` / `#E3F2EA` / `#15573A` | 验证通过 |
+| warning / warningContainer / onWarningContainer / warningBorder | `#B45309` / `#FFF4E5` / `#8A4B0E` / `#E2C9A6` | 修复图标、缺失字段、澄清卡 |
+| mapGround | `#EEF3F2` | 示意图底色 |
+
+**颜色：深色主题**（由你按同样的语义推导，下面是起点）：background `#0E161D`，surface `#16212B`，border `#263440`，text `#E6EBEF`，textMuted `#9AA7B2`，primary `#5CC2B5`（onPrimary `#08211F`），hero 卡用 `#1C2A35` 加 border 描边以区别于背景。error、success、warning 的 container 改用低明度底色，前景用高明度色。**要求：深色和浅色两套主题下，所有正文与背景的对比度 ≥ 4.5:1，大字（≥ 24sp）≥ 3:1**；写一个单元测试，对 token 表中所有“前景/背景”组合计算 WCAG 对比度并断言。
+
+**字体**：标题用 Space Grotesk（600/700），正文用 Inter（400/500/600），违规代码用 JetBrains Mono（500）。三种字体都是 OFL 许可，**打包进应用资源，不能运行时联网下载**；在 `NOTICE.md` 中补充字体许可。
+
+| 样式 | 字体 | 字号/字重 |
+|---|---|---|
+| displayLarge（首页标题） | Space Grotesk | 34sp / 700，字间距 -0.5 |
+| headlineHero（预算金额） | Space Grotesk | 36sp / 700（宽屏 40sp） |
+| headlineMedium（澄清问题） | Space Grotesk | 22sp / 600 |
+| titleLarge（顶栏标题） | Space Grotesk | 18sp / 600 |
+| titleMedium（区块标题） | Space Grotesk | 16–18sp / 600 |
+| bodyLarge（输入框、主要正文） | Inter | 16sp / 400 |
+| bodyMedium（列表项） | Inter | 14–15sp / 500–600 |
+| bodySmall（说明文字） | Inter | 13sp / 400 |
+| labelSmall（大写分类标签） | Inter | 11–12sp / 600，全大写，字间距 0.4–0.6 |
+| code | JetBrains Mono | 11sp / 500 |
+
+**形状与间距**：页面左右边距 16dp（正文段落 20dp）；卡片圆角 16–20dp；主按钮高 52dp、圆角 14dp；芯片为全圆角；所有可点击元素的触控区域 ≥ 44dp；卡片阴影只在首页输入卡上使用（很淡），其他卡片用 1dp 描边。
+
+#### P3.2 页面（手机，竖屏单栏）
+
+**① 首页**
+- 顶部：左侧 primaryContainer 底色的“Offline · on device”标识（带图标）；右侧“关于”图标按钮（打开 ⑥）。
+- 标题“Plan a trip”，下面一段说明文字。
+- 输入卡（白底、淡阴影）：标签“Your trip”、3 行多行输入框、主按钮“Plan trip”（右侧箭头图标）。输入为空时按钮禁用。
+- “Try a scenario”区块：预算修复预设做成 hero 深色大卡（标签 + 标题 + 一行说明），其余 5 个预设放在两列网格的白色卡片中（只显示标题和箭头）。**标题和查询用 `presets.ts` 的真实内容**；大卡的说明文字从该预设的查询中提炼（城市、天数、人数、预算），不要编造。点击预设：把查询填入输入框并直接运行。
+- 页脚：“OpenStreetMap snapshot · 12 US cities · prices are planning estimates.” 加“Data & limits”链接（打开 ⑥）。城市数从加载器读取，不要写死。
+
+**② 运行页（阶段播放）**
+- 顶栏：返回、标题（需求解析出目的地和天数后显示“Austin · 3 days”，否则显示“Planning”）、右侧“Skip”文字按钮（立即展开全部阶段）。
+- 进度条加文字“Stage 4 of 5 · Validation”。
+- 原始查询的引用卡片。
+- 垂直时间线，5 个阶段，每个阶段由圆点、连接线和内容组成。圆点状态：已完成为 primary 实心加对勾；失败为 error 实心加感叹号；通过为 success；未到达为 inputBorder 空心圆。已完成区段的连接线用 primary，其余用 border 色。
+  - Request：字符数。
+  - Requirements：芯片行显示目的地、天数、人数；预算约束芯片用 hero 深色底，例如“≤ $350 total · HARD”。偏好和歧义也做成芯片，歧义用 warning 色。
+  - Candidate retrieval：一句说明，加 4 格统计（Sights、Hotels、Food、Transit 各自的数量）；点击打开候选列表的 bottom sheet，按类别分组，区分 selected 和 alternatives，每项显示价格、单位、标签、偏好匹配、来源（OSM 或 mock）。
+  - Validation：失败时显示 errorContainer 卡片，内容为违规代码（等宽字体）和一句话“Draft costs $394.00 — $44.00 over the $350.00 cap”；通过时显示 successContainer 卡片。
+  - Repair & final：显示 not reached、eligible、passed、failed 等状态。
+- 播放：引擎在 `Dispatchers.Default` 上一次算完，再按 `useStagePlayback` 的节奏逐个展开阶段。播放完成后：有行程则自动进入 ④；needs_clarification 则进入 ⑤。点击 Validation 或 Repair 阶段可进入 ③。
+
+**③ 验证与修复**（仅在发生过修复时可进入）
+- 违规卡（errorContainer）：代码与类别；三列显示 Draft、Cap、Over 的金额，Over 用 error 色。
+- 一行说明：修复图标（warning 色）+“Repair 1 of 1 · cheapest option in each category, every day”。
+- 修复前后对比表：Day、Before、After 三列，每天一行，最后一行 Total（Before 用 error 色，After 用 success 色）。
+- “What changed”：逐条列出每天、每个类别中被替换的项目（旧项目加删除线和旧价格，新项目和新价格），由 `repair.initial_itinerary` 与最终行程逐项比较得出。同一天的三餐合并为“Meals ×3”。
+- 底部结果条：通过时用 successContainer，显示“Re-validated: $317.00 ≤ $350.00 · $33.00 left”；失败时用 errorContainer。
+
+**④ 最终方案**
+- 顶栏：返回、标题、右侧“Stages”链接（回到 ②，此时全部展开）。
+- 预算 hero 卡：状态标签（“Passed” / “Passed after 1 repair”）；有修复时右上角显示“saved $77.00”（来自 savings）；大号总价，加“of $350.00 · $33.00 left”；按分类堆叠的进度条，**总长代表预算上限**，空白部分即剩余预算；图例显示各分类金额，金额为 0 的分类只显示文字、不画色块。没有预算上限时，进度条总长代表总价，并且不显示“left”。
+- 离线示意图卡（见 P3.4）。
+- 分段切换器：Day 1 · $135 / Day 2 · $135 / Day 3 · $47，天数多于 3 天时改为可横向滚动的标签行。
+- 当天活动列表：左列为大写分类标签（Sight、Breakfast、Lunch、Dinner、Transit、Hotel），中间为名称，右侧为金额。餐次从活动名称的括号中解析。
+- 页脚：引擎返回的 warnings 原文。
+- **修复失败的状态**（设计稿未画，按同一风格实现）：hero 卡改为 errorContainer 风格，标题为“Couldn't fit the budget”，显示触发的违规和初稿总价，提供“Edit request”按钮返回首页并保留查询。具体字段以 `repair-failure.json` 为准。
+
+**⑤ 需要澄清**
+- 顶栏标题为已解析出的目的地（没有则显示“Plan a trip”）。
+- 查询引用卡。
+- 已解析字段（success 色对勾）和缺失字段（warning 色，标注“missing”），来自 `missing_fields`。
+- 澄清卡（warningContainer）：标签“The agent needs one more detail”，`clarification_question` 原文用 headlineMedium 显示，下方是预填原查询的输入框（warningBorder 描边）和“Run again”主按钮。
+- 页脚：“Nothing was planned or priced. When a required detail is missing, the agent asks instead of guessing.”
+
+**⑥ 关于与数据**（设计稿未画，按同一风格实现）
+- OSM 署名与 ODbL 许可（来自 `NOTICE.md`）、每个快照的抓取日期（从快照元数据读取）、字体许可。
+- 能力边界清单：没有营业时间、没有路线、价格是规划估算、没有实时数据、修复最多一次。
+- 一致性说明：一句话介绍“与 Python 参考实现逐项对照验证”，加上测试通过数（可以写成构建时生成的常量）。
+- 版本号和源 golden tag。
+
+#### P3.3 宽屏（≥ 840dp，平板横屏和 Desktop）
+
+- 顶部一行：应用名“Travel Agent”、单行查询输入框（自适应宽度）、“Plan trip”按钮。
+- 下方左右两栏：左栏（约 300–360dp）为白色卡片中的紧凑阶段列表（编号圆点、阶段名、一行详情）；右栏为预算 hero 卡（总价，加 Hotel、Food、Sights、Left 四格），三天行程并排为三张卡片（超过 3 天时网格自动换行），以及数据说明。
+- 600–840dp 使用单栏布局，左右边距加大到 24dp，内容最大宽度 640dp。
+- 点击左栏阶段时，右栏切换到对应详情（候选、修复对比等）。
+
+#### P3.4 离线示意图
+
+- 用 Compose Canvas 实现。投影：x = 经度 × cos(平均纬度)，y = −纬度，然后等比缩放到画布内，四周留 24dp 边距，不能拉伸变形。
+- 只画有坐标的地点（mock 交通没有坐标，跳过）。同一地点多次出现时只画一次。
+- 点的样式：景点为白底 text 色描边；酒店为 primary 实心；餐饮为白底 warning 色描边。按当天的活动顺序用 primary 色虚线连接。
+- 标签避免重叠：放不下时只保留圆点，点击后显示名称。
+- 卡片下方固定显示说明：“Sketch from snapshot coordinates — lines are not routes”。
+- 图形需要整体的 contentDescription，列出地点名称。
+
+#### P3.5 工程要求
+
+- 状态管理：一个 `PlanViewModel`（或同等结构），状态为 `Idle`、`Running(stageIndex)`、`Done(result)`、`NeedsClarification`；同一时间只运行一次规划，运行中再次提交时先取消上一次。
+- 导航：手机端为 Home → Run → Result / Clarify，Run 和 Result 都能进入 Repair；Android 返回键行为正确。
+- **Android manifest 不能声明 `INTERNET` 权限**，这也是“完全离线”的证明，写进 README。
+- 无障碍：图标按钮有 contentDescription；阶段时间线的读屏顺序正确；系统字体放大到 1.3 倍时不截断、不重叠。
+- 金额显示统一走 `MoneyFormatting`。
+- 文字暂时只做英文，但全部放进字符串资源，方便以后加中文。
 
 **验收**
-- 6 个预设在 Android 模拟器和 Desktop 上都能完整运行，结果与对应 e2e fixture 一致。
-- 每个页面截图存到 `docs/screenshots/`，汇报时附上。
+- 6 个预设、`clarification.json` 和 `repair-failure.json` 对应的查询，在 iQOO 15 和 Desktop 上都能完整跑通，界面显示的数值与对应 fixture 一致（写 Compose UI 测试，至少覆盖修复成功、修复失败、澄清三个流程，断言关键金额文字）。
+- 截图存到 `docs/screenshots/`：手机 ①–⑥ 各一张（浅色），④ 再加一张深色；宽屏 Desktop 一张。截图从真机或 Desktop 应用实际截取，不要用预览渲染代替。
+- 对比度单元测试通过；manifest 中没有 `INTERNET` 权限。
 
 ### P4：Android 一致性、发布与文档
 
