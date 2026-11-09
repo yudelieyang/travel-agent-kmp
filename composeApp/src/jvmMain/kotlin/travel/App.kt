@@ -70,7 +70,7 @@ private fun presets(): List<Preset> {
         BoxWithConstraints(Modifier.fillMaxSize().background(colors.background).statusBarsPadding().navigationBarsPadding(), contentAlignment = Alignment.TopCenter) {
             val wide = maxWidth >= 840.dp
             val medium = maxWidth >= 600.dp && !wide
-            if (wide && screen in listOf("home", "run", "result")) {
+            if (wide && screen in listOf("home", "run", "result") && !(screen == "result" && result?.result?.status == "error")) {
                 WidePage(cities, query, { query = it }, ::run, result, stage, running, failed, onAbout = { screen = "about" }, onRepair = { repairOrigin = screen; screen = "repair" }, onEdit = { result = null; screen = "home" })
             } else Box(if (medium) Modifier.fillMaxWidth().widthIn(max = 640.dp).padding(horizontal = 24.dp) else Modifier.fillMaxSize()) {
             key(screen) {
@@ -79,6 +79,7 @@ private fun presets(): List<Preset> {
             else if (result == null) Text(stringResource(Res.string.planning), Modifier.padding(24.dp), color = colors.text)
             else if (screen == "repair") RepairPage(result!!, onBack = { screen = repairOrigin })
             else if (screen == "clarify") ClarificationPage(result!!, onBack = { screen = "run" }, onRun = ::run)
+            else if (screen == "result" && result!!.result.status == "error") FailurePage(result!!, onBack = { screen = "run" }, onRun = ::run)
             else if (screen == "result") ResultPage(result!!, onBack = { screen = "run" }, onEdit = { screen = "home" }, onStages = { stage = 4; screen = "run" }, onRepair = { repairOrigin = "result"; screen = "repair" })
             else RunPage(result!!, stage, onBack = { job?.cancel(); screen = "home" }, onSkip = { job?.cancel(); stage = 4; screen = if (result?.result?.status == "needs_clarification") "clarify" else "result" }, onRepair = { job?.cancel(); repairOrigin = "run"; screen = "repair" })
             }
