@@ -113,9 +113,15 @@ class RequirementsParser {
             if (field != null && preference.value !in values.getValue(field)) values.getValue(field).add(preference.value)
             if (preference.category == "FOOD" && "food" !in values.getValue("interests")) values.getValue("interests").add("food")
         }
-        val canonicalTotal = extracted.first.firstOrNull { it.scope == "TOTAL_TRIP" }
+        val canonical = extracted.first.toMutableList()
+        for (constraint in canonical) require(constraint.strength == "HARD") { "Canonical budget constraints must be hard constraints" }
+        require(canonical.map { it.scope }.distinct().size == canonical.size) { "Only one canonical budget constraint is allowed per scope" }
+        if (canonical.isEmpty() && budget != null && scope == "TOTAL_TRIP" && strength == "HARD") {
+            canonical.add(BudgetConstraint(1.0, currency, "LEGACY_PROJECTION", "BUDGET", "LTE", "TOTAL_TRIP", null, "HARD", budget))
+        }
+        val canonicalTotal = canonical.firstOrNull { it.scope == "TOTAL_TRIP" }
         if (canonicalTotal != null) { budget = canonicalTotal.value; scope = "TOTAL_TRIP"; strength = "HARD"; currency = canonicalTotal.currency }
-        val v2 = RequirementsV2(extracted.second, extracted.first, objective?.let(::listOf) ?: emptyList(), specifics)
+        val v2 = RequirementsV2(extracted.second, canonical, objective?.let(::listOf) ?: emptyList(), specifics)
         return TravelRequirements(budget, strength, scope, constraints.distinct(), currency, normalizePlace(destination), duration, endDate?.toString(),
             values.getValue("food_preferences"), values.getValue("hotel_preferences"), values.getValue("interests"), objective, normalizePlace(origin), v2, specifics,
             startDate?.toString(), values.getValue("transport_preferences"), travelers)
