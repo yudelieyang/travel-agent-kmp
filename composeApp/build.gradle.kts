@@ -10,7 +10,7 @@ kotlin {
     jvmToolchain(17)
     sourceSets {
         commonMain.dependencies { implementation(compose.runtime); implementation(compose.foundation); implementation(compose.material3) }
-        val desktopMain by getting { dependencies { implementation(compose.desktop.currentOs) } }
+        val desktopMain by getting { dependencies { implementation(compose.desktop.currentOs); implementation(project(":core")) } }
         val androidMain by getting { dependencies { implementation("androidx.activity:activity-compose:1.13.0") } }
     }
 }

@@ -10,15 +10,12 @@ The project is under construction; no planner implementation is included in P1a.
 .\gradlew.bat :core:test
 .\gradlew.bat :core:test -Pfixture=SEM200-001 --tests "travel.GoldenTest.fixtures"
 .\gradlew.bat :composeApp:run
-.\gradlew.bat :composeApp:installDebug
-.\gradlew.bat :composeApp:connectedAndroidTest
+.\gradlew.bat :androidApp:installDebug
+.\gradlew.bat :androidApp:connectedDebugAndroidTest
 ```
 
 Synchronize fixtures from the pinned Python tag with `python tools/sync_golden.py`.
 
-## P1a status
 
-The current `composeApp` is a multiplatform Android library, not an Android application.
-Consequently `installDebug` and Android device-test commands above are not yet available.
-Desktop compilation and JVM fixture round-trip tests have been exercised; the Android app
-packaging and complete snapshot validation remain to be finished.
+Android and Desktop startup show the snapshot and fixture candidate counts.
+Android min SDK is 26, required by the current java.time-based snapshot validator.
