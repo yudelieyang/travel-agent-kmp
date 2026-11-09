@@ -1,0 +1,5368 @@
+[
+  {
+    "city": "Boston",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "bos-a1",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "attractions",
+        "name": "Isabella Stewart Gardner Museum",
+        "price": 20.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "25 Evans Way, Boston, MA 02115",
+        "latitude": 42.3382381,
+        "longitude": -71.0990448,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/29650851",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "bos-a2",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "attractions",
+        "name": "New England Aquarium",
+        "price": 15.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "aquarium"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1 Central Wharf, Boston, MA 02110",
+        "latitude": 42.3591988,
+        "longitude": -71.0493558,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/29660091",
+        "provider_category_ids": [
+          "tourism=aquarium"
+        ],
+        "provider_category_labels": [
+          "Aquarium"
+        ],
+        "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "bos-a3",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "attractions",
+        "name": "Boston Public Garden",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "parks"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "4 Charles Street, Boston, MA 02116",
+        "latitude": 42.3540568,
+        "longitude": -71.069998,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/23787885",
+        "provider_category_ids": [
+          "leisure=park"
+        ],
+        "provider_category_labels": [
+          "Park"
+        ],
+        "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Boston",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "bos-h1",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "hotel",
+        "name": "Boston Harbor Hotel",
+        "price": 100.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "central",
+          "budget"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "70 Rowes Wharf, Boston, MA 02110",
+        "latitude": 42.3566602,
+        "longitude": -71.0503163,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/1325873780",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "bos-h2",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "hotel",
+        "name": "The Eliot Hotel",
+        "price": 130.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "370 Commonwealth Avenue, Boston, MA 02115",
+        "latitude": 42.3486873,
+        "longitude": -71.0887471,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/2350330785",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "bos-h3",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "hotel",
+        "name": "Four Seasons Hotel Boston",
+        "price": 220.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "central",
+          "luxury"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "200 Boylston Street, Boston, MA 02116",
+        "latitude": 42.3520527,
+        "longitude": -71.0683352,
+        "provider": "openstreetmap",
+        "provider_place_id": "relation/63916",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Boston",
+    "category": "food",
+    "options": [
+      {
+        "id": "bos-f1",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "food",
+        "name": "Aceituna Grill",
+        "price": 16.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian",
+          "vegan"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "267 Newbury Street, Boston, MA 02116",
+        "latitude": 42.3495341,
+        "longitude": -71.0834556,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/12663666560",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=mediterranean",
+          "diet:vegetarian=yes",
+          "diet:vegan=yes"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Mediterranean",
+          "Vegetarian options",
+          "Vegan options"
+        ],
+        "snapshot_version": "osm_boston_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "bos-f2",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "food",
+        "name": "India Quality",
+        "price": 20.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "484 Commonwealth Avenue, Boston, MA 02215",
+        "latitude": 42.3485475,
+        "longitude": -71.0942315,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/7775144117",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=indian",
+          "diet:vegetarian=yes",
+          "diet:vegan=yes"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Indian",
+          "Vegetarian options",
+          "Vegan options"
+        ],
+        "snapshot_version": "osm_boston_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "bos-f3",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "food",
+        "name": "Atlantic Fish",
+        "price": 30.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "seafood"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "761 Boylston Street, Boston, MA 02116",
+        "latitude": 42.3492931,
+        "longitude": -71.0811812,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/4418932490",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=seafood"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Seafood"
+        ],
+        "snapshot_version": "osm_boston_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Boston",
+    "category": "transport",
+    "options": [
+      {
+        "id": "bos-t1",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "bos-t2",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "transport",
+        "name": "Mock Transit Day Allowance",
+        "price": 10.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.4,
+        "review_count": 900,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "bos-t3",
+        "destination": "Boston",
+        "city": "Boston",
+        "state": "MA",
+        "category": "transport",
+        "name": "Mock Taxi Day Allowance",
+        "price": 45.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.1,
+        "review_count": 330,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  },
+  {
+    "city": "New York City",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "nyc-a1",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "attractions",
+        "name": "9/11 Memorial & Museum",
+        "price": 25.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "art"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "180 Greenwich Street, New York NY 10007",
+        "latitude": 40.711456,
+        "longitude": -74.0127418,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/278033604",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_new_york_city_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:49:46.679364Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "nyc-a2",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "attractions",
+        "name": "American Museum of Natural History",
+        "price": 30.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "history"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "200 Central Park West, New York NY 10024",
+        "latitude": 40.7810986,
+        "longitude": -73.974211,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/388436810",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_new_york_city_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:49:46.679364Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "nyc-a3",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "attractions",
+        "name": "Asia Society",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "parks"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "725 Park Avenue, New York NY 10021",
+        "latitude": 40.7698384,
+        "longitude": -73.9642913,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/266887857",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_new_york_city_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:49:46.679364Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "New York City",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "nyc-h1",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "hotel",
+        "name": "Arlo Soho",
+        "price": 120.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "central",
+          "budget"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "231 Hudson Street, New York NY 10013",
+        "latitude": 40.7244314,
+        "longitude": -74.0082488,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/320487241",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_new_york_city_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:51:37.765105Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "nyc-h2",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "hotel",
+        "name": "Arlo Williamsburg",
+        "price": 150.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "96 Wythe Avenue, Brooklyn NY 11249",
+        "latitude": 40.7216247,
+        "longitude": -73.9588729,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/280122409",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_new_york_city_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:51:37.765105Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "nyc-h3",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "hotel",
+        "name": "EVEN Hotel",
+        "price": 250.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "central",
+          "luxury"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "46 Nevins Street, Brooklyn NY 11217",
+        "latitude": 40.6876437,
+        "longitude": -73.9818254,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/575449026",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_new_york_city_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:51:37.765105Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "New York City",
+    "category": "food",
+    "options": [
+      {
+        "id": "nyc-f1",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "food",
+        "name": "Anixi Mediterranean Vegan Restaurant",
+        "price": 18.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian",
+          "vegan"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "290 8th Avenue, New York NY 10001",
+        "latitude": 40.7462748,
+        "longitude": -73.9975223,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/11088424818",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=mediterranean",
+          "diet:vegetarian=yes",
+          "diet:vegan=only"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Mediterranean",
+          "Vegetarian options",
+          "Vegan only"
+        ],
+        "snapshot_version": "osm_new_york_city_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:53:05.592174Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "nyc-f2",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "food",
+        "name": "Aquavit",
+        "price": 22.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "65 East 55th Street, New York NY 10022",
+        "latitude": 40.7607818,
+        "longitude": -73.9721848,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/3213784371",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=scandinavian"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Scandinavian"
+        ],
+        "snapshot_version": "osm_new_york_city_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:53:05.592174Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "nyc-f3",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "food",
+        "name": "Atlantic Grill",
+        "price": 35.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "seafood"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "49 West 64th Street, New York NY 10023",
+        "latitude": 40.7720849,
+        "longitude": -73.9813978,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/2744875804",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=seafood"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Seafood"
+        ],
+        "snapshot_version": "osm_new_york_city_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:53:05.592174Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "New York City",
+    "category": "transport",
+    "options": [
+      {
+        "id": "nyc-t1",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "nyc-t2",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "transport",
+        "name": "Mock Transit Day Allowance",
+        "price": 12.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.5,
+        "review_count": 2400,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "nyc-t3",
+        "destination": "New York City",
+        "city": "New York City",
+        "state": "NY",
+        "category": "transport",
+        "name": "Mock Taxi Day Allowance",
+        "price": 50.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.0,
+        "review_count": 710,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  },
+  {
+    "city": "Columbus",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "cmh-a1",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "attractions",
+        "name": "COSI",
+        "price": 22.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "zoo",
+          "animals",
+          "family"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "333 West Broad Street, Columbus, OH 43215",
+        "latitude": 39.959665,
+        "longitude": -83.006595,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/32873150",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_columbus_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:20:11.514085Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-a2",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "attractions",
+        "name": "Columbus Museum of Art",
+        "price": 28.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "zoo",
+          "animals",
+          "outdoors"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "480 East Broad Street, Columbus, OH 43215",
+        "latitude": 39.9644285,
+        "longitude": -82.987752,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/293476179",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_columbus_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:20:11.514085Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-a3",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "attractions",
+        "name": "Ohio History Center",
+        "price": 18.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "zoo",
+          "animals",
+          "family"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "800 E. 17th Avenue, Columbus, OH 43211",
+        "latitude": 40.0050452,
+        "longitude": -82.9876307,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/835107792",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_columbus_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:20:11.514085Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-a4",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "attractions",
+        "name": "National Veterans Memorial and Museum",
+        "price": 20.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "zoo",
+          "science",
+          "museums"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "300 West Broad Street, Columbus, OH 43215",
+        "latitude": 39.9619805,
+        "longitude": -83.0080526,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/570391114",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_columbus_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:20:11.514085Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-a5",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "attractions",
+        "name": "Scioto Audubon Metro Park",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "zoo",
+          "parks",
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "400 Whittier Street, Columbus, OH",
+        "latitude": 39.9470771,
+        "longitude": -83.0065835,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/224492486",
+        "provider_category_ids": [
+          "leisure=park"
+        ],
+        "provider_category_labels": [
+          "Park"
+        ],
+        "snapshot_version": "osm_columbus_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:20:11.514085Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Columbus",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "cmh-h1",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "hotel",
+        "name": "Days Inn by Wyndham Columbus Fairgrounds",
+        "price": 82.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "budget",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1700 Clara Avenue, Columbus, OH 43211",
+        "latitude": 39.9998016,
+        "longitude": -82.9857381,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/717324868",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_columbus_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:22:28.387578Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-h2",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "hotel",
+        "name": "Holiday Inn Express",
+        "price": 105.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet",
+          "neighborhood"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "650 South High Street, Columbus, OH 43215",
+        "latitude": 39.9488541,
+        "longitude": -82.9973137,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/474605329",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_columbus_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:22:28.387578Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-h3",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "hotel",
+        "name": "Hampton Inn & Suites Columbus Downtown",
+        "price": 135.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "501 North High Street, Columbus, OH 43215",
+        "latitude": 39.9724764,
+        "longitude": -83.002876,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/4685223268",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_columbus_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:22:28.387578Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-h4",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "hotel",
+        "name": "The Westin Great Southern Columbus",
+        "price": 190.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "luxury",
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "310 South High Street, Columbus, OH 43215",
+        "latitude": 39.9558079,
+        "longitude": -82.999124,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/1376126720",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_columbus_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:22:28.387578Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Columbus",
+    "category": "food",
+    "options": [
+      {
+        "id": "cmh-f1",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "food",
+        "name": "Jerky's Jamaican Grill",
+        "price": 14.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "fried chicken",
+          "comfort food"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1247 North High Street, Columbus, OH 43201",
+        "latitude": 39.9878053,
+        "longitude": -83.0058345,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/8343623182",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=jamaican",
+          "cuisine=caribbean",
+          "cuisine=african",
+          "cuisine=american",
+          "cuisine=pasta",
+          "cuisine=chicken",
+          "cuisine=fried_chicken",
+          "cuisine=curry",
+          "cuisine=jerk",
+          "cuisine=jerk_chicken",
+          "cuisine=curry_goat"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Jamaican",
+          "Cuisine: Caribbean",
+          "Cuisine: African",
+          "Cuisine: American",
+          "Cuisine: Pasta",
+          "Cuisine: Chicken",
+          "Cuisine: Fried Chicken",
+          "Cuisine: Curry",
+          "Cuisine: Jerk",
+          "Cuisine: Jerk Chicken",
+          "Cuisine: Curry Goat"
+        ],
+        "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-f2",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "food",
+        "name": "Feed Me! Sandwich Kings!",
+        "price": 17.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "fried chicken",
+          "market"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1053 East Main Street, Columbus, OH 43205",
+        "latitude": 39.957716,
+        "longitude": -82.9711763,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/8481484417",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=sandwich",
+          "cuisine=burger",
+          "cuisine=chicken",
+          "cuisine=american",
+          "cuisine=fish_and_chips",
+          "cuisine=drinks",
+          "cuisine=coffee_shop",
+          "cuisine=fries"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Sandwich",
+          "Cuisine: Burger",
+          "Cuisine: Chicken",
+          "Cuisine: American",
+          "Cuisine: Fish and Chips",
+          "Cuisine: Drinks",
+          "Cuisine: Coffee Shop",
+          "Cuisine: Fries"
+        ],
+        "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-f3",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "food",
+        "name": "The Crispy Coop",
+        "price": 20.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "fried chicken",
+          "casual"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1717 Northwest Boulevard",
+        "latitude": 39.9932641,
+        "longitude": -83.0421042,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/8561182617",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=chicken",
+          "cuisine=american"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Chicken",
+          "Cuisine: American"
+        ],
+        "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-f4",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "food",
+        "name": "CM Chicken",
+        "price": 18.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "fried chicken",
+          "casual"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1132 West Henderson Road, Columbus, OH 43220",
+        "latitude": 40.0535621,
+        "longitude": -83.0506175,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/9993723530",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=korean",
+          "cuisine=chicken"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Korean",
+          "Cuisine: Chicken"
+        ],
+        "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-f5",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "food",
+        "name": "OX-B's",
+        "price": 26.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "fried chicken",
+          "local"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "7370P Sawmill Road, Columbus, OH 43235",
+        "latitude": 40.1162563,
+        "longitude": -83.090071,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/14093010165",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=chicken"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Chicken"
+        ],
+        "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "cmh-f6",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "food",
+        "name": "BonChon Chicken",
+        "price": 16.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "fried chicken",
+          "casual"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "2973 North High Street, Columbus, OH 43202",
+        "latitude": 40.0226892,
+        "longitude": -83.0141229,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/512159964",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=burger",
+          "cuisine=chicken"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Burger",
+          "Cuisine: Chicken"
+        ],
+        "snapshot_version": "osm_columbus_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:22:39.133980Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Columbus",
+    "category": "transport",
+    "options": [
+      {
+        "id": "cmh-t1",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "cmh-t2",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "transport",
+        "name": "Mock Bus Day Allowance",
+        "price": 8.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.1,
+        "review_count": 410,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "cmh-t3",
+        "destination": "Columbus",
+        "city": "Columbus",
+        "state": "OH",
+        "category": "transport",
+        "name": "Mock Rideshare Day Allowance",
+        "price": 38.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.2,
+        "review_count": 280,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  },
+  {
+    "city": "Chicago",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "chi-a1",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "attractions",
+        "name": "American Writers Museum",
+        "price": 24.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "art"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "180 North Michigan Avenue, Chicago IL 60601",
+        "latitude": 41.8855608,
+        "longitude": -87.6249909,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/5169949885",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_chicago_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:53:51.367411Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "chi-a2",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "attractions",
+        "name": "A. Philip Randolph Pullman Porter Museum",
+        "price": 18.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "history"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "10406 South Maryland Avenue, Chicago IL 60628",
+        "latitude": 41.7053741,
+        "longitude": -87.6030693,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/210698577",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_chicago_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:53:51.367411Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "chi-a3",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "attractions",
+        "name": "Balzekas Museum of Lithuanian Culture",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "parks",
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "6500 South Pulaski Road, Chicago IL 60629",
+        "latitude": 41.7746301,
+        "longitude": -87.7229824,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/163573566",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_chicago_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T15:53:51.367411Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Chicago",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "chi-h1",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "hotel",
+        "name": "Hotel Riu Plaza Chicago",
+        "price": 95.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "budget",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "150 East Ontario Street, Chicago IL 60611",
+        "latitude": 41.8935944,
+        "longitude": -87.6232845,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/401244510",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_chicago_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:37:50.069047Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "chi-h2",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "hotel",
+        "name": "Hyatt Regency Chicago",
+        "price": 135.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "151 East Wacker Drive, Chicago IL 60601",
+        "latitude": 41.8874924,
+        "longitude": -87.6222342,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/235920251",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_chicago_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:37:50.069047Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "chi-h3",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "hotel",
+        "name": "London House Chicago",
+        "price": 225.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "luxury",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "85 East Wacker Drive, Chicago IL 60601",
+        "latitude": 41.8877548,
+        "longitude": -87.625305,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/330535225",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_chicago_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:37:50.069047Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Chicago",
+    "category": "food",
+    "options": [
+      {
+        "id": "chi-f1",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "food",
+        "name": "Alinea",
+        "price": 19.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "pizza",
+          "local"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1723 North Halsted Street, Chicago IL 60614",
+        "latitude": 41.9134372,
+        "longitude": -87.648199,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/3502294529",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=fine_dining"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Fine Dining"
+        ],
+        "snapshot_version": "osm_chicago_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:39:57.005646Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "chi-f2",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "food",
+        "name": "Calumet Fisheries",
+        "price": 17.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian",
+          "vegan"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "3259 East 95th Street, Chicago IL 60617",
+        "latitude": 41.722641,
+        "longitude": -87.5440215,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/211352838",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=seafood"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Seafood"
+        ],
+        "snapshot_version": "osm_chicago_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:39:57.005646Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "chi-f3",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "food",
+        "name": "Frontera Grill",
+        "price": 31.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "seafood"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "445 North Clark Street, Chicago IL 60654",
+        "latitude": 41.8905369,
+        "longitude": -87.6309213,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/3575225597",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=mexican"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Mexican"
+        ],
+        "snapshot_version": "osm_chicago_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:39:57.005646Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Chicago",
+    "category": "transport",
+    "options": [
+      {
+        "id": "chi-t1",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "chi-t2",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "transport",
+        "name": "Mock Rail Day Allowance",
+        "price": 10.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.4,
+        "review_count": 1500,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "chi-t3",
+        "destination": "Chicago",
+        "city": "Chicago",
+        "state": "IL",
+        "category": "transport",
+        "name": "Mock Taxi Day Allowance",
+        "price": 44.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.0,
+        "review_count": 390,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  },
+  {
+    "city": "Washington DC",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "wdc-a1",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "attractions",
+        "name": "America's Islamic Heritage Museum",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "history"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "2315 Martin Luther King Junior Avenue Southeast, Washington DC 20020",
+        "latitude": 38.8632003,
+        "longitude": -76.9918493,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/3688609913",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_washington_dc_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:41:30.641736Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "wdc-a2",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "attractions",
+        "name": "Arts and Industries Building",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "art"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "900 Jefferson Drive Southwest, Washington DC 20560",
+        "latitude": 38.8881834,
+        "longitude": -77.0244785,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/42341486",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_washington_dc_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:41:30.641736Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "wdc-a3",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "attractions",
+        "name": "DAR Museum",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "parks",
+          "history",
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1776 D Street Northwest, Washington DC 20006",
+        "latitude": 38.8939474,
+        "longitude": -77.0399678,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/4806102794",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_washington_dc_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:41:30.641736Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Washington DC",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "wdc-h1",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "hotel",
+        "name": "Conrad Hotel Washington DC",
+        "price": 110.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "budget",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "950 New York Avenue Northwest, Washington DC 20001",
+        "latitude": 38.9012767,
+        "longitude": -77.0253663,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/740826352",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_washington_dc_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:43:55.938690Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "wdc-h2",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "hotel",
+        "name": "Courtyard Washington, DC Dupont Circle",
+        "price": 155.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1733 N Street Northwest, Washington DC 20036",
+        "latitude": 38.9074198,
+        "longitude": -77.0397084,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/55327039",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_washington_dc_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:43:55.938690Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "wdc-h3",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "hotel",
+        "name": "Grand Hyatt Washington",
+        "price": 240.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "luxury",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1000 H Street Northwest, Washington DC 20001",
+        "latitude": 38.8993407,
+        "longitude": -77.0264883,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/48041504",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_washington_dc_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:43:55.938690Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Washington DC",
+    "category": "food",
+    "options": [
+      {
+        "id": "wdc-f1",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "food",
+        "name": "Bistrot du Coin",
+        "price": 18.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian",
+          "vegan"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1738 Connecticut Avenue Northwest, Washington DC 20009-1103",
+        "latitude": 38.9137931,
+        "longitude": -77.046129,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/3261823930",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=french"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: French"
+        ],
+        "snapshot_version": "osm_washington_dc_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:44:10.974804Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "wdc-f2",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "food",
+        "name": "Blue Duck Tavern",
+        "price": 24.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "grilled",
+          "local"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1201 24th Street Northwest, Washington DC 20037",
+        "latitude": 38.9055325,
+        "longitude": -77.0511634,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/3832550822",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=american"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: American"
+        ],
+        "snapshot_version": "osm_washington_dc_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:44:10.974804Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "wdc-f3",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "food",
+        "name": "Bresca",
+        "price": 33.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "seafood"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1906 14th Street Northwest, Washington DC 20009",
+        "latitude": 38.9157574,
+        "longitude": -77.0321871,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/6299710951",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=french"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: French"
+        ],
+        "snapshot_version": "osm_washington_dc_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:44:10.974804Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Washington DC",
+    "category": "transport",
+    "options": [
+      {
+        "id": "wdc-t1",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "wdc-t2",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "transport",
+        "name": "Mock Metro Day Allowance",
+        "price": 11.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.5,
+        "review_count": 1700,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "wdc-t3",
+        "destination": "Washington DC",
+        "city": "Washington DC",
+        "state": "DC",
+        "category": "transport",
+        "name": "Mock Taxi Day Allowance",
+        "price": 46.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.0,
+        "review_count": 420,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  },
+  {
+    "city": "Miami",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "mia-a1",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "attractions",
+        "name": "HistoryMiami Museum",
+        "price": 23.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "art"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "101 West Flagler Street, Miami FL 33130",
+        "latitude": 25.7745642,
+        "longitude": -80.1965921,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/648249520",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_miami_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:48:26.525766Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "mia-a2",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "attractions",
+        "name": "Patricia and Phillip Frost Museum of Science",
+        "price": 16.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "history"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1101 Biscayne Boulevard, Miami FL 33132",
+        "latitude": 25.785299,
+        "longitude": -80.1877391,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/319426548",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_miami_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:48:26.525766Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "mia-a3",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "attractions",
+        "name": "Pérez Art Museum Miami",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "parks",
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1103 Biscayne Boulevard, Miami FL 33132",
+        "latitude": 25.7860342,
+        "longitude": -80.1863239,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/484587327",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_miami_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:48:26.525766Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Miami",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "mia-h1",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "hotel",
+        "name": "Doubletree by Hilton Grand Hotel Biscayne Bay",
+        "price": 105.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "budget",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1717 North Bayshore Drive, Miami FL 33132-1180",
+        "latitude": 25.7915535,
+        "longitude": -80.1862338,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/468023519",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_miami_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:49:27.691559Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "mia-h2",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "hotel",
+        "name": "Eurostars Langford",
+        "price": 145.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "121 Southeast 1st Street, Miami FL 33131",
+        "latitude": 25.7736361,
+        "longitude": -80.1914075,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/467892170",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_miami_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:49:27.691559Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "mia-h3",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "hotel",
+        "name": "Four Seasons Hotel Miami",
+        "price": 260.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "luxury",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1435 Brickell Avenue, Miami FL 33131",
+        "latitude": 25.7589918,
+        "longitude": -80.1920516,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/300241285",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_miami_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:49:27.691559Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Miami",
+    "category": "food",
+    "options": [
+      {
+        "id": "mia-f1",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "food",
+        "name": "Versailles Restaurant",
+        "price": 16.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "cuban",
+          "local"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "3555 Southwest 8th Street, Miami FL 33135",
+        "latitude": 25.7649886,
+        "longitude": -80.2527677,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/1576341770",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=cuban",
+          "cuisine=latin_american",
+          "cuisine=sandwich"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Cuban",
+          "Cuisine: Latin American",
+          "Cuisine: Sandwich"
+        ],
+        "snapshot_version": "osm_miami_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:53:44.854681Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "mia-f2",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "food",
+        "name": "305 Pizza",
+        "price": 19.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian",
+          "vegan"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "151 Northwest 24th Street, Miami FL 33127",
+        "latitude": 25.7999652,
+        "longitude": -80.1981994,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/8713382843",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=pizza"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Pizza"
+        ],
+        "snapshot_version": "osm_miami_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:53:44.854681Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "mia-f3",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "food",
+        "name": "Amazonico",
+        "price": 34.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "seafood"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "800 Brickell Avenue, Miami FL 33131",
+        "latitude": 25.7660427,
+        "longitude": -80.1911693,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/13461562301",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=international"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: International"
+        ],
+        "snapshot_version": "osm_miami_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:53:44.854681Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Miami",
+    "category": "transport",
+    "options": [
+      {
+        "id": "mia-t1",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "mia-t2",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "transport",
+        "name": "Mock Transit Day Allowance",
+        "price": 9.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.1,
+        "review_count": 620,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "mia-t3",
+        "destination": "Miami",
+        "city": "Miami",
+        "state": "FL",
+        "category": "transport",
+        "name": "Mock Taxi Day Allowance",
+        "price": 48.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.0,
+        "review_count": 350,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  },
+  {
+    "city": "Austin",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "aus-a1",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "attractions",
+        "name": "Blanton Museum of Art",
+        "price": 19.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "art"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "200 East Martin Luther King Jr Boulevard, Austin, TX 78705",
+        "latitude": 30.2809842,
+        "longitude": -97.7374171,
+        "provider": "openstreetmap",
+        "provider_place_id": "relation/20972967",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_austin_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T14:53:48.053870Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "aus-a2",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "attractions",
+        "name": "Texas Music Museum",
+        "price": 17.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "history",
+          "music"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1011 San Marcos Street, TX",
+        "latitude": 30.2694425,
+        "longitude": -97.7306205,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/379207889",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_austin_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T14:53:48.053870Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "aus-a3",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "attractions",
+        "name": "Zilker Park",
+        "price": 5.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "parks",
+          "outdoors"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "Barton Springs Road, AUSTIN, TX 78746",
+        "latitude": 30.2676819,
+        "longitude": -97.7666085,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/946120954",
+        "provider_category_ids": [
+          "leisure=park"
+        ],
+        "provider_category_labels": [
+          "Park"
+        ],
+        "snapshot_version": "osm_austin_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T14:53:48.053870Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Austin",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "aus-h1",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "hotel",
+        "name": "Hilton Austin",
+        "price": 88.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "budget",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "500 East 4th Street, Austin, TX 78701",
+        "latitude": 30.2652582,
+        "longitude": -97.73806,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/12577833089",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_austin_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T14:54:27.873422Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "aus-h2",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "hotel",
+        "name": "Hyatt Regency Austin",
+        "price": 120.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "208 Barton Springs Road, Austin, TX 78704",
+        "latitude": 30.2607066,
+        "longitude": -97.7467623,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/104137285",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_austin_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T14:54:27.873422Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "aus-h3",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "hotel",
+        "name": "Four Seasons Hotel Austin",
+        "price": 205.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "luxury",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "98 San Jacinto Blvd, Austin, TX 78701",
+        "latitude": 30.2616262,
+        "longitude": -97.7422786,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/134807221",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_austin_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T14:54:27.873422Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Austin",
+    "category": "food",
+    "options": [
+      {
+        "id": "aus-f1",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "food",
+        "name": "Veracruz All Natural",
+        "price": 14.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "tacos",
+          "local"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "2505 Webberville Road, Austin, TX 78702",
+        "latitude": 30.2630626,
+        "longitude": -97.7137458,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/802335915",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=mexican"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Mexican"
+        ],
+        "snapshot_version": "osm_austin_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T14:55:27.455931Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "aus-f2",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "food",
+        "name": "Bouldin Creek Cafe",
+        "price": 18.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian",
+          "vegan"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1900 South 1st Street, Austin, TX 78704",
+        "latitude": 30.2464901,
+        "longitude": -97.7568002,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/382491308",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "diet:vegetarian=only",
+          "diet:vegan=yes"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Vegetarian only",
+          "Vegan options"
+        ],
+        "snapshot_version": "osm_austin_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T14:55:27.455931Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "aus-f3",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "food",
+        "name": "Franklin Barbecue",
+        "price": 27.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "barbecue",
+          "local"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "900 East 11th Street, Austin, TX 78702",
+        "latitude": 30.2701634,
+        "longitude": -97.7312704,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/382368408",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=barbecue"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Barbecue"
+        ],
+        "snapshot_version": "osm_austin_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T14:55:27.455931Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Austin",
+    "category": "transport",
+    "options": [
+      {
+        "id": "aus-t1",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "aus-t2",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "transport",
+        "name": "Mock Bus Day Allowance",
+        "price": 7.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.1,
+        "review_count": 490,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "aus-t3",
+        "destination": "Austin",
+        "city": "Austin",
+        "state": "TX",
+        "category": "transport",
+        "name": "Mock Rideshare Day Allowance",
+        "price": 40.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.2,
+        "review_count": 310,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  },
+  {
+    "city": "Denver",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "den-a1",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "attractions",
+        "name": "American Museum of Western Art",
+        "price": 21.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "art"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1727 Tremont Place, Denver CO 80202",
+        "latitude": 39.7446273,
+        "longitude": -104.9879622,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/366396461",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_denver_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:54:14.818687Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "den-a2",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "attractions",
+        "name": "Children’s Museum of Denver at Marsico Campus",
+        "price": 17.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "history"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "2121 Children's Museum Drive, Denver CO 80211",
+        "latitude": 39.7486538,
+        "longitude": -105.017044,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/366396449",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_denver_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:54:14.818687Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "den-a3",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "attractions",
+        "name": "Clyfford Still Museum",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "parks",
+          "outdoors"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1250 Bannock Street, Denver CO 80204",
+        "latitude": 39.7362967,
+        "longitude": -104.9898418,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/315709021",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_denver_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T20:54:14.818687Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Denver",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "den-h1",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "hotel",
+        "name": "Embassy Suites by Hilton Denver Downtown Convention Center",
+        "price": 92.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "budget",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1420 Stout Street, Denver CO 80202",
+        "latitude": 39.7441238,
+        "longitude": -104.9947666,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/114312226",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_denver_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:01:20.038615Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "den-h2",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "hotel",
+        "name": "Hilton Denver City Center",
+        "price": 128.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1701 California Street, Denver CO 80202",
+        "latitude": 39.7471695,
+        "longitude": -104.9904675,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/53085855",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_denver_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:01:20.038615Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "den-h3",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "hotel",
+        "name": "Hyatt Regency Denver Tech Center",
+        "price": 215.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "luxury",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "7800 East Tufts Avenue, Denver CO 80237",
+        "latitude": 39.6303737,
+        "longitude": -104.8989435,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/558417129",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_denver_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:01:20.038615Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Denver",
+    "category": "food",
+    "options": [
+      {
+        "id": "den-f1",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "food",
+        "name": "Buckhorn Exchange",
+        "price": 16.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "local",
+          "casual"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1000 Osage Street, Denver CO 80204",
+        "latitude": 39.7322529,
+        "longitude": -105.0051124,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/519549594",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=steak_house"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Steak House"
+        ],
+        "snapshot_version": "osm_denver_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:15:33.645616Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "den-f2",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "food",
+        "name": "La Diabla Pozole Y Mezcal",
+        "price": 18.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian",
+          "vegan"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "2233 Larimer Street, Denver CO 80205",
+        "latitude": 39.7554154,
+        "longitude": -104.989695,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/11916986269",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=mexican"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Mexican"
+        ],
+        "snapshot_version": "osm_denver_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:15:33.645616Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "den-f3",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "food",
+        "name": "Acorn",
+        "price": 29.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "grilled",
+          "local"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "3350 Brighton Boulevard, Denver CO 80216",
+        "latitude": 39.768623,
+        "longitude": -104.97988,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/3039100985",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=american",
+          "diet:vegetarian=limited",
+          "diet:vegan=no"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: American",
+          "Vegetarian options",
+          "Vegan options"
+        ],
+        "snapshot_version": "osm_denver_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:15:33.645616Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Denver",
+    "category": "transport",
+    "options": [
+      {
+        "id": "den-t1",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "den-t2",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "transport",
+        "name": "Mock Rail Day Allowance",
+        "price": 10.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.3,
+        "review_count": 780,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "den-t3",
+        "destination": "Denver",
+        "city": "Denver",
+        "state": "CO",
+        "category": "transport",
+        "name": "Mock Taxi Day Allowance",
+        "price": 43.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.1,
+        "review_count": 340,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  },
+  {
+    "city": "Seattle",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "sea-a1",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "attractions",
+        "name": "Burke Museum of Natural History and Culture",
+        "price": 24.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "art"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "4303 Memorial Way Northeast, Seattle WA 98105",
+        "latitude": 47.6604219,
+        "longitude": -122.3115327,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/160545994",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_seattle_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:18:32.564134Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sea-a2",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "attractions",
+        "name": "Center for Wooden Boats",
+        "price": 19.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "history"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1010 Valley Street, Seattle WA 98109",
+        "latitude": 47.6271962,
+        "longitude": -122.3359006,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/49747361",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_seattle_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:18:32.564134Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sea-a3",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "attractions",
+        "name": "Chihuly Garden and Glass",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "parks",
+          "outdoors"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "305 Harrison Street, Seattle WA 98109",
+        "latitude": 47.6205353,
+        "longitude": -122.3501816,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/161587729",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_seattle_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:18:32.564134Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Seattle",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "sea-h1",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "hotel",
+        "name": "Crowne Plaza Seattle Downtown",
+        "price": 108.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "budget",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1113 6th Avenue, Seattle WA 98101",
+        "latitude": 47.6080905,
+        "longitude": -122.3321214,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/396824069",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_seattle_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:20:21.079984Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sea-h2",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "hotel",
+        "name": "Fairmont Olympic Hotel",
+        "price": 148.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "411 University Street, Seattle WA 98101",
+        "latitude": 47.6080973,
+        "longitude": -122.3339606,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/35824976",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_seattle_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:20:21.079984Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sea-h3",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "hotel",
+        "name": "Four Seasons Seattle",
+        "price": 245.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "luxury",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "99 Union Street, Seattle WA 98101",
+        "latitude": 47.6073807,
+        "longitude": -122.3391648,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/357283830",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_seattle_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:20:21.079984Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Seattle",
+    "category": "food",
+    "options": [
+      {
+        "id": "sea-f1",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "food",
+        "name": "Alki Homestead",
+        "price": 18.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "seafood",
+          "local"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "2717 61st Avenue Southwest, Seattle WA 98116",
+        "latitude": 47.5785227,
+        "longitude": -122.4111061,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/233293290",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=italian"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Italian"
+        ],
+        "snapshot_version": "osm_seattle_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:20:47.095649Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sea-f2",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "food",
+        "name": "Annapurna Cafe",
+        "price": 19.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian",
+          "vegan"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1831 Broadway, Seattle WA 98122",
+        "latitude": 47.6185701,
+        "longitude": -122.321079,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/2077272324",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=indian"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Indian"
+        ],
+        "snapshot_version": "osm_seattle_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:20:47.095649Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sea-f3",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "food",
+        "name": "Café Campagne",
+        "price": 32.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "seafood"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1600 Post Alley, Seattle WA 98101",
+        "latitude": 47.6097117,
+        "longitude": -122.3415286,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/2397485860",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=french"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: French"
+        ],
+        "snapshot_version": "osm_seattle_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:20:47.095649Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Seattle",
+    "category": "transport",
+    "options": [
+      {
+        "id": "sea-t1",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "sea-t2",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "transport",
+        "name": "Mock Transit Day Allowance",
+        "price": 11.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.4,
+        "review_count": 960,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "sea-t3",
+        "destination": "Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "category": "transport",
+        "name": "Mock Taxi Day Allowance",
+        "price": 47.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.0,
+        "review_count": 370,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  },
+  {
+    "city": "San Francisco",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "sfo-a1",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "attractions",
+        "name": "Asian Art Museum of San Francisco",
+        "price": 26.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "art"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "200 Larkin Street, San Francisco CA 94102",
+        "latitude": 37.7802455,
+        "longitude": -122.4159975,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/24588037",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_san_francisco_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:25:22.207676Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sfo-a2",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "attractions",
+        "name": "Cable Car Powerhouse and Barn",
+        "price": 20.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "history"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "1201 Mason Street, San Francisco CA 94108",
+        "latitude": 37.7948846,
+        "longitude": -122.4119197,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/30029681",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_san_francisco_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:25:22.207676Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sfo-a3",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "attractions",
+        "name": "California Academy of Sciences",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "parks",
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "55 Music Concourse Drive, San Francisco CA 94118",
+        "latitude": 37.7698269,
+        "longitude": -122.4660916,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/28695389",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_san_francisco_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:25:22.207676Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "San Francisco",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "sfo-h1",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "hotel",
+        "name": "Four Seasons",
+        "price": 125.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "budget",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "757 Market Street, San Francisco CA 94103",
+        "latitude": 37.7862212,
+        "longitude": -122.4042473,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/149332498",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_san_francisco_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:26:59.707796Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sfo-h2",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "hotel",
+        "name": "Grand Hyatt San Francisco",
+        "price": 165.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "345 Stockton Street, San Francisco CA 94108",
+        "latitude": 37.7891243,
+        "longitude": -122.4072404,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/32863494",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_san_francisco_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:26:59.707796Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sfo-h3",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "hotel",
+        "name": "Hilton San Francisco Financial District",
+        "price": 275.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "luxury",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "750 Kearny Street, San Francisco CA 94108",
+        "latitude": 37.7951542,
+        "longitude": -122.404292,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/260922316",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_san_francisco_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:26:59.707796Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "San Francisco",
+    "category": "food",
+    "options": [
+      {
+        "id": "sfo-f1",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "food",
+        "name": "A16",
+        "price": 20.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "local",
+          "casual"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "2355 Chestnut Street, San Francisco CA 94123",
+        "latitude": 37.7999597,
+        "longitude": -122.442104,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/3380825006",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=italian"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Italian"
+        ],
+        "snapshot_version": "osm_san_francisco_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:29:14.446788Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sfo-f2",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "food",
+        "name": "Greens Restaurant",
+        "price": 22.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian",
+          "vegan"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "2 Marina Boulevard, San Francisco CA 94123",
+        "latitude": 37.806886,
+        "longitude": -122.4322073,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/2653235898",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "diet:vegetarian=only",
+          "diet:vegan=yes"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Vegetarian only",
+          "Vegan options"
+        ],
+        "snapshot_version": "osm_san_francisco_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:29:14.446788Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "sfo-f3",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "food",
+        "name": "John's Grill Live Jazz",
+        "price": 38.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "seafood"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "63 Ellis Street, San Francisco CA 94102",
+        "latitude": 37.7854639,
+        "longitude": -122.4071525,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/317081652",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=steak",
+          "cuisine=seafood"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Steak",
+          "Cuisine: Seafood"
+        ],
+        "snapshot_version": "osm_san_francisco_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:29:14.446788Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "San Francisco",
+    "category": "transport",
+    "options": [
+      {
+        "id": "sfo-t1",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "sfo-t2",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "transport",
+        "name": "Mock Transit Day Allowance",
+        "price": 13.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.4,
+        "review_count": 1180,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "sfo-t3",
+        "destination": "San Francisco",
+        "city": "San Francisco",
+        "state": "CA",
+        "category": "transport",
+        "name": "Mock Taxi Day Allowance",
+        "price": 54.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.0,
+        "review_count": 410,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  },
+  {
+    "city": "Los Angeles",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "lax-a1",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "attractions",
+        "name": "Academy Museum of Motion Pictures",
+        "price": 25.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "art"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "6067 Wilshire Boulevard, Los Angeles CA 90036",
+        "latitude": 34.0636022,
+        "longitude": -118.3608216,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/913293590",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_los_angeles_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:34:48.409659Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "lax-a2",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "attractions",
+        "name": "Autry Museum of the American West",
+        "price": 27.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "history",
+          "film"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "4700 Western Heritage Way, Los Angeles CA 90027",
+        "latitude": 34.1483813,
+        "longitude": -118.2817076,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/368174050",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_los_angeles_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:34:48.409659Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "lax-a3",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "attractions",
+        "name": "California Science Center",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "parks",
+          "outdoors"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "700 Exposition Park Drive, Los Angeles CA 90037",
+        "latitude": 34.0159714,
+        "longitude": -118.2864729,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/407373715",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_los_angeles_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:34:48.409659Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Los Angeles",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "lax-h1",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "hotel",
+        "name": "DoubleTree by Hilton Hotel Los Angeles Downtown",
+        "price": 112.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "budget",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "120 South Los Angeles Street, Los Angeles CA 90012",
+        "latitude": 34.0505303,
+        "longitude": -118.2426654,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/427817639",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_los_angeles_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:35:56.264551Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "lax-h2",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "hotel",
+        "name": "Fairmont Century Plaza",
+        "price": 152.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "2025 Avenue of the Stars, Los Angeles CA 90067",
+        "latitude": 34.0575083,
+        "longitude": -118.4157229,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/43342001",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_los_angeles_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:35:56.264551Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "lax-h3",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "hotel",
+        "name": "H Hotel Los Angeles, Curio Collection by Hilton",
+        "price": 265.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "luxury",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "6151 West Century Boulevard, Los Angeles CA 90045",
+        "latitude": 33.946053,
+        "longitude": -118.392718,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/9774638782",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_los_angeles_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:35:56.264551Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Los Angeles",
+    "category": "food",
+    "options": [
+      {
+        "id": "lax-f1",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "food",
+        "name": "Astro Family Restaurant",
+        "price": 16.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "tacos",
+          "local"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "2300 Fletcher Drive, Los Angeles CA 90039",
+        "latitude": 34.1044675,
+        "longitude": -118.2587152,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/401895843",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=burger",
+          "cuisine=breakfast",
+          "cuisine=american",
+          "cuisine=coffee_shop",
+          "cuisine=sandwich",
+          "cuisine=salad",
+          "cuisine=mexican"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Burger",
+          "Cuisine: Breakfast",
+          "Cuisine: American",
+          "Cuisine: Coffee Shop",
+          "Cuisine: Sandwich",
+          "Cuisine: Salad",
+          "Cuisine: Mexican"
+        ],
+        "snapshot_version": "osm_los_angeles_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:38:19.186586Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "lax-f2",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "food",
+        "name": "Bavel",
+        "price": 21.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian",
+          "vegan"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "500 Mateo Street, Los Angeles CA 90013",
+        "latitude": 34.0414422,
+        "longitude": -118.2327188,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/5953394925",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=middle_eastern"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Middle Eastern"
+        ],
+        "snapshot_version": "osm_los_angeles_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:38:19.186586Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "lax-f3",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "food",
+        "name": "Bottega Louie",
+        "price": 36.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "seafood"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "700 South Grand Avenue, Los Angeles CA 90017",
+        "latitude": 34.047039,
+        "longitude": -118.256567,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/470881995",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=italian"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Italian"
+        ],
+        "snapshot_version": "osm_los_angeles_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:38:19.186586Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Los Angeles",
+    "category": "transport",
+    "options": [
+      {
+        "id": "lax-t1",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "lax-t2",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "transport",
+        "name": "Mock Transit Day Allowance",
+        "price": 9.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.0,
+        "review_count": 690,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "lax-t3",
+        "destination": "Los Angeles",
+        "city": "Los Angeles",
+        "state": "CA",
+        "category": "transport",
+        "name": "Mock Rideshare Day Allowance",
+        "price": 55.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.1,
+        "review_count": 450,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  },
+  {
+    "city": "Las Vegas",
+    "category": "attractions",
+    "options": [
+      {
+        "id": "las-a1",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "attractions",
+        "name": "Discovery Children's Museum",
+        "price": 24.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "art"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "360 Promenade Place, Las Vegas NV 89106",
+        "latitude": 36.1687157,
+        "longitude": -115.1525751,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/182464620",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_las_vegas_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:38:35.928700Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "las-a2",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "attractions",
+        "name": "Las Vegas Natural History Museum",
+        "price": 19.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "museums",
+          "history"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "900 Las Vegas Boulevard North, Las Vegas NV 89101",
+        "latitude": 36.1799391,
+        "longitude": -115.1338241,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/925732138",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_las_vegas_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:38:35.928700Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "las-a3",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "attractions",
+        "name": "Neon Museum",
+        "price": 12.0,
+        "currency": "USD",
+        "unit": "per_person_visit",
+        "tags": [
+          "parks",
+          "outdoors"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "770 North Las Vegas Boulevard, Las Vegas NV 89101",
+        "latitude": 36.1766859,
+        "longitude": -115.1352127,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/266824889",
+        "provider_category_ids": [
+          "tourism=museum"
+        ],
+        "provider_category_labels": [
+          "Museum"
+        ],
+        "snapshot_version": "osm_las_vegas_attractions_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:38:35.928700Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Las Vegas",
+    "category": "hotel",
+    "options": [
+      {
+        "id": "las-h1",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "hotel",
+        "name": "La Quinta Inn & Suites",
+        "price": 78.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "budget",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "9570 West Sahara Avenue, Las Vegas NV 89117",
+        "latitude": 36.1455019,
+        "longitude": -115.303275,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/461103845",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_las_vegas_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:46:59.617302Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "las-h2",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "hotel",
+        "name": "AC Hotel by Marriott Las Vegas Symphony Park",
+        "price": 118.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "quiet"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "330 South Grand Central Parkway, Las Vegas NV 89106",
+        "latitude": 36.1695277,
+        "longitude": -115.1533783,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/13770197469",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_las_vegas_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:46:59.617302Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "las-h3",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "hotel",
+        "name": "Best Western Plus Las Vegas West",
+        "price": 235.0,
+        "currency": "USD",
+        "unit": "per_person_night",
+        "tags": [
+          "luxury",
+          "central"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "8669 West Sahara Avenue, Las Vegas NV 89117",
+        "latitude": 36.1425967,
+        "longitude": -115.2807125,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/463007736",
+        "provider_category_ids": [
+          "tourism=hotel"
+        ],
+        "provider_category_labels": [
+          "Hotel"
+        ],
+        "snapshot_version": "osm_las_vegas_hotels_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:46:59.617302Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Las Vegas",
+    "category": "food",
+    "options": [
+      {
+        "id": "las-f1",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "food",
+        "name": "Carson Kitchen",
+        "price": 15.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "local",
+          "casual"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "124 South 6th Street, Las Vegas NV 89101",
+        "latitude": 36.1678978,
+        "longitude": -115.1406066,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/1380168243",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=tapas",
+          "cuisine=american"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Tapas",
+          "Cuisine: American"
+        ],
+        "snapshot_version": "osm_las_vegas_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:47:28.378883Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "las-f2",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "food",
+        "name": "Heart Attack Grill",
+        "price": 19.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "vegetarian",
+          "vegan"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "450 Fremont Street, Las Vegas NV 89101",
+        "latitude": 36.1695171,
+        "longitude": -115.1407926,
+        "provider": "openstreetmap",
+        "provider_place_id": "way/1380168245",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=american"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: American"
+        ],
+        "snapshot_version": "osm_las_vegas_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:47:28.378883Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      },
+      {
+        "id": "las-f3",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "food",
+        "name": "Weera Thai",
+        "price": 34.0,
+        "currency": "USD",
+        "unit": "per_person_meal",
+        "tags": [
+          "grilled",
+          "luxury"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "real_snapshot",
+        "description": null,
+        "preference_matches": [],
+        "address": "3839 West Sahara Avenue, Las Vegas NV 89102-0540",
+        "latitude": 36.1440589,
+        "longitude": -115.1933253,
+        "provider": "openstreetmap",
+        "provider_place_id": "node/7140749328",
+        "provider_category_ids": [
+          "amenity=restaurant",
+          "cuisine=thai"
+        ],
+        "provider_category_labels": [
+          "Restaurant",
+          "Cuisine: Thai"
+        ],
+        "snapshot_version": "osm_las_vegas_food_2026-09-16_v1",
+        "snapshot_fetched_at": "2026-09-16T21:47:28.378883Z",
+        "cost_origin": "planner_estimate",
+        "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+        "cost_version": "phase_o_v1"
+      }
+    ]
+  },
+  {
+    "city": "Las Vegas",
+    "category": "transport",
+    "options": [
+      {
+        "id": "las-t1",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "transport",
+        "name": "Mock Walking Allowance",
+        "price": 0.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "walking"
+        ],
+        "rating": null,
+        "review_count": null,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "las-t2",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "transport",
+        "name": "Mock Transit Day Allowance",
+        "price": 8.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "public transit"
+        ],
+        "rating": 4.0,
+        "review_count": 540,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      },
+      {
+        "id": "las-t3",
+        "destination": "Las Vegas",
+        "city": "Las Vegas",
+        "state": "NV",
+        "category": "transport",
+        "name": "Mock Taxi Day Allowance",
+        "price": 49.0,
+        "currency": "USD",
+        "unit": "per_person_day",
+        "tags": [
+          "taxi"
+        ],
+        "rating": 4.1,
+        "review_count": 390,
+        "image_url": null,
+        "source": "controlled_mock_fixture",
+        "description": null,
+        "preference_matches": []
+      }
+    ]
+  }
+]
