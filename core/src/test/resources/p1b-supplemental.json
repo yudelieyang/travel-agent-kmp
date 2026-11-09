@@ -1,0 +1,5252 @@
+[
+  {
+    "fixture": {
+      "budget": null,
+      "candidates": [
+        {
+          "alternatives": [
+            {
+              "address": "4 Charles Street, Boston, MA 02116",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a3",
+              "image_url": null,
+              "latitude": 42.3540568,
+              "longitude": -71.069998,
+              "name": "Boston Public Garden",
+              "preference_matches": [],
+              "price": "0.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "leisure=park"
+              ],
+              "provider_category_labels": [
+                "Park"
+              ],
+              "provider_place_id": "way/23787885",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "parks"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "1 Central Wharf, Boston, MA 02110",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a2",
+              "image_url": null,
+              "latitude": 42.3591988,
+              "longitude": -71.0493558,
+              "name": "New England Aquarium",
+              "preference_matches": [],
+              "price": "15.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=aquarium"
+              ],
+              "provider_category_labels": [
+                "Aquarium"
+              ],
+              "provider_place_id": "way/29660091",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "aquarium"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "25 Evans Way, Boston, MA 02115",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a1",
+              "image_url": null,
+              "latitude": 42.3382381,
+              "longitude": -71.0990448,
+              "name": "Isabella Stewart Gardner Museum",
+              "preference_matches": [],
+              "price": "20.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/29650851",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "museums"
+              ],
+              "unit": "per_person_visit"
+            }
+          ],
+          "category": "attractions",
+          "selected": []
+        },
+        {
+          "alternatives": [
+            {
+              "address": "267 Newbury Street, Boston, MA 02116",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f1",
+              "image_url": null,
+              "latitude": 42.3495341,
+              "longitude": -71.0834556,
+              "name": "Aceituna Grill",
+              "preference_matches": [],
+              "price": "16.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=mediterranean",
+                "diet:vegetarian=yes",
+                "diet:vegan=yes"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Mediterranean",
+                "Vegetarian options",
+                "Vegan options"
+              ],
+              "provider_place_id": "node/12663666560",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "vegetarian",
+                "vegan"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "484 Commonwealth Avenue, Boston, MA 02215",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f2",
+              "image_url": null,
+              "latitude": 42.3485475,
+              "longitude": -71.0942315,
+              "name": "India Quality",
+              "preference_matches": [],
+              "price": "20.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=indian",
+                "diet:vegetarian=yes",
+                "diet:vegan=yes"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Indian",
+                "Vegetarian options",
+                "Vegan options"
+              ],
+              "provider_place_id": "node/7775144117",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "vegetarian"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "761 Boylston Street, Boston, MA 02116",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f3",
+              "image_url": null,
+              "latitude": 42.3492931,
+              "longitude": -71.0811812,
+              "name": "Atlantic Fish",
+              "preference_matches": [],
+              "price": "30.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=seafood"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Seafood"
+              ],
+              "provider_place_id": "node/4418932490",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "seafood"
+              ],
+              "unit": "per_person_meal"
+            }
+          ],
+          "category": "food",
+          "selected": []
+        },
+        {
+          "alternatives": [
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t1",
+              "image_url": null,
+              "name": "Mock Walking Allowance",
+              "preference_matches": [],
+              "price": "0.0",
+              "rating": null,
+              "review_count": null,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "walking"
+              ],
+              "unit": "per_person_day"
+            },
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t2",
+              "image_url": null,
+              "name": "Mock Transit Day Allowance",
+              "preference_matches": [],
+              "price": "10.0",
+              "rating": 4.4,
+              "review_count": 900,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "public transit"
+              ],
+              "unit": "per_person_day"
+            },
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t3",
+              "image_url": null,
+              "name": "Mock Taxi Day Allowance",
+              "preference_matches": [],
+              "price": "45.0",
+              "rating": 4.1,
+              "review_count": 330,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "taxi"
+              ],
+              "unit": "per_person_day"
+            }
+          ],
+          "category": "transport",
+          "selected": []
+        }
+      ],
+      "clarification_question": null,
+      "itinerary": null,
+      "missing_fields": [],
+      "query": "Plan a 2-day trip to Boston for 2 travelers. Hotel spending must not exceed $1 total.",
+      "repair": null,
+      "requirements": {
+        "budget_amount": null,
+        "budget_constraint_strength": "UNSPECIFIED",
+        "budget_scope": "UNKNOWN",
+        "constraints": [],
+        "currency": "USD",
+        "destination": "Boston",
+        "duration_days": 2,
+        "end_date": null,
+        "food_preferences": [],
+        "hotel_preferences": [],
+        "interests": [],
+        "objective": null,
+        "origin": null,
+        "requirements_v2": {
+          "ambiguities": [],
+          "constraints": [
+            {
+              "confidence": 1.0,
+              "currency": "USD",
+              "extractor_source": "deterministic",
+              "kind": "BUDGET",
+              "operator": "LTE",
+              "scope": "HOTEL_TOTAL",
+              "source_text": "Hotel spending must not exceed $1  total",
+              "strength": "HARD",
+              "value": "1.0"
+            }
+          ],
+          "objectives": [],
+          "preferences": []
+        },
+        "specific_preferences": [],
+        "start_date": null,
+        "transport_preferences": [],
+        "travelers": 2
+      },
+      "status": "error",
+      "validation": {
+        "outcome": "not_performed",
+        "performed": false,
+        "reason": "prior_errors",
+        "violations": []
+      },
+      "warnings": []
+    },
+    "id": "extra-01"
+  },
+  {
+    "fixture": {
+      "budget": {
+        "basis": "group",
+        "breakdown": {
+          "attractions": "0.0",
+          "food": "96.0",
+          "hotel": "0.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "UNKNOWN",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "96.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "48.0",
+        "provided_limit": null,
+        "remaining_budget": null,
+        "travelers": 2,
+        "warnings": [],
+        "within_budget": null
+      },
+      "candidates": [
+        {
+          "alternatives": [
+            {
+              "address": "1 Central Wharf, Boston, MA 02110",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a2",
+              "image_url": null,
+              "latitude": 42.3591988,
+              "longitude": -71.0493558,
+              "name": "New England Aquarium",
+              "preference_matches": [],
+              "price": "15.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=aquarium"
+              ],
+              "provider_category_labels": [
+                "Aquarium"
+              ],
+              "provider_place_id": "way/29660091",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "aquarium"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "25 Evans Way, Boston, MA 02115",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a1",
+              "image_url": null,
+              "latitude": 42.3382381,
+              "longitude": -71.0990448,
+              "name": "Isabella Stewart Gardner Museum",
+              "preference_matches": [],
+              "price": "20.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/29650851",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "museums"
+              ],
+              "unit": "per_person_visit"
+            }
+          ],
+          "category": "attractions",
+          "selected": [
+            {
+              "address": "4 Charles Street, Boston, MA 02116",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a3",
+              "image_url": null,
+              "latitude": 42.3540568,
+              "longitude": -71.069998,
+              "name": "Boston Public Garden",
+              "preference_matches": [],
+              "price": "0.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "leisure=park"
+              ],
+              "provider_category_labels": [
+                "Park"
+              ],
+              "provider_place_id": "way/23787885",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "parks"
+              ],
+              "unit": "per_person_visit"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "address": "70 Rowes Wharf, Boston, MA 02110",
+              "category": "hotel",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-h1",
+              "image_url": null,
+              "latitude": 42.3566602,
+              "longitude": -71.0503163,
+              "name": "Boston Harbor Hotel",
+              "preference_matches": [],
+              "price": "100.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "node/1325873780",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+              "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "central",
+                "budget"
+              ],
+              "unit": "per_person_night"
+            },
+            {
+              "address": "370 Commonwealth Avenue, Boston, MA 02115",
+              "category": "hotel",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-h2",
+              "image_url": null,
+              "latitude": 42.3486873,
+              "longitude": -71.0887471,
+              "name": "The Eliot Hotel",
+              "preference_matches": [],
+              "price": "130.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "node/2350330785",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+              "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "quiet"
+              ],
+              "unit": "per_person_night"
+            },
+            {
+              "address": "200 Boylston Street, Boston, MA 02116",
+              "category": "hotel",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-h3",
+              "image_url": null,
+              "latitude": 42.3520527,
+              "longitude": -71.0683352,
+              "name": "Four Seasons Hotel Boston",
+              "preference_matches": [],
+              "price": "220.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "relation/63916",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+              "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "central",
+                "luxury"
+              ],
+              "unit": "per_person_night"
+            }
+          ],
+          "category": "hotel",
+          "selected": []
+        },
+        {
+          "alternatives": [
+            {
+              "address": "484 Commonwealth Avenue, Boston, MA 02215",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f2",
+              "image_url": null,
+              "latitude": 42.3485475,
+              "longitude": -71.0942315,
+              "name": "India Quality",
+              "preference_matches": [],
+              "price": "20.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=indian",
+                "diet:vegetarian=yes",
+                "diet:vegan=yes"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Indian",
+                "Vegetarian options",
+                "Vegan options"
+              ],
+              "provider_place_id": "node/7775144117",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "vegetarian"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "761 Boylston Street, Boston, MA 02116",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f3",
+              "image_url": null,
+              "latitude": 42.3492931,
+              "longitude": -71.0811812,
+              "name": "Atlantic Fish",
+              "preference_matches": [],
+              "price": "30.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=seafood"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Seafood"
+              ],
+              "provider_place_id": "node/4418932490",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "seafood"
+              ],
+              "unit": "per_person_meal"
+            }
+          ],
+          "category": "food",
+          "selected": [
+            {
+              "address": "267 Newbury Street, Boston, MA 02116",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f1",
+              "image_url": null,
+              "latitude": 42.3495341,
+              "longitude": -71.0834556,
+              "name": "Aceituna Grill",
+              "preference_matches": [],
+              "price": "16.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=mediterranean",
+                "diet:vegetarian=yes",
+                "diet:vegan=yes"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Mediterranean",
+                "Vegetarian options",
+                "Vegan options"
+              ],
+              "provider_place_id": "node/12663666560",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "vegetarian",
+                "vegan"
+              ],
+              "unit": "per_person_meal"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t2",
+              "image_url": null,
+              "name": "Mock Transit Day Allowance",
+              "preference_matches": [],
+              "price": "10.0",
+              "rating": 4.4,
+              "review_count": 900,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "public transit"
+              ],
+              "unit": "per_person_day"
+            },
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t3",
+              "image_url": null,
+              "name": "Mock Taxi Day Allowance",
+              "preference_matches": [],
+              "price": "45.0",
+              "rating": 4.1,
+              "review_count": 330,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "taxi"
+              ],
+              "unit": "per_person_day"
+            }
+          ],
+          "category": "transport",
+          "selected": [
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t1",
+              "image_url": null,
+              "name": "Mock Walking Allowance",
+              "preference_matches": [],
+              "price": "0.0",
+              "rating": null,
+              "review_count": null,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "walking"
+              ],
+              "unit": "per_person_day"
+            }
+          ]
+        }
+      ],
+      "clarification_question": null,
+      "itinerary": {
+        "currency": "USD",
+        "daily_plan": [
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "0.0",
+                "name": "Boston Public Garden"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "32.0",
+                "name": "Aceituna Grill (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "32.0",
+                "name": "Aceituna Grill (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "32.0",
+                "name": "Aceituna Grill (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              }
+            ],
+            "day_number": 1,
+            "estimated_cost": "96.0"
+          }
+        ],
+        "days": 1,
+        "destination": "Boston",
+        "estimated_total_cost": "96.0",
+        "warnings": [
+          "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+          "Quote convention: three meals/day and days minus one lodging nights; prices per person."
+        ]
+      },
+      "missing_fields": [],
+      "query": "Plan a 1-day trip to Boston for 2 travelers. Hotel spending must not exceed $0 total.",
+      "repair": null,
+      "requirements": {
+        "budget_amount": null,
+        "budget_constraint_strength": "UNSPECIFIED",
+        "budget_scope": "UNKNOWN",
+        "constraints": [],
+        "currency": "USD",
+        "destination": "Boston",
+        "duration_days": 1,
+        "end_date": null,
+        "food_preferences": [],
+        "hotel_preferences": [],
+        "interests": [],
+        "objective": null,
+        "origin": null,
+        "requirements_v2": {
+          "ambiguities": [],
+          "constraints": [
+            {
+              "confidence": 1.0,
+              "currency": "USD",
+              "extractor_source": "deterministic",
+              "kind": "BUDGET",
+              "operator": "LTE",
+              "scope": "HOTEL_TOTAL",
+              "source_text": "Hotel spending must not exceed $0  total",
+              "strength": "HARD",
+              "value": "0.0"
+            }
+          ],
+          "objectives": [],
+          "preferences": []
+        },
+        "specific_preferences": [],
+        "start_date": null,
+        "transport_preferences": [],
+        "travelers": 2
+      },
+      "status": "success",
+      "validation": {
+        "outcome": "passed",
+        "performed": true,
+        "reason": null,
+        "violations": []
+      },
+      "warnings": [
+        "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+        "Quote convention: three meals/day and days minus one lodging nights; prices per person."
+      ]
+    },
+    "id": "extra-02"
+  },
+  {
+    "fixture": {
+      "budget": null,
+      "candidates": [],
+      "clarification_question": null,
+      "itinerary": null,
+      "missing_fields": [],
+      "query": "Plan a 2-day trip to Atlantis for 1 traveler.",
+      "repair": null,
+      "requirements": {
+        "budget_amount": null,
+        "budget_constraint_strength": "UNSPECIFIED",
+        "budget_scope": "UNKNOWN",
+        "constraints": [],
+        "currency": "USD",
+        "destination": "Atlantis",
+        "duration_days": 2,
+        "end_date": null,
+        "food_preferences": [],
+        "hotel_preferences": [],
+        "interests": [],
+        "objective": null,
+        "origin": null,
+        "requirements_v2": {
+          "ambiguities": [],
+          "constraints": [],
+          "objectives": [],
+          "preferences": []
+        },
+        "specific_preferences": [],
+        "start_date": null,
+        "transport_preferences": [],
+        "travelers": 1
+      },
+      "status": "error",
+      "validation": {
+        "outcome": "not_performed",
+        "performed": false,
+        "reason": "prior_errors",
+        "violations": []
+      },
+      "warnings": []
+    },
+    "id": "extra-03"
+  },
+  {
+    "fixture": {
+      "budget": null,
+      "candidates": [
+        {
+          "alternatives": [
+            {
+              "address": "4 Charles Street, Boston, MA 02116",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a3",
+              "image_url": null,
+              "latitude": 42.3540568,
+              "longitude": -71.069998,
+              "name": "Boston Public Garden",
+              "preference_matches": [],
+              "price": "0.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "leisure=park"
+              ],
+              "provider_category_labels": [
+                "Park"
+              ],
+              "provider_place_id": "way/23787885",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "parks"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "1 Central Wharf, Boston, MA 02110",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a2",
+              "image_url": null,
+              "latitude": 42.3591988,
+              "longitude": -71.0493558,
+              "name": "New England Aquarium",
+              "preference_matches": [],
+              "price": "15.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=aquarium"
+              ],
+              "provider_category_labels": [
+                "Aquarium"
+              ],
+              "provider_place_id": "way/29660091",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "aquarium"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "25 Evans Way, Boston, MA 02115",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a1",
+              "image_url": null,
+              "latitude": 42.3382381,
+              "longitude": -71.0990448,
+              "name": "Isabella Stewart Gardner Museum",
+              "preference_matches": [],
+              "price": "20.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/29650851",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "museums"
+              ],
+              "unit": "per_person_visit"
+            }
+          ],
+          "category": "attractions",
+          "selected": []
+        },
+        {
+          "alternatives": [
+            {
+              "address": "267 Newbury Street, Boston, MA 02116",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f1",
+              "image_url": null,
+              "latitude": 42.3495341,
+              "longitude": -71.0834556,
+              "name": "Aceituna Grill",
+              "preference_matches": [],
+              "price": "16.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=mediterranean",
+                "diet:vegetarian=yes",
+                "diet:vegan=yes"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Mediterranean",
+                "Vegetarian options",
+                "Vegan options"
+              ],
+              "provider_place_id": "node/12663666560",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "vegetarian",
+                "vegan"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "484 Commonwealth Avenue, Boston, MA 02215",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f2",
+              "image_url": null,
+              "latitude": 42.3485475,
+              "longitude": -71.0942315,
+              "name": "India Quality",
+              "preference_matches": [],
+              "price": "20.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=indian",
+                "diet:vegetarian=yes",
+                "diet:vegan=yes"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Indian",
+                "Vegetarian options",
+                "Vegan options"
+              ],
+              "provider_place_id": "node/7775144117",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "vegetarian"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "761 Boylston Street, Boston, MA 02116",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f3",
+              "image_url": null,
+              "latitude": 42.3492931,
+              "longitude": -71.0811812,
+              "name": "Atlantic Fish",
+              "preference_matches": [],
+              "price": "30.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=seafood"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Seafood"
+              ],
+              "provider_place_id": "node/4418932490",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "seafood"
+              ],
+              "unit": "per_person_meal"
+            }
+          ],
+          "category": "food",
+          "selected": []
+        },
+        {
+          "alternatives": [
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t1",
+              "image_url": null,
+              "name": "Mock Walking Allowance",
+              "preference_matches": [],
+              "price": "0.0",
+              "rating": null,
+              "review_count": null,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "walking"
+              ],
+              "unit": "per_person_day"
+            },
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t2",
+              "image_url": null,
+              "name": "Mock Transit Day Allowance",
+              "preference_matches": [],
+              "price": "10.0",
+              "rating": 4.4,
+              "review_count": 900,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "public transit"
+              ],
+              "unit": "per_person_day"
+            },
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t3",
+              "image_url": null,
+              "name": "Mock Taxi Day Allowance",
+              "preference_matches": [],
+              "price": "45.0",
+              "rating": 4.1,
+              "review_count": 330,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "taxi"
+              ],
+              "unit": "per_person_day"
+            }
+          ],
+          "category": "transport",
+          "selected": []
+        }
+      ],
+      "clarification_question": null,
+      "itinerary": null,
+      "missing_fields": [],
+      "query": "Plan a 4-day trip to Boston for 2 travelers. Hotel spending must not exceed $400 total. The total budget is $1200.",
+      "repair": null,
+      "requirements": {
+        "budget_amount": "1200.0",
+        "budget_constraint_strength": "HARD",
+        "budget_scope": "TOTAL_TRIP",
+        "constraints": [],
+        "currency": "USD",
+        "destination": "Boston",
+        "duration_days": 4,
+        "end_date": null,
+        "food_preferences": [],
+        "hotel_preferences": [],
+        "interests": [],
+        "objective": null,
+        "origin": null,
+        "requirements_v2": {
+          "ambiguities": [],
+          "constraints": [
+            {
+              "confidence": 1.0,
+              "currency": "USD",
+              "extractor_source": "deterministic",
+              "kind": "BUDGET",
+              "operator": "LTE",
+              "scope": "HOTEL_TOTAL",
+              "source_text": "Hotel spending must not exceed $400  total",
+              "strength": "HARD",
+              "value": "400.0"
+            },
+            {
+              "confidence": 1.0,
+              "currency": "USD",
+              "extractor_source": "deterministic",
+              "kind": "BUDGET",
+              "operator": "LTE",
+              "scope": "TOTAL_TRIP",
+              "source_text": "The total budget is $1200",
+              "strength": "HARD",
+              "value": "1200.0"
+            }
+          ],
+          "objectives": [],
+          "preferences": []
+        },
+        "specific_preferences": [],
+        "start_date": null,
+        "transport_preferences": [],
+        "travelers": 2
+      },
+      "status": "error",
+      "validation": {
+        "outcome": "not_performed",
+        "performed": false,
+        "reason": "prior_errors",
+        "violations": []
+      },
+      "warnings": []
+    },
+    "id": "extra-04"
+  },
+  {
+    "fixture": {
+      "budget": null,
+      "candidates": [
+        {
+          "alternatives": [
+            {
+              "address": "1101 Biscayne Boulevard, Miami FL 33132",
+              "category": "attractions",
+              "city": "Miami",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-a2",
+              "image_url": null,
+              "latitude": 25.785299,
+              "longitude": -80.1877391,
+              "name": "Patricia and Phillip Frost Museum of Science",
+              "preference_matches": [],
+              "price": "16.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/319426548",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:48:26.525766Z",
+              "snapshot_version": "osm_miami_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "FL",
+              "tags": [
+                "museums",
+                "history"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "101 West Flagler Street, Miami FL 33130",
+              "category": "attractions",
+              "city": "Miami",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-a1",
+              "image_url": null,
+              "latitude": 25.7745642,
+              "longitude": -80.1965921,
+              "name": "HistoryMiami Museum",
+              "preference_matches": [],
+              "price": "23.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/648249520",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:48:26.525766Z",
+              "snapshot_version": "osm_miami_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "FL",
+              "tags": [
+                "museums",
+                "art"
+              ],
+              "unit": "per_person_visit"
+            }
+          ],
+          "category": "attractions",
+          "selected": [
+            {
+              "address": "1103 Biscayne Boulevard, Miami FL 33132",
+              "category": "attractions",
+              "city": "Miami",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-a3",
+              "image_url": null,
+              "latitude": 25.7860342,
+              "longitude": -80.1863239,
+              "name": "Pérez Art Museum Miami",
+              "preference_matches": [],
+              "price": "0.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/484587327",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:48:26.525766Z",
+              "snapshot_version": "osm_miami_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "FL",
+              "tags": [
+                "parks",
+                "walking"
+              ],
+              "unit": "per_person_visit"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "address": "121 Southeast 1st Street, Miami FL 33131",
+              "category": "hotel",
+              "city": "Miami",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-h2",
+              "image_url": null,
+              "latitude": 25.7736361,
+              "longitude": -80.1914075,
+              "name": "Eurostars Langford",
+              "preference_matches": [],
+              "price": "145.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "way/467892170",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:49:27.691559Z",
+              "snapshot_version": "osm_miami_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "FL",
+              "tags": [
+                "quiet"
+              ],
+              "unit": "per_person_night"
+            },
+            {
+              "address": "1435 Brickell Avenue, Miami FL 33131",
+              "category": "hotel",
+              "city": "Miami",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-h3",
+              "image_url": null,
+              "latitude": 25.7589918,
+              "longitude": -80.1920516,
+              "name": "Four Seasons Hotel Miami",
+              "preference_matches": [],
+              "price": "260.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "way/300241285",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:49:27.691559Z",
+              "snapshot_version": "osm_miami_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "FL",
+              "tags": [
+                "luxury",
+                "central"
+              ],
+              "unit": "per_person_night"
+            }
+          ],
+          "category": "hotel",
+          "selected": [
+            {
+              "address": "1717 North Bayshore Drive, Miami FL 33132-1180",
+              "category": "hotel",
+              "city": "Miami",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-h1",
+              "image_url": null,
+              "latitude": 25.7915535,
+              "longitude": -80.1862338,
+              "name": "Doubletree by Hilton Grand Hotel Biscayne Bay",
+              "preference_matches": [],
+              "price": "105.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "way/468023519",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:49:27.691559Z",
+              "snapshot_version": "osm_miami_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "FL",
+              "tags": [
+                "budget",
+                "central"
+              ],
+              "unit": "per_person_night"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "address": "151 Northwest 24th Street, Miami FL 33127",
+              "category": "food",
+              "city": "Miami",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-f2",
+              "image_url": null,
+              "latitude": 25.7999652,
+              "longitude": -80.1981994,
+              "name": "305 Pizza",
+              "preference_matches": [],
+              "price": "19.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=pizza"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Pizza"
+              ],
+              "provider_place_id": "node/8713382843",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:53:44.854681Z",
+              "snapshot_version": "osm_miami_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "FL",
+              "tags": [
+                "vegetarian",
+                "vegan"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "800 Brickell Avenue, Miami FL 33131",
+              "category": "food",
+              "city": "Miami",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-f3",
+              "image_url": null,
+              "latitude": 25.7660427,
+              "longitude": -80.1911693,
+              "name": "Amazonico",
+              "preference_matches": [],
+              "price": "34.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=international"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: International"
+              ],
+              "provider_place_id": "node/13461562301",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:53:44.854681Z",
+              "snapshot_version": "osm_miami_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "FL",
+              "tags": [
+                "seafood"
+              ],
+              "unit": "per_person_meal"
+            }
+          ],
+          "category": "food",
+          "selected": [
+            {
+              "address": "3555 Southwest 8th Street, Miami FL 33135",
+              "category": "food",
+              "city": "Miami",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-f1",
+              "image_url": null,
+              "latitude": 25.7649886,
+              "longitude": -80.2527677,
+              "name": "Versailles Restaurant",
+              "preference_matches": [],
+              "price": "16.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=cuban",
+                "cuisine=latin_american",
+                "cuisine=sandwich"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Cuban",
+                "Cuisine: Latin American",
+                "Cuisine: Sandwich"
+              ],
+              "provider_place_id": "node/1576341770",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:53:44.854681Z",
+              "snapshot_version": "osm_miami_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "FL",
+              "tags": [
+                "cuban",
+                "local"
+              ],
+              "unit": "per_person_meal"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "category": "transport",
+              "city": "Miami",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-t2",
+              "image_url": null,
+              "name": "Mock Transit Day Allowance",
+              "preference_matches": [],
+              "price": "9.0",
+              "rating": 4.1,
+              "review_count": 620,
+              "source": "controlled_mock_fixture",
+              "state": "FL",
+              "tags": [
+                "public transit"
+              ],
+              "unit": "per_person_day"
+            },
+            {
+              "category": "transport",
+              "city": "Miami",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-t3",
+              "image_url": null,
+              "name": "Mock Taxi Day Allowance",
+              "preference_matches": [],
+              "price": "48.0",
+              "rating": 4.0,
+              "review_count": 350,
+              "source": "controlled_mock_fixture",
+              "state": "FL",
+              "tags": [
+                "taxi"
+              ],
+              "unit": "per_person_day"
+            }
+          ],
+          "category": "transport",
+          "selected": [
+            {
+              "category": "transport",
+              "city": "Miami",
+              "currency": "USD",
+              "description": null,
+              "destination": "Miami",
+              "id": "mia-t1",
+              "image_url": null,
+              "name": "Mock Walking Allowance",
+              "preference_matches": [],
+              "price": "0.0",
+              "rating": null,
+              "review_count": null,
+              "source": "controlled_mock_fixture",
+              "state": "FL",
+              "tags": [
+                "walking"
+              ],
+              "unit": "per_person_day"
+            }
+          ]
+        }
+      ],
+      "clarification_question": null,
+      "itinerary": null,
+      "missing_fields": [],
+      "query": "Plan a 3-day trip to Miami for 3 travelers. The total budget is $250.",
+      "repair": {
+        "attempt": 1,
+        "final_budget": {
+          "basis": "group",
+          "breakdown": {
+            "attractions": "0.0",
+            "food": "432.0",
+            "hotel": "630.0",
+            "transport": "0.0"
+          },
+          "budget_scope": "TOTAL_TRIP",
+          "comparison_cost": "1062.0",
+          "currency": "USD",
+          "estimated_total_cost": "1062.0",
+          "limit_currency": "USD",
+          "per_traveler_cost": "354.0",
+          "provided_limit": "250.0",
+          "remaining_budget": "-812.0",
+          "travelers": 3,
+          "warnings": [
+            "Estimated group cost exceeds the supplied budget."
+          ],
+          "within_budget": false
+        },
+        "final_outcome": "failed",
+        "initial_itinerary": {
+          "currency": "USD",
+          "daily_plan": [
+            {
+              "activities": [
+                {
+                  "category": "attractions",
+                  "estimated_cost": "0.0",
+                  "name": "Pérez Art Museum Miami"
+                },
+                {
+                  "category": "food",
+                  "estimated_cost": "48.0",
+                  "name": "Versailles Restaurant (breakfast)"
+                },
+                {
+                  "category": "food",
+                  "estimated_cost": "48.0",
+                  "name": "Versailles Restaurant (lunch)"
+                },
+                {
+                  "category": "food",
+                  "estimated_cost": "48.0",
+                  "name": "Versailles Restaurant (dinner)"
+                },
+                {
+                  "category": "transport",
+                  "estimated_cost": "0.0",
+                  "name": "Mock Walking Allowance"
+                },
+                {
+                  "category": "hotel",
+                  "estimated_cost": "315.0",
+                  "name": "Doubletree by Hilton Grand Hotel Biscayne Bay"
+                }
+              ],
+              "day_number": 1,
+              "estimated_cost": "459.0"
+            },
+            {
+              "activities": [
+                {
+                  "category": "attractions",
+                  "estimated_cost": "48.0",
+                  "name": "Patricia and Phillip Frost Museum of Science"
+                },
+                {
+                  "category": "food",
+                  "estimated_cost": "57.0",
+                  "name": "305 Pizza (breakfast)"
+                },
+                {
+                  "category": "food",
+                  "estimated_cost": "57.0",
+                  "name": "305 Pizza (lunch)"
+                },
+                {
+                  "category": "food",
+                  "estimated_cost": "57.0",
+                  "name": "305 Pizza (dinner)"
+                },
+                {
+                  "category": "transport",
+                  "estimated_cost": "0.0",
+                  "name": "Mock Walking Allowance"
+                },
+                {
+                  "category": "hotel",
+                  "estimated_cost": "315.0",
+                  "name": "Doubletree by Hilton Grand Hotel Biscayne Bay"
+                }
+              ],
+              "day_number": 2,
+              "estimated_cost": "534.0"
+            },
+            {
+              "activities": [
+                {
+                  "category": "attractions",
+                  "estimated_cost": "69.0",
+                  "name": "HistoryMiami Museum"
+                },
+                {
+                  "category": "food",
+                  "estimated_cost": "102.0",
+                  "name": "Amazonico (breakfast)"
+                },
+                {
+                  "category": "food",
+                  "estimated_cost": "102.0",
+                  "name": "Amazonico (lunch)"
+                },
+                {
+                  "category": "food",
+                  "estimated_cost": "102.0",
+                  "name": "Amazonico (dinner)"
+                },
+                {
+                  "category": "transport",
+                  "estimated_cost": "0.0",
+                  "name": "Mock Walking Allowance"
+                }
+              ],
+              "day_number": 3,
+              "estimated_cost": "375.0"
+            }
+          ],
+          "days": 3,
+          "destination": "Miami",
+          "estimated_total_cost": "1368.0",
+          "warnings": [
+            "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+            "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+            "Estimated group cost exceeds the supplied budget."
+          ]
+        },
+        "trigger": [
+          {
+            "actual": "1368.0",
+            "category": "budget",
+            "code": "HARD_BUDGET_EXCEEDED",
+            "excess": "1118.0",
+            "expected": "250.0",
+            "message": "Hard budget exceeded"
+          }
+        ]
+      },
+      "requirements": {
+        "budget_amount": "250.0",
+        "budget_constraint_strength": "HARD",
+        "budget_scope": "TOTAL_TRIP",
+        "constraints": [],
+        "currency": "USD",
+        "destination": "Miami",
+        "duration_days": 3,
+        "end_date": null,
+        "food_preferences": [],
+        "hotel_preferences": [],
+        "interests": [],
+        "objective": null,
+        "origin": null,
+        "requirements_v2": {
+          "ambiguities": [],
+          "constraints": [
+            {
+              "confidence": 1.0,
+              "currency": "USD",
+              "extractor_source": "deterministic",
+              "kind": "BUDGET",
+              "operator": "LTE",
+              "scope": "TOTAL_TRIP",
+              "source_text": "The total budget is $250",
+              "strength": "HARD",
+              "value": "250.0"
+            }
+          ],
+          "objectives": [],
+          "preferences": []
+        },
+        "specific_preferences": [],
+        "start_date": null,
+        "transport_preferences": [],
+        "travelers": 3
+      },
+      "status": "error",
+      "validation": {
+        "outcome": "failed",
+        "performed": true,
+        "reason": null,
+        "violations": [
+          {
+            "actual": "1062.0",
+            "category": "budget",
+            "code": "HARD_BUDGET_EXCEEDED",
+            "excess": "812.0",
+            "expected": "250.0",
+            "message": "Hard budget exceeded"
+          }
+        ]
+      },
+      "warnings": [
+        "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+        "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+        "Budget repair selected the least-cost matching options for each day.",
+        "Estimated group cost exceeds the supplied budget."
+      ]
+    },
+    "id": "extra-05"
+  },
+  {
+    "fixture": {
+      "budget": {
+        "basis": "group",
+        "breakdown": {
+          "attractions": "43.0",
+          "food": "207.0",
+          "hotel": "216.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "UNKNOWN",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "466.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "466.0",
+        "provided_limit": null,
+        "remaining_budget": null,
+        "travelers": 1,
+        "warnings": [],
+        "within_budget": null
+      },
+      "candidates": [
+        {
+          "alternatives": [],
+          "category": "attractions",
+          "selected": [
+            {
+              "address": "305 Harrison Street, Seattle WA 98109",
+              "category": "attractions",
+              "city": "Seattle",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-a3",
+              "image_url": null,
+              "latitude": 47.6205353,
+              "longitude": -122.3501816,
+              "name": "Chihuly Garden and Glass",
+              "preference_matches": [],
+              "price": "0.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/161587729",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T21:18:32.564134Z",
+              "snapshot_version": "osm_seattle_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "WA",
+              "tags": [
+                "parks",
+                "outdoors"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "1010 Valley Street, Seattle WA 98109",
+              "category": "attractions",
+              "city": "Seattle",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-a2",
+              "image_url": null,
+              "latitude": 47.6271962,
+              "longitude": -122.3359006,
+              "name": "Center for Wooden Boats",
+              "preference_matches": [],
+              "price": "19.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/49747361",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T21:18:32.564134Z",
+              "snapshot_version": "osm_seattle_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "WA",
+              "tags": [
+                "museums",
+                "history"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "4303 Memorial Way Northeast, Seattle WA 98105",
+              "category": "attractions",
+              "city": "Seattle",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-a1",
+              "image_url": null,
+              "latitude": 47.6604219,
+              "longitude": -122.3115327,
+              "name": "Burke Museum of Natural History and Culture",
+              "preference_matches": [],
+              "price": "24.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/160545994",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T21:18:32.564134Z",
+              "snapshot_version": "osm_seattle_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "WA",
+              "tags": [
+                "museums",
+                "art"
+              ],
+              "unit": "per_person_visit"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "address": "411 University Street, Seattle WA 98101",
+              "category": "hotel",
+              "city": "Seattle",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-h2",
+              "image_url": null,
+              "latitude": 47.6080973,
+              "longitude": -122.3339606,
+              "name": "Fairmont Olympic Hotel",
+              "preference_matches": [],
+              "price": "148.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "way/35824976",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T21:20:21.079984Z",
+              "snapshot_version": "osm_seattle_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "WA",
+              "tags": [
+                "quiet"
+              ],
+              "unit": "per_person_night"
+            },
+            {
+              "address": "99 Union Street, Seattle WA 98101",
+              "category": "hotel",
+              "city": "Seattle",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-h3",
+              "image_url": null,
+              "latitude": 47.6073807,
+              "longitude": -122.3391648,
+              "name": "Four Seasons Seattle",
+              "preference_matches": [],
+              "price": "245.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "way/357283830",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T21:20:21.079984Z",
+              "snapshot_version": "osm_seattle_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "WA",
+              "tags": [
+                "luxury",
+                "central"
+              ],
+              "unit": "per_person_night"
+            }
+          ],
+          "category": "hotel",
+          "selected": [
+            {
+              "address": "1113 6th Avenue, Seattle WA 98101",
+              "category": "hotel",
+              "city": "Seattle",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-h1",
+              "image_url": null,
+              "latitude": 47.6080905,
+              "longitude": -122.3321214,
+              "name": "Crowne Plaza Seattle Downtown",
+              "preference_matches": [],
+              "price": "108.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "way/396824069",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T21:20:21.079984Z",
+              "snapshot_version": "osm_seattle_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "WA",
+              "tags": [
+                "budget",
+                "central"
+              ],
+              "unit": "per_person_night"
+            }
+          ]
+        },
+        {
+          "alternatives": [],
+          "category": "food",
+          "selected": [
+            {
+              "address": "2717 61st Avenue Southwest, Seattle WA 98116",
+              "category": "food",
+              "city": "Seattle",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-f1",
+              "image_url": null,
+              "latitude": 47.5785227,
+              "longitude": -122.4111061,
+              "name": "Alki Homestead",
+              "preference_matches": [],
+              "price": "18.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=italian"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Italian"
+              ],
+              "provider_place_id": "way/233293290",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T21:20:47.095649Z",
+              "snapshot_version": "osm_seattle_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "WA",
+              "tags": [
+                "seafood",
+                "local"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "1831 Broadway, Seattle WA 98122",
+              "category": "food",
+              "city": "Seattle",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-f2",
+              "image_url": null,
+              "latitude": 47.6185701,
+              "longitude": -122.321079,
+              "name": "Annapurna Cafe",
+              "preference_matches": [],
+              "price": "19.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=indian"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Indian"
+              ],
+              "provider_place_id": "node/2077272324",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T21:20:47.095649Z",
+              "snapshot_version": "osm_seattle_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "WA",
+              "tags": [
+                "vegetarian",
+                "vegan"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "1600 Post Alley, Seattle WA 98101",
+              "category": "food",
+              "city": "Seattle",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-f3",
+              "image_url": null,
+              "latitude": 47.6097117,
+              "longitude": -122.3415286,
+              "name": "Café Campagne",
+              "preference_matches": [],
+              "price": "32.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=french"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: French"
+              ],
+              "provider_place_id": "node/2397485860",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T21:20:47.095649Z",
+              "snapshot_version": "osm_seattle_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "WA",
+              "tags": [
+                "seafood"
+              ],
+              "unit": "per_person_meal"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "category": "transport",
+              "city": "Seattle",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-t2",
+              "image_url": null,
+              "name": "Mock Transit Day Allowance",
+              "preference_matches": [],
+              "price": "11.0",
+              "rating": 4.4,
+              "review_count": 960,
+              "source": "controlled_mock_fixture",
+              "state": "WA",
+              "tags": [
+                "public transit"
+              ],
+              "unit": "per_person_day"
+            },
+            {
+              "category": "transport",
+              "city": "Seattle",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-t3",
+              "image_url": null,
+              "name": "Mock Taxi Day Allowance",
+              "preference_matches": [],
+              "price": "47.0",
+              "rating": 4.0,
+              "review_count": 370,
+              "source": "controlled_mock_fixture",
+              "state": "WA",
+              "tags": [
+                "taxi"
+              ],
+              "unit": "per_person_day"
+            }
+          ],
+          "category": "transport",
+          "selected": [
+            {
+              "category": "transport",
+              "city": "Seattle",
+              "currency": "USD",
+              "description": null,
+              "destination": "Seattle",
+              "id": "sea-t1",
+              "image_url": null,
+              "name": "Mock Walking Allowance",
+              "preference_matches": [],
+              "price": "0.0",
+              "rating": null,
+              "review_count": null,
+              "source": "controlled_mock_fixture",
+              "state": "WA",
+              "tags": [
+                "walking"
+              ],
+              "unit": "per_person_day"
+            }
+          ]
+        }
+      ],
+      "clarification_question": null,
+      "itinerary": {
+        "currency": "USD",
+        "daily_plan": [
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "0.0",
+                "name": "Chihuly Garden and Glass"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "18.0",
+                "name": "Alki Homestead (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "18.0",
+                "name": "Alki Homestead (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "18.0",
+                "name": "Alki Homestead (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "108.0",
+                "name": "Crowne Plaza Seattle Downtown"
+              }
+            ],
+            "day_number": 1,
+            "estimated_cost": "162.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "19.0",
+                "name": "Center for Wooden Boats"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "19.0",
+                "name": "Annapurna Cafe (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "19.0",
+                "name": "Annapurna Cafe (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "19.0",
+                "name": "Annapurna Cafe (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "108.0",
+                "name": "Crowne Plaza Seattle Downtown"
+              }
+            ],
+            "day_number": 2,
+            "estimated_cost": "184.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "24.0",
+                "name": "Burke Museum of Natural History and Culture"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "32.0",
+                "name": "Café Campagne (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "32.0",
+                "name": "Café Campagne (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "32.0",
+                "name": "Café Campagne (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              }
+            ],
+            "day_number": 3,
+            "estimated_cost": "120.0"
+          }
+        ],
+        "days": 3,
+        "destination": "Seattle",
+        "estimated_total_cost": "466.0",
+        "warnings": [
+          "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+          "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+          "Dates determine duration only; opening hours and dated availability are not checked."
+        ]
+      },
+      "missing_fields": [],
+      "query": "Plan a 3-day trip to Seattle from 2026-12-01 to 2026-12-03 for 1 traveler.",
+      "repair": null,
+      "requirements": {
+        "budget_amount": null,
+        "budget_constraint_strength": "UNSPECIFIED",
+        "budget_scope": "UNKNOWN",
+        "constraints": [],
+        "currency": "USD",
+        "destination": "Seattle",
+        "duration_days": 3,
+        "end_date": "2026-12-03",
+        "food_preferences": [],
+        "hotel_preferences": [],
+        "interests": [],
+        "objective": null,
+        "origin": null,
+        "requirements_v2": {
+          "ambiguities": [],
+          "constraints": [],
+          "objectives": [],
+          "preferences": []
+        },
+        "specific_preferences": [],
+        "start_date": "2026-12-01",
+        "transport_preferences": [],
+        "travelers": 1
+      },
+      "status": "success",
+      "validation": {
+        "outcome": "passed",
+        "performed": true,
+        "reason": null,
+        "violations": []
+      },
+      "warnings": [
+        "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+        "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+        "Dates determine duration only; opening hours and dated availability are not checked."
+      ]
+    },
+    "id": "extra-06"
+  },
+  {
+    "fixture": {
+      "budget": {
+        "basis": "group",
+        "breakdown": {
+          "attractions": "252.0",
+          "food": "1392.0",
+          "hotel": "1710.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "UNKNOWN",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "3354.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "1677.0",
+        "provided_limit": null,
+        "remaining_budget": null,
+        "travelers": 2,
+        "warnings": [],
+        "within_budget": null
+      },
+      "candidates": [
+        {
+          "alternatives": [],
+          "category": "attractions",
+          "selected": [
+            {
+              "address": "6500 South Pulaski Road, Chicago IL 60629",
+              "category": "attractions",
+              "city": "Chicago",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-a3",
+              "image_url": null,
+              "latitude": 41.7746301,
+              "longitude": -87.7229824,
+              "name": "Balzekas Museum of Lithuanian Culture",
+              "preference_matches": [],
+              "price": "0.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/163573566",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T15:53:51.367411Z",
+              "snapshot_version": "osm_chicago_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "IL",
+              "tags": [
+                "parks",
+                "walking"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "10406 South Maryland Avenue, Chicago IL 60628",
+              "category": "attractions",
+              "city": "Chicago",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-a2",
+              "image_url": null,
+              "latitude": 41.7053741,
+              "longitude": -87.6030693,
+              "name": "A. Philip Randolph Pullman Porter Museum",
+              "preference_matches": [],
+              "price": "18.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/210698577",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T15:53:51.367411Z",
+              "snapshot_version": "osm_chicago_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "IL",
+              "tags": [
+                "museums",
+                "history"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "180 North Michigan Avenue, Chicago IL 60601",
+              "category": "attractions",
+              "city": "Chicago",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-a1",
+              "image_url": null,
+              "latitude": 41.8855608,
+              "longitude": -87.6249909,
+              "name": "American Writers Museum",
+              "preference_matches": [],
+              "price": "24.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "node/5169949885",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T15:53:51.367411Z",
+              "snapshot_version": "osm_chicago_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "IL",
+              "tags": [
+                "museums",
+                "art"
+              ],
+              "unit": "per_person_visit"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "address": "151 East Wacker Drive, Chicago IL 60601",
+              "category": "hotel",
+              "city": "Chicago",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-h2",
+              "image_url": null,
+              "latitude": 41.8874924,
+              "longitude": -87.6222342,
+              "name": "Hyatt Regency Chicago",
+              "preference_matches": [],
+              "price": "135.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "way/235920251",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:37:50.069047Z",
+              "snapshot_version": "osm_chicago_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "IL",
+              "tags": [
+                "quiet"
+              ],
+              "unit": "per_person_night"
+            },
+            {
+              "address": "85 East Wacker Drive, Chicago IL 60601",
+              "category": "hotel",
+              "city": "Chicago",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-h3",
+              "image_url": null,
+              "latitude": 41.8877548,
+              "longitude": -87.625305,
+              "name": "London House Chicago",
+              "preference_matches": [],
+              "price": "225.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "way/330535225",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:37:50.069047Z",
+              "snapshot_version": "osm_chicago_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "IL",
+              "tags": [
+                "luxury",
+                "central"
+              ],
+              "unit": "per_person_night"
+            }
+          ],
+          "category": "hotel",
+          "selected": [
+            {
+              "address": "150 East Ontario Street, Chicago IL 60611",
+              "category": "hotel",
+              "city": "Chicago",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-h1",
+              "image_url": null,
+              "latitude": 41.8935944,
+              "longitude": -87.6232845,
+              "name": "Hotel Riu Plaza Chicago",
+              "preference_matches": [],
+              "price": "95.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "way/401244510",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:37:50.069047Z",
+              "snapshot_version": "osm_chicago_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "IL",
+              "tags": [
+                "budget",
+                "central"
+              ],
+              "unit": "per_person_night"
+            }
+          ]
+        },
+        {
+          "alternatives": [],
+          "category": "food",
+          "selected": [
+            {
+              "address": "445 North Clark Street, Chicago IL 60654",
+              "category": "food",
+              "city": "Chicago",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-f3",
+              "image_url": null,
+              "latitude": 41.8905369,
+              "longitude": -87.6309213,
+              "name": "Frontera Grill",
+              "preference_matches": [
+                "seafood"
+              ],
+              "price": "31.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=mexican"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Mexican"
+              ],
+              "provider_place_id": "node/3575225597",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:39:57.005646Z",
+              "snapshot_version": "osm_chicago_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "IL",
+              "tags": [
+                "seafood"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "3259 East 95th Street, Chicago IL 60617",
+              "category": "food",
+              "city": "Chicago",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-f2",
+              "image_url": null,
+              "latitude": 41.722641,
+              "longitude": -87.5440215,
+              "name": "Calumet Fisheries",
+              "preference_matches": [],
+              "price": "17.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=seafood"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Seafood"
+              ],
+              "provider_place_id": "way/211352838",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:39:57.005646Z",
+              "snapshot_version": "osm_chicago_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "IL",
+              "tags": [
+                "vegetarian",
+                "vegan"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "1723 North Halsted Street, Chicago IL 60614",
+              "category": "food",
+              "city": "Chicago",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-f1",
+              "image_url": null,
+              "latitude": 41.9134372,
+              "longitude": -87.648199,
+              "name": "Alinea",
+              "preference_matches": [],
+              "price": "19.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=fine_dining"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Fine Dining"
+              ],
+              "provider_place_id": "node/3502294529",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T20:39:57.005646Z",
+              "snapshot_version": "osm_chicago_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "IL",
+              "tags": [
+                "pizza",
+                "local"
+              ],
+              "unit": "per_person_meal"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "category": "transport",
+              "city": "Chicago",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-t2",
+              "image_url": null,
+              "name": "Mock Rail Day Allowance",
+              "preference_matches": [],
+              "price": "10.0",
+              "rating": 4.4,
+              "review_count": 1500,
+              "source": "controlled_mock_fixture",
+              "state": "IL",
+              "tags": [
+                "public transit"
+              ],
+              "unit": "per_person_day"
+            },
+            {
+              "category": "transport",
+              "city": "Chicago",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-t3",
+              "image_url": null,
+              "name": "Mock Taxi Day Allowance",
+              "preference_matches": [],
+              "price": "44.0",
+              "rating": 4.0,
+              "review_count": 390,
+              "source": "controlled_mock_fixture",
+              "state": "IL",
+              "tags": [
+                "taxi"
+              ],
+              "unit": "per_person_day"
+            }
+          ],
+          "category": "transport",
+          "selected": [
+            {
+              "category": "transport",
+              "city": "Chicago",
+              "currency": "USD",
+              "description": null,
+              "destination": "Chicago",
+              "id": "chi-t1",
+              "image_url": null,
+              "name": "Mock Walking Allowance",
+              "preference_matches": [
+                "walking"
+              ],
+              "price": "0.0",
+              "rating": null,
+              "review_count": null,
+              "source": "controlled_mock_fixture",
+              "state": "IL",
+              "tags": [
+                "walking"
+              ],
+              "unit": "per_person_day"
+            }
+          ]
+        }
+      ],
+      "clarification_question": null,
+      "itinerary": {
+        "currency": "USD",
+        "daily_plan": [
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "0.0",
+                "name": "Balzekas Museum of Lithuanian Culture"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "190.0",
+                "name": "Hotel Riu Plaza Chicago"
+              }
+            ],
+            "day_number": 1,
+            "estimated_cost": "376.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "36.0",
+                "name": "A. Philip Randolph Pullman Porter Museum"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "34.0",
+                "name": "Calumet Fisheries (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "34.0",
+                "name": "Calumet Fisheries (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "34.0",
+                "name": "Calumet Fisheries (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "190.0",
+                "name": "Hotel Riu Plaza Chicago"
+              }
+            ],
+            "day_number": 2,
+            "estimated_cost": "328.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "48.0",
+                "name": "American Writers Museum"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "38.0",
+                "name": "Alinea (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "38.0",
+                "name": "Alinea (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "38.0",
+                "name": "Alinea (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "190.0",
+                "name": "Hotel Riu Plaza Chicago"
+              }
+            ],
+            "day_number": 3,
+            "estimated_cost": "352.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "0.0",
+                "name": "Balzekas Museum of Lithuanian Culture"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "190.0",
+                "name": "Hotel Riu Plaza Chicago"
+              }
+            ],
+            "day_number": 4,
+            "estimated_cost": "376.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "36.0",
+                "name": "A. Philip Randolph Pullman Porter Museum"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "34.0",
+                "name": "Calumet Fisheries (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "34.0",
+                "name": "Calumet Fisheries (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "34.0",
+                "name": "Calumet Fisheries (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "190.0",
+                "name": "Hotel Riu Plaza Chicago"
+              }
+            ],
+            "day_number": 5,
+            "estimated_cost": "328.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "48.0",
+                "name": "American Writers Museum"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "38.0",
+                "name": "Alinea (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "38.0",
+                "name": "Alinea (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "38.0",
+                "name": "Alinea (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "190.0",
+                "name": "Hotel Riu Plaza Chicago"
+              }
+            ],
+            "day_number": 6,
+            "estimated_cost": "352.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "0.0",
+                "name": "Balzekas Museum of Lithuanian Culture"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "190.0",
+                "name": "Hotel Riu Plaza Chicago"
+              }
+            ],
+            "day_number": 7,
+            "estimated_cost": "376.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "36.0",
+                "name": "A. Philip Randolph Pullman Porter Museum"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "34.0",
+                "name": "Calumet Fisheries (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "34.0",
+                "name": "Calumet Fisheries (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "34.0",
+                "name": "Calumet Fisheries (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "190.0",
+                "name": "Hotel Riu Plaza Chicago"
+              }
+            ],
+            "day_number": 8,
+            "estimated_cost": "328.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "48.0",
+                "name": "American Writers Museum"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "38.0",
+                "name": "Alinea (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "38.0",
+                "name": "Alinea (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "38.0",
+                "name": "Alinea (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "190.0",
+                "name": "Hotel Riu Plaza Chicago"
+              }
+            ],
+            "day_number": 9,
+            "estimated_cost": "352.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "0.0",
+                "name": "Balzekas Museum of Lithuanian Culture"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "62.0",
+                "name": "Frontera Grill (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              }
+            ],
+            "day_number": 10,
+            "estimated_cost": "186.0"
+          }
+        ],
+        "days": 10,
+        "destination": "Chicago",
+        "estimated_total_cost": "3354.0",
+        "warnings": [
+          "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+          "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+          "Small mock dataset: some attractions repeat across days."
+        ]
+      },
+      "missing_fields": [],
+      "query": "Plan a 10-day trip to Chicago for 2 travelers. I like walking and seafood.",
+      "repair": null,
+      "requirements": {
+        "budget_amount": null,
+        "budget_constraint_strength": "UNSPECIFIED",
+        "budget_scope": "UNKNOWN",
+        "constraints": [],
+        "currency": "USD",
+        "destination": "Chicago",
+        "duration_days": 10,
+        "end_date": null,
+        "food_preferences": [
+          "seafood"
+        ],
+        "hotel_preferences": [],
+        "interests": [],
+        "objective": null,
+        "origin": null,
+        "requirements_v2": {
+          "ambiguities": [],
+          "constraints": [],
+          "objectives": [],
+          "preferences": []
+        },
+        "specific_preferences": [],
+        "start_date": null,
+        "transport_preferences": [
+          "walking"
+        ],
+        "travelers": 2
+      },
+      "status": "success",
+      "validation": {
+        "outcome": "passed",
+        "performed": true,
+        "reason": null,
+        "violations": []
+      },
+      "warnings": [
+        "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+        "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+        "Small mock dataset: some attractions repeat across days."
+      ]
+    },
+    "id": "extra-07"
+  },
+  {
+    "fixture": {
+      "budget": {
+        "basis": "per_traveler",
+        "breakdown": {
+          "attractions": "22.0",
+          "food": "96.0",
+          "hotel": "88.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "TOTAL_TRIP",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "206.0",
+        "limit_currency": "EUR",
+        "per_traveler_cost": "206.0",
+        "provided_limit": "500.0",
+        "remaining_budget": null,
+        "travelers": null,
+        "warnings": [
+          "Traveler count is unspecified: costs are per traveler, not a group total.",
+          "Mock prices are USD; no currency conversion or budget comparison was made."
+        ],
+        "within_budget": null
+      },
+      "candidates": [
+        {
+          "alternatives": [
+            {
+              "address": "200 East Martin Luther King Jr Boulevard, Austin, TX 78705",
+              "category": "attractions",
+              "city": "Austin",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-a1",
+              "image_url": null,
+              "latitude": 30.2809842,
+              "longitude": -97.7374171,
+              "name": "Blanton Museum of Art",
+              "preference_matches": [],
+              "price": "19.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "relation/20972967",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T14:53:48.053870Z",
+              "snapshot_version": "osm_austin_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "TX",
+              "tags": [
+                "museums",
+                "art"
+              ],
+              "unit": "per_person_visit"
+            }
+          ],
+          "category": "attractions",
+          "selected": [
+            {
+              "address": "Barton Springs Road, AUSTIN, TX 78746",
+              "category": "attractions",
+              "city": "Austin",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-a3",
+              "image_url": null,
+              "latitude": 30.2676819,
+              "longitude": -97.7666085,
+              "name": "Zilker Park",
+              "preference_matches": [],
+              "price": "5.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "leisure=park"
+              ],
+              "provider_category_labels": [
+                "Park"
+              ],
+              "provider_place_id": "way/946120954",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T14:53:48.053870Z",
+              "snapshot_version": "osm_austin_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "TX",
+              "tags": [
+                "parks",
+                "outdoors"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "1011 San Marcos Street, TX",
+              "category": "attractions",
+              "city": "Austin",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-a2",
+              "image_url": null,
+              "latitude": 30.2694425,
+              "longitude": -97.7306205,
+              "name": "Texas Music Museum",
+              "preference_matches": [],
+              "price": "17.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/379207889",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T14:53:48.053870Z",
+              "snapshot_version": "osm_austin_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "TX",
+              "tags": [
+                "museums",
+                "history",
+                "music"
+              ],
+              "unit": "per_person_visit"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "address": "208 Barton Springs Road, Austin, TX 78704",
+              "category": "hotel",
+              "city": "Austin",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-h2",
+              "image_url": null,
+              "latitude": 30.2607066,
+              "longitude": -97.7467623,
+              "name": "Hyatt Regency Austin",
+              "preference_matches": [],
+              "price": "120.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "way/104137285",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T14:54:27.873422Z",
+              "snapshot_version": "osm_austin_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "TX",
+              "tags": [
+                "quiet"
+              ],
+              "unit": "per_person_night"
+            },
+            {
+              "address": "98 San Jacinto Blvd, Austin, TX 78701",
+              "category": "hotel",
+              "city": "Austin",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-h3",
+              "image_url": null,
+              "latitude": 30.2616262,
+              "longitude": -97.7422786,
+              "name": "Four Seasons Hotel Austin",
+              "preference_matches": [],
+              "price": "205.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "way/134807221",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T14:54:27.873422Z",
+              "snapshot_version": "osm_austin_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "TX",
+              "tags": [
+                "luxury",
+                "central"
+              ],
+              "unit": "per_person_night"
+            }
+          ],
+          "category": "hotel",
+          "selected": [
+            {
+              "address": "500 East 4th Street, Austin, TX 78701",
+              "category": "hotel",
+              "city": "Austin",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-h1",
+              "image_url": null,
+              "latitude": 30.2652582,
+              "longitude": -97.73806,
+              "name": "Hilton Austin",
+              "preference_matches": [],
+              "price": "88.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "node/12577833089",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T14:54:27.873422Z",
+              "snapshot_version": "osm_austin_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "TX",
+              "tags": [
+                "budget",
+                "central"
+              ],
+              "unit": "per_person_night"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "address": "900 East 11th Street, Austin, TX 78702",
+              "category": "food",
+              "city": "Austin",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-f3",
+              "image_url": null,
+              "latitude": 30.2701634,
+              "longitude": -97.7312704,
+              "name": "Franklin Barbecue",
+              "preference_matches": [],
+              "price": "27.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=barbecue"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Barbecue"
+              ],
+              "provider_place_id": "way/382368408",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T14:55:27.455931Z",
+              "snapshot_version": "osm_austin_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "TX",
+              "tags": [
+                "barbecue",
+                "local"
+              ],
+              "unit": "per_person_meal"
+            }
+          ],
+          "category": "food",
+          "selected": [
+            {
+              "address": "2505 Webberville Road, Austin, TX 78702",
+              "category": "food",
+              "city": "Austin",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-f1",
+              "image_url": null,
+              "latitude": 30.2630626,
+              "longitude": -97.7137458,
+              "name": "Veracruz All Natural",
+              "preference_matches": [],
+              "price": "14.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=mexican"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Mexican"
+              ],
+              "provider_place_id": "way/802335915",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T14:55:27.455931Z",
+              "snapshot_version": "osm_austin_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "TX",
+              "tags": [
+                "tacos",
+                "local"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "1900 South 1st Street, Austin, TX 78704",
+              "category": "food",
+              "city": "Austin",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-f2",
+              "image_url": null,
+              "latitude": 30.2464901,
+              "longitude": -97.7568002,
+              "name": "Bouldin Creek Cafe",
+              "preference_matches": [],
+              "price": "18.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "diet:vegetarian=only",
+                "diet:vegan=yes"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Vegetarian only",
+                "Vegan options"
+              ],
+              "provider_place_id": "way/382491308",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T14:55:27.455931Z",
+              "snapshot_version": "osm_austin_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "TX",
+              "tags": [
+                "vegetarian",
+                "vegan"
+              ],
+              "unit": "per_person_meal"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "category": "transport",
+              "city": "Austin",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-t2",
+              "image_url": null,
+              "name": "Mock Bus Day Allowance",
+              "preference_matches": [],
+              "price": "7.0",
+              "rating": 4.1,
+              "review_count": 490,
+              "source": "controlled_mock_fixture",
+              "state": "TX",
+              "tags": [
+                "public transit"
+              ],
+              "unit": "per_person_day"
+            },
+            {
+              "category": "transport",
+              "city": "Austin",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-t3",
+              "image_url": null,
+              "name": "Mock Rideshare Day Allowance",
+              "preference_matches": [],
+              "price": "40.0",
+              "rating": 4.2,
+              "review_count": 310,
+              "source": "controlled_mock_fixture",
+              "state": "TX",
+              "tags": [
+                "taxi"
+              ],
+              "unit": "per_person_day"
+            }
+          ],
+          "category": "transport",
+          "selected": [
+            {
+              "category": "transport",
+              "city": "Austin",
+              "currency": "USD",
+              "description": null,
+              "destination": "Austin",
+              "id": "aus-t1",
+              "image_url": null,
+              "name": "Mock Walking Allowance",
+              "preference_matches": [],
+              "price": "0.0",
+              "rating": null,
+              "review_count": null,
+              "source": "controlled_mock_fixture",
+              "state": "TX",
+              "tags": [
+                "walking"
+              ],
+              "unit": "per_person_day"
+            }
+          ]
+        }
+      ],
+      "clarification_question": null,
+      "itinerary": {
+        "currency": "USD",
+        "daily_plan": [
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "5.0",
+                "name": "Zilker Park"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "14.0",
+                "name": "Veracruz All Natural (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "14.0",
+                "name": "Veracruz All Natural (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "14.0",
+                "name": "Veracruz All Natural (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "88.0",
+                "name": "Hilton Austin"
+              }
+            ],
+            "day_number": 1,
+            "estimated_cost": "135.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "17.0",
+                "name": "Texas Music Museum"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "18.0",
+                "name": "Bouldin Creek Cafe (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "18.0",
+                "name": "Bouldin Creek Cafe (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "18.0",
+                "name": "Bouldin Creek Cafe (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              }
+            ],
+            "day_number": 2,
+            "estimated_cost": "71.0"
+          }
+        ],
+        "days": 2,
+        "destination": "Austin",
+        "estimated_total_cost": "206.0",
+        "warnings": [
+          "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+          "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+          "Traveler count is unspecified: costs are per traveler, not a group total.",
+          "Mock prices are USD; no currency conversion or budget comparison was made."
+        ]
+      },
+      "missing_fields": [],
+      "query": "Plan a 2-day trip to Austin with a budget of EUR 500 total.",
+      "repair": null,
+      "requirements": {
+        "budget_amount": "500.0",
+        "budget_constraint_strength": "HARD",
+        "budget_scope": "TOTAL_TRIP",
+        "constraints": [],
+        "currency": "EUR",
+        "destination": "Austin",
+        "duration_days": 2,
+        "end_date": null,
+        "food_preferences": [],
+        "hotel_preferences": [],
+        "interests": [],
+        "objective": null,
+        "origin": null,
+        "requirements_v2": {
+          "ambiguities": [],
+          "constraints": [
+            {
+              "confidence": 1.0,
+              "currency": "EUR",
+              "extractor_source": "deterministic",
+              "kind": "BUDGET",
+              "operator": "LTE",
+              "scope": "TOTAL_TRIP",
+              "source_text": "Plan a 2-day trip to Austin with a budget of EUR 500  total",
+              "strength": "HARD",
+              "value": "500.0"
+            }
+          ],
+          "objectives": [],
+          "preferences": []
+        },
+        "specific_preferences": [],
+        "start_date": null,
+        "transport_preferences": [],
+        "travelers": null
+      },
+      "status": "success",
+      "validation": {
+        "outcome": "passed",
+        "performed": true,
+        "reason": null,
+        "violations": []
+      },
+      "warnings": [
+        "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+        "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+        "Traveler count is unspecified: costs are per traveler, not a group total.",
+        "Mock prices are USD; no currency conversion or budget comparison was made."
+      ]
+    },
+    "id": "extra-08"
+  },
+  {
+    "fixture": {
+      "budget": {
+        "basis": "per_traveler",
+        "breakdown": {
+          "attractions": "15.0",
+          "food": "108.0",
+          "hotel": "100.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "TOTAL_TRIP",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "223.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "223.0",
+        "provided_limit": "500.0",
+        "remaining_budget": null,
+        "travelers": null,
+        "warnings": [
+          "Traveler count is unspecified: costs are per traveler, not a group total.",
+          "Group budget cannot be verified without a traveler count."
+        ],
+        "within_budget": null
+      },
+      "candidates": [
+        {
+          "alternatives": [
+            {
+              "address": "25 Evans Way, Boston, MA 02115",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a1",
+              "image_url": null,
+              "latitude": 42.3382381,
+              "longitude": -71.0990448,
+              "name": "Isabella Stewart Gardner Museum",
+              "preference_matches": [],
+              "price": "20.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/29650851",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "museums"
+              ],
+              "unit": "per_person_visit"
+            }
+          ],
+          "category": "attractions",
+          "selected": [
+            {
+              "address": "4 Charles Street, Boston, MA 02116",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a3",
+              "image_url": null,
+              "latitude": 42.3540568,
+              "longitude": -71.069998,
+              "name": "Boston Public Garden",
+              "preference_matches": [],
+              "price": "0.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "leisure=park"
+              ],
+              "provider_category_labels": [
+                "Park"
+              ],
+              "provider_place_id": "way/23787885",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "parks"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "1 Central Wharf, Boston, MA 02110",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a2",
+              "image_url": null,
+              "latitude": 42.3591988,
+              "longitude": -71.0493558,
+              "name": "New England Aquarium",
+              "preference_matches": [],
+              "price": "15.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=aquarium"
+              ],
+              "provider_category_labels": [
+                "Aquarium"
+              ],
+              "provider_place_id": "way/29660091",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "aquarium"
+              ],
+              "unit": "per_person_visit"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "address": "370 Commonwealth Avenue, Boston, MA 02115",
+              "category": "hotel",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-h2",
+              "image_url": null,
+              "latitude": 42.3486873,
+              "longitude": -71.0887471,
+              "name": "The Eliot Hotel",
+              "preference_matches": [],
+              "price": "130.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "node/2350330785",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+              "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "quiet"
+              ],
+              "unit": "per_person_night"
+            },
+            {
+              "address": "200 Boylston Street, Boston, MA 02116",
+              "category": "hotel",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-h3",
+              "image_url": null,
+              "latitude": 42.3520527,
+              "longitude": -71.0683352,
+              "name": "Four Seasons Hotel Boston",
+              "preference_matches": [],
+              "price": "220.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "relation/63916",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+              "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "central",
+                "luxury"
+              ],
+              "unit": "per_person_night"
+            }
+          ],
+          "category": "hotel",
+          "selected": [
+            {
+              "address": "70 Rowes Wharf, Boston, MA 02110",
+              "category": "hotel",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-h1",
+              "image_url": null,
+              "latitude": 42.3566602,
+              "longitude": -71.0503163,
+              "name": "Boston Harbor Hotel",
+              "preference_matches": [],
+              "price": "100.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "node/1325873780",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+              "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "central",
+                "budget"
+              ],
+              "unit": "per_person_night"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "address": "761 Boylston Street, Boston, MA 02116",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f3",
+              "image_url": null,
+              "latitude": 42.3492931,
+              "longitude": -71.0811812,
+              "name": "Atlantic Fish",
+              "preference_matches": [],
+              "price": "30.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=seafood"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Seafood"
+              ],
+              "provider_place_id": "node/4418932490",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "seafood"
+              ],
+              "unit": "per_person_meal"
+            }
+          ],
+          "category": "food",
+          "selected": [
+            {
+              "address": "267 Newbury Street, Boston, MA 02116",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f1",
+              "image_url": null,
+              "latitude": 42.3495341,
+              "longitude": -71.0834556,
+              "name": "Aceituna Grill",
+              "preference_matches": [],
+              "price": "16.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=mediterranean",
+                "diet:vegetarian=yes",
+                "diet:vegan=yes"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Mediterranean",
+                "Vegetarian options",
+                "Vegan options"
+              ],
+              "provider_place_id": "node/12663666560",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "vegetarian",
+                "vegan"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "484 Commonwealth Avenue, Boston, MA 02215",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f2",
+              "image_url": null,
+              "latitude": 42.3485475,
+              "longitude": -71.0942315,
+              "name": "India Quality",
+              "preference_matches": [],
+              "price": "20.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=indian",
+                "diet:vegetarian=yes",
+                "diet:vegan=yes"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Indian",
+                "Vegetarian options",
+                "Vegan options"
+              ],
+              "provider_place_id": "node/7775144117",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "vegetarian"
+              ],
+              "unit": "per_person_meal"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t2",
+              "image_url": null,
+              "name": "Mock Transit Day Allowance",
+              "preference_matches": [],
+              "price": "10.0",
+              "rating": 4.4,
+              "review_count": 900,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "public transit"
+              ],
+              "unit": "per_person_day"
+            },
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t3",
+              "image_url": null,
+              "name": "Mock Taxi Day Allowance",
+              "preference_matches": [],
+              "price": "45.0",
+              "rating": 4.1,
+              "review_count": 330,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "taxi"
+              ],
+              "unit": "per_person_day"
+            }
+          ],
+          "category": "transport",
+          "selected": [
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t1",
+              "image_url": null,
+              "name": "Mock Walking Allowance",
+              "preference_matches": [],
+              "price": "0.0",
+              "rating": null,
+              "review_count": null,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "walking"
+              ],
+              "unit": "per_person_day"
+            }
+          ]
+        }
+      ],
+      "clarification_question": null,
+      "itinerary": {
+        "currency": "USD",
+        "daily_plan": [
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "0.0",
+                "name": "Boston Public Garden"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "16.0",
+                "name": "Aceituna Grill (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "16.0",
+                "name": "Aceituna Grill (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "16.0",
+                "name": "Aceituna Grill (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "100.0",
+                "name": "Boston Harbor Hotel"
+              }
+            ],
+            "day_number": 1,
+            "estimated_cost": "148.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "15.0",
+                "name": "New England Aquarium"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "20.0",
+                "name": "India Quality (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "20.0",
+                "name": "India Quality (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "20.0",
+                "name": "India Quality (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              }
+            ],
+            "day_number": 2,
+            "estimated_cost": "75.0"
+          }
+        ],
+        "days": 2,
+        "destination": "Boston",
+        "estimated_total_cost": "223.0",
+        "warnings": [
+          "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+          "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+          "Traveler count is unspecified: costs are per traveler, not a group total.",
+          "Group budget cannot be verified without a traveler count."
+        ]
+      },
+      "missing_fields": [],
+      "query": "Plan a 2-day trip to Boston. The total budget is $500.",
+      "repair": null,
+      "requirements": {
+        "budget_amount": "500.0",
+        "budget_constraint_strength": "HARD",
+        "budget_scope": "TOTAL_TRIP",
+        "constraints": [],
+        "currency": "USD",
+        "destination": "Boston",
+        "duration_days": 2,
+        "end_date": null,
+        "food_preferences": [],
+        "hotel_preferences": [],
+        "interests": [],
+        "objective": null,
+        "origin": null,
+        "requirements_v2": {
+          "ambiguities": [],
+          "constraints": [
+            {
+              "confidence": 1.0,
+              "currency": "USD",
+              "extractor_source": "deterministic",
+              "kind": "BUDGET",
+              "operator": "LTE",
+              "scope": "TOTAL_TRIP",
+              "source_text": "The total budget is $500",
+              "strength": "HARD",
+              "value": "500.0"
+            }
+          ],
+          "objectives": [],
+          "preferences": []
+        },
+        "specific_preferences": [],
+        "start_date": null,
+        "transport_preferences": [],
+        "travelers": null
+      },
+      "status": "success",
+      "validation": {
+        "outcome": "passed",
+        "performed": true,
+        "reason": null,
+        "violations": []
+      },
+      "warnings": [
+        "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+        "Quote convention: three meals/day and days minus one lodging nights; prices per person.",
+        "Traveler count is unspecified: costs are per traveler, not a group total.",
+        "Group budget cannot be verified without a traveler count."
+      ]
+    },
+    "id": "extra-09"
+  },
+  {
+    "fixture": {
+      "budget": {
+        "basis": "group",
+        "breakdown": {
+          "attractions": "40.0",
+          "food": "216.0",
+          "hotel": "200.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "UNKNOWN",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "456.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "228.0",
+        "provided_limit": null,
+        "remaining_budget": null,
+        "travelers": 2,
+        "warnings": [],
+        "within_budget": null
+      },
+      "candidates": [
+        {
+          "alternatives": [
+            {
+              "address": "1 Central Wharf, Boston, MA 02110",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a2",
+              "image_url": null,
+              "latitude": 42.3591988,
+              "longitude": -71.0493558,
+              "name": "New England Aquarium",
+              "preference_matches": [],
+              "price": "15.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=aquarium"
+              ],
+              "provider_category_labels": [
+                "Aquarium"
+              ],
+              "provider_place_id": "way/29660091",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "aquarium"
+              ],
+              "unit": "per_person_visit"
+            }
+          ],
+          "category": "attractions",
+          "selected": [
+            {
+              "address": "25 Evans Way, Boston, MA 02115",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a1",
+              "image_url": null,
+              "latitude": 42.3382381,
+              "longitude": -71.0990448,
+              "name": "Isabella Stewart Gardner Museum",
+              "preference_matches": [
+                "museums"
+              ],
+              "price": "20.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=museum"
+              ],
+              "provider_category_labels": [
+                "Museum"
+              ],
+              "provider_place_id": "way/29650851",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "museums"
+              ],
+              "unit": "per_person_visit"
+            },
+            {
+              "address": "4 Charles Street, Boston, MA 02116",
+              "category": "attractions",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-a3",
+              "image_url": null,
+              "latitude": 42.3540568,
+              "longitude": -71.069998,
+              "name": "Boston Public Garden",
+              "preference_matches": [],
+              "price": "0.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "leisure=park"
+              ],
+              "provider_category_labels": [
+                "Park"
+              ],
+              "provider_place_id": "way/23787885",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T05:36:07.289011Z",
+              "snapshot_version": "osm_boston_attractions_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "parks"
+              ],
+              "unit": "per_person_visit"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "address": "370 Commonwealth Avenue, Boston, MA 02115",
+              "category": "hotel",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-h2",
+              "image_url": null,
+              "latitude": 42.3486873,
+              "longitude": -71.0887471,
+              "name": "The Eliot Hotel",
+              "preference_matches": [],
+              "price": "130.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "node/2350330785",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+              "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "quiet"
+              ],
+              "unit": "per_person_night"
+            },
+            {
+              "address": "200 Boylston Street, Boston, MA 02116",
+              "category": "hotel",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-h3",
+              "image_url": null,
+              "latitude": 42.3520527,
+              "longitude": -71.0683352,
+              "name": "Four Seasons Hotel Boston",
+              "preference_matches": [],
+              "price": "220.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "relation/63916",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+              "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "central",
+                "luxury"
+              ],
+              "unit": "per_person_night"
+            }
+          ],
+          "category": "hotel",
+          "selected": [
+            {
+              "address": "70 Rowes Wharf, Boston, MA 02110",
+              "category": "hotel",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-h1",
+              "image_url": null,
+              "latitude": 42.3566602,
+              "longitude": -71.0503163,
+              "name": "Boston Harbor Hotel",
+              "preference_matches": [],
+              "price": "100.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "tourism=hotel"
+              ],
+              "provider_category_labels": [
+                "Hotel"
+              ],
+              "provider_place_id": "node/1325873780",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T06:26:35.924546Z",
+              "snapshot_version": "osm_boston_hotels_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "central",
+                "budget"
+              ],
+              "unit": "per_person_night"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "address": "761 Boylston Street, Boston, MA 02116",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f3",
+              "image_url": null,
+              "latitude": 42.3492931,
+              "longitude": -71.0811812,
+              "name": "Atlantic Fish",
+              "preference_matches": [],
+              "price": "30.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=seafood"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Seafood"
+              ],
+              "provider_place_id": "node/4418932490",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "seafood"
+              ],
+              "unit": "per_person_meal"
+            }
+          ],
+          "category": "food",
+          "selected": [
+            {
+              "address": "267 Newbury Street, Boston, MA 02116",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f1",
+              "image_url": null,
+              "latitude": 42.3495341,
+              "longitude": -71.0834556,
+              "name": "Aceituna Grill",
+              "preference_matches": [
+                "vegetarian"
+              ],
+              "price": "16.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=mediterranean",
+                "diet:vegetarian=yes",
+                "diet:vegan=yes"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Mediterranean",
+                "Vegetarian options",
+                "Vegan options"
+              ],
+              "provider_place_id": "node/12663666560",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "vegetarian",
+                "vegan"
+              ],
+              "unit": "per_person_meal"
+            },
+            {
+              "address": "484 Commonwealth Avenue, Boston, MA 02215",
+              "category": "food",
+              "city": "Boston",
+              "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+              "cost_origin": "planner_estimate",
+              "cost_version": "phase_o_v1",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-f2",
+              "image_url": null,
+              "latitude": 42.3485475,
+              "longitude": -71.0942315,
+              "name": "India Quality",
+              "preference_matches": [
+                "vegetarian"
+              ],
+              "price": "20.0",
+              "provider": "openstreetmap",
+              "provider_category_ids": [
+                "amenity=restaurant",
+                "cuisine=indian",
+                "diet:vegetarian=yes",
+                "diet:vegan=yes"
+              ],
+              "provider_category_labels": [
+                "Restaurant",
+                "Cuisine: Indian",
+                "Vegetarian options",
+                "Vegan options"
+              ],
+              "provider_place_id": "node/7775144117",
+              "rating": null,
+              "review_count": null,
+              "snapshot_fetched_at": "2026-09-16T12:07:21.440541Z",
+              "snapshot_version": "osm_boston_food_2026-09-16_v1",
+              "source": "real_snapshot",
+              "state": "MA",
+              "tags": [
+                "vegetarian"
+              ],
+              "unit": "per_person_meal"
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t2",
+              "image_url": null,
+              "name": "Mock Transit Day Allowance",
+              "preference_matches": [],
+              "price": "10.0",
+              "rating": 4.4,
+              "review_count": 900,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "public transit"
+              ],
+              "unit": "per_person_day"
+            },
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t3",
+              "image_url": null,
+              "name": "Mock Taxi Day Allowance",
+              "preference_matches": [],
+              "price": "45.0",
+              "rating": 4.1,
+              "review_count": 330,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "taxi"
+              ],
+              "unit": "per_person_day"
+            }
+          ],
+          "category": "transport",
+          "selected": [
+            {
+              "category": "transport",
+              "city": "Boston",
+              "currency": "USD",
+              "description": null,
+              "destination": "Boston",
+              "id": "bos-t1",
+              "image_url": null,
+              "name": "Mock Walking Allowance",
+              "preference_matches": [],
+              "price": "0.0",
+              "rating": null,
+              "review_count": null,
+              "source": "controlled_mock_fixture",
+              "state": "MA",
+              "tags": [
+                "walking"
+              ],
+              "unit": "per_person_day"
+            }
+          ]
+        }
+      ],
+      "clarification_question": null,
+      "itinerary": {
+        "currency": "USD",
+        "daily_plan": [
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "40.0",
+                "name": "Isabella Stewart Gardner Museum"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "32.0",
+                "name": "Aceituna Grill (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "32.0",
+                "name": "Aceituna Grill (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "32.0",
+                "name": "Aceituna Grill (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              },
+              {
+                "category": "hotel",
+                "estimated_cost": "200.0",
+                "name": "Boston Harbor Hotel"
+              }
+            ],
+            "day_number": 1,
+            "estimated_cost": "336.0"
+          },
+          {
+            "activities": [
+              {
+                "category": "attractions",
+                "estimated_cost": "0.0",
+                "name": "Boston Public Garden"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "40.0",
+                "name": "India Quality (breakfast)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "40.0",
+                "name": "India Quality (lunch)"
+              },
+              {
+                "category": "food",
+                "estimated_cost": "40.0",
+                "name": "India Quality (dinner)"
+              },
+              {
+                "category": "transport",
+                "estimated_cost": "0.0",
+                "name": "Mock Walking Allowance"
+              }
+            ],
+            "day_number": 2,
+            "estimated_cost": "120.0"
+          }
+        ],
+        "days": 2,
+        "destination": "Boston",
+        "estimated_total_cost": "456.0",
+        "warnings": [
+          "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+          "Quote convention: three meals/day and days minus one lodging nights; prices per person."
+        ]
+      },
+      "missing_fields": [],
+      "query": "Plan a 2-day trip to Boston for 2 travelers. I like museums and vegetarian food.",
+      "repair": null,
+      "requirements": {
+        "budget_amount": null,
+        "budget_constraint_strength": "UNSPECIFIED",
+        "budget_scope": "UNKNOWN",
+        "constraints": [],
+        "currency": "USD",
+        "destination": "Boston",
+        "duration_days": 2,
+        "end_date": null,
+        "food_preferences": [
+          "vegetarian"
+        ],
+        "hotel_preferences": [],
+        "interests": [
+          "museums",
+          "food"
+        ],
+        "objective": null,
+        "origin": null,
+        "requirements_v2": {
+          "ambiguities": [],
+          "constraints": [],
+          "objectives": [],
+          "preferences": [
+            {
+              "category": "FOOD",
+              "value": "vegetarian"
+            }
+          ]
+        },
+        "specific_preferences": [
+          {
+            "category": "FOOD",
+            "value": "vegetarian"
+          }
+        ],
+        "start_date": null,
+        "transport_preferences": [],
+        "travelers": 2
+      },
+      "status": "success",
+      "validation": {
+        "outcome": "passed",
+        "performed": true,
+        "reason": null,
+        "violations": []
+      },
+      "warnings": [
+        "Offline mock estimates only; no live availability, tax, tips or intercity fares.",
+        "Quote convention: three meals/day and days minus one lodging nights; prices per person."
+      ]
+    },
+    "id": "extra-10"
+  }
+]
