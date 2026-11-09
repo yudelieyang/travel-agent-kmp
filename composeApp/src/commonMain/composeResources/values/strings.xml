@@ -1,0 +1,44 @@
+<resources>
+    <string name="offline">Offline · on device</string>
+    <string name="about">About and data</string>
+    <string name="home_title">Plan a trip</string>
+    <string name="home_subtitle">Tell us what you have in mind. Your plan stays on this device.</string>
+    <string name="your_trip">Your trip</string>
+    <string name="input_hint">Where would you like to go?</string>
+    <string name="plan_trip">Plan trip</string>
+    <string name="scenarios">Try a scenario</string>
+    <string name="featured">BUDGET REPAIR</string>
+    <string name="data_limits">Data &amp; limits</string>
+    <string name="footer">OpenStreetMap snapshot · %1$d US cities · prices are planning estimates.</string>
+    <string name="planning">Planning</string>
+    <string name="cancel">Back</string>
+    <string name="error">Unable to plan this request.</string>
+    <string name="skip">Skip</string><string name="stages">Stages</string>
+    <string name="request_stage">Request</string><string name="requirements_stage">Requirements</string><string name="candidates_stage">Candidate retrieval</string><string name="validation_stage">Validation</string><string name="repair_stage">Repair &amp; final</string>
+    <string name="stage_progress">Stage %1$d of 5 · %2$s</string><string name="character_count">%1$d characters</string>
+    <string name="candidate_description">Offline candidates selected from the snapshot and mock dataset.</string><string name="view_candidates">View candidates</string>
+    <string name="sights">Sights</string><string name="hotels">Hotels</string><string name="food">Food</string><string name="transit">Transit</string>
+    <string name="close">Close</string><string name="selected">Selected</string><string name="alternatives">Alternatives</string>
+    <string name="validation_passed">Validation passed</string><string name="validation_failed">Validation failed</string><string name="repair_detail">View repair details</string>
+    <string name="not_reached">Not reached</string><string name="passed">Passed</string><string name="failed">Failed</string>
+    <string name="days">%1$d days</string><string name="travelers">%1$d travelers</string>
+    <string name="one_traveler">1 traveler</string>
+    <string name="repair_title">Validation &amp; repair</string><string name="draft">Draft</string><string name="cap">Cap</string><string name="over">Over</string>
+    <string name="repair_description">Repair 1 of 1 · cheapest option in each category, every day</string>
+    <string name="before_after">Before &amp; after</string><string name="day">Day</string><string name="before">Before</string><string name="after">After</string><string name="total">Total</string><string name="changes">What changed</string>
+    <string name="revalidated">Re-validated</string><string name="left">left</string><string name="meals">Meals ×3</string>
+    <string name="result_title">Your trip</string><string name="passed_repair">Passed after 1 repair</string><string name="saved">saved %1$s</string><string name="of_budget">of %1$s</string>
+    <string name="sketch">Offline sketch</string><string name="sketch_caption">Sketch from snapshot coordinates — lines are not routes</string>
+    <string name="could_not_fit">Couldn't fit the budget</string><string name="edit_request">Edit request</string><string name="warnings">Notes &amp; limits</string><string name="day_amount">Day %1$d · %2$s</string>
+    <string name="destination">Destination</string><string name="duration">Duration</string><string name="missing">missing</string>
+    <string name="clarify_label">THE AGENT NEEDS ONE MORE DETAIL</string><string name="run_again">Run again</string>
+    <string name="clarify_footer">Nothing was planned or priced. When a required detail is missing, the agent asks instead of guessing.</string>
+    <string name="about_title">About &amp; data</string><string name="osm_notice">© OpenStreetMap contributors. Data is available under the Open Database License (ODbL).</string>
+    <string name="snapshot_dates">Snapshot dates</string><string name="font_notice">Fonts: Space Grotesk, Inter and JetBrains Mono, SIL Open Font License 1.1.</string>
+    <string name="limits">What this can and can't do</string><string name="limit_hours">Opening hours are not checked.</string><string name="limit_routes">Lines are sketches, not routes.</string><string name="limit_prices">Prices are planning estimates.</string><string name="limit_live">No live data or availability.</string><string name="limit_repair">At most one repair attempt.</string>
+    <string name="parity">Individually checked against the Python reference: 200 requirements and 28 end-to-end fixtures.</string><string name="version">Version 1.0 · golden-v1.1</string>
+    <string name="app_name">Travel Agent</string><string name="overview">Overview</string>
+    <string name="validation_summary">Draft costs %1$s — %2$s over the %3$s cap</string>
+    <string name="breakfast">Breakfast</string><string name="lunch">Lunch</string><string name="dinner">Dinner</string><string name="hotel">Hotel</string><string name="sight">Sight</string><string name="total_trip">total</string>
+    <string name="per_person">per person</string>
+</resources>

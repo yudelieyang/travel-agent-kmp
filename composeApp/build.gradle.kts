@@ -11,8 +11,10 @@ kotlin {
     sourceSets {
         commonMain.dependencies { implementation(compose.runtime); implementation(compose.foundation); implementation(compose.material3); implementation(compose.components.resources) }
         commonTest.dependencies { implementation(kotlin("test")) }
-        val desktopMain by getting { dependencies { implementation(compose.desktop.currentOs); implementation(project(":core")) } }
-        val androidMain by getting { dependencies { implementation("androidx.activity:activity-compose:1.13.0") } }
+        val jvmMain by creating { dependsOn(commonMain.get()); dependencies { implementation(project(":core")); implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.11.0") } }
+        val desktopMain by getting { dependsOn(jvmMain); dependencies { implementation(compose.desktop.currentOs) } }
+        val desktopTest by getting { resources.srcDir("../core/src/test/resources"); dependencies { implementation("org.jetbrains.compose.ui:ui-test-junit4:1.12.2"); implementation("junit:junit:4.13.2") } }
+        val androidMain by getting { dependsOn(jvmMain); dependencies { implementation("androidx.activity:activity-compose:1.13.0") } }
     }
 }
 compose.desktop { application { mainClass = "travel.MainKt" } }

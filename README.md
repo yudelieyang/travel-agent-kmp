@@ -18,5 +18,6 @@ Synchronize fixtures from the pinned Python `golden-v1.1` tag with `python tools
 The P2 Python differential corpora can be regenerated with the adjacent Python repository's `.venv` interpreter using `tools/generate_regex_parity.py` and `tools/generate_function_parity.py`. Both validate the pinned Python source and avoid writing Python bytecode. See `docs/P2_GOLD_COMPARISON.json` for the semantic dataset evaluation.
 
 
-Android and Desktop startup show the snapshot and fixture candidate counts.
+The Android manifest declares no `INTERNET` permission; planning and the bundled fonts work offline.
+On iQOO devices that suppress Activity launches from instrumentation, run P3 UI tests with `python tools/run_android_ui_tests.py` after installing the debug and androidTest APKs; the helper issues an external foreground launch for each test.
 Android min SDK is 26, required by the current java.time-based snapshot validator.

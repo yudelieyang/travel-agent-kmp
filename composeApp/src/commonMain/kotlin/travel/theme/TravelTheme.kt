@@ -49,9 +49,9 @@ val LocalTravelFonts = staticCompositionLocalOf { TravelFonts(FontFamily.Default
 @Composable fun TravelTheme(dark: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
     val c = if (dark) DarkColors else LightColors
     val fonts = TravelFonts(
-        FontFamily(Font(Res.font.space_grotesk, FontWeight.Normal)),
-        FontFamily(Font(Res.font.inter, FontWeight.Normal)),
-        FontFamily(Font(Res.font.jetbrains_mono, FontWeight.Normal)),
+        FontFamily(Font(Res.font.space_grotesk, FontWeight.Normal), Font(Res.font.space_grotesk, FontWeight.SemiBold), Font(Res.font.space_grotesk, FontWeight.Bold)),
+        FontFamily(Font(Res.font.inter, FontWeight.Normal), Font(Res.font.inter, FontWeight.Medium), Font(Res.font.inter, FontWeight.SemiBold)),
+        FontFamily(Font(Res.font.jetbrains_mono, FontWeight.Medium)),
     )
     val scheme = if (dark) darkColorScheme(primary = c.primary, onPrimary = c.onPrimary, background = c.background, surface = c.surface, onSurface = c.text) else
         lightColorScheme(primary = c.primary, onPrimary = c.onPrimary, background = c.background, surface = c.surface, onSurface = c.text)
