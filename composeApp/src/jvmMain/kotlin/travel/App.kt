@@ -71,7 +71,7 @@ private fun presets(): List<Preset> {
             val wide = maxWidth >= 840.dp
             val medium = maxWidth >= 600.dp && !wide
             if (wide && screen in listOf("home", "run", "result")) {
-                WidePage(cities, query, { query = it }, ::run, result, stage, running, failed, onAbout = { screen = "about" }, onRepair = { repairOrigin = screen; screen = "repair" })
+                WidePage(cities, query, { query = it }, ::run, result, stage, running, failed, onAbout = { screen = "about" }, onRepair = { repairOrigin = screen; screen = "repair" }, onEdit = { result = null; screen = "home" })
             } else Box(if (medium) Modifier.fillMaxWidth().widthIn(max = 640.dp).padding(horizontal = 24.dp) else Modifier.fillMaxSize()) {
             key(screen) {
             if (screen == "home") Home(cities, query, { query = it }, ::run, running, failed, onAbout = { screen = "about" })
@@ -105,7 +105,7 @@ private fun presets(): List<Preset> {
         Surface(shape = RoundedCornerShape(20.dp), color = c.surface, shadowElevation = 3.dp) {
             Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 Text(stringResource(Res.string.your_trip), fontFamily = fonts.body, fontWeight = FontWeight.SemiBold, color = c.text)
-                BasicTextField(value = query, onValueChange = onQuery, modifier = Modifier.fillMaxWidth().heightIn(min = 100.dp).border(1.dp, c.inputBorder, RoundedCornerShape(12.dp)).padding(14.dp), textStyle = androidx.compose.ui.text.TextStyle(color = c.text, fontFamily = fonts.body, fontSize = 16.sp), decorationBox = { inner -> Box { if (query.isEmpty()) Text(stringResource(Res.string.input_hint), color = c.textMuted, fontFamily = fonts.body); inner() } })
+                BasicTextField(value = query, onValueChange = onQuery, modifier = Modifier.fillMaxWidth().heightIn(min = 100.dp).border(1.dp, c.inputBorder, RoundedCornerShape(12.dp)).padding(14.dp), textStyle = androidx.compose.ui.text.TextStyle(color = c.text, fontFamily = fonts.body, fontSize = 16.sp, letterSpacing = 0.sp, fontFeatureSettings = "tnum"), decorationBox = { inner -> Box { if (query.isEmpty()) Text(stringResource(Res.string.input_hint), color = c.textMuted, fontFamily = fonts.body); inner() } })
                 Button(onClick = { run(query) }, enabled = query.isNotBlank() && !running, modifier = Modifier.fillMaxWidth().height(52.dp), shape = RoundedCornerShape(14.dp), colors = ButtonDefaults.buttonColors(disabledContainerColor = c.segmentTrack, disabledContentColor = c.textMuted)) { Text(stringResource(Res.string.plan_trip), fontFamily = fonts.body, fontWeight = FontWeight.SemiBold); Spacer(Modifier.weight(1f)); Text("→") }
                 if (failed) Text(stringResource(Res.string.error), color = c.error)
             }

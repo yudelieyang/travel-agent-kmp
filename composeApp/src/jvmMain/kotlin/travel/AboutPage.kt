@@ -21,7 +21,8 @@ import org.jetbrains.compose.resources.stringResource
 import travel.theme.*
 import travel_agent_kmp.composeapp.generated.resources.*
 
-private fun snapshotDates(): List<String> {
+private data class SnapshotDate(val city: String, val category: String, val date: String)
+private fun snapshotDates(): List<SnapshotDate> {
     val loader = requireNotNull(SnapshotLoader::class.java.classLoader)
     val root = "data/travel/snapshots/openstreetmap/"
     fun read(path: String) = requireNotNull(loader.getResourceAsStream(path)).bufferedReader().use { it.readText() }
@@ -29,7 +30,7 @@ private fun snapshotDates(): List<String> {
     return manifest["routes"]!!.jsonArray.map { row ->
         val route = row.jsonObject
         val data = Json.parseToJsonElement(read(root + route["snapshot"]!!.jsonPrimitive.content)).jsonObject
-        "${route["city"]!!.jsonPrimitive.content} · ${route["category"]!!.jsonPrimitive.content} · ${data["snapshot_fetched_at"]!!.jsonPrimitive.content.substringBefore('T')}"
+        SnapshotDate(route["city"]!!.jsonPrimitive.content, route["category"]!!.jsonPrimitive.content, data["snapshot_fetched_at"]!!.jsonPrimitive.content.substringBefore('T'))
     }
 }
 
@@ -37,7 +38,7 @@ private fun snapshotDates(): List<String> {
     val c = LocalTravelColors.current; val f = LocalTravelFonts.current
     val dates = remember { snapshotDates() }
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-        Row { val backDescription = stringResource(Res.string.cancel); TextButton(onClick = onBack, modifier = Modifier.semantics { contentDescription = backDescription }) { Text("←") }; Text(stringResource(Res.string.about_title), Modifier.padding(12.dp), color = c.text, fontFamily = f.title, fontSize = 18.sp, fontWeight = FontWeight.SemiBold) }
+        Row { BackButton(onBack); Text(stringResource(Res.string.about_title), Modifier.padding(12.dp), color = c.text, fontFamily = f.title, fontSize = 18.sp, fontWeight = FontWeight.SemiBold) }
         Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(16.dp)).background(c.surface).border(1.dp, c.border, RoundedCornerShape(16.dp)).padding(18.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
             Text(stringResource(Res.string.osm_notice), color = c.text, fontFamily = f.body)
             Text(stringResource(Res.string.font_notice), color = c.textMuted, fontFamily = f.body, fontSize = 13.sp)
@@ -45,7 +46,18 @@ private fun snapshotDates(): List<String> {
         Text(stringResource(Res.string.limits), color = c.text, fontFamily = f.title, fontSize = 18.sp, fontWeight = FontWeight.SemiBold)
         listOf(Res.string.limit_hours, Res.string.limit_routes, Res.string.limit_prices, Res.string.limit_live, Res.string.limit_repair).forEach { Text("•  ${stringResource(it)}", color = c.textMuted, fontFamily = f.body) }
         Text(stringResource(Res.string.snapshot_dates), color = c.text, fontFamily = f.title, fontSize = 18.sp, fontWeight = FontWeight.SemiBold)
-        dates.forEach { Text(it, color = c.textMuted, fontFamily = f.body, fontSize = 13.sp) }
+        dates.groupBy { it.city }.forEach { (city, entries) ->
+            entries.groupBy { it.date }.forEach { (date, dated) ->
+                val categories = dated.map { entry -> when (entry.category) {
+                    "attractions" -> stringResource(Res.string.snapshot_attractions)
+                    "hotel" -> stringResource(Res.string.snapshot_hotels)
+                    "food" -> stringResource(Res.string.snapshot_food)
+                    "transport" -> stringResource(Res.string.snapshot_transit)
+                    else -> entry.category
+                } }.distinct().joinToString(", ")
+                Text("$city · $categories · $date", color = c.textMuted, fontFamily = f.body, fontSize = 13.sp)
+            }
+        }
         Text(stringResource(Res.string.parity), color = c.textMuted, fontFamily = f.body, fontSize = 13.sp)
         Text(stringResource(Res.string.version), color = c.textMuted, fontFamily = f.body, fontSize = 13.sp)
     }

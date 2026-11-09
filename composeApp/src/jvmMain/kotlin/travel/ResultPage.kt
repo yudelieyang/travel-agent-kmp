@@ -25,6 +25,8 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.stringResource
@@ -32,12 +34,13 @@ import travel.theme.*
 import travel_agent_kmp.composeapp.generated.resources.*
 import kotlin.math.cos
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable fun ResultPage(run: EngineRun, onBack: () -> Unit, onEdit: () -> Unit, onStages: () -> Unit, onRepair: () -> Unit) {
     val c = LocalTravelColors.current; val f = LocalTravelFonts.current; val result = run.result
     val trip = result.itinerary; val budget = result.budget
     var dayIndex by remember { mutableIntStateOf(0) }
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-        Row(Modifier.fillMaxWidth()) { val backDescription = stringResource(Res.string.cancel); TextButton(onClick = onBack, modifier = Modifier.semantics { contentDescription = backDescription }) { Text("←") }; Text(result.requirements.destination ?: stringResource(Res.string.result_title), Modifier.weight(1f).padding(12.dp), color = c.text, fontFamily = f.title, fontSize = 18.sp, fontWeight = FontWeight.SemiBold); TextButton(onClick = onStages) { Text(stringResource(Res.string.stages)) } }
+        Row(Modifier.fillMaxWidth()) { BackButton(onBack); Text(result.requirements.destination ?: stringResource(Res.string.result_title), Modifier.weight(1f).padding(12.dp), color = c.text, fontFamily = f.title, fontSize = 18.sp, fontWeight = FontWeight.SemiBold); TextButton(onClick = onStages) { Text(stringResource(Res.string.stages)) } }
         if (trip == null || budget == null) {
             Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(18.dp)).background(c.errorContainer).padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 Text(stringResource(if (result.repair != null) Res.string.could_not_fit else Res.string.error), fontFamily = f.title, fontSize = 22.sp, fontWeight = FontWeight.Bold, color = c.onErrorContainer)
@@ -63,27 +66,39 @@ import kotlin.math.cos
                     }
                 }
                 val legendColors = mapOf("hotel" to c.heroAccent, "food" to c.heroWarm, "attractions" to c.onHero, "transport" to c.primary)
-                budget.breakdown.forEach { (key, value) -> Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                    if (value.signum() != 0) Spacer(Modifier.padding(top = 4.dp).size(8.dp).clip(RoundedCornerShape(50)).background(legendColors.getValue(key)))
-                    Text("${categoryLabel(key)} · $${MoneyFormatting.format(value)}", color = c.onHeroMuted, fontSize = 12.sp)
-                } }
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    listOf("hotel", "food", "attractions", "transport").forEach { key ->
+                        val value = budget.breakdown[key] ?: java.math.BigDecimal.ZERO
+                        Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                            if (value.signum() != 0) Spacer(Modifier.padding(top = 4.dp).size(8.dp).clip(RoundedCornerShape(2.dp)).background(legendColors.getValue(key)))
+                            Text("${categoryLabel(key)} $${legendMoney(value)}", color = c.onHeroMuted, fontSize = 12.sp)
+                        }
+                    }
+                }
                 if (result.repair != null) TextButton(onClick = onRepair) { Text(stringResource(Res.string.repair_detail), color = c.heroAccent) }
             }
             val day = trip.daily_plan.getOrNull(dayIndex) ?: trip.daily_plan.first()
-            val selected = result.candidates.flatMap { it.selected }.filter { it.latitude != null && it.longitude != null }
-            val places = day.activities.mapNotNull { a -> selected.firstOrNull { a.name == it.name || a.name.startsWith(it.name + " (") } }.distinctBy { it.id }
+            val places = placesForDay(run, day)
             Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(18.dp)).background(c.surface).border(1.dp, c.border, RoundedCornerShape(18.dp)).padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text(stringResource(Res.string.sketch), color = c.text, fontFamily = f.title, fontWeight = FontWeight.SemiBold)
                 Sketch(places)
                 Text(stringResource(Res.string.sketch_caption), color = c.textMuted, fontSize = 12.sp)
             }
-            Row((if (trip.daily_plan.size > 3) Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()) else Modifier.fillMaxWidth()).clip(RoundedCornerShape(50)).background(c.segmentTrack).padding(4.dp)) {
-                trip.daily_plan.forEachIndexed { index, item -> Text(stringResource(Res.string.day_amount, item.day_number, "$${MoneyFormatting.format(item.estimated_cost)}"), (if (trip.daily_plan.size <= 3) Modifier.weight(1f) else Modifier).clip(RoundedCornerShape(50)).background(if (index == dayIndex) c.surface else c.segmentTrack).clickable { dayIndex = index }.padding(horizontal = 5.dp, vertical = 12.dp), color = c.text, fontSize = 11.sp, textAlign = androidx.compose.ui.text.style.TextAlign.Center) }
+            val dayLabels = trip.daily_plan.map { stringResource(Res.string.day_amount, it.day_number, "$${compactMoney(it.estimated_cost)}") }
+            val measurer = rememberTextMeasurer()
+            val density = LocalDensity.current
+            BoxWithConstraints(Modifier.fillMaxWidth()) {
+                val available = with(density) { (maxWidth - 8.dp).toPx() }
+                val required = dayLabels.maxOfOrNull { measurer.measure(it, style = TextStyle(fontFamily = f.body, fontSize = 11.sp, letterSpacing = 0.sp, fontFeatureSettings = "tnum")).size.width.toDouble() + with(density) { 20.dp.toPx() } }?.times(dayLabels.size) ?: 0.0
+                val scroll = dayLabels.size > 3 || required > available
+                Row((if (scroll) Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()) else Modifier.fillMaxWidth()).clip(RoundedCornerShape(50)).background(c.segmentTrack).padding(4.dp)) {
+                    dayLabels.forEachIndexed { index, label -> Text(label, (if (!scroll) Modifier.weight(1f) else Modifier).clip(RoundedCornerShape(50)).background(if (index == dayIndex) c.surface else c.segmentTrack).clickable { dayIndex = index }.padding(horizontal = 10.dp, vertical = 12.dp), color = c.text, fontSize = 11.sp, maxLines = 1, textAlign = androidx.compose.ui.text.style.TextAlign.Center) }
+                }
             }
             day.activities.forEach { activity ->
                 val meal = Regex("\\((breakfast|lunch|dinner)\\)$").find(activity.name)?.groupValues?.get(1)
                 Row(Modifier.fillMaxWidth().padding(vertical = 7.dp), horizontalArrangement = Arrangement.SpaceBetween) {
-                    Text(categoryLabel(meal ?: activity.category).uppercase(), Modifier.width(90.dp), color = c.textMuted, fontSize = 11.sp, fontWeight = FontWeight.SemiBold)
+                    Text(categoryLabel(meal ?: activity.category, singular = true).uppercase(), Modifier.width(90.dp), color = c.textMuted, fontSize = 11.sp, fontWeight = FontWeight.SemiBold, letterSpacing = .5.sp)
                     Text(activity.name.substringBefore(" ("), Modifier.weight(1f), color = c.text, fontSize = 14.sp)
                     Text("$${MoneyFormatting.format(activity.estimated_cost)}", color = c.text, fontSize = 14.sp)
                 }
@@ -93,12 +108,19 @@ import kotlin.math.cos
     }
 }
 
-@Composable private fun Sketch(points: List<TravelOption>) {
+fun placesForDay(run: EngineRun, day: DayPlan): List<TravelOption> {
+    val selected = run.result.candidates.flatMap { it.selected }.filter { it.latitude != null && it.longitude != null }
+    return day.activities.mapNotNull { activity -> selected.firstOrNull { activity.name == it.name || activity.name.startsWith(it.name + " (") } }.distinctBy { it.id }
+}
+
+@Composable fun Sketch(points: List<TravelOption>) {
     val c = LocalTravelColors.current
     val description = points.joinToString(", ") { it.name }
     var bounds by remember { mutableStateOf(IntSize.Zero) }
     var selected by remember(points) { mutableStateOf<String?>(null) }
     val padPixels = with(LocalDensity.current) { 24.dp.toPx() }
+    val measurer = rememberTextMeasurer()
+    val fonts = LocalTravelFonts.current
     fun positions(width: Float, height: Float): List<Offset> {
         if (points.isEmpty()) return emptyList()
         val lat = points.map { it.latitude!! }.average()
@@ -121,12 +143,12 @@ import kotlin.math.cos
     }
     val labels = mutableListOf<androidx.compose.ui.geometry.Rect>()
     positions(bounds.width.toFloat(), bounds.height.toFloat()).forEachIndexed { index, point ->
-        val width = (points[index].name.length * padPixels * .22f).coerceAtMost(bounds.width * .55f)
-        val height = padPixels * .7f
-        val x = (point.x + padPixels * .3f).coerceIn(0f, (bounds.width - width).coerceAtLeast(0f))
+        val measurement = measurer.measure(points[index].name, style = TextStyle(fontFamily = fonts.body, fontSize = 10.sp, letterSpacing = 0.sp))
+        val width = measurement.size.width.toFloat(); val height = measurement.size.height.toFloat()
+        val x = (point.x + padPixels * .3f).takeIf { it + width <= bounds.width } ?: (point.x - width - padPixels * .3f)
         val y = (point.y - height - padPixels * .2f).coerceIn(0f, (bounds.height - height).coerceAtLeast(0f))
         val rect = androidx.compose.ui.geometry.Rect(x, y, x + width, y + height)
-        if (bounds.width > 0 && labels.none { it.overlaps(rect) }) {
+        if (bounds.width > 0 && x >= 0 && rect.right <= bounds.width && labels.none { it.overlaps(rect) }) {
             labels.add(rect)
             Text(points[index].name, Modifier.offset { IntOffset(x.toInt(), y.toInt()) }.background(c.mapGround), color = c.text, fontSize = 10.sp, maxLines = 1)
         }

@@ -41,4 +41,6 @@
     <string name="validation_summary">Draft costs %1$s — %2$s over the %3$s cap</string>
     <string name="breakfast">Breakfast</string><string name="lunch">Lunch</string><string name="dinner">Dinner</string><string name="hotel">Hotel</string><string name="sight">Sight</string><string name="total_trip">total</string>
     <string name="per_person">per person</string>
+    <string name="budget_label">Budget</string><string name="each">each</string><string name="left_capital">Left</string>
+    <string name="snapshot_attractions">attractions</string><string name="snapshot_hotels">hotels</string><string name="snapshot_food">food</string><string name="snapshot_transit">transit</string>
 </resources>

@@ -4,8 +4,8 @@ import androidx.compose.runtime.Composable
 import org.jetbrains.compose.resources.stringResource
 import travel_agent_kmp.composeapp.generated.resources.*
 
-@Composable fun categoryLabel(key: String): String = when (key) {
-    "attractions" -> stringResource(Res.string.sight)
+@Composable fun categoryLabel(key: String, singular: Boolean = false): String = when (key) {
+    "attractions" -> stringResource(if (singular) Res.string.sight else Res.string.sights)
     "hotel" -> stringResource(Res.string.hotel)
     "food" -> stringResource(Res.string.food)
     "transport" -> stringResource(Res.string.transit)

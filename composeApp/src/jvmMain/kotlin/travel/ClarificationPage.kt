@@ -25,7 +25,7 @@ import travel_agent_kmp.composeapp.generated.resources.*
     val c = LocalTravelColors.current; val f = LocalTravelFonts.current; val r = run.result
     var query by remember { mutableStateOf(r.query) }
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp), verticalArrangement = Arrangement.spacedBy(18.dp)) {
-        Row { val backDescription = stringResource(Res.string.cancel); TextButton(onClick = onBack, modifier = Modifier.semantics { contentDescription = backDescription }) { Text("←") }; Text(r.requirements.destination ?: stringResource(Res.string.home_title), Modifier.padding(12.dp), color = c.text, fontFamily = f.title, fontSize = 18.sp, fontWeight = FontWeight.SemiBold) }
+        Row { BackButton(onBack); Text(r.requirements.destination ?: stringResource(Res.string.home_title), Modifier.padding(12.dp), color = c.text, fontFamily = f.title, fontSize = 18.sp, fontWeight = FontWeight.SemiBold) }
         Text("“${r.query}”", Modifier.fillMaxWidth().clip(RoundedCornerShape(16.dp)).background(c.surface).border(1.dp, c.border, RoundedCornerShape(16.dp)).padding(16.dp), color = c.textMuted, fontFamily = f.body)
         listOf("destination" to stringResource(Res.string.destination), "duration" to stringResource(Res.string.duration)).forEach { (key, label) ->
             val missing = key in r.missing_fields
@@ -35,7 +35,7 @@ import travel_agent_kmp.composeapp.generated.resources.*
         Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(18.dp)).background(c.warningContainer).padding(18.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
             Text(stringResource(Res.string.clarify_label), color = c.onWarningContainer, fontFamily = f.body, fontSize = 11.sp, fontWeight = FontWeight.SemiBold, letterSpacing = .5.sp)
             Text(r.clarification_question.orEmpty(), color = c.onWarningContainer, fontFamily = f.title, fontSize = 22.sp, lineHeight = 28.sp, fontWeight = FontWeight.SemiBold)
-            BasicTextField(query, { query = it }, Modifier.fillMaxWidth().heightIn(min = 100.dp).clip(RoundedCornerShape(12.dp)).background(c.surface).border(1.dp, c.warningBorder, RoundedCornerShape(12.dp)).padding(14.dp), textStyle = TextStyle(color = c.text, fontFamily = f.body, fontSize = 16.sp))
+            BasicTextField(query, { query = it }, Modifier.fillMaxWidth().heightIn(min = 100.dp).clip(RoundedCornerShape(12.dp)).background(c.surface).border(1.dp, c.warningBorder, RoundedCornerShape(12.dp)).padding(14.dp), textStyle = TextStyle(color = c.text, fontFamily = f.body, fontSize = 16.sp, letterSpacing = 0.sp, fontFeatureSettings = "tnum"))
             Button(onClick = { onRun(query) }, enabled = query.isNotBlank(), modifier = Modifier.fillMaxWidth().height(52.dp), shape = RoundedCornerShape(14.dp)) { Text(stringResource(Res.string.run_again)) }
         }
         Text(stringResource(Res.string.clarify_footer), color = c.textMuted, fontFamily = f.body, fontSize = 13.sp, lineHeight = 19.sp)

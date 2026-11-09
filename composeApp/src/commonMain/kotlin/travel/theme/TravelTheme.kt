@@ -4,12 +4,16 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
+import androidx.compose.material3.Typography
+import androidx.compose.material3.ProvideTextStyle
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.Font
 import travel_agent_kmp.composeapp.generated.resources.Res
 import travel_agent_kmp.composeapp.generated.resources.inter
@@ -55,5 +59,16 @@ val LocalTravelFonts = staticCompositionLocalOf { TravelFonts(FontFamily.Default
     )
     val scheme = if (dark) darkColorScheme(primary = c.primary, onPrimary = c.onPrimary, background = c.background, surface = c.surface, onSurface = c.text) else
         lightColorScheme(primary = c.primary, onPrimary = c.onPrimary, background = c.background, surface = c.surface, onSurface = c.text)
-    CompositionLocalProvider(LocalTravelColors provides c, LocalTravelFonts provides fonts) { MaterialTheme(colorScheme = scheme, content = content) }
+    val base = Typography()
+    fun TextStyle.body() = copy(fontFamily = fonts.body, letterSpacing = 0.sp, fontFeatureSettings = "tnum")
+    val typography = base.copy(
+        displayLarge = base.displayLarge.body(), displayMedium = base.displayMedium.body(), displaySmall = base.displaySmall.body(),
+        headlineLarge = base.headlineLarge.body(), headlineMedium = base.headlineMedium.body(), headlineSmall = base.headlineSmall.body(),
+        titleLarge = base.titleLarge.body(), titleMedium = base.titleMedium.body(), titleSmall = base.titleSmall.body(),
+        bodyLarge = base.bodyLarge.body(), bodyMedium = base.bodyMedium.body(), bodySmall = base.bodySmall.body(),
+        labelLarge = base.labelLarge.body(), labelMedium = base.labelMedium.body(), labelSmall = base.labelSmall.body(),
+    )
+    CompositionLocalProvider(LocalTravelColors provides c, LocalTravelFonts provides fonts) {
+        MaterialTheme(colorScheme = scheme, typography = typography) { ProvideTextStyle(typography.bodyLarge, content) }
+    }
 }
