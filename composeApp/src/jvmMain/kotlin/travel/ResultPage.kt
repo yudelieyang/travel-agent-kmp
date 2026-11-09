@@ -49,7 +49,7 @@ import kotlin.math.cos
             }
         } else {
             Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(20.dp)).background(c.hero).border(1.dp, c.border, RoundedCornerShape(20.dp)).padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                FlowRow(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     Text(if (result.repair != null) stringResource(Res.string.passed_repair) else stringResource(Res.string.passed), color = c.heroAccent, fontWeight = FontWeight.SemiBold)
                     run.savings?.let { Text(stringResource(Res.string.saved, "$${MoneyFormatting.format(it)}"), color = c.heroWarm) }
                 }
@@ -143,15 +143,22 @@ fun placesForDay(run: EngineRun, day: DayPlan): List<TravelOption> {
         }
     }
     val labels = mutableListOf<androidx.compose.ui.geometry.Rect>()
-    positions(bounds.width.toFloat(), bounds.height.toFloat()).forEachIndexed { index, point ->
+    val locations = positions(bounds.width.toFloat(), bounds.height.toFloat())
+    val markerRadius = with(LocalDensity.current) { 8.dp.toPx() }
+    val markers = locations.map { androidx.compose.ui.geometry.Rect(it.x - markerRadius, it.y - markerRadius, it.x + markerRadius, it.y + markerRadius) }
+    locations.forEachIndexed { index, point ->
         val measurement = measurer.measure(points[index].name, style = labelStyle)
         val width = measurement.size.width.toFloat(); val height = measurement.size.height.toFloat()
-        val x = (point.x + padPixels * .3f).takeIf { it + width <= bounds.width } ?: (point.x - width - padPixels * .3f)
-        val y = (point.y - height - padPixels * .2f).coerceIn(0f, (bounds.height - height).coerceAtLeast(0f))
-        val rect = androidx.compose.ui.geometry.Rect(x, y, x + width, y + height)
-        if (bounds.width > 0 && x >= 0 && rect.right <= bounds.width && labels.none { it.overlaps(rect) }) {
+        val gap = markerRadius + 2f
+        val candidates = listOf(
+            Offset(point.x + gap, point.y - height - gap), Offset(point.x - width - gap, point.y - height - gap),
+            Offset(point.x + gap, point.y + gap), Offset(point.x - width - gap, point.y + gap),
+        )
+        val rect = candidates.map { androidx.compose.ui.geometry.Rect(it.x, it.y, it.x + width, it.y + height) }
+            .firstOrNull { bounds.width > 0 && it.left >= 0 && it.top >= 0 && it.right <= bounds.width && it.bottom <= bounds.height && labels.none { label -> label.overlaps(it) } && markers.none { marker -> marker.overlaps(it) } }
+        if (rect != null) {
             labels.add(rect)
-            Text(points[index].name, Modifier.offset { IntOffset(x.toInt(), y.toInt()) }.background(c.mapGround), color = c.text, style = labelStyle, maxLines = 1)
+            Text(points[index].name, Modifier.offset { IntOffset(rect.left.toInt(), rect.top.toInt()) }.background(c.mapGround), color = c.text, style = labelStyle, maxLines = 1)
         }
     }
     }
