@@ -78,8 +78,10 @@ Python 在 `backend/app/tools/mock.py:money` 中执行 `Decimal(...).quantize(De
    *依据*：Python `repr(float)` 输出的是能还原到同一个 binary64 的最短十进制串，`toDouble()` 是正确舍入的解析，因此会得到与 Python 完全相同的二进制值。比较值本身已经足够，不需要比较格式。
 
    **D2：`Decimal → float → Decimal(str(float))` 这段往返，Kotlin 不做 float 中转，全程保持 `BigDecimal`。**
-   *依据*：设 q 是有效数字不超过 15 位的十进制数（binary64 的 DBL_DIG = 15）。q 转成 double 后再取 15 位有效数字，一定能还原出 q；所以任何不超过 15 位、且与 q 不同的十进制数，都不会和 q 映射到同一个 double。`repr` 取的是能还原到该 double 的最短串，它必然在数值上等于 q。因此 `Decimal(str(float(q)))` 在数值上等于 q，float 中转没有损失。
-   *适用范围*：量化到 2 位小数的金额，只要绝对值小于 10^13，就满足 15 位有效数字的条件。B 类输入（JSON 价格、查询中的金额文本）同样要求有效数字不超过 15 位。超过 15 位时两边可能不一致，作为**已接受的例外**登记到 `PARITY_EXCEPTIONS.md`，并写一个测试固定 Kotlin 在这种情况下的行为。不要为此实现最短 repr 算法。
+   *依据*：设 q 是有效数字不超过 15 位的十进制数（binary64 的 DBL_DIG = 15），并且 **q 落在 binary64 的正规数范围内**，即 q = 0，或 DBL_MIN（约 2.225e-308）≤ |q| ≤ DBL_MAX（约 1.798e308）。在这个范围内，double 的相对间距不超过 2^-52，比 15 位十进制数的相对间距更密，所以 q 转成 double 后再取 15 位有效数字，一定能还原出 q；任何不超过 15 位、且与 q 不同的十进制数，都不会和 q 映射到同一个 double。`repr` 取的是能还原到该 double 的最短串，它必然在数值上等于 q。因此 `Decimal(str(float(q)))` 在数值上等于 q，float 中转没有损失。
+   正规数范围这个条件是必需的：在非正规数区间，有效位数随数值变小而减少，不同的短十进制数会映射到同一个 double。例如 `4e-324` 和 `5e-324` 都映射到最小的非正规数，Python 会把 `4e-324` 变成 `5e-324`。超出 DBL_MAX 的值则会变成 `inf`。
+   *适用范围*：取保守的十进制边界，要求 q = 0 或 1e-307 ≤ |q| ≤ 1e308，并且有效数字不超过 15 位。量化到 2 位小数的金额只要绝对值小于 10^13 就满足条件（非零的 2 位小数金额至少是 0.01，不会落入下溢区间）。B 类输入（JSON 价格、查询中的金额文本）需要同时满足有效数字和数值范围两个条件。
+   *不满足条件时*：作为**已接受的例外**登记到 `PARITY_EXCEPTIONS.md`，分三类：有效数字超过 15 位；0 < |q| < 1e-307（非正规数和下溢）；|q| > 1e308（溢出）。为每一类写一个测试，固定 Kotlin 在这种情况下的行为。不要为此实现最短 repr 算法，也不要模拟非正规数的舍入。
 
    **D3：Python 在 float 上做的比较、筛选、排序（`candidates_for`、`select_option`、`validate_itinerary` 中的比较），Kotlin 用 `pyFloat` 函数在 `Double` 上做**，操作数用 `BigDecimal.toDouble()` 或字符串 `toDouble()` 得到。比较结果决定的是后续分支，输出的金额仍用 D2 的 `BigDecimal`。
 
