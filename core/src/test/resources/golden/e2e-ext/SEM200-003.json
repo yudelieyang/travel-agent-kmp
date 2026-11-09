@@ -1,0 +1,649 @@
+{
+  "query": "I would like a 4-day trip to Miami.",
+  "repair": null,
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Miami",
+    "duration_days": 4,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  },
+  "status": "success",
+  "tools": [
+    {
+      "data": [
+        {
+          "address": "1103 Biscayne Boulevard, Miami FL 33132",
+          "category": "attractions",
+          "city": "Miami",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-a3",
+          "image_url": null,
+          "latitude": "25.7860342",
+          "longitude": "-80.1863239",
+          "name": "Pérez Art Museum Miami",
+          "preference_matches": [],
+          "price": "0.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/484587327",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:48:26.525766Z",
+          "snapshot_version": "osm_miami_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "FL",
+          "tags": [
+            "parks",
+            "walking"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "1101 Biscayne Boulevard, Miami FL 33132",
+          "category": "attractions",
+          "city": "Miami",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-a2",
+          "image_url": null,
+          "latitude": "25.785299",
+          "longitude": "-80.1877391",
+          "name": "Patricia and Phillip Frost Museum of Science",
+          "preference_matches": [],
+          "price": "16.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/319426548",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:48:26.525766Z",
+          "snapshot_version": "osm_miami_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "FL",
+          "tags": [
+            "museums",
+            "history"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "101 West Flagler Street, Miami FL 33130",
+          "category": "attractions",
+          "city": "Miami",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-a1",
+          "image_url": null,
+          "latitude": "25.7745642",
+          "longitude": "-80.1965921",
+          "name": "HistoryMiami Museum",
+          "preference_matches": [],
+          "price": "23.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/648249520",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:48:26.525766Z",
+          "snapshot_version": "osm_miami_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "FL",
+          "tags": [
+            "museums",
+            "art"
+          ],
+          "unit": "per_person_visit"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 1,
+      "requested_arguments": {
+        "destination": "Miami",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Miami",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_attractions"
+    },
+    {
+      "data": [
+        {
+          "address": "1717 North Bayshore Drive, Miami FL 33132-1180",
+          "category": "hotel",
+          "city": "Miami",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-h1",
+          "image_url": null,
+          "latitude": "25.7915535",
+          "longitude": "-80.1862338",
+          "name": "Doubletree by Hilton Grand Hotel Biscayne Bay",
+          "preference_matches": [],
+          "price": "105.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/468023519",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:49:27.691559Z",
+          "snapshot_version": "osm_miami_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "FL",
+          "tags": [
+            "budget",
+            "central"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "121 Southeast 1st Street, Miami FL 33131",
+          "category": "hotel",
+          "city": "Miami",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-h2",
+          "image_url": null,
+          "latitude": "25.7736361",
+          "longitude": "-80.1914075",
+          "name": "Eurostars Langford",
+          "preference_matches": [],
+          "price": "145.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/467892170",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:49:27.691559Z",
+          "snapshot_version": "osm_miami_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "FL",
+          "tags": [
+            "quiet"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "1435 Brickell Avenue, Miami FL 33131",
+          "category": "hotel",
+          "city": "Miami",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-h3",
+          "image_url": null,
+          "latitude": "25.7589918",
+          "longitude": "-80.1920516",
+          "name": "Four Seasons Hotel Miami",
+          "preference_matches": [],
+          "price": "260.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/300241285",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:49:27.691559Z",
+          "snapshot_version": "osm_miami_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "FL",
+          "tags": [
+            "luxury",
+            "central"
+          ],
+          "unit": "per_person_night"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 2,
+      "requested_arguments": {
+        "destination": "Miami",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Miami",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_hotels"
+    },
+    {
+      "data": [
+        {
+          "address": "3555 Southwest 8th Street, Miami FL 33135",
+          "category": "food",
+          "city": "Miami",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-f1",
+          "image_url": null,
+          "latitude": "25.7649886",
+          "longitude": "-80.2527677",
+          "name": "Versailles Restaurant",
+          "preference_matches": [],
+          "price": "16.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=cuban",
+            "cuisine=latin_american",
+            "cuisine=sandwich"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Cuban",
+            "Cuisine: Latin American",
+            "Cuisine: Sandwich"
+          ],
+          "provider_place_id": "node/1576341770",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:53:44.854681Z",
+          "snapshot_version": "osm_miami_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "FL",
+          "tags": [
+            "cuban",
+            "local"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "151 Northwest 24th Street, Miami FL 33127",
+          "category": "food",
+          "city": "Miami",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-f2",
+          "image_url": null,
+          "latitude": "25.7999652",
+          "longitude": "-80.1981994",
+          "name": "305 Pizza",
+          "preference_matches": [],
+          "price": "19.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=pizza"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Pizza"
+          ],
+          "provider_place_id": "node/8713382843",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:53:44.854681Z",
+          "snapshot_version": "osm_miami_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "FL",
+          "tags": [
+            "vegetarian",
+            "vegan"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "800 Brickell Avenue, Miami FL 33131",
+          "category": "food",
+          "city": "Miami",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-f3",
+          "image_url": null,
+          "latitude": "25.7660427",
+          "longitude": "-80.1911693",
+          "name": "Amazonico",
+          "preference_matches": [],
+          "price": "34.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=international"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: International"
+          ],
+          "provider_place_id": "node/13461562301",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:53:44.854681Z",
+          "snapshot_version": "osm_miami_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "FL",
+          "tags": [
+            "seafood"
+          ],
+          "unit": "per_person_meal"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 3,
+      "requested_arguments": {
+        "destination": "Miami",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Miami",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_restaurants"
+    },
+    {
+      "data": [
+        {
+          "category": "transport",
+          "city": "Miami",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-t1",
+          "image_url": null,
+          "name": "Mock Walking Allowance",
+          "preference_matches": [],
+          "price": "0.0",
+          "rating": null,
+          "review_count": null,
+          "source": "controlled_mock_fixture",
+          "state": "FL",
+          "tags": [
+            "walking"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Miami",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-t2",
+          "image_url": null,
+          "name": "Mock Transit Day Allowance",
+          "preference_matches": [],
+          "price": "9.0",
+          "rating": "4.1",
+          "review_count": 620,
+          "source": "controlled_mock_fixture",
+          "state": "FL",
+          "tags": [
+            "public transit"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Miami",
+          "currency": "USD",
+          "description": null,
+          "destination": "Miami",
+          "id": "mia-t3",
+          "image_url": null,
+          "name": "Mock Taxi Day Allowance",
+          "preference_matches": [],
+          "price": "48.0",
+          "rating": "4.0",
+          "review_count": 350,
+          "source": "controlled_mock_fixture",
+          "state": "FL",
+          "tags": [
+            "taxi"
+          ],
+          "unit": "per_person_day"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 4,
+      "requested_arguments": {
+        "destination": "Miami",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Miami",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "mock",
+      "status": "SUCCESS",
+      "tool_name": "search_transport"
+    },
+    {
+      "data": {
+        "basis": "per_traveler",
+        "breakdown": {
+          "attractions": "39.0",
+          "food": "255.0",
+          "hotel": "315.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "UNKNOWN",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "609.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "609.0",
+        "provided_limit": null,
+        "remaining_budget": null,
+        "travelers": null,
+        "warnings": [
+          "Traveler count is unspecified: costs are per traveler, not a group total."
+        ],
+        "within_budget": null
+      },
+      "error_code": null,
+      "executed": true,
+      "execution_order": 5,
+      "requested_arguments": null,
+      "runtime_arguments": {
+        "budget_scope": "UNKNOWN",
+        "items": [
+          {
+            "amount": "0.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "16.0",
+            "category": "food"
+          },
+          {
+            "amount": "16.0",
+            "category": "food"
+          },
+          {
+            "amount": "16.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "105.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "16.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "105.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "23.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "34.0",
+            "category": "food"
+          },
+          {
+            "amount": "34.0",
+            "category": "food"
+          },
+          {
+            "amount": "34.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "105.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "0.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "16.0",
+            "category": "food"
+          },
+          {
+            "amount": "16.0",
+            "category": "food"
+          },
+          {
+            "amount": "16.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          }
+        ],
+        "limit": null,
+        "limit_currency": "USD",
+        "travelers": null
+      },
+      "selected": true,
+      "source": "deterministic",
+      "status": "SUCCESS",
+      "tool_name": "calculate_budget"
+    }
+  ]
+}

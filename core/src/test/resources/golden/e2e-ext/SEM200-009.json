@@ -1,0 +1,633 @@
+{
+  "query": "Three days in San Francisco; I enjoy seafood.",
+  "repair": null,
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "San Francisco",
+    "duration_days": 3,
+    "end_date": null,
+    "food_preferences": [
+      "seafood"
+    ],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  },
+  "status": "success",
+  "tools": [
+    {
+      "data": [
+        {
+          "address": "55 Music Concourse Drive, San Francisco CA 94118",
+          "category": "attractions",
+          "city": "San Francisco",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-a3",
+          "image_url": null,
+          "latitude": "37.7698269",
+          "longitude": "-122.4660916",
+          "name": "California Academy of Sciences",
+          "preference_matches": [],
+          "price": "0.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/28695389",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:25:22.207676Z",
+          "snapshot_version": "osm_san_francisco_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "parks",
+            "walking"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "1201 Mason Street, San Francisco CA 94108",
+          "category": "attractions",
+          "city": "San Francisco",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-a2",
+          "image_url": null,
+          "latitude": "37.7948846",
+          "longitude": "-122.4119197",
+          "name": "Cable Car Powerhouse and Barn",
+          "preference_matches": [],
+          "price": "20.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/30029681",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:25:22.207676Z",
+          "snapshot_version": "osm_san_francisco_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "museums",
+            "history"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "200 Larkin Street, San Francisco CA 94102",
+          "category": "attractions",
+          "city": "San Francisco",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-a1",
+          "image_url": null,
+          "latitude": "37.7802455",
+          "longitude": "-122.4159975",
+          "name": "Asian Art Museum of San Francisco",
+          "preference_matches": [],
+          "price": "26.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/24588037",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:25:22.207676Z",
+          "snapshot_version": "osm_san_francisco_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "museums",
+            "art"
+          ],
+          "unit": "per_person_visit"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 1,
+      "requested_arguments": {
+        "destination": "San Francisco",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "San Francisco",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_attractions"
+    },
+    {
+      "data": [
+        {
+          "address": "757 Market Street, San Francisco CA 94103",
+          "category": "hotel",
+          "city": "San Francisco",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-h1",
+          "image_url": null,
+          "latitude": "37.7862212",
+          "longitude": "-122.4042473",
+          "name": "Four Seasons",
+          "preference_matches": [],
+          "price": "125.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/149332498",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:26:59.707796Z",
+          "snapshot_version": "osm_san_francisco_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "budget",
+            "central"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "345 Stockton Street, San Francisco CA 94108",
+          "category": "hotel",
+          "city": "San Francisco",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-h2",
+          "image_url": null,
+          "latitude": "37.7891243",
+          "longitude": "-122.4072404",
+          "name": "Grand Hyatt San Francisco",
+          "preference_matches": [],
+          "price": "165.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/32863494",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:26:59.707796Z",
+          "snapshot_version": "osm_san_francisco_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "quiet"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "750 Kearny Street, San Francisco CA 94108",
+          "category": "hotel",
+          "city": "San Francisco",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-h3",
+          "image_url": null,
+          "latitude": "37.7951542",
+          "longitude": "-122.404292",
+          "name": "Hilton San Francisco Financial District",
+          "preference_matches": [],
+          "price": "275.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/260922316",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:26:59.707796Z",
+          "snapshot_version": "osm_san_francisco_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "luxury",
+            "central"
+          ],
+          "unit": "per_person_night"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 2,
+      "requested_arguments": {
+        "destination": "San Francisco",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "San Francisco",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_hotels"
+    },
+    {
+      "data": [
+        {
+          "address": "63 Ellis Street, San Francisco CA 94102",
+          "category": "food",
+          "city": "San Francisco",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-f3",
+          "image_url": null,
+          "latitude": "37.7854639",
+          "longitude": "-122.4071525",
+          "name": "John's Grill Live Jazz",
+          "preference_matches": [
+            "seafood"
+          ],
+          "price": "38.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=steak",
+            "cuisine=seafood"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Steak",
+            "Cuisine: Seafood"
+          ],
+          "provider_place_id": "node/317081652",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:29:14.446788Z",
+          "snapshot_version": "osm_san_francisco_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "seafood"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "2355 Chestnut Street, San Francisco CA 94123",
+          "category": "food",
+          "city": "San Francisco",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-f1",
+          "image_url": null,
+          "latitude": "37.7999597",
+          "longitude": "-122.442104",
+          "name": "A16",
+          "preference_matches": [],
+          "price": "20.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=italian"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Italian"
+          ],
+          "provider_place_id": "node/3380825006",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:29:14.446788Z",
+          "snapshot_version": "osm_san_francisco_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "local",
+            "casual"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "2 Marina Boulevard, San Francisco CA 94123",
+          "category": "food",
+          "city": "San Francisco",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-f2",
+          "image_url": null,
+          "latitude": "37.806886",
+          "longitude": "-122.4322073",
+          "name": "Greens Restaurant",
+          "preference_matches": [],
+          "price": "22.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "diet:vegetarian=only",
+            "diet:vegan=yes"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Vegetarian only",
+            "Vegan options"
+          ],
+          "provider_place_id": "node/2653235898",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:29:14.446788Z",
+          "snapshot_version": "osm_san_francisco_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "vegetarian",
+            "vegan"
+          ],
+          "unit": "per_person_meal"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 3,
+      "requested_arguments": {
+        "destination": "San Francisco",
+        "max_price": null,
+        "preferences": [
+          "seafood"
+        ]
+      },
+      "runtime_arguments": {
+        "destination": "San Francisco",
+        "max_price": null,
+        "preferences": [
+          "seafood"
+        ]
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_restaurants"
+    },
+    {
+      "data": [
+        {
+          "category": "transport",
+          "city": "San Francisco",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-t1",
+          "image_url": null,
+          "name": "Mock Walking Allowance",
+          "preference_matches": [],
+          "price": "0.0",
+          "rating": null,
+          "review_count": null,
+          "source": "controlled_mock_fixture",
+          "state": "CA",
+          "tags": [
+            "walking"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "San Francisco",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-t2",
+          "image_url": null,
+          "name": "Mock Transit Day Allowance",
+          "preference_matches": [],
+          "price": "13.0",
+          "rating": "4.4",
+          "review_count": 1180,
+          "source": "controlled_mock_fixture",
+          "state": "CA",
+          "tags": [
+            "public transit"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "San Francisco",
+          "currency": "USD",
+          "description": null,
+          "destination": "San Francisco",
+          "id": "sfo-t3",
+          "image_url": null,
+          "name": "Mock Taxi Day Allowance",
+          "preference_matches": [],
+          "price": "54.0",
+          "rating": "4.0",
+          "review_count": 410,
+          "source": "controlled_mock_fixture",
+          "state": "CA",
+          "tags": [
+            "taxi"
+          ],
+          "unit": "per_person_day"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 4,
+      "requested_arguments": {
+        "destination": "San Francisco",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "San Francisco",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "mock",
+      "status": "SUCCESS",
+      "tool_name": "search_transport"
+    },
+    {
+      "data": {
+        "basis": "per_traveler",
+        "breakdown": {
+          "attractions": "46.0",
+          "food": "240.0",
+          "hotel": "250.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "UNKNOWN",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "536.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "536.0",
+        "provided_limit": null,
+        "remaining_budget": null,
+        "travelers": null,
+        "warnings": [
+          "Traveler count is unspecified: costs are per traveler, not a group total."
+        ],
+        "within_budget": null
+      },
+      "error_code": null,
+      "executed": true,
+      "execution_order": 5,
+      "requested_arguments": null,
+      "runtime_arguments": {
+        "budget_scope": "UNKNOWN",
+        "items": [
+          {
+            "amount": "0.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "38.0",
+            "category": "food"
+          },
+          {
+            "amount": "38.0",
+            "category": "food"
+          },
+          {
+            "amount": "38.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "125.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "20.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "20.0",
+            "category": "food"
+          },
+          {
+            "amount": "20.0",
+            "category": "food"
+          },
+          {
+            "amount": "20.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "125.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "26.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "22.0",
+            "category": "food"
+          },
+          {
+            "amount": "22.0",
+            "category": "food"
+          },
+          {
+            "amount": "22.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          }
+        ],
+        "limit": null,
+        "limit_currency": "USD",
+        "travelers": null
+      },
+      "selected": true,
+      "source": "deterministic",
+      "status": "SUCCESS",
+      "tool_name": "calculate_budget"
+    }
+  ]
+}

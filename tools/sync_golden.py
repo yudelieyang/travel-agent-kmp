@@ -1,19 +1,19 @@
-"""Copy byte-identical, tracked data from the Python golden-v1 commit."""
+"""Copy byte-identical, tracked data from the Python golden-v1.1 commit."""
 import hashlib
 import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT.parent / 'travel-planning-agent'
-COMMIT = '0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd'
+COMMIT = '5d8983d3e4abc3c914a562f232a5ac060c6864be'
 
 def git(*args):
     return subprocess.check_output(['git', '-C', str(SOURCE), *args])
 
 def main():
-    resolved = git('rev-parse', 'golden-v1^{commit}').decode().strip()
+    resolved = git('rev-parse', 'golden-v1.1^{commit}').decode().strip()
     if resolved != COMMIT:
-        raise RuntimeError(f'golden-v1 resolved to unexpected commit: {resolved}')
+        raise RuntimeError(f'golden-v1.1 resolved to unexpected commit: {resolved}')
     prefixes = ['golden/', 'data/travel/snapshots/openstreetmap/', 'data/travel/us/cities.json', 'frontend/src/presets.ts']
     paths = git('ls-tree', '-r', '--name-only', '-z', COMMIT, '--', *prefixes).decode().split('\0')
     paths = [path for path in paths if path]
@@ -36,7 +36,7 @@ def main():
         dest.write_bytes(content)
         if hashlib.sha256(content).digest() != hashlib.sha256(dest.read_bytes()).digest():
             raise RuntimeError(f'SHA-256 mismatch: {path}')
-    if counts != {'golden': 230, 'snapshot': 41, 'cities': 1, 'presets': 1}:
+    if counts != {'golden': 260, 'snapshot': 41, 'cities': 1, 'presets': 1}:
         raise RuntimeError(f'Unexpected file count: {counts}')
     golden_dir = ROOT / 'core/src/test/resources/golden'
     actual = sum(1 for f in golden_dir.rglob('*') if f.is_file() and f.name != 'SOURCE.txt')

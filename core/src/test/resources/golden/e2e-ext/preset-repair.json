@@ -1,0 +1,684 @@
+{
+  "query": "Please build a three-day trip to Austin for one traveler. My total budget is $350.",
+  "repair": {
+    "attempt": 1,
+    "changes": [
+      {
+        "after": [
+          "Zilker Park"
+        ],
+        "before": [
+          "Zilker Park",
+          "Texas Music Museum",
+          "Blanton Museum of Art"
+        ],
+        "category": "attractions"
+      },
+      {
+        "after": [
+          "Veracruz All Natural (breakfast)",
+          "Veracruz All Natural (lunch)",
+          "Veracruz All Natural (dinner)"
+        ],
+        "before": [
+          "Veracruz All Natural (breakfast)",
+          "Veracruz All Natural (lunch)",
+          "Veracruz All Natural (dinner)",
+          "Bouldin Creek Cafe (breakfast)",
+          "Bouldin Creek Cafe (lunch)",
+          "Bouldin Creek Cafe (dinner)",
+          "Franklin Barbecue (breakfast)",
+          "Franklin Barbecue (lunch)",
+          "Franklin Barbecue (dinner)"
+        ],
+        "category": "food"
+      }
+    ],
+    "final_outcome": "passed",
+    "final_total": "317.0",
+    "initial_total": "394.0",
+    "maximum_attempts": 1,
+    "savings": "77.0",
+    "trigger": [
+      {
+        "actual": "394.0",
+        "category": "budget",
+        "code": "HARD_BUDGET_EXCEEDED",
+        "excess": "44.0",
+        "expected": "350.0",
+        "message": "Hard budget exceeded"
+      }
+    ]
+  },
+  "requirements": {
+    "budget_amount": "350.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Austin",
+    "duration_days": 3,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": "1.0",
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "My total budget is $350",
+          "strength": "HARD",
+          "value": "350.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": 1
+  },
+  "status": "success",
+  "tools": [
+    {
+      "data": [
+        {
+          "address": "Barton Springs Road, AUSTIN, TX 78746",
+          "category": "attractions",
+          "city": "Austin",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-a3",
+          "image_url": null,
+          "latitude": "30.2676819",
+          "longitude": "-97.7666085",
+          "name": "Zilker Park",
+          "preference_matches": [],
+          "price": "5.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "leisure=park"
+          ],
+          "provider_category_labels": [
+            "Park"
+          ],
+          "provider_place_id": "way/946120954",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T14:53:48.053870Z",
+          "snapshot_version": "osm_austin_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "TX",
+          "tags": [
+            "parks",
+            "outdoors"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "1011 San Marcos Street, TX",
+          "category": "attractions",
+          "city": "Austin",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-a2",
+          "image_url": null,
+          "latitude": "30.2694425",
+          "longitude": "-97.7306205",
+          "name": "Texas Music Museum",
+          "preference_matches": [],
+          "price": "17.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/379207889",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T14:53:48.053870Z",
+          "snapshot_version": "osm_austin_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "TX",
+          "tags": [
+            "museums",
+            "history",
+            "music"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "200 East Martin Luther King Jr Boulevard, Austin, TX 78705",
+          "category": "attractions",
+          "city": "Austin",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-a1",
+          "image_url": null,
+          "latitude": "30.2809842",
+          "longitude": "-97.7374171",
+          "name": "Blanton Museum of Art",
+          "preference_matches": [],
+          "price": "19.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "relation/20972967",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T14:53:48.053870Z",
+          "snapshot_version": "osm_austin_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "TX",
+          "tags": [
+            "museums",
+            "art"
+          ],
+          "unit": "per_person_visit"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 1,
+      "requested_arguments": {
+        "destination": "Austin",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Austin",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_attractions"
+    },
+    {
+      "data": [
+        {
+          "address": "500 East 4th Street, Austin, TX 78701",
+          "category": "hotel",
+          "city": "Austin",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-h1",
+          "image_url": null,
+          "latitude": "30.2652582",
+          "longitude": "-97.73806",
+          "name": "Hilton Austin",
+          "preference_matches": [],
+          "price": "88.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "node/12577833089",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T14:54:27.873422Z",
+          "snapshot_version": "osm_austin_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "TX",
+          "tags": [
+            "budget",
+            "central"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "208 Barton Springs Road, Austin, TX 78704",
+          "category": "hotel",
+          "city": "Austin",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-h2",
+          "image_url": null,
+          "latitude": "30.2607066",
+          "longitude": "-97.7467623",
+          "name": "Hyatt Regency Austin",
+          "preference_matches": [],
+          "price": "120.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/104137285",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T14:54:27.873422Z",
+          "snapshot_version": "osm_austin_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "TX",
+          "tags": [
+            "quiet"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "98 San Jacinto Blvd, Austin, TX 78701",
+          "category": "hotel",
+          "city": "Austin",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-h3",
+          "image_url": null,
+          "latitude": "30.2616262",
+          "longitude": "-97.7422786",
+          "name": "Four Seasons Hotel Austin",
+          "preference_matches": [],
+          "price": "205.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/134807221",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T14:54:27.873422Z",
+          "snapshot_version": "osm_austin_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "TX",
+          "tags": [
+            "luxury",
+            "central"
+          ],
+          "unit": "per_person_night"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 2,
+      "requested_arguments": {
+        "destination": "Austin",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Austin",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_hotels"
+    },
+    {
+      "data": [
+        {
+          "address": "2505 Webberville Road, Austin, TX 78702",
+          "category": "food",
+          "city": "Austin",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-f1",
+          "image_url": null,
+          "latitude": "30.2630626",
+          "longitude": "-97.7137458",
+          "name": "Veracruz All Natural",
+          "preference_matches": [],
+          "price": "14.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=mexican"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Mexican"
+          ],
+          "provider_place_id": "way/802335915",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T14:55:27.455931Z",
+          "snapshot_version": "osm_austin_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "TX",
+          "tags": [
+            "tacos",
+            "local"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "1900 South 1st Street, Austin, TX 78704",
+          "category": "food",
+          "city": "Austin",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-f2",
+          "image_url": null,
+          "latitude": "30.2464901",
+          "longitude": "-97.7568002",
+          "name": "Bouldin Creek Cafe",
+          "preference_matches": [],
+          "price": "18.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "diet:vegetarian=only",
+            "diet:vegan=yes"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Vegetarian only",
+            "Vegan options"
+          ],
+          "provider_place_id": "way/382491308",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T14:55:27.455931Z",
+          "snapshot_version": "osm_austin_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "TX",
+          "tags": [
+            "vegetarian",
+            "vegan"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "900 East 11th Street, Austin, TX 78702",
+          "category": "food",
+          "city": "Austin",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-f3",
+          "image_url": null,
+          "latitude": "30.2701634",
+          "longitude": "-97.7312704",
+          "name": "Franklin Barbecue",
+          "preference_matches": [],
+          "price": "27.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=barbecue"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Barbecue"
+          ],
+          "provider_place_id": "way/382368408",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T14:55:27.455931Z",
+          "snapshot_version": "osm_austin_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "TX",
+          "tags": [
+            "barbecue",
+            "local"
+          ],
+          "unit": "per_person_meal"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 3,
+      "requested_arguments": {
+        "destination": "Austin",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Austin",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_restaurants"
+    },
+    {
+      "data": [
+        {
+          "category": "transport",
+          "city": "Austin",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-t1",
+          "image_url": null,
+          "name": "Mock Walking Allowance",
+          "preference_matches": [],
+          "price": "0.0",
+          "rating": null,
+          "review_count": null,
+          "source": "controlled_mock_fixture",
+          "state": "TX",
+          "tags": [
+            "walking"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Austin",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-t2",
+          "image_url": null,
+          "name": "Mock Bus Day Allowance",
+          "preference_matches": [],
+          "price": "7.0",
+          "rating": "4.1",
+          "review_count": 490,
+          "source": "controlled_mock_fixture",
+          "state": "TX",
+          "tags": [
+            "public transit"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Austin",
+          "currency": "USD",
+          "description": null,
+          "destination": "Austin",
+          "id": "aus-t3",
+          "image_url": null,
+          "name": "Mock Rideshare Day Allowance",
+          "preference_matches": [],
+          "price": "40.0",
+          "rating": "4.2",
+          "review_count": 310,
+          "source": "controlled_mock_fixture",
+          "state": "TX",
+          "tags": [
+            "taxi"
+          ],
+          "unit": "per_person_day"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 4,
+      "requested_arguments": {
+        "destination": "Austin",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Austin",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "mock",
+      "status": "SUCCESS",
+      "tool_name": "search_transport"
+    },
+    {
+      "data": {
+        "basis": "group",
+        "breakdown": {
+          "attractions": "15.0",
+          "food": "126.0",
+          "hotel": "176.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "TOTAL_TRIP",
+        "comparison_cost": "317.0",
+        "currency": "USD",
+        "estimated_total_cost": "317.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "317.0",
+        "provided_limit": "350.0",
+        "remaining_budget": "33.0",
+        "travelers": 1,
+        "warnings": [],
+        "within_budget": true
+      },
+      "error_code": null,
+      "executed": true,
+      "execution_order": 5,
+      "requested_arguments": null,
+      "runtime_arguments": {
+        "budget_scope": "TOTAL_TRIP",
+        "items": [
+          {
+            "amount": "5.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "14.0",
+            "category": "food"
+          },
+          {
+            "amount": "14.0",
+            "category": "food"
+          },
+          {
+            "amount": "14.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "88.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "5.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "14.0",
+            "category": "food"
+          },
+          {
+            "amount": "14.0",
+            "category": "food"
+          },
+          {
+            "amount": "14.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "88.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "5.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "14.0",
+            "category": "food"
+          },
+          {
+            "amount": "14.0",
+            "category": "food"
+          },
+          {
+            "amount": "14.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          }
+        ],
+        "limit": "350.0",
+        "limit_currency": "USD",
+        "travelers": 1
+      },
+      "selected": true,
+      "source": "deterministic",
+      "status": "SUCCESS",
+      "tool_name": "calculate_budget"
+    }
+  ]
+}

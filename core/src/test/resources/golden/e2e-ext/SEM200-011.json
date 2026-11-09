@@ -1,0 +1,718 @@
+{
+  "query": "Plan a 7-day trip to Las Vegas for 3 travelers.",
+  "repair": null,
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Las Vegas",
+    "duration_days": 7,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": 3
+  },
+  "status": "success",
+  "tools": [
+    {
+      "data": [
+        {
+          "address": "770 North Las Vegas Boulevard, Las Vegas NV 89101",
+          "category": "attractions",
+          "city": "Las Vegas",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-a3",
+          "image_url": null,
+          "latitude": "36.1766859",
+          "longitude": "-115.1352127",
+          "name": "Neon Museum",
+          "preference_matches": [],
+          "price": "12.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/266824889",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:38:35.928700Z",
+          "snapshot_version": "osm_las_vegas_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NV",
+          "tags": [
+            "parks",
+            "outdoors"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "900 Las Vegas Boulevard North, Las Vegas NV 89101",
+          "category": "attractions",
+          "city": "Las Vegas",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-a2",
+          "image_url": null,
+          "latitude": "36.1799391",
+          "longitude": "-115.1338241",
+          "name": "Las Vegas Natural History Museum",
+          "preference_matches": [],
+          "price": "19.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/925732138",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:38:35.928700Z",
+          "snapshot_version": "osm_las_vegas_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NV",
+          "tags": [
+            "museums",
+            "history"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "360 Promenade Place, Las Vegas NV 89106",
+          "category": "attractions",
+          "city": "Las Vegas",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-a1",
+          "image_url": null,
+          "latitude": "36.1687157",
+          "longitude": "-115.1525751",
+          "name": "Discovery Children's Museum",
+          "preference_matches": [],
+          "price": "24.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/182464620",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:38:35.928700Z",
+          "snapshot_version": "osm_las_vegas_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NV",
+          "tags": [
+            "museums",
+            "art"
+          ],
+          "unit": "per_person_visit"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 1,
+      "requested_arguments": {
+        "destination": "Las Vegas",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Las Vegas",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_attractions"
+    },
+    {
+      "data": [
+        {
+          "address": "9570 West Sahara Avenue, Las Vegas NV 89117",
+          "category": "hotel",
+          "city": "Las Vegas",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-h1",
+          "image_url": null,
+          "latitude": "36.1455019",
+          "longitude": "-115.303275",
+          "name": "La Quinta Inn & Suites",
+          "preference_matches": [],
+          "price": "78.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/461103845",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:46:59.617302Z",
+          "snapshot_version": "osm_las_vegas_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NV",
+          "tags": [
+            "budget",
+            "central"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "330 South Grand Central Parkway, Las Vegas NV 89106",
+          "category": "hotel",
+          "city": "Las Vegas",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-h2",
+          "image_url": null,
+          "latitude": "36.1695277",
+          "longitude": "-115.1533783",
+          "name": "AC Hotel by Marriott Las Vegas Symphony Park",
+          "preference_matches": [],
+          "price": "118.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "node/13770197469",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:46:59.617302Z",
+          "snapshot_version": "osm_las_vegas_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NV",
+          "tags": [
+            "quiet"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "8669 West Sahara Avenue, Las Vegas NV 89117",
+          "category": "hotel",
+          "city": "Las Vegas",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-h3",
+          "image_url": null,
+          "latitude": "36.1425967",
+          "longitude": "-115.2807125",
+          "name": "Best Western Plus Las Vegas West",
+          "preference_matches": [],
+          "price": "235.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/463007736",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:46:59.617302Z",
+          "snapshot_version": "osm_las_vegas_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NV",
+          "tags": [
+            "luxury",
+            "central"
+          ],
+          "unit": "per_person_night"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 2,
+      "requested_arguments": {
+        "destination": "Las Vegas",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Las Vegas",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_hotels"
+    },
+    {
+      "data": [
+        {
+          "address": "124 South 6th Street, Las Vegas NV 89101",
+          "category": "food",
+          "city": "Las Vegas",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-f1",
+          "image_url": null,
+          "latitude": "36.1678978",
+          "longitude": "-115.1406066",
+          "name": "Carson Kitchen",
+          "preference_matches": [],
+          "price": "15.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=tapas",
+            "cuisine=american"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Tapas",
+            "Cuisine: American"
+          ],
+          "provider_place_id": "way/1380168243",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:47:28.378883Z",
+          "snapshot_version": "osm_las_vegas_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NV",
+          "tags": [
+            "local",
+            "casual"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "450 Fremont Street, Las Vegas NV 89101",
+          "category": "food",
+          "city": "Las Vegas",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-f2",
+          "image_url": null,
+          "latitude": "36.1695171",
+          "longitude": "-115.1407926",
+          "name": "Heart Attack Grill",
+          "preference_matches": [],
+          "price": "19.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=american"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: American"
+          ],
+          "provider_place_id": "way/1380168245",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:47:28.378883Z",
+          "snapshot_version": "osm_las_vegas_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NV",
+          "tags": [
+            "vegetarian",
+            "vegan"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "3839 West Sahara Avenue, Las Vegas NV 89102-0540",
+          "category": "food",
+          "city": "Las Vegas",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-f3",
+          "image_url": null,
+          "latitude": "36.1440589",
+          "longitude": "-115.1933253",
+          "name": "Weera Thai",
+          "preference_matches": [],
+          "price": "34.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=thai"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Thai"
+          ],
+          "provider_place_id": "node/7140749328",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:47:28.378883Z",
+          "snapshot_version": "osm_las_vegas_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "NV",
+          "tags": [
+            "grilled",
+            "luxury"
+          ],
+          "unit": "per_person_meal"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 3,
+      "requested_arguments": {
+        "destination": "Las Vegas",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Las Vegas",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_restaurants"
+    },
+    {
+      "data": [
+        {
+          "category": "transport",
+          "city": "Las Vegas",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-t1",
+          "image_url": null,
+          "name": "Mock Walking Allowance",
+          "preference_matches": [],
+          "price": "0.0",
+          "rating": null,
+          "review_count": null,
+          "source": "controlled_mock_fixture",
+          "state": "NV",
+          "tags": [
+            "walking"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Las Vegas",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-t2",
+          "image_url": null,
+          "name": "Mock Transit Day Allowance",
+          "preference_matches": [],
+          "price": "8.0",
+          "rating": "4.0",
+          "review_count": 540,
+          "source": "controlled_mock_fixture",
+          "state": "NV",
+          "tags": [
+            "public transit"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Las Vegas",
+          "currency": "USD",
+          "description": null,
+          "destination": "Las Vegas",
+          "id": "las-t3",
+          "image_url": null,
+          "name": "Mock Taxi Day Allowance",
+          "preference_matches": [],
+          "price": "49.0",
+          "rating": "4.1",
+          "review_count": 390,
+          "source": "controlled_mock_fixture",
+          "state": "NV",
+          "tags": [
+            "taxi"
+          ],
+          "unit": "per_person_day"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 4,
+      "requested_arguments": {
+        "destination": "Las Vegas",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Las Vegas",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "mock",
+      "status": "SUCCESS",
+      "tool_name": "search_transport"
+    },
+    {
+      "data": {
+        "basis": "group",
+        "breakdown": {
+          "attractions": "366.0",
+          "food": "1359.0",
+          "hotel": "1404.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "UNKNOWN",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "3129.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "1043.0",
+        "provided_limit": null,
+        "remaining_budget": null,
+        "travelers": 3,
+        "warnings": [],
+        "within_budget": null
+      },
+      "error_code": null,
+      "executed": true,
+      "execution_order": 5,
+      "requested_arguments": null,
+      "runtime_arguments": {
+        "budget_scope": "UNKNOWN",
+        "items": [
+          {
+            "amount": "12.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "15.0",
+            "category": "food"
+          },
+          {
+            "amount": "15.0",
+            "category": "food"
+          },
+          {
+            "amount": "15.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "78.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "19.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "78.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "24.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "34.0",
+            "category": "food"
+          },
+          {
+            "amount": "34.0",
+            "category": "food"
+          },
+          {
+            "amount": "34.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "78.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "12.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "15.0",
+            "category": "food"
+          },
+          {
+            "amount": "15.0",
+            "category": "food"
+          },
+          {
+            "amount": "15.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "78.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "19.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "78.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "24.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "34.0",
+            "category": "food"
+          },
+          {
+            "amount": "34.0",
+            "category": "food"
+          },
+          {
+            "amount": "34.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "78.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "12.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "15.0",
+            "category": "food"
+          },
+          {
+            "amount": "15.0",
+            "category": "food"
+          },
+          {
+            "amount": "15.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          }
+        ],
+        "limit": null,
+        "limit_currency": "USD",
+        "travelers": 3
+      },
+      "selected": true,
+      "source": "deterministic",
+      "status": "SUCCESS",
+      "tool_name": "calculate_budget"
+    }
+  ]
+}

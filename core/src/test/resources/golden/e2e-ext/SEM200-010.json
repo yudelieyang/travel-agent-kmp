@@ -1,0 +1,637 @@
+{
+  "query": "Los Angeles for 2 days, and I like art museums.",
+  "repair": null,
+  "requirements": {
+    "budget_amount": null,
+    "budget_constraint_strength": "UNSPECIFIED",
+    "budget_scope": "UNKNOWN",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Los Angeles",
+    "duration_days": 2,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [
+      "museums",
+      "art",
+      "art museums"
+    ],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [],
+      "objectives": [],
+      "preferences": [
+        {
+          "category": "ACTIVITY",
+          "value": "art museums"
+        }
+      ]
+    },
+    "specific_preferences": [
+      {
+        "category": "ACTIVITY",
+        "value": "art museums"
+      }
+    ],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  },
+  "status": "success",
+  "tools": [
+    {
+      "data": [
+        {
+          "address": "6067 Wilshire Boulevard, Los Angeles CA 90036",
+          "category": "attractions",
+          "city": "Los Angeles",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-a1",
+          "image_url": null,
+          "latitude": "34.0636022",
+          "longitude": "-118.3608216",
+          "name": "Academy Museum of Motion Pictures",
+          "preference_matches": [
+            "museums",
+            "art"
+          ],
+          "price": "25.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/913293590",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:34:48.409659Z",
+          "snapshot_version": "osm_los_angeles_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "museums",
+            "art"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "4700 Western Heritage Way, Los Angeles CA 90027",
+          "category": "attractions",
+          "city": "Los Angeles",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-a2",
+          "image_url": null,
+          "latitude": "34.1483813",
+          "longitude": "-118.2817076",
+          "name": "Autry Museum of the American West",
+          "preference_matches": [
+            "museums"
+          ],
+          "price": "27.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "node/368174050",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:34:48.409659Z",
+          "snapshot_version": "osm_los_angeles_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "museums",
+            "history",
+            "film"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "700 Exposition Park Drive, Los Angeles CA 90037",
+          "category": "attractions",
+          "city": "Los Angeles",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-a3",
+          "image_url": null,
+          "latitude": "34.0159714",
+          "longitude": "-118.2864729",
+          "name": "California Science Center",
+          "preference_matches": [],
+          "price": "0.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/407373715",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:34:48.409659Z",
+          "snapshot_version": "osm_los_angeles_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "parks",
+            "outdoors"
+          ],
+          "unit": "per_person_visit"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 1,
+      "requested_arguments": {
+        "destination": "Los Angeles",
+        "max_price": null,
+        "preferences": [
+          "museums",
+          "art",
+          "art museums"
+        ]
+      },
+      "runtime_arguments": {
+        "destination": "Los Angeles",
+        "max_price": null,
+        "preferences": [
+          "museums",
+          "art",
+          "art museums"
+        ]
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_attractions"
+    },
+    {
+      "data": [
+        {
+          "address": "120 South Los Angeles Street, Los Angeles CA 90012",
+          "category": "hotel",
+          "city": "Los Angeles",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-h1",
+          "image_url": null,
+          "latitude": "34.0505303",
+          "longitude": "-118.2426654",
+          "name": "DoubleTree by Hilton Hotel Los Angeles Downtown",
+          "preference_matches": [],
+          "price": "112.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/427817639",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:35:56.264551Z",
+          "snapshot_version": "osm_los_angeles_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "budget",
+            "central"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "2025 Avenue of the Stars, Los Angeles CA 90067",
+          "category": "hotel",
+          "city": "Los Angeles",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-h2",
+          "image_url": null,
+          "latitude": "34.0575083",
+          "longitude": "-118.4157229",
+          "name": "Fairmont Century Plaza",
+          "preference_matches": [],
+          "price": "152.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/43342001",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:35:56.264551Z",
+          "snapshot_version": "osm_los_angeles_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "quiet"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "6151 West Century Boulevard, Los Angeles CA 90045",
+          "category": "hotel",
+          "city": "Los Angeles",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-h3",
+          "image_url": null,
+          "latitude": "33.946053",
+          "longitude": "-118.392718",
+          "name": "H Hotel Los Angeles, Curio Collection by Hilton",
+          "preference_matches": [],
+          "price": "265.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "node/9774638782",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:35:56.264551Z",
+          "snapshot_version": "osm_los_angeles_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "luxury",
+            "central"
+          ],
+          "unit": "per_person_night"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 2,
+      "requested_arguments": {
+        "destination": "Los Angeles",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Los Angeles",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_hotels"
+    },
+    {
+      "data": [
+        {
+          "address": "2300 Fletcher Drive, Los Angeles CA 90039",
+          "category": "food",
+          "city": "Los Angeles",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-f1",
+          "image_url": null,
+          "latitude": "34.1044675",
+          "longitude": "-118.2587152",
+          "name": "Astro Family Restaurant",
+          "preference_matches": [],
+          "price": "16.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=burger",
+            "cuisine=breakfast",
+            "cuisine=american",
+            "cuisine=coffee_shop",
+            "cuisine=sandwich",
+            "cuisine=salad",
+            "cuisine=mexican"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Burger",
+            "Cuisine: Breakfast",
+            "Cuisine: American",
+            "Cuisine: Coffee Shop",
+            "Cuisine: Sandwich",
+            "Cuisine: Salad",
+            "Cuisine: Mexican"
+          ],
+          "provider_place_id": "way/401895843",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:38:19.186586Z",
+          "snapshot_version": "osm_los_angeles_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "tacos",
+            "local"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "500 Mateo Street, Los Angeles CA 90013",
+          "category": "food",
+          "city": "Los Angeles",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-f2",
+          "image_url": null,
+          "latitude": "34.0414422",
+          "longitude": "-118.2327188",
+          "name": "Bavel",
+          "preference_matches": [],
+          "price": "21.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=middle_eastern"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Middle Eastern"
+          ],
+          "provider_place_id": "node/5953394925",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:38:19.186586Z",
+          "snapshot_version": "osm_los_angeles_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "vegetarian",
+            "vegan"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "700 South Grand Avenue, Los Angeles CA 90017",
+          "category": "food",
+          "city": "Los Angeles",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-f3",
+          "image_url": null,
+          "latitude": "34.047039",
+          "longitude": "-118.256567",
+          "name": "Bottega Louie",
+          "preference_matches": [],
+          "price": "36.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=italian"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Italian"
+          ],
+          "provider_place_id": "node/470881995",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T21:38:19.186586Z",
+          "snapshot_version": "osm_los_angeles_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "CA",
+          "tags": [
+            "seafood"
+          ],
+          "unit": "per_person_meal"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 3,
+      "requested_arguments": {
+        "destination": "Los Angeles",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Los Angeles",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_restaurants"
+    },
+    {
+      "data": [
+        {
+          "category": "transport",
+          "city": "Los Angeles",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-t1",
+          "image_url": null,
+          "name": "Mock Walking Allowance",
+          "preference_matches": [],
+          "price": "0.0",
+          "rating": null,
+          "review_count": null,
+          "source": "controlled_mock_fixture",
+          "state": "CA",
+          "tags": [
+            "walking"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Los Angeles",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-t2",
+          "image_url": null,
+          "name": "Mock Transit Day Allowance",
+          "preference_matches": [],
+          "price": "9.0",
+          "rating": "4.0",
+          "review_count": 690,
+          "source": "controlled_mock_fixture",
+          "state": "CA",
+          "tags": [
+            "public transit"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Los Angeles",
+          "currency": "USD",
+          "description": null,
+          "destination": "Los Angeles",
+          "id": "lax-t3",
+          "image_url": null,
+          "name": "Mock Rideshare Day Allowance",
+          "preference_matches": [],
+          "price": "55.0",
+          "rating": "4.1",
+          "review_count": 450,
+          "source": "controlled_mock_fixture",
+          "state": "CA",
+          "tags": [
+            "taxi"
+          ],
+          "unit": "per_person_day"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 4,
+      "requested_arguments": {
+        "destination": "Los Angeles",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Los Angeles",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "mock",
+      "status": "SUCCESS",
+      "tool_name": "search_transport"
+    },
+    {
+      "data": {
+        "basis": "per_traveler",
+        "breakdown": {
+          "attractions": "52.0",
+          "food": "111.0",
+          "hotel": "112.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "UNKNOWN",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "275.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "275.0",
+        "provided_limit": null,
+        "remaining_budget": null,
+        "travelers": null,
+        "warnings": [
+          "Traveler count is unspecified: costs are per traveler, not a group total."
+        ],
+        "within_budget": null
+      },
+      "error_code": null,
+      "executed": true,
+      "execution_order": 5,
+      "requested_arguments": null,
+      "runtime_arguments": {
+        "budget_scope": "UNKNOWN",
+        "items": [
+          {
+            "amount": "25.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "16.0",
+            "category": "food"
+          },
+          {
+            "amount": "16.0",
+            "category": "food"
+          },
+          {
+            "amount": "16.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "112.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "27.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "21.0",
+            "category": "food"
+          },
+          {
+            "amount": "21.0",
+            "category": "food"
+          },
+          {
+            "amount": "21.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          }
+        ],
+        "limit": null,
+        "limit_currency": "USD",
+        "travelers": null
+      },
+      "selected": true,
+      "source": "deterministic",
+      "status": "SUCCESS",
+      "tool_name": "calculate_budget"
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "query": "Trip max $1,330 for two days in Chicago.",
+  "repair": null,
+  "requirements": {
+    "budget_amount": "1330.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Chicago",
+    "duration_days": 2,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": "1.0",
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "Trip max $1,330  for two days in Chicago",
+          "strength": "HARD",
+          "value": "1330.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  },
+  "status": "success",
+  "tools": [
+    {
+      "data": [
+        {
+          "address": "6500 South Pulaski Road, Chicago IL 60629",
+          "category": "attractions",
+          "city": "Chicago",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-a3",
+          "image_url": null,
+          "latitude": "41.7746301",
+          "longitude": "-87.7229824",
+          "name": "Balzekas Museum of Lithuanian Culture",
+          "preference_matches": [],
+          "price": "0.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/163573566",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:53:51.367411Z",
+          "snapshot_version": "osm_chicago_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "IL",
+          "tags": [
+            "parks",
+            "walking"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "10406 South Maryland Avenue, Chicago IL 60628",
+          "category": "attractions",
+          "city": "Chicago",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-a2",
+          "image_url": null,
+          "latitude": "41.7053741",
+          "longitude": "-87.6030693",
+          "name": "A. Philip Randolph Pullman Porter Museum",
+          "preference_matches": [],
+          "price": "18.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/210698577",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:53:51.367411Z",
+          "snapshot_version": "osm_chicago_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "IL",
+          "tags": [
+            "museums",
+            "history"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "180 North Michigan Avenue, Chicago IL 60601",
+          "category": "attractions",
+          "city": "Chicago",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-a1",
+          "image_url": null,
+          "latitude": "41.8855608",
+          "longitude": "-87.6249909",
+          "name": "American Writers Museum",
+          "preference_matches": [],
+          "price": "24.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "node/5169949885",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T15:53:51.367411Z",
+          "snapshot_version": "osm_chicago_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "IL",
+          "tags": [
+            "museums",
+            "art"
+          ],
+          "unit": "per_person_visit"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 1,
+      "requested_arguments": {
+        "destination": "Chicago",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Chicago",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_attractions"
+    },
+    {
+      "data": [
+        {
+          "address": "150 East Ontario Street, Chicago IL 60611",
+          "category": "hotel",
+          "city": "Chicago",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-h1",
+          "image_url": null,
+          "latitude": "41.8935944",
+          "longitude": "-87.6232845",
+          "name": "Hotel Riu Plaza Chicago",
+          "preference_matches": [],
+          "price": "95.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/401244510",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:37:50.069047Z",
+          "snapshot_version": "osm_chicago_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "IL",
+          "tags": [
+            "budget",
+            "central"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "151 East Wacker Drive, Chicago IL 60601",
+          "category": "hotel",
+          "city": "Chicago",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-h2",
+          "image_url": null,
+          "latitude": "41.8874924",
+          "longitude": "-87.6222342",
+          "name": "Hyatt Regency Chicago",
+          "preference_matches": [],
+          "price": "135.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/235920251",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:37:50.069047Z",
+          "snapshot_version": "osm_chicago_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "IL",
+          "tags": [
+            "quiet"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "85 East Wacker Drive, Chicago IL 60601",
+          "category": "hotel",
+          "city": "Chicago",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-h3",
+          "image_url": null,
+          "latitude": "41.8877548",
+          "longitude": "-87.625305",
+          "name": "London House Chicago",
+          "preference_matches": [],
+          "price": "225.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/330535225",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:37:50.069047Z",
+          "snapshot_version": "osm_chicago_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "IL",
+          "tags": [
+            "luxury",
+            "central"
+          ],
+          "unit": "per_person_night"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 2,
+      "requested_arguments": {
+        "destination": "Chicago",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Chicago",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_hotels"
+    },
+    {
+      "data": [
+        {
+          "address": "3259 East 95th Street, Chicago IL 60617",
+          "category": "food",
+          "city": "Chicago",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-f2",
+          "image_url": null,
+          "latitude": "41.722641",
+          "longitude": "-87.5440215",
+          "name": "Calumet Fisheries",
+          "preference_matches": [],
+          "price": "17.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=seafood"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Seafood"
+          ],
+          "provider_place_id": "way/211352838",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:39:57.005646Z",
+          "snapshot_version": "osm_chicago_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "IL",
+          "tags": [
+            "vegetarian",
+            "vegan"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "1723 North Halsted Street, Chicago IL 60614",
+          "category": "food",
+          "city": "Chicago",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-f1",
+          "image_url": null,
+          "latitude": "41.9134372",
+          "longitude": "-87.648199",
+          "name": "Alinea",
+          "preference_matches": [],
+          "price": "19.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=fine_dining"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Fine Dining"
+          ],
+          "provider_place_id": "node/3502294529",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:39:57.005646Z",
+          "snapshot_version": "osm_chicago_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "IL",
+          "tags": [
+            "pizza",
+            "local"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "445 North Clark Street, Chicago IL 60654",
+          "category": "food",
+          "city": "Chicago",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-f3",
+          "image_url": null,
+          "latitude": "41.8905369",
+          "longitude": "-87.6309213",
+          "name": "Frontera Grill",
+          "preference_matches": [],
+          "price": "31.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=mexican"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: Mexican"
+          ],
+          "provider_place_id": "node/3575225597",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:39:57.005646Z",
+          "snapshot_version": "osm_chicago_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "IL",
+          "tags": [
+            "seafood"
+          ],
+          "unit": "per_person_meal"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 3,
+      "requested_arguments": {
+        "destination": "Chicago",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Chicago",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_restaurants"
+    },
+    {
+      "data": [
+        {
+          "category": "transport",
+          "city": "Chicago",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-t1",
+          "image_url": null,
+          "name": "Mock Walking Allowance",
+          "preference_matches": [],
+          "price": "0.0",
+          "rating": null,
+          "review_count": null,
+          "source": "controlled_mock_fixture",
+          "state": "IL",
+          "tags": [
+            "walking"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Chicago",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-t2",
+          "image_url": null,
+          "name": "Mock Rail Day Allowance",
+          "preference_matches": [],
+          "price": "10.0",
+          "rating": "4.4",
+          "review_count": 1500,
+          "source": "controlled_mock_fixture",
+          "state": "IL",
+          "tags": [
+            "public transit"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Chicago",
+          "currency": "USD",
+          "description": null,
+          "destination": "Chicago",
+          "id": "chi-t3",
+          "image_url": null,
+          "name": "Mock Taxi Day Allowance",
+          "preference_matches": [],
+          "price": "44.0",
+          "rating": "4.0",
+          "review_count": 390,
+          "source": "controlled_mock_fixture",
+          "state": "IL",
+          "tags": [
+            "taxi"
+          ],
+          "unit": "per_person_day"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 4,
+      "requested_arguments": {
+        "destination": "Chicago",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Chicago",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "mock",
+      "status": "SUCCESS",
+      "tool_name": "search_transport"
+    },
+    {
+      "data": {
+        "basis": "per_traveler",
+        "breakdown": {
+          "attractions": "18.0",
+          "food": "108.0",
+          "hotel": "95.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "TOTAL_TRIP",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "221.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "221.0",
+        "provided_limit": "1330.0",
+        "remaining_budget": null,
+        "travelers": null,
+        "warnings": [
+          "Traveler count is unspecified: costs are per traveler, not a group total.",
+          "Group budget cannot be verified without a traveler count."
+        ],
+        "within_budget": null
+      },
+      "error_code": null,
+      "executed": true,
+      "execution_order": 5,
+      "requested_arguments": null,
+      "runtime_arguments": {
+        "budget_scope": "TOTAL_TRIP",
+        "items": [
+          {
+            "amount": "0.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "17.0",
+            "category": "food"
+          },
+          {
+            "amount": "17.0",
+            "category": "food"
+          },
+          {
+            "amount": "17.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "95.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "18.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "19.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          }
+        ],
+        "limit": "1330.0",
+        "limit_currency": "USD",
+        "travelers": null
+      },
+      "selected": true,
+      "source": "deterministic",
+      "status": "SUCCESS",
+      "tool_name": "calculate_budget"
+    }
+  ]
+}

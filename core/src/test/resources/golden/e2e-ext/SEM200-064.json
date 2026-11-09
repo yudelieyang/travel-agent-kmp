@@ -1,0 +1,670 @@
+{
+  "query": "Washington DC for 4 days, total under $1,420, with a hotel total under $610.",
+  "repair": null,
+  "requirements": {
+    "budget_amount": "1420.0",
+    "budget_constraint_strength": "HARD",
+    "budget_scope": "TOTAL_TRIP",
+    "constraints": [],
+    "currency": "USD",
+    "destination": "Washington DC",
+    "duration_days": 4,
+    "end_date": null,
+    "food_preferences": [],
+    "hotel_preferences": [],
+    "interests": [],
+    "objective": null,
+    "origin": null,
+    "requirements_v2": {
+      "ambiguities": [],
+      "constraints": [
+        {
+          "confidence": "1.0",
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "TOTAL_TRIP",
+          "source_text": "Washington DC for 4 days, total under $1,420",
+          "strength": "HARD",
+          "value": "1420.0"
+        },
+        {
+          "confidence": "1.0",
+          "currency": "USD",
+          "extractor_source": "deterministic",
+          "kind": "BUDGET",
+          "operator": "LTE",
+          "scope": "HOTEL_TOTAL",
+          "source_text": "with a hotel total under $610",
+          "strength": "HARD",
+          "value": "610.0"
+        }
+      ],
+      "objectives": [],
+      "preferences": []
+    },
+    "specific_preferences": [],
+    "start_date": null,
+    "transport_preferences": [],
+    "travelers": null
+  },
+  "status": "success",
+  "tools": [
+    {
+      "data": [
+        {
+          "address": "2315 Martin Luther King Junior Avenue Southeast, Washington DC 20020",
+          "category": "attractions",
+          "city": "Washington DC",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-a1",
+          "image_url": null,
+          "latitude": "38.8632003",
+          "longitude": "-76.9918493",
+          "name": "America's Islamic Heritage Museum",
+          "preference_matches": [],
+          "price": "0.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "node/3688609913",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:41:30.641736Z",
+          "snapshot_version": "osm_washington_dc_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "DC",
+          "tags": [
+            "museums",
+            "history"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "900 Jefferson Drive Southwest, Washington DC 20560",
+          "category": "attractions",
+          "city": "Washington DC",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-a2",
+          "image_url": null,
+          "latitude": "38.8881834",
+          "longitude": "-77.0244785",
+          "name": "Arts and Industries Building",
+          "preference_matches": [],
+          "price": "0.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "way/42341486",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:41:30.641736Z",
+          "snapshot_version": "osm_washington_dc_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "DC",
+          "tags": [
+            "museums",
+            "art"
+          ],
+          "unit": "per_person_visit"
+        },
+        {
+          "address": "1776 D Street Northwest, Washington DC 20006",
+          "category": "attractions",
+          "city": "Washington DC",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-a3",
+          "image_url": null,
+          "latitude": "38.8939474",
+          "longitude": "-77.0399678",
+          "name": "DAR Museum",
+          "preference_matches": [],
+          "price": "0.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=museum"
+          ],
+          "provider_category_labels": [
+            "Museum"
+          ],
+          "provider_place_id": "node/4806102794",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:41:30.641736Z",
+          "snapshot_version": "osm_washington_dc_attractions_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "DC",
+          "tags": [
+            "parks",
+            "history",
+            "walking"
+          ],
+          "unit": "per_person_visit"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 1,
+      "requested_arguments": {
+        "destination": "Washington DC",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Washington DC",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_attractions"
+    },
+    {
+      "data": [
+        {
+          "address": "950 New York Avenue Northwest, Washington DC 20001",
+          "category": "hotel",
+          "city": "Washington DC",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-h1",
+          "image_url": null,
+          "latitude": "38.9012767",
+          "longitude": "-77.0253663",
+          "name": "Conrad Hotel Washington DC",
+          "preference_matches": [],
+          "price": "110.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/740826352",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:43:55.938690Z",
+          "snapshot_version": "osm_washington_dc_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "DC",
+          "tags": [
+            "budget",
+            "central"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "1733 N Street Northwest, Washington DC 20036",
+          "category": "hotel",
+          "city": "Washington DC",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-h2",
+          "image_url": null,
+          "latitude": "38.9074198",
+          "longitude": "-77.0397084",
+          "name": "Courtyard Washington, DC Dupont Circle",
+          "preference_matches": [],
+          "price": "155.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/55327039",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:43:55.938690Z",
+          "snapshot_version": "osm_washington_dc_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "DC",
+          "tags": [
+            "quiet"
+          ],
+          "unit": "per_person_night"
+        },
+        {
+          "address": "1000 H Street Northwest, Washington DC 20001",
+          "category": "hotel",
+          "city": "Washington DC",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-h3",
+          "image_url": null,
+          "latitude": "38.8993407",
+          "longitude": "-77.0264883",
+          "name": "Grand Hyatt Washington",
+          "preference_matches": [],
+          "price": "240.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "tourism=hotel"
+          ],
+          "provider_category_labels": [
+            "Hotel"
+          ],
+          "provider_place_id": "way/48041504",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:43:55.938690Z",
+          "snapshot_version": "osm_washington_dc_hotels_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "DC",
+          "tags": [
+            "luxury",
+            "central"
+          ],
+          "unit": "per_person_night"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 2,
+      "requested_arguments": {
+        "destination": "Washington DC",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Washington DC",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_hotels"
+    },
+    {
+      "data": [
+        {
+          "address": "1738 Connecticut Avenue Northwest, Washington DC 20009-1103",
+          "category": "food",
+          "city": "Washington DC",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-f1",
+          "image_url": null,
+          "latitude": "38.9137931",
+          "longitude": "-77.046129",
+          "name": "Bistrot du Coin",
+          "preference_matches": [],
+          "price": "18.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=french"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: French"
+          ],
+          "provider_place_id": "node/3261823930",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:44:10.974804Z",
+          "snapshot_version": "osm_washington_dc_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "DC",
+          "tags": [
+            "vegetarian",
+            "vegan"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "1201 24th Street Northwest, Washington DC 20037",
+          "category": "food",
+          "city": "Washington DC",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-f2",
+          "image_url": null,
+          "latitude": "38.9055325",
+          "longitude": "-77.0511634",
+          "name": "Blue Duck Tavern",
+          "preference_matches": [],
+          "price": "24.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=american"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: American"
+          ],
+          "provider_place_id": "node/3832550822",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:44:10.974804Z",
+          "snapshot_version": "osm_washington_dc_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "DC",
+          "tags": [
+            "grilled",
+            "local"
+          ],
+          "unit": "per_person_meal"
+        },
+        {
+          "address": "1906 14th Street Northwest, Washington DC 20009",
+          "category": "food",
+          "city": "Washington DC",
+          "cost_method": "legacy_demo_cost_preserved_for_phase_o_migration",
+          "cost_origin": "planner_estimate",
+          "cost_version": "phase_o_v1",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-f3",
+          "image_url": null,
+          "latitude": "38.9157574",
+          "longitude": "-77.0321871",
+          "name": "Bresca",
+          "preference_matches": [],
+          "price": "33.0",
+          "provider": "openstreetmap",
+          "provider_category_ids": [
+            "amenity=restaurant",
+            "cuisine=french"
+          ],
+          "provider_category_labels": [
+            "Restaurant",
+            "Cuisine: French"
+          ],
+          "provider_place_id": "node/6299710951",
+          "rating": null,
+          "review_count": null,
+          "snapshot_fetched_at": "2026-09-16T20:44:10.974804Z",
+          "snapshot_version": "osm_washington_dc_food_2026-09-16_v1",
+          "source": "real_snapshot",
+          "state": "DC",
+          "tags": [
+            "seafood"
+          ],
+          "unit": "per_person_meal"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 3,
+      "requested_arguments": {
+        "destination": "Washington DC",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Washington DC",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "snapshot",
+      "status": "SUCCESS",
+      "tool_name": "search_restaurants"
+    },
+    {
+      "data": [
+        {
+          "category": "transport",
+          "city": "Washington DC",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-t1",
+          "image_url": null,
+          "name": "Mock Walking Allowance",
+          "preference_matches": [],
+          "price": "0.0",
+          "rating": null,
+          "review_count": null,
+          "source": "controlled_mock_fixture",
+          "state": "DC",
+          "tags": [
+            "walking"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Washington DC",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-t2",
+          "image_url": null,
+          "name": "Mock Metro Day Allowance",
+          "preference_matches": [],
+          "price": "11.0",
+          "rating": "4.5",
+          "review_count": 1700,
+          "source": "controlled_mock_fixture",
+          "state": "DC",
+          "tags": [
+            "public transit"
+          ],
+          "unit": "per_person_day"
+        },
+        {
+          "category": "transport",
+          "city": "Washington DC",
+          "currency": "USD",
+          "description": null,
+          "destination": "Washington DC",
+          "id": "wdc-t3",
+          "image_url": null,
+          "name": "Mock Taxi Day Allowance",
+          "preference_matches": [],
+          "price": "46.0",
+          "rating": "4.0",
+          "review_count": 420,
+          "source": "controlled_mock_fixture",
+          "state": "DC",
+          "tags": [
+            "taxi"
+          ],
+          "unit": "per_person_day"
+        }
+      ],
+      "error_code": null,
+      "executed": true,
+      "execution_order": 4,
+      "requested_arguments": {
+        "destination": "Washington DC",
+        "max_price": null,
+        "preferences": []
+      },
+      "runtime_arguments": {
+        "destination": "Washington DC",
+        "max_price": null,
+        "preferences": []
+      },
+      "selected": true,
+      "source": "mock",
+      "status": "SUCCESS",
+      "tool_name": "search_transport"
+    },
+    {
+      "data": {
+        "basis": "per_traveler",
+        "breakdown": {
+          "attractions": "0.0",
+          "food": "279.0",
+          "hotel": "330.0",
+          "transport": "0.0"
+        },
+        "budget_scope": "TOTAL_TRIP",
+        "comparison_cost": null,
+        "currency": "USD",
+        "estimated_total_cost": "609.0",
+        "limit_currency": "USD",
+        "per_traveler_cost": "609.0",
+        "provided_limit": "1420.0",
+        "remaining_budget": null,
+        "travelers": null,
+        "warnings": [
+          "Traveler count is unspecified: costs are per traveler, not a group total.",
+          "Group budget cannot be verified without a traveler count."
+        ],
+        "within_budget": null
+      },
+      "error_code": null,
+      "executed": true,
+      "execution_order": 5,
+      "requested_arguments": null,
+      "runtime_arguments": {
+        "budget_scope": "TOTAL_TRIP",
+        "items": [
+          {
+            "amount": "0.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "18.0",
+            "category": "food"
+          },
+          {
+            "amount": "18.0",
+            "category": "food"
+          },
+          {
+            "amount": "18.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "110.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "0.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "24.0",
+            "category": "food"
+          },
+          {
+            "amount": "24.0",
+            "category": "food"
+          },
+          {
+            "amount": "24.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "110.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "0.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "33.0",
+            "category": "food"
+          },
+          {
+            "amount": "33.0",
+            "category": "food"
+          },
+          {
+            "amount": "33.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          },
+          {
+            "amount": "110.0",
+            "category": "hotel"
+          },
+          {
+            "amount": "0.0",
+            "category": "attractions"
+          },
+          {
+            "amount": "18.0",
+            "category": "food"
+          },
+          {
+            "amount": "18.0",
+            "category": "food"
+          },
+          {
+            "amount": "18.0",
+            "category": "food"
+          },
+          {
+            "amount": "0.0",
+            "category": "transport"
+          }
+        ],
+        "limit": "1420.0",
+        "limit_currency": "USD",
+        "travelers": null
+      },
+      "selected": true,
+      "source": "deterministic",
+      "status": "SUCCESS",
+      "tool_name": "calculate_budget"
+    }
+  ]
+}
