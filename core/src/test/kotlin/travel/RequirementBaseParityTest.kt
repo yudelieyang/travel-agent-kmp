@@ -35,6 +35,19 @@ class RequirementBaseParityTest {
             assertNull(GoldenComparator.difference(row["extract_budget_constraints"]!!.jsonObject["value"]!!, actual))
         }
     }
+    @TestFactory fun specificPreferences(): List<DynamicTest> = records.map { entry ->
+        val row = entry.jsonObject; DynamicTest.dynamicTest(row["id"]!!.jsonPrimitive.content) {
+            val actual = JsonArray(functions.extractSpecificPreferences(row["query"]!!.jsonPrimitive.content).map { json.encodeToJsonElement(SpecificPreference.serializer(), it) })
+            assertNull(GoldenComparator.difference(row["extract_specific_preferences"]!!.jsonObject["value"]!!, actual))
+        }
+    }
+    @TestFactory fun budgetPreferences(): List<DynamicTest> = records.map { entry ->
+        val row = entry.jsonObject; DynamicTest.dynamicTest(row["id"]!!.jsonPrimitive.content) {
+            val query = row["query"]!!.jsonPrimitive.content
+            val actual = JsonArray(functions.extractBudgetPreferences(query, functions.recognizedMoneyExpressions(query)).map { json.encodeToJsonElement(SpecificPreference.serializer(), it) })
+            assertNull(GoldenComparator.difference(row["extract_budget_preferences"]!!.jsonObject["value"]!!, actual))
+        }
+    }
     @TestFactory fun monetaryScope(): List<DynamicTest> = records.map { entry ->
         val row = entry.jsonObject; DynamicTest.dynamicTest(row["id"]!!.jsonPrimitive.content) {
             for (context in row["amount_context"]!!.jsonArray) {

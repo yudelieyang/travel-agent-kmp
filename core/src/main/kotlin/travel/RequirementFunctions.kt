@@ -115,6 +115,55 @@ class RequirementFunctions {
         }
         return mergeBudgetConstraints(candidates) to ambiguities
     }
+    // Port of requirements.py:preference_category (L762–775).
+    fun preferenceCategory(value: String): String {
+        if (req(763).fullmatch(value) != null) return "TRANSPORT"
+        if (req(765).search(value) != null || req(767).search(value) != null) return "ACTIVITY"
+        if (req(769, 0).search(value) != null || req(769, 1).match(value) != null) return "FOOD"
+        if (req(773).search(value) != null) return "HOTEL"
+        return "UNSPECIFIED"
+    }
+    // Port of requirements.py:extract_specific_preferences (L709–732).
+    fun extractSpecificPreferences(query: String): List<SpecificPreference> {
+        val generic = setOf("museums", "food", "parks", "history", "art", "quiet", "central", "budget", "luxury", "vegetarian", "vegan", "seafood", "walking", "public transit", "taxi")
+        val preferences = mutableListOf<SpecificPreference>()
+        for (match in req(413).finditer(query)) {
+            for (rawValue in req(416).split(match.named.getValue("values").value!!)) {
+                val raw = rawValue ?: continue
+                if (req(403).search(raw) != null) continue
+                var value = PyStr.casefold(req(417).sub(raw.trim(), "").trim())
+                if (value.isEmpty() || value in generic) continue
+                if (value == "zoos") value = "zoo"
+                val category = preferenceCategory(value)
+                if (category == "FOOD" && value.endsWith(" food")) value = value.removeSuffix(" food").trim()
+                val item = SpecificPreference(category, value)
+                if (item !in preferences) preferences.add(item)
+            }
+        }
+        for (match in req(725).finditer(query)) {
+            val value = PyStr.casefold(match.named.getValue("value").value!!)
+            val item = SpecificPreference("ACTIVITY", if (value == "zoos") "zoo" else value)
+            if (item !in preferences) preferences.add(item)
+        }
+        return preferences
+    }
+    // Port of requirements.py:extract_budget_preferences (L735–759).
+    fun extractBudgetPreferences(query: String, amounts: List<PyRegex.Match>): List<SpecificPreference> {
+        val preferences = mutableListOf<SpecificPreference>()
+        for (amount in amounts) {
+            val (prefix, suffix) = budgetContext(query, amount)
+            val intro = amount.named["intro"]?.value ?: ""
+            val scope = monetaryScope(prefix, suffix, intro)
+            val category = if (scope == "HOTEL_TOTAL" || req(743).search("$prefix ${suffix.take(30)}") != null) "HOTEL"
+                else if (req(745).search("$prefix ${suffix.take(30)}") != null) "FOOD" else null
+            if (category == null || budgetStrength("$prefix $intro $suffix") != "SOFT") continue
+            val rate = if (req(752).search(suffix) != null) " per night" else ""
+            val value = PyStr.casefold("around ${budgetCurrency(amount)} ${amount.named["amount"]!!.value}$rate")
+            val item = SpecificPreference(category, value)
+            if (item !in preferences) preferences.add(item)
+        }
+        return preferences
+    }
     fun mergeBudgetConstraints(items: List<BudgetConstraint>): List<BudgetConstraint> {
         val merged = linkedMapOf<String, BudgetConstraint>()
         for (item in items) merged[item.scope] = item
