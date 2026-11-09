@@ -28,3 +28,7 @@ fun pyFloatPositive(value: BigDecimal): Boolean = value.toDouble() > 0.0
 
 // D1/D7: IEEE 754 numeric equality, with NaN always rejected and signed zeros equal.
 fun pyFloatIeeeEqual(a: Double, b: Double): Boolean = !a.isNaN() && !b.isNaN() && a == b
+
+// P2 coverage numeric parsing uses the same binary64 conversions as semantic_coverage.py.
+fun pyFloatParseAmount(text: String): Double = text.toDouble()
+fun pyFloatFromDecimal(value: BigDecimal): Double = value.toDouble()
