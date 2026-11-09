@@ -1,0 +1,22 @@
+[
+  {
+    "input": "Bo\u017fton",
+    "lower": "bo\u017fton",
+    "casefold": "boston"
+  },
+  {
+    "input": "\u0130stanbul",
+    "lower": "i\u0307stanbul",
+    "casefold": "i\u0307stanbul"
+  },
+  {
+    "input": "STRASSE",
+    "lower": "strasse",
+    "casefold": "strasse"
+  },
+  {
+    "input": "stra\u00dfe",
+    "lower": "stra\u00dfe",
+    "casefold": "strasse"
+  }
+]

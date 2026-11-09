@@ -14,3 +14,9 @@ for name in ('lower', 'casefold'):
             lines.append(f'{cp:X}\t' + ' '.join(f'{ord(c):X}' for c in result) + '\n')
     (root / f'{name}.tsv').write_text(''.join(lines), encoding='utf8', newline='\n')
     print(name, len(lines) - 1)
+
+# Human-readable expectations are produced by the same interpreter as the maps.
+import json
+cases = [{"input": s, "lower": s.lower(), "casefold": s.casefold()} for s in ("Boſton", "İstanbul", "STRASSE", "straße")]
+out = Path(__file__).resolve().parents[1] / "core/src/test/resources/unicode-cases.json"
+out.write_text(json.dumps(cases, ensure_ascii=True, indent=2) + "\n", encoding="utf8", newline="\n")
