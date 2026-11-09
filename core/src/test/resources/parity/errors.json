@@ -1,0 +1,198 @@
+[
+  {
+    "id": "clarification",
+    "query": "Plan a trip to Boston.",
+    "errors": []
+  },
+  {
+    "id": "preset-ambiguity",
+    "query": "Plan a 3-day trip to Boston for 1 traveler. I want a $240 hotel in Boston.",
+    "errors": []
+  },
+  {
+    "id": "preset-correction",
+    "query": "Plan a 3-day trip to Boston for 1 traveler. Hotel spending for the whole trip must stay under $575. Sorry, revise lodging to $525.",
+    "errors": []
+  },
+  {
+    "id": "preset-deterministic",
+    "query": "Plan a 3-day trip to Columbus for 1 traveler under $900 total. Hotel spending must not exceed $400. I like zoos and fried chicken.",
+    "errors": []
+  },
+  {
+    "id": "preset-repair",
+    "query": "Please build a three-day trip to Austin for one traveler. My total budget is $350.",
+    "errors": []
+  },
+  {
+    "id": "preset-snapshot",
+    "query": "Plan a 2-day trip to Boston for 1 traveler under $500 total.",
+    "errors": []
+  },
+  {
+    "id": "preset-tradeoff",
+    "query": "Plan a 3-day trip to Boston for 1 traveler. Spend more on the Boston hotel if it is downtown, but keep the whole trip below $1,300.",
+    "errors": []
+  },
+  {
+    "id": "repair-failure",
+    "query": "Please build a three-day trip to Austin for one traveler. My total budget is $1.",
+    "errors": [
+      "Hard budget exceeded"
+    ]
+  },
+  {
+    "id": "SEM200-002",
+    "query": "Chicago for 5 days with 2 travelers, please.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-003",
+    "query": "I would like a 4-day trip to Miami.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-004",
+    "query": "Just me in Seattle for 3 days.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-005",
+    "query": "Plan 6 days in Denver for 4 people.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-009",
+    "query": "Three days in San Francisco; I enjoy seafood.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-010",
+    "query": "Los Angeles for 2 days, and I like art museums.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-011",
+    "query": "Plan a 7-day trip to Las Vegas for 3 travelers.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-012",
+    "query": "New York City, 4 days, two of us.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-014",
+    "query": "Boston for 3 days. I enjoy walking.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-015",
+    "query": "Please arrange 5 days in Columbus for a family of 5.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-017",
+    "query": "Visit Miami for 2 days with 3 people.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-018",
+    "query": "Denver for one day; public transit is preferred.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-019",
+    "query": "Plan 4 days in Austin for 2 travelers.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-033",
+    "query": "Trip max $1,330 for two days in Chicago.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-058",
+    "query": "Miami, 3 days: total max $1,120. I like parks. Lodging total max $430.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-064",
+    "query": "Washington DC for 4 days, total under $1,420, with a hotel total under $610.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-176",
+    "query": "Boston for 3 days with 2 travelers; visit 2 museums.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-178",
+    "query": "Miami for 5 days: see 3 parks and 2 museums.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-181",
+    "query": "Austin for 4 days; I want 5 attractions.",
+    "errors": []
+  },
+  {
+    "id": "SEM200-183",
+    "query": "Las Vegas for 1 day, with 4 shows on the itinerary.",
+    "errors": []
+  },
+  {
+    "id": "unknown-city",
+    "query": "Plan a 2-day trip to wonderland for 1 traveler under $500 total.",
+    "errors": [
+      "UNSUPPORTED_CITY_DATA"
+    ]
+  },
+  {
+    "id": "no-hotels",
+    "query": "Plan a 3-day trip to Boston for 1 traveler. Hotel spending must stay under $1 total.",
+    "errors": [
+      "search_hotels: NO_RESULTS"
+    ]
+  },
+  {
+    "id": "missing-destination",
+    "query": "Plan a 3-day trip for 1 traveler.",
+    "errors": []
+  },
+  {
+    "id": "missing-both",
+    "query": "Plan a trip.",
+    "errors": []
+  },
+  {
+    "id": "coverage-unresolved",
+    "query": "Find me zoos in Columbus.",
+    "errors": []
+  },
+  {
+    "id": "coverage-ambiguous",
+    "query": "Do not let Seattle hotel spending exceed $635 total.",
+    "errors": []
+  },
+  {
+    "id": "coverage-money",
+    "query": "Keep the entire Seattle trip within $1,700, and keep accommodation within $760 total.",
+    "errors": []
+  },
+  {
+    "id": "coverage-correction",
+    "query": "Hotel spending cannot exceed $580 total. Actually, $530.",
+    "errors": []
+  },
+  {
+    "id": "coverage-negation",
+    "query": "Boston is fine, but do not include zoos.",
+    "errors": []
+  },
+  {
+    "id": "coverage-tradeoff",
+    "query": "Spend more on the Boston hotel if it is downtown, but keep the whole trip below $1,300.",
+    "errors": []
+  }
+]

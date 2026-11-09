@@ -35,7 +35,7 @@ typealias Money = @Serializable(with = MoneySerializer::class) BigDecimal
 @Serializable data class ValidationResult(val performed: Boolean, val outcome: String, val reason: String?, val violations: List<Violation>)
 @Serializable data class RepairSummary(val attempt: Int, val trigger: List<Violation>, val initial_itinerary: Itinerary, val final_budget: BudgetSummary?, val final_outcome: String)
 @Serializable data class CandidateGroup(val category: String, val selected: List<TravelOption>, val alternatives: List<TravelOption>)
-@Serializable data class PlanResult(val query: String, val requirements: TravelRequirements, val candidates: List<CandidateGroup>, val itinerary: Itinerary?, val budget: BudgetSummary?, val validation: ValidationResult, val repair: RepairSummary?, val status: String, val missing_fields: List<String>, val clarification_question: String?, val warnings: List<String>)
+@Serializable data class PlanResult(val query: String, val requirements: TravelRequirements, val candidates: List<CandidateGroup>, val itinerary: Itinerary?, val budget: BudgetSummary?, val validation: ValidationResult, val repair: RepairSummary?, val status: String, val missing_fields: List<String>, val clarification_question: String?, val warnings: List<String>, val errors: List<String> = emptyList())
 @Serializable data class CoverageSignals(val blocking_ambiguities: Int, val monetary_expressions: Int, val resolved_constraints: Int)
 @Serializable data class CoverageResult(val needs_llm: Boolean, val reasons: List<String>, val evidence: List<String>, val signals: CoverageSignals)
 @Serializable data class RequirementsFixture(val id: String, val query: String, val requirements: TravelRequirements, val coverage: CoverageResult)

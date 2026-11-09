@@ -11,7 +11,7 @@ class FullPipelineParityTest {
         DynamicTest.dynamicTest(file.name) {
             val expected = json.parseToJsonElement(file.readText(Charsets.UTF_8)).jsonObject
             val actual = engine.run(expected["query"]!!.jsonPrimitive.content)
-            assertNull(GoldenComparator.difference(expected, json.encodeToJsonElement(PlanResult.serializer(), actual.result)))
+            assertNull(GoldenComparator.difference(expected, JsonObject(json.encodeToJsonElement(PlanResult.serializer(), actual.result).jsonObject - "errors")))
         }
     }
 }

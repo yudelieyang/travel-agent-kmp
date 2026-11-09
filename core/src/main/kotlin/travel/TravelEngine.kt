@@ -24,7 +24,7 @@ private val json = Json { explicitNulls = true; encodeDefaults = false }
 data class Stage(val name: String, val sequence: Int, val outcome: String)
 data class SearchArguments(val destination: String, val maxPrice: Double?, val preferences: List<String>)
 data class ToolRecord(val toolName: String, val requestedArguments: SearchArguments?, val runtimeArguments: SearchArguments?)
-data class EngineRun(val result: PlanResult, val stages: List<Stage>, val tools: List<ToolRecord>, val savings: Double?, val coverage: CoverageResult? = null)
+data class EngineRun(val result: PlanResult, val stages: List<Stage>, val tools: List<ToolRecord>, val savings: Double?, val coverage: CoverageResult? = null) { val errors: List<String> get() = result.errors }
 
 /** Deterministic port of graph.py, itinerary.py, planner.py, mock.py and candidate_data.py. */
 class TravelEngine(private val loader: SnapshotLoader = SnapshotLoader()) {
@@ -264,7 +264,7 @@ class TravelEngine(private val loader: SnapshotLoader = SnapshotLoader()) {
         val savings = if (previous != null && finalBudget != null) pyFloatSavings(previous.estimated_total_cost, finalBudget.estimated_total_cost) else null
         val result = PlanResult(query, r, state.candidateGroups, if (status == "success") state.itinerary else null,
             if (status == "success") state.budgetSummary else null, state.publicValidation, repair, status,
-            state.missingFields, state.clarificationQuestion, state.warnings)
+            state.missingFields, state.clarificationQuestion, state.warnings, state.errors.toList())
         return EngineRun(result, state.executionStages, state.approvedToolRequests, savings)
     }
 }
