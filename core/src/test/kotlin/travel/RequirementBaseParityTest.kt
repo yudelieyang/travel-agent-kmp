@@ -9,6 +9,19 @@ class RequirementBaseParityTest {
     private val json = Json { explicitNulls = true; encodeDefaults = false }
     private val functions = RequirementFunctions()
     private val records = json.parseToJsonElement(File("src/test/resources/parity/functions/python.json").readText(Charsets.UTF_8)).jsonObject["cases"]!!.jsonArray
+    @TestFactory fun recognizedMoneyExpressions(): List<DynamicTest> = records.map { entry ->
+        val row = entry.jsonObject; DynamicTest.dynamicTest(row["id"]!!.jsonPrimitive.content) {
+            val actual = JsonArray(functions.recognizedMoneyExpressions(row["query"]!!.jsonPrimitive.content).map { match ->
+                buildJsonObject {
+                    put("text", match.groups[0].value!!)
+                    put("span", JsonArray(match.groups[0].span.map(::JsonPrimitive)))
+                    put("groups", JsonObject(match.named.mapValues { it.value.value?.let(::JsonPrimitive) ?: JsonNull }))
+                    put("group_spans", JsonObject(match.named.mapValues { JsonArray(it.value.span.map(::JsonPrimitive)) }))
+                }
+            })
+            assertEquals(row["recognized_money_expressions"], actual)
+        }
+    }
     @TestFactory fun budgetStrength(): List<DynamicTest> = records.map { entry ->
         val row = entry.jsonObject; DynamicTest.dynamicTest(row["id"]!!.jsonPrimitive.content) {
             assertEquals(row["budget_strength"]!!.jsonPrimitive.content, functions.budgetStrength(row["query"]!!.jsonPrimitive.content))
