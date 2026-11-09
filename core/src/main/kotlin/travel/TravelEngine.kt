@@ -24,7 +24,7 @@ private val json = Json { explicitNulls = true; encodeDefaults = false }
 data class Stage(val name: String, val sequence: Int, val outcome: String)
 data class SearchArguments(val destination: String, val maxPrice: Double?, val preferences: List<String>)
 data class ToolRecord(val toolName: String, val requestedArguments: SearchArguments?, val runtimeArguments: SearchArguments?)
-data class EngineRun(val result: PlanResult, val stages: List<Stage>, val tools: List<ToolRecord>, val savings: Double?)
+data class EngineRun(val result: PlanResult, val stages: List<Stage>, val tools: List<ToolRecord>, val savings: Double?, val coverage: CoverageResult? = null)
 
 /** Deterministic port of graph.py, itinerary.py, planner.py, mock.py and candidate_data.py. */
 class TravelEngine(private val loader: SnapshotLoader = SnapshotLoader()) {
@@ -145,6 +145,15 @@ class TravelEngine(private val loader: SnapshotLoader = SnapshotLoader()) {
         var budgetRepair = false
         var candidateGroups = emptyList<CandidateGroup>()
         fun stage(name: String, outcome: String = "completed") { executionStages.add(Stage(name, executionStages.size + 1, outcome)) }
+    }
+
+    // Port of service.py:TravelService.run deterministic extraction and coverage (L69–105).
+    fun run(query: String): EngineRun {
+        val normalized = query.trim()
+        require(normalized.isNotEmpty() && normalized.codePointCount(0, normalized.length) <= 2000)
+        val requirements = RequirementsParser().parse(normalized)
+        val coverage = SemanticCoverageAnalyzer().analyze(normalized, requirements)
+        return runWithRequirements(requirements, normalized).copy(coverage = coverage)
     }
 
     // Port of service.py:TravelService.run and graph.py:build_graph (L26–292), bypassing text parsing.
