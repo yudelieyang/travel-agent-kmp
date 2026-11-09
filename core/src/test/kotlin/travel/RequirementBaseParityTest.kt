@@ -14,6 +14,15 @@ class RequirementBaseParityTest {
             assertEquals(row["budget_strength"]!!.jsonPrimitive.content, functions.budgetStrength(row["query"]!!.jsonPrimitive.content))
         }
     }
+    @TestFactory fun monetaryScope(): List<DynamicTest> = records.map { entry ->
+        val row = entry.jsonObject; DynamicTest.dynamicTest(row["id"]!!.jsonPrimitive.content) {
+            for (context in row["amount_context"]!!.jsonArray) {
+                val c = context.jsonObject
+                val expected = c["monetary_scope"].let { if (it == null || it is JsonNull) null else it.jsonPrimitive.content }
+                assertEquals(expected, functions.monetaryScope(c["prefix"]!!.jsonPrimitive.content, c["suffix"]!!.jsonPrimitive.content, c["intro"]!!.jsonPrimitive.content))
+            }
+        }
+    }
     @TestFactory fun budgetCurrency(): List<DynamicTest> = records.map { entry ->
         val row = entry.jsonObject; DynamicTest.dynamicTest(row["id"]!!.jsonPrimitive.content) {
             val matches = SourcePatterns.at("agent.requirements", 403).finditer(row["query"]!!.jsonPrimitive.content)

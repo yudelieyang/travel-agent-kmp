@@ -19,6 +19,18 @@ class RequirementFunctions {
             else -> normalized.uppercase(Locale.ROOT)
         }
     }
+    // Port of requirements.py:monetary_scope (L601–628).
+    fun monetaryScope(prefix: String, suffix: String, intro: String = ""): String? {
+        val head = "$prefix $intro".trim()
+        val tail = suffix.take(30)
+        if (req(604).match(tail) != null) return null
+        if (req(606).search(head) != null || req(606).search(tail) != null) {
+            if (req(609).search("$head $tail") != null) return null
+            return "HOTEL_TOTAL"
+        }
+        if (req(612).search(head) != null || req(624).match(tail) != null) return "TOTAL_TRIP"
+        return null
+    }
     fun mergeBudgetConstraints(items: List<BudgetConstraint>): List<BudgetConstraint> {
         val merged = linkedMapOf<String, BudgetConstraint>()
         for (item in items) merged[item.scope] = item
