@@ -115,6 +115,18 @@ class RequirementFunctions {
         }
         return mergeBudgetConstraints(candidates) to ambiguities
     }
+    // Port of requirements.py:legacy_budget_projection_match (L667–683).
+    fun legacyBudgetProjectionMatch(query: String, amounts: List<PyRegex.Match>): PyRegex.Match? {
+        val compatible = amounts.filter { amount ->
+            val (prefix, suffix) = budgetContext(query, amount)
+            val scope = monetaryScope(prefix, suffix, amount.named["intro"]?.value ?: "")
+            scope == "TOTAL_TRIP" || (scope == null && unsupportedMoneyScope(prefix, suffix) == null)
+        }
+        return compatible.lastOrNull { amount ->
+            val (prefix, suffix) = budgetContext(query, amount)
+            monetaryScope(prefix, suffix, amount.named["intro"]?.value ?: "") == "TOTAL_TRIP"
+        } ?: compatible.lastOrNull()
+    }
     // Port of requirements.py:preference_category (L762–775).
     fun preferenceCategory(value: String): String {
         if (req(763).fullmatch(value) != null) return "TRANSPORT"
