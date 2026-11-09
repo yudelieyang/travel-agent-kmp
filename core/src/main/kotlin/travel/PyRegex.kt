@@ -10,7 +10,16 @@ class PyRegex(pattern: String, flags: Int = 0) {
     private val names = Regex("\\(\\?P<([A-Za-z][A-Za-z0-9]*)>").findAll(pattern).map { it.groupValues[1] }.toList()
     private val translated = pattern.replace(Regex("\\(\\?P<([A-Za-z][A-Za-z0-9]*)>"), "(?<$1>")
         .replace(Regex("\\(\\?P=([A-Za-z][A-Za-z0-9]*)\\)"), "\\\\k<$1>")
-    private val compiled = Pattern.compile(translated, Pattern.UNICODE_CHARACTER_CLASS or Pattern.UNICODE_CASE or if (flags and 2 != 0) Pattern.CASE_INSENSITIVE else 0)
+    private val compiled = run {
+        val caseFlag = if (flags and 2 != 0) Pattern.CASE_INSENSITIVE else 0
+        try {
+            Pattern.compile(translated, Pattern.UNICODE_CHARACTER_CLASS or Pattern.UNICODE_CASE or caseFlag)
+        } catch (error: IllegalArgumentException) {
+            if (error.message?.contains("UNICODE_CHARACTER_CLASS flag not supported") != true) throw error
+            // Android's ICU regex engine uses Unicode character classes without this JVM-only flag.
+            Pattern.compile(translated, caseFlag)
+        }
+    }
     private fun offset(input: String, index: Int): Int = if (index < 0) -1 else input.codePointCount(0, index)
     private fun group(input: String, value: String?, start: Int, end: Int) = Group(value, listOf(offset(input, start), offset(input, end)))
     private fun capture(input: String, matcher: Matcher): Match {

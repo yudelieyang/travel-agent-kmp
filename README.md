@@ -4,7 +4,7 @@ Offline Android and Desktop migration of the deterministic Python travel planner
 Frozen fixtures describe Python behavior, not real-world feasibility: prices are estimates,
 and opening hours and routes are not validated. OpenStreetMap attribution is in NOTICE.md.
 
-The deterministic P1b engine accepts structured requirements through `TravelEngine.runWithRequirements`. Natural-language parsing and the full travel UI are not yet implemented.
+The deterministic engine accepts natural-language queries through `TravelEngine.run` and structured requirements through `TravelEngine.runWithRequirements`. The full travel UI is not yet implemented.
 
 ```powershell
 .\gradlew.bat :core:test
@@ -15,6 +15,7 @@ The deterministic P1b engine accepts structured requirements through `TravelEngi
 ```
 
 Synchronize fixtures from the pinned Python `golden-v1.1` tag with `python tools/sync_golden.py`.
+The P2 Python differential corpora can be regenerated with the adjacent Python repository's `.venv` interpreter using `tools/generate_regex_parity.py` and `tools/generate_function_parity.py`. Both validate the pinned Python source and avoid writing Python bytecode. See `docs/P2_GOLD_COMPARISON.json` for the semantic dataset evaluation.
 
 
 Android and Desktop startup show the snapshot and fixture candidate counts.

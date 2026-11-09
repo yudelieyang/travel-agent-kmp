@@ -6,12 +6,13 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[1]
 PYTHON = ROOT.parent / 'travel-planning-agent'
 COMMIT = '0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd'
 if subprocess.check_output(['git', '-C', str(PYTHON), 'rev-parse', 'golden-v1^{commit}']).decode().strip() != COMMIT:
     raise RuntimeError('Unexpected golden-v1 commit')
-if subprocess.check_output(['git', '-C', str(PYTHON), 'diff', '--name-only', COMMIT, '--', 'backend/app', 'data/travel']):
+if subprocess.check_output(['git', '-C', str(PYTHON), 'diff', '--name-only', COMMIT, '--', 'backend/app', 'data/travel', 'evals/datasets/hybrid_semantics_200_v1.json', 'golden/e2e']):
     raise RuntimeError('Python runtime code or data differs from golden-v1')
 sys.path.insert(0, str(PYTHON / 'backend'))
 from app.agent import requirements, semantic_coverage
@@ -99,6 +100,8 @@ out.mkdir(parents=True, exist_ok=True)
 corpus = queries + manual
 manifest = {'python_version': sys.version.split()[0], 'source_commit': COMMIT, 'corpus': corpus, 'patterns': patterns, 'query_count': len(queries), 'manual_count': len(manual)}
 (out / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf8', newline='\n')
+runtime_catalog = ROOT / 'core/src/main/resources/parser/regex-patterns.json'
+runtime_catalog.write_text(json.dumps({'source_commit': COMMIT, 'patterns': patterns}, ensure_ascii=False, indent=2) + '\n', encoding='utf8', newline='\n')
 # Compact JSONL allows streaming instead of loading the entire corpus at once.
 with (out / 'results.jsonl').open('w', encoding='utf8', newline='\n') as target:
     for i, item in enumerate(patterns):

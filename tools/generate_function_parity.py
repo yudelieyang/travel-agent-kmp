@@ -3,13 +3,14 @@ import json
 import subprocess
 import sys
 from pathlib import Path
+sys.dont_write_bytecode = True
 from pydantic import BaseModel
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT.parent / 'travel-planning-agent'
 COMMIT = '0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd'
 if subprocess.check_output(['git', '-C', str(SOURCE), 'rev-parse', 'golden-v1^{commit}']).decode().strip() != COMMIT:
     raise RuntimeError('Unexpected golden-v1 commit')
-if subprocess.check_output(['git', '-C', str(SOURCE), 'diff', '--name-only', COMMIT, '--', 'backend/app', 'data/travel']):
+if subprocess.check_output(['git', '-C', str(SOURCE), 'diff', '--name-only', COMMIT, '--', 'backend/app', 'data/travel', 'evals/datasets/hybrid_semantics_200_v1.json']):
     raise RuntimeError('Python runtime code or data differs from golden-v1')
 sys.path.insert(0, str(SOURCE / 'backend'))
 from app.agent import requirements as r, semantic_coverage as c

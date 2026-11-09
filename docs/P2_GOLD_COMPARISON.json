@@ -1,0 +1,10 @@
+{
+  "dataset": "hybrid_semantics_200_v1",
+  "source_commit": "0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd",
+  "cases": 200,
+  "python_pass": 76,
+  "kotlin_pass": 76,
+  "python_rate": 0.38,
+  "kotlin_rate": 0.38,
+  "mismatches": []
+}
