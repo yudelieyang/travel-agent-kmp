@@ -47,6 +47,36 @@ internal object SnapshotValidation {
             OffsetDateTime.parse(normalized)
         }
     }
+    // Port of candidate_data.py CandidateFixture, CityFixture and CandidateDataset validators.
+    fun fixtureDataset(data: JsonObject) {
+        fun plain(o: JsonObject, key: String): String {
+            val value = o[key] as? JsonPrimitive ?: error("Missing $key")
+            require(value.isString); return value.content
+        }
+        allowed(data, setOf("dataset", "source", "cities")); plain(data, "dataset"); require(plain(data, "source") == "controlled_mock_fixture")
+        val ids = mutableSetOf<String>(); val owners = mutableMapOf<String, String>()
+        for (entry in data["cities"]!!.jsonArray) {
+            val city = entry.jsonObject; allowed(city, setOf("city", "state", "aliases", "candidates"))
+            val name = plain(city, "city"); require(plain(city, "state").length == 2)
+            val aliases = city["aliases"]!!.jsonArray.map { require(it.jsonPrimitive.isString); it.jsonPrimitive.content }
+            for (alias in listOf(name) + aliases) {
+                val key = Regex("[a-z0-9]+").findAll(PyStr.casefold(alias)).joinToString(" ") { it.value }
+                val owner = owners.putIfAbsent(key, name); require(owner == null || owner == name)
+            }
+            val groups = city["candidates"]!!.jsonObject; require(groups.keys == categories.keys && groups.values.all { it.jsonArray.isNotEmpty() })
+            for (rows in groups.values) for (item in rows.jsonArray) {
+                val row = item.jsonObject
+                allowed(row, setOf("id", "name", "price", "currency", "unit", "tags", "rating", "review_count", "image_url", "description"))
+                require(ids.add(plain(row, "id"))); plain(row, "name"); require(number(row, "price")!! >= 0)
+                require((if ("currency" in row) plain(row, "currency") else "USD") == "USD")
+                require(plain(row, "unit") in categories.values)
+                row["tags"]!!.jsonArray.forEach { require(it.jsonPrimitive.isString) }
+                number(row, "rating", true)?.let { require(it in 0.0..5.0) }
+                number(row, "review_count", true)?.let { require(it >= 0 && it % 1.0 == 0.0) }
+                for (key in listOf("image_url", "description")) if (key in row && row[key] !is JsonNull) plain(row, key)
+            }
+        }
+    }
     fun manifest(data: JsonObject): List<JsonObject> {
         allowed(data, setOf("manifest_version", "routes")); require(version.matches(required(data, "manifest_version")))
         val routes = data["routes"]!!.jsonArray.map { obj(it) }; require(routes.isNotEmpty())

@@ -10,7 +10,7 @@ class SnapshotLoader(private val read: (String) -> String = { path ->
         .bufferedReader(Charsets.UTF_8).use { it.readText() }
 }) {
     private val root = "data/travel/snapshots/openstreetmap/"
-    private val cities = Json.parseToJsonElement(read("data/travel/us/cities.json")).jsonObject["cities"]!!.jsonArray
+    private val cities = Json.parseToJsonElement(read("data/travel/us/cities.json")).jsonObject.also { SnapshotValidation.fixtureDataset(it) }["cities"]!!.jsonArray
     private val routes: List<JsonObject>
     private val snapshots: Map<String, JsonObject>
     init {
