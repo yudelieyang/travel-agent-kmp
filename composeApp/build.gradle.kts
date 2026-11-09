@@ -9,7 +9,8 @@ kotlin {
     android { namespace = "travel.app"; compileSdk = 37; minSdk = 24; androidResources { enable = true } }
     jvmToolchain(17)
     sourceSets {
-        commonMain.dependencies { implementation(compose.runtime); implementation(compose.foundation); implementation(compose.material3) }
+        commonMain.dependencies { implementation(compose.runtime); implementation(compose.foundation); implementation(compose.material3); implementation(compose.components.resources) }
+        commonTest.dependencies { implementation(kotlin("test")) }
         val desktopMain by getting { dependencies { implementation(compose.desktop.currentOs); implementation(project(":core")) } }
         val androidMain by getting { dependencies { implementation("androidx.activity:activity-compose:1.13.0") } }
     }

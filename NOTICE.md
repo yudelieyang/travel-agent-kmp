@@ -56,3 +56,6 @@ live availability was imported.
 
 Candidate prices are project-generated planner estimates preserved for deterministic demo behavior.
 They are not OpenStreetMap data, admission prices, room rates, meal prices, or current ticket prices.
+# Fonts
+
+Space Grotesk, Inter and JetBrains Mono are distributed under the SIL Open Font License 1.1. Their individual copyright and license notices are in `licenses/fonts/`.
