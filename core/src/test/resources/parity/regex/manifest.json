@@ -1,0 +1,1525 @@
+{
+  "python_version": "3.11.9",
+  "source_commit": "0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd",
+  "corpus": [
+    "Please plan a 2-day visit to Boston for one traveler.",
+    "Chicago for 5 days with 2 travelers, please.",
+    "I would like a 4-day trip to Miami.",
+    "Just me in Seattle for 3 days.",
+    "Plan 6 days in Denver for 4 people.",
+    "A 1-day Austin getaway for 2 travelers.",
+    "I want to visit parks in Washington DC.",
+    "Find me zoos in Columbus.",
+    "Three days in San Francisco; I enjoy seafood.",
+    "Los Angeles for 2 days, and I like art museums.",
+    "Plan a 7-day trip to Las Vegas for 3 travelers.",
+    "New York City, 4 days, two of us.",
+    "I like fried chicken in Chicago.",
+    "Boston for 3 days. I enjoy walking.",
+    "Please arrange 5 days in Columbus for a family of 5.",
+    "I want coffee shops in Seattle.",
+    "Visit Miami for 2 days with 3 people.",
+    "Denver for one day; public transit is preferred.",
+    "Plan 4 days in Austin for 2 travelers.",
+    "I want to visit museums in San Francisco.",
+    "Keep the total cost of my Boston trip under $875.",
+    "For Chicago, the whole trip must stay below $1,250.",
+    "No more than $760 total for a Miami vacation.",
+    "The entire Seattle trip cannot exceed $1,480.",
+    "Cap the trip at $1,050 in Denver.",
+    "I can't go above $990 for the whole trip to Austin.",
+    "Please keep everything within $1,600 for New York City.",
+    "My absolute ceiling for the full Las Vegas trip is $2,000.",
+    "The trip budget for Washington DC is $1,175 maximum.",
+    "Do not let the total trip go over $845 in Columbus.",
+    "For San Francisco, stay under $1,900 total.",
+    "I only have $720 for the entire trip to Boston.",
+    "Trip max $1,330 for two days in Chicago.",
+    "The total for Miami has to stay at or below $1,010.",
+    "Keep the full trip below $1,550; Seattle is the destination.",
+    "My trip budget must not exceed $680 for Denver.",
+    "Austin: no more than $1,240 for the whole trip.",
+    "Budget the total New York City trip at $1,800 or less.",
+    "Las Vegas trip, maximum total spend: $1,470.",
+    "For Washington DC, keep the trip under $1,095—not a penny more.",
+    "In Boston, hotel spending must stay under $430 total.",
+    "Lodging total for Chicago cannot exceed $610.",
+    "No more than $525 total for accommodation in Miami.",
+    "The hotel must stay below $690 total in Seattle.",
+    "Cap my Denver hotel bill at $475 total.",
+    "Austin lodging cannot go above $560 in total.",
+    "Keep hotel spending within $820 total for New York City.",
+    "For Las Vegas, the accommodation total must not exceed $740.",
+    "Hotel total max $380 in Washington DC.",
+    "My San Francisco hotel must cost at most $900 total.",
+    "Boston lodging spending has an absolute ceiling of $360 total.",
+    "In Chicago, spend no more than $585 on the hotel total.",
+    "Accommodation in Miami: under $410 total, please.",
+    "Do not let Seattle hotel spending exceed $635 total.",
+    "Denver hotel, total maximum $710.",
+    "Boston total trip under $1,300; hotel total under $520.",
+    "Hotel spending in Chicago must stay below $640 total, while the whole trip cannot exceed $1,550.",
+    "Miami, 3 days: total max $1,120. I like parks. Lodging total max $430.",
+    "Keep the entire Seattle trip within $1,700, and keep accommodation within $760 total.",
+    "Denver hotel total: no more than $550. Whole trip: no more than $1,260.",
+    "For Austin\ntrip budget under $980 total\nhotel budget under $390 total",
+    "New York City: cap the whole trip at $2,100; hotel spending cannot exceed $950 total.",
+    "Las Vegas hotel must stay below $680 total. Also, the total trip must stay below $1,650.",
+    "Washington DC for 4 days, total under $1,420, with a hotel total under $610.",
+    "I enjoy seafood. San Francisco trip maximum is $2,200; accommodation maximum is $1,020 total.",
+    "Boston, 2 travelers. Keep everything under $1,450 and the lodging total under $600.",
+    "Trip budget: $1,520 maximum for Chicago. Hotel total: $590 maximum.",
+    "In Miami, no more than $1,050 for the full trip and no more than $470 for lodging total.",
+    "Seattle: hotel under $725 total; total trip under $1,880. Museums please.",
+    "Hotel total cannot exceed $460 in Denver; the trip total cannot exceed $1,180.",
+    "Austin has a $1,110 total-trip ceiling, plus a $440 hotel-total ceiling.",
+    "New York City: whole trip under $2,350. Quiet hotel, under $990 total.",
+    "Las Vegas total $1,740 max; hotel spending $710 max total.",
+    "Washington DC trip must stay under $1,360, hotel total must stay under $540, and I like parks.",
+    "San Francisco: no more than $2,050 overall; lodging no more than $880 total.",
+    "The total trip budget is $1,400. Actually, make that $1,100.",
+    "Hotel total max $650; change it to $500.",
+    "Keep the whole trip under $1,250. Sorry, I meant $1,000.",
+    "Lodging total under $720; make that $610 instead.",
+    "Trip budget $1,650 maximum. No, use $1,450 for the total trip.",
+    "Hotel spending cannot exceed $580 total. Actually, $530.",
+    "My whole-trip cap is $900; change that to $840.",
+    "Accommodation total must stay under $470. Make it $430.",
+    "Total trip max $1,350. Instead, cap the trip at $1,200.",
+    "Hotel total $800 maximum; sorry, make that $700.",
+    "The full trip must stay below $1,090. Actually, I prefer museums.",
+    "Hotel under $600 total. Make it a 4-day trip.",
+    "Trip total under $1,500. Change the destination to Chicago.",
+    "Lodging must stay below $450 total. I'd rather stay downtown.",
+    "The trip maximum is $1,300. Actually, I want seafood.",
+    "Total trip max $1,500; hotel total max $620. Actually make the total $1,280.",
+    "Hotel total under $540. Whole trip under $1,250. Change the hotel to $480.",
+    "Trip ceiling $1,800 and lodging ceiling $750 total; sorry, make the trip $1,600.",
+    "Hotel max $690 total; total trip max $1,700. Instead, hotel max $590.",
+    "The total is capped at $1,350. Hotel total is capped at $500. Change total to $1,200 only.",
+    "Keep the whole trip below $1,100 and accommodation below $420 total. Adjust hotel only: $380.",
+    "Trip max $2,000, hotel max $850 total. Actually change the total trip to $1,750.",
+    "Lodging must not exceed $460 total; entire trip must not exceed $980. Make lodging $400 instead.",
+    "Total trip: $1,450 maximum. Hotel: $600 total maximum. No, use $1,300 for the trip.",
+    "Whole trip under $1,600; hotel under $700 total. Sorry, hotel should be $640.",
+    "Around $980 total would be comfortable for Boston.",
+    "I would prefer to stay near $1,300 for the whole Chicago trip.",
+    "Miami hotel around $420 total would be ideal.",
+    "Try to keep lodging roughly $560 total in Seattle.",
+    "About $1,100 total is my target for Denver, not a strict cap.",
+    "Ideally the Austin trip is under about $950.",
+    "I can spend roughly $700 on a New York City hotel total.",
+    "Keep the Las Vegas hotel near $640 total if possible.",
+    "Washington DC should come to about $1,250 overall.",
+    "San Francisco lodging around $850 total is fine.",
+    "I only want to spend like $900 total in Boston.",
+    "For Chicago, hotel spending of about $510 total is preferred.",
+    "A Miami trip near $1,050 total would be nice.",
+    "Seattle accommodation roughly $630 total, please.",
+    "Denver total under $1,200 would be ideal, though flexible.",
+    "I want a $240 hotel in Boston.",
+    "My hotel budget is $375 for Chicago.",
+    "$480 for lodging in Miami.",
+    "I can spend $550 on the hotel in Seattle.",
+    "Denver hotel budget: $460.",
+    "Reserve a $315 accommodation in Austin.",
+    "A $700 place to stay in New York City is okay.",
+    "Hotel money is $430 in Las Vegas.",
+    "Washington DC lodging for $390, please.",
+    "I need a $820 hotel in San Francisco.",
+    "A hotel price of $290 for Boston.",
+    "Chicago accommodation costs $510 in my plan.",
+    "Can you find Miami lodging at $405?",
+    "Seattle hotel: $660.",
+    "For Denver I can do a $350 hotel.",
+    "Food must stay below $260 in Boston.",
+    "Chicago transportation cannot exceed $140.",
+    "Activities in Miami must cost no more than $190.",
+    "Seattle hotel must stay under $210 per night.",
+    "No more than $310 for restaurants in Denver.",
+    "Austin transit spending must stay under $95.",
+    "Attractions for New York City cannot exceed $275.",
+    "Las Vegas accommodation must be under $180 per night.",
+    "Washington DC meal budget must not exceed $230.",
+    "Keep transport below $120 in San Francisco.",
+    "Boston museum tickets must stay below $160.",
+    "Chicago hotel is capped at $155 per night.",
+    "Food in Miami: $290 maximum.",
+    "Denver flights and transport must stay under $210.",
+    "Austin activities max $145.",
+    "Boston: zoos, parks, and seafood please.",
+    "I like fried chicken, art museums, and coffee shops in Chicago.",
+    "Miami should have a quiet hotel and nearby parks.",
+    "In Seattle I want seafood, coffee shops, and art museums.",
+    "Denver: downtown hotel, public transit, and museums.",
+    "For Austin, I enjoy parks, fried chicken, and walking.",
+    "New York City needs a quiet hotel, seafood, and zoos.",
+    "Las Vegas: parks, coffee shops, and public transit are important.",
+    "Washington DC, please include museums, seafood, and a downtown hotel.",
+    "San Francisco with zoos, fried chicken, and a quiet hotel.",
+    "Boston is fine, but do not include zoos.",
+    "I do not care about nightlife in Chicago.",
+    "No luxury hotels in Miami.",
+    "Avoid expensive restaurants in Seattle.",
+    "I don't need museums in Denver.",
+    "Please exclude parks from the Austin plan.",
+    "No seafood for New York City.",
+    "Don't schedule a casino in Las Vegas.",
+    "Washington DC, no crowded hotel areas.",
+    "San Francisco without tourist-trap restaurants.",
+    "Spend more on the Boston hotel if it is downtown, but keep the whole trip below $1,300.",
+    "Save on food in Chicago so we can spend more on activities.",
+    "Prioritize hotel quality over restaurants for Miami.",
+    "I would pay more for a better Seattle location, while keeping total trip under $1,800.",
+    "For Denver, choose a cheaper hotel only if museums remain easy to reach.",
+    "Austin food can be simpler if the hotel is closer to downtown.",
+    "I value location over room size in New York City, up to a total of $2,100.",
+    "Spend less on shows in Las Vegas so the hotel can be nicer.",
+    "Pay extra for a quiet Washington DC hotel if it cuts commute time.",
+    "For San Francisco, prioritize seafood over attractions if choices conflict.",
+    "Boston for 3 days with 2 travelers; visit 2 museums.",
+    "Chicago hotel should be 4-star; breakfast is at 9 AM.",
+    "Miami for 5 days: see 3 parks and 2 museums.",
+    "Seattle route includes Route 66 and a 4-star hotel.",
+    "Denver, 2 travelers, 3 restaurants, and a 7 PM dinner.",
+    "Austin for 4 days; I want 5 attractions.",
+    "New York City: 2 adults, a 3-star hotel, and 9 AM coffee.",
+    "Las Vegas for 1 day, with 4 shows on the itinerary.",
+    "Washington DC: visit 2 museums at 10 AM after a 3-day stay.",
+    "San Francisco for 6 days, in a 4-star hotel near Route 101.",
+    "hotel money should not more then 470 total in Boston",
+    "whole Chicago trip cost less 1180 pls",
+    "miami hotel 390 not 490 make it max total",
+    "seattle trip budgt under 1500 and hotel 600 total",
+    "denver 3 days i like zoo and fried chiken",
+    "austin all trip no more 1100; lodge total no more 430",
+    "nyc hotel money cant above 780 total and trip 1900 max",
+    "vegas 2 day, trip max 1400, hotel max 550 totl",
+    "wash dc accomodation total under 620, all trip under 1350",
+    "san fran hotel shud be 800 total max; trip 2050 max",
+    "Boston trip max $1,200. Hotel rating at least 4 stars.",
+    "Chicago hotel total max $500. Dinner around $90. Whole trip max $1,400.",
+    "Miami total trip under $1,100. Visit 3 museums. Hotel total under $450.",
+    "Seattle hotel around $600 total, but the whole trip cannot exceed $1,500.",
+    "San Francisco hotel total max $900; actually make the trip 4 days, not $900.",
+    "Plan a trip to Boston.",
+    "Plan a 3-day trip to Boston for 1 traveler. I want a $240 hotel in Boston.",
+    "Plan a 3-day trip to Boston for 1 traveler. Hotel spending for the whole trip must stay under $575. Sorry, revise lodging to $525.",
+    "Plan a 3-day trip to Columbus for 1 traveler under $900 total. Hotel spending must not exceed $400. I like zoos and fried chicken.",
+    "Please build a three-day trip to Austin for one traveler. My total budget is $350.",
+    "Plan a 2-day trip to Boston for 1 traveler under $500 total.",
+    "Plan a 3-day trip to Boston for 1 traveler. Spend more on the Boston hotel if it is downtown, but keep the whole trip below $1,300.",
+    "Please build a three-day trip to Austin for one traveler. My total budget is $1.",
+    "Chicago for 5 days with 2 travelers, please.",
+    "I would like a 4-day trip to Miami.",
+    "Just me in Seattle for 3 days.",
+    "Plan 6 days in Denver for 4 people.",
+    "Three days in San Francisco; I enjoy seafood.",
+    "Los Angeles for 2 days, and I like art museums.",
+    "Plan a 7-day trip to Las Vegas for 3 travelers.",
+    "New York City, 4 days, two of us.",
+    "Boston for 3 days. I enjoy walking.",
+    "Please arrange 5 days in Columbus for a family of 5.",
+    "Visit Miami for 2 days with 3 people.",
+    "Denver for one day; public transit is preferred.",
+    "Plan 4 days in Austin for 2 travelers.",
+    "Trip max $1,330 for two days in Chicago.",
+    "Miami, 3 days: total max $1,120. I like parks. Lodging total max $430.",
+    "Washington DC for 4 days, total under $1,420, with a hotel total under $610.",
+    "Boston for 3 days with 2 travelers; visit 2 museums.",
+    "Miami for 5 days: see 3 parks and 2 museums.",
+    "Austin for 4 days; I want 5 attractions.",
+    "Las Vegas for 1 day, with 4 shows on the itinerary.",
+    "whole-trip",
+    "entire-trip",
+    "more then",
+    "U.S.",
+    "Boston, MA",
+    "Boston or Miami",
+    "2-day Boston trip",
+    "to Boston for 2 travelers",
+    "from Austin to Boston",
+    "three-day",
+    "family of four",
+    "just me",
+    "traveling alone",
+    "me and my partner",
+    "2026-01-01",
+    "per person",
+    "total",
+    "whole trip",
+    "spend as much of the budget as reasonably possible",
+    "but",
+    "budget hotel",
+    "city walking",
+    "no walking",
+    "avoid nightlife",
+    "without meat",
+    "never rent a car",
+    "no expensive restaurant",
+    "wheelchair",
+    "must visit parks",
+    "cheap",
+    "affordable",
+    "under $500",
+    "I also like fried chicken",
+    "I like zoos and parks",
+    "however",
+    "hotel around $500 per night",
+    "not a strict cap",
+    "actually make the hotel $400",
+    "food $80",
+    "transport $100",
+    "museum tickets $50",
+    "total trip cannot exceed $500",
+    "my hotel budget",
+    "per night",
+    "around",
+    "hotel",
+    "public transit is preferred",
+    "quiet hotel",
+    "USD 500",
+    "USD",
+    "find me museums",
+    "Café",
+    "São Paulo",
+    "Boston，Miami！",
+    "ſ",
+    "İ",
+    "Boston",
+    "",
+    "no match here",
+    "⛄",
+    "for two",
+    "have",
+    " and actually make that to ",
+    "can't go above",
+    "history",
+    "art",
+    "central",
+    "luxury",
+    "vegetarian",
+    "vegan",
+    "seafood",
+    "taxi",
+    "if necessary",
+    "not",
+    "austin",
+    "austin texas",
+    "austin tx",
+    "boston ma",
+    "boston massachusetts",
+    "chicago",
+    "chicago il",
+    "chicago illinois",
+    "columbus",
+    "columbus oh",
+    "columbus ohio",
+    "dc",
+    "denver",
+    "denver co",
+    "denver colorado",
+    "district of columbia",
+    "l a",
+    "la",
+    "las vegas",
+    "las vegas nevada",
+    "las vegas nv",
+    "los angeles",
+    "los angeles ca",
+    "los angeles california",
+    "miami",
+    "miami fl",
+    "miami florida",
+    "new york",
+    "new york city",
+    "new york city ny",
+    "new york ny",
+    "nyc",
+    "san francisco",
+    "san francisco ca",
+    "san francisco california",
+    "seattle",
+    "seattle wa",
+    "seattle washington",
+    "sf",
+    "vegas",
+    "washington d c",
+    "washington dc"
+  ],
+  "patterns": [
+    {
+      "pattern": "(?:(?P<intro>under|below|up to|around|max(?:imum)?|at most|no more than|don't spend more than|(?:don't\\s+let\\s+(?:the\\s+)?(?:total|trip|whole\\s+trip)\\s+go\\s+over)|(?:cap\\s+(?:the\\s+)?(?:whole\\s+)?trip\\s+at)|(?:my\\s+)?(?:total\\s+)?budget(?:\\s+(?:of|is))?)\\s*)?(?:(?P<code>USD|EUR|GBP)\\s*|(?P<symbol>[$€£])\\s*)?(?P<amount>-?\\d(?:[\\d,]*\\d)?(?:\\.\\d+)?)(?P<multiplier>[kK])?\\s*(?P<currency>USD|EUR|GBP|dollars?|euros?|pounds?)?",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:403"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bi\\s+(?:also\\s+)?(?:like|enjoy|prefer|love|need)\\s+(?P<values>[^.!?;]+)",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:413"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\s*(?:,|\\b(?:and|but)\\b)\\s*",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:416"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^(?:(?:i\\s+)?(?:also\\s+)?(?:like|enjoy|prefer|love|need)\\s+|also\\s+)",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:417"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:budget|spending\\s+limit|spend|afford|under|up\\s+to|max(?:imum)?|at\\s+most|no\\s+more\\s+than|around|about)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:420"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:under|below|up\\s+to|max(?:imum)?|at\\s+most|no\\s+more\\s+than|(?:do not|don't)\\s+spend\\s+more\\s+than|spending\\s+limit|(?:do\\s+not|don't)\\s+let\\s+(?:the\\s+)?(?:total|(?:total\\s+)?trip)\\s+go\\s+over|cap\\s+(?:the\\s+)?(?:whole\\s+)?trip\\s+at|(?:total\\s+)?budget|(?:must|should)\\s+(?:not\\s+)?(?:exceed|be\\s+more\\s+than)|cannot\\s+(?:exceed|go\\s+above)|(?:absolute\\s+)?ceiling|(?:capped?|cap)(?:\\s+is)?(?:\\s+at)?|\\bwithin\\b|\\bonly\\s+have\\b)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:425"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:around|about|roughly|near|ideally|ideal|if\\s+possible|would\\s+(?:like|be\\s+ideal)|flexible)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:435"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^[A-Z]{3}$",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:71:Field",
+        "app.agent.requirements:123:Field"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(whole|entire|full)-trip\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:221"
+      ],
+      "replacements": [
+        "\\1 trip"
+      ]
+    },
+    {
+      "pattern": "\\bmore\\s+then\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:222"
+      ],
+      "replacements": [
+        "more than"
+      ]
+    },
+    {
+      "pattern": "\\b([A-Za-z])\\.([A-Za-z])\\.",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:223"
+      ],
+      "replacements": [
+        "\\1\\2"
+      ]
+    },
+    {
+      "pattern": "\\b([A-Za-z][A-Za-z ]*),\\s*([A-Z]{2})\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:224"
+      ],
+      "replacements": [
+        "\\1 \\2"
+      ]
+    },
+    {
+      "pattern": "\\b(?:to|in|visit)\\s+([A-Za-z][A-Za-z ]*?)(?=\\s+(?:under|for|with|from|on|starting|between|around|but|budget)\\b|[.,!?;]|$)",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:226"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bfrom\\s+([A-Za-z][A-Za-z ]*?)\\s+to\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:261"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?<![\\w.])(-?\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\\s*[- ]\\s*days?\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:264"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?<![\\w.])(-?\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\\s+(?:travelers?|people|persons?|adults?)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:267"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b\\d{4}-\\d{2}-\\d{2}\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:284"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bspend\\s+as\\s+much\\b[^.!?;]{0,80}\\bbudget\\s+as\\s+(?:reasonably\\s+)?possible\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:328"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "[.!?;]|\\b(?:but|however)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:340"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:maximum\\s+|total\\s+|my\\s+)?budget\\s*(?:is|=|of)?\\s*(?P<value>[A-Za-z]+)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:461"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\s*(?:per\\s+(?:person|traveler)|each)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:604"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:food|meals?|restaurants?)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:646"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:transport(?:ation)?|transit|flight)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:648"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:attractions?|activities?|museum\\s+tickets?)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:650"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:want\\s+to\\s+)?visit\\s+(?P<value>zoos?|museums?|parks?)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:725"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:walking|public transit|taxi)",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:763"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:city|urban|neighborhood)\\s+walking\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:765",
+        "app.agent.requirements:349"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:zoos?|museums?|parks?)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:767"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:hotel|lodging|accommodation)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:773"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bor\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:254"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bfamily of\\s+(-?\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:271"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bfor\\s+(-?\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)(?=\\s*(?:[.,;!?]|$|under\\b|with\\b))",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:273"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:traveling|travelling) alone\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:278"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:per (?:person|traveler)|each)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:306"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bwheelchair\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:360"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bmust\\s+.+",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:362"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:cheap|affordable)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:365"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:\\b(?:but|however)\\b|\\b(?:while|and|with)\\s+(?:the\\s+|a\\s+)?(?=(?:hotel|hotels|lodging|accommodation|food|transport|flight|attractions?|(?:whole|entire|full)\\s+trip|total)\\b)|\\band\\s+(?:would|i|spend|keep)\\b|,\\s*(?:hotel|hotels|lodging|accommodation|food|transport|flight|attractions?|while\\s+(?:the\\s+)?(?:whole|entire|full)\\s+trip|with\\s+(?:a\\s+|the\\s+)?(?:hotel|lodging|accommodation))\\b)",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:472"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bhave\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:501"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\s*(?:(?:total|maximum|ceiling)\\s*)*(?:[.;]\\s*|\\s+(?:and|but)\\s+)(?:(?:actually|sorry)(?:,\\s*)?)?\\s*(?:i\\s+meant|(?:make|change)\\s+(?:that|it|the\\s+(?:total\\s+trip|trip\\s+total|total|trip|hotel))|(?:no,\\s*)?use|instead)(?:\\s+to)?\\s*",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:590"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:hotel|hotels|lodging|accommodation)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:606",
+        "app.agent.requirements:606",
+        "app.agent.requirements:743"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bper\\s+night\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:609",
+        "app.agent.requirements:642",
+        "app.agent.requirements:752"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:total(?:\\s+budget)?|keep\\s+(?:the\\s+)?trip|(?:whole|entire|full)\\s+(?:the\\s+)?trip|everything|don't\\s+let\\s+(?:the\\s+)?(?:total|trip|whole\\s+trip)\\s+go\\s+over|do\\s+not\\s+let\\s+(?:the\\s+)?(?:total|(?:total\\s+)?trip)\\s+go\\s+over|cap\\s+(?:the\\s+)?(?:whole\\s+)?trip\\s+at|(?:the\\s+)?trip\\s+budget|(?:whole|entire|full)\\s+trip\\s+cap|(?:the\\s+)?trip\\s+(?:(?:must|has\\s+to|needs\\s+to)\\s+stay\\s+)?(?:under|below|up\\s+to|max(?:imum)?|at\\s+most|no\\s+more\\s+than|cannot\\s+exceed|can't\\s+go\\s+above)|\\btrip\\b[^.!?;]{0,40}\\b(?:cannot\\s+exceed|can't\\s+go\\s+above)\\b|\\b(?:absolute\\s+)?ceiling\\b[^.!?;]{0,40}\\btrip\\b|\\boverall\\b)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:612"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\s*(?:total|overall|for (?:the )?(?:(?:whole|entire|full) )?trip)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:624"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:hotel|lodging|accommodation)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:642",
+        "app.agent.semantic_coverage:254"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:food|cuisine|meal|dish|coffee)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:769"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:fried|grilled|baked|roasted|steamed)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:769"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\s+or\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:242"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:\\d+|-?\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)\\s*-\\s*days?\\s+(?P<place>[A-Z][A-Za-z]*(?:\\s+[A-Z][A-Za-z]*)*)\\s+trip\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:246"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:somewhere|anywhere|rent|eat|stay|book)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:257"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bjust me\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:280"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bnightlife\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:357:\\bnightlife\\b"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bmeat\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:357:\\bmeat\\b"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:rent a car|rental cars?)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:357:\\b(?:rent a car|rental cars?)\\b"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bexpensive restaurants?\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:357:\\bexpensive restaurants?\\b"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\d",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:499",
+        "app.agent.requirements:504"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:for|on) (?:the )?trip\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:505"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bcan't\\s+go\\s+above\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:537"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:my\\s+)?(?:hotel|lodging|accommodation)\\s+budget\\s*(?:is|of|:)?\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:635"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bme and my partner\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:282"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:total|(?:for|on) (?:the )?(?:(?:whole|entire) )?trip)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:308"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:total budget|whole trip|entire trip)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:312"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bmuseums\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:museums"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bfood\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:food"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bparks\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:parks"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bhistory\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:history"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bart\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:art"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bquiet\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:quiet"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bcentral\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:central"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bbudget\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:budget"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bluxury\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:luxury"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bvegetarian\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:vegetarian"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bvegan\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:vegan"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bseafood\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:seafood"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bwalking\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:walking"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bpublic\\ transit\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:public transit"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\btaxi\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:346:taxi"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:don't|do not|no|not|avoid|without|never)\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:351",
+        "app.agent.requirements:358"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:total|per\\s+night|under|below|at\\s+most|no\\s+more)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:636"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:food|meal|restaurant)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.requirements:745"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "budget hotels?",
+      "flags": 32,
+      "origins": [
+        "app.agent.requirements:347"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:[$€£]\\s*\\d|\\b(?:USD|EUR|GBP)\\s+\\d)",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:38"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:if\\s+necessary|okay\\s+spending\\s+more|prioriti[sz]e\\b[^.!?;]{0,60}\\bover|rather\\s+(?:spend|pay)|(?:save|spend\\s+less)\\b[^.!?;]{0,60}\\bso\\b|(?:spend|pay)\\s+(?:a\\s+little\\s+)?(?:more|extra)\\b[^.!?;]{0,60}\\b(?:if|while)|(?:cheaper|simpler)\\b[^.!?;]{0,60}\\bif|value\\b[^.!?;]{0,60}\\bover)\\b|\\bstretch\\b[^.!?;]{0,40}\\bbudget\\b[^.!?;]{0,40}\\bif\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:39"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:if necessary|okay spending more|rather spend|rather pay)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:48"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?<![\\w])(?:[$€£]\\s*|(?:USD|EUR|GBP)\\s+)?(?P<value>\\d[\\d,]*)",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:51"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:budget|budgt|money|spend(?:ing)?|cost|trip|hotel|lodg\\w*|ac+om+odation|food|dining|restaurants?|transport|transit|flights?|airfare|activities?|attractions?|total)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:52"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:under|below|max(?:imum)?|cap(?:ped)?|ceiling|within|must|should|shud|cannot|can't|cant|no\\s+more|not\\s+more|cost\\s+less)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:57"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:actually|sorry|make|change|instead|use)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:62"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bnot\\s+(?:a\\s+)?strict\\s+cap\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:63"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:around|about|roughly|ideally|ideal|flexible|target|if\\s+possible)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:64"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:[$€£]\\s*\\d[\\d,]*[^.!?;]{0,40}\\b(?:hotel|place\\s+to\\s+stay|lodging|accommodation)\\b|\\b(?:hotel|place\\s+to\\s+stay|lodging|accommodation)\\b[^.!?;]{0,40}[$€£]\\s*\\d)",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:67"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "(?:\\bhotel\\b[^.!?;]{0,30}\\b(?:around|about)\\b[^.!?;]{0,20}[$€£]\\s*\\d|\\b(?:around|about)\\b[^.!?;]{0,20}[$€£]\\s*\\d[^.!?;]{0,30}\\bhotel\\b)",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:72"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:(?:do\\s+not|don't)\\s+(?:include|need|schedule|care\\s+about)|(?:please\\s+)?exclude|avoid|without|no(?!\\s+more\\s+than))\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:77"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:zoos?|nightlife|luxury\\s+hotels?|restaurants?|museums?|parks?|seafood|casino|hotel\\s+areas?|attractions?|activities?)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:82"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:find\\s+me\\s+(?:zoos?|museums?|parks?)|i\\s+(?:like|enjoy|prefer|love)\\b|i\\s+want\\s+(?!to\\s+spend|\\d)|(?:public\\s+transit)\\s+is\\s+preferred|i'd\\s+rather\\s+stay|(?:zoos?|museums?|parks?)[^.!?;]{0,50}\\bplease|(?:quiet|downtown)\\s+hotel)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:87"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "[.!?;]",
+      "flags": 32,
+      "origins": [
+        "app.agent.semantic_coverage:266"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b(?:trip|total)\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:252"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\b\\d[\\d,]*\\b",
+      "flags": 32,
+      "origins": [
+        "app.agent.semantic_coverage:214"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "-?\\s*days?\\b|\\s*stars?\\b",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:243"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "\\bnot\\s*$",
+      "flags": 34,
+      "origins": [
+        "app.agent.semantic_coverage:244"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "[a-z0-9]+",
+      "flags": 32,
+      "origins": [
+        "app.tools.candidate_data:71"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^boston\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:boston"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^boston[\\s,.]+ma\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:boston ma"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^boston[\\s,.]+massachusetts\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:boston massachusetts"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^new[\\s,.]+york[\\s,.]+city\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:new york city"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^nyc\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:nyc"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^new[\\s,.]+york\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:new york"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^new[\\s,.]+york[\\s,.]+ny\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:new york ny"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^new[\\s,.]+york[\\s,.]+city[\\s,.]+ny\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:new york city ny"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^columbus\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:columbus"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^columbus[\\s,.]+oh\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:columbus oh"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^columbus[\\s,.]+ohio\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:columbus ohio"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^chicago\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:chicago"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^chicago[\\s,.]+il\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:chicago il"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^chicago[\\s,.]+illinois\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:chicago illinois"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^washington[\\s,.]+dc\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:washington dc",
+        "app.tools.candidate_data:100:alias:washington dc"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^washington[\\s,.]+d[\\s,.]+c\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:washington d c",
+        "app.tools.candidate_data:100:alias:washington d c"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^dc\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:dc"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^district[\\s,.]+of[\\s,.]+columbia\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:district of columbia"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^miami\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:miami"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^miami[\\s,.]+fl\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:miami fl"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^miami[\\s,.]+florida\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:miami florida"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^austin\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:austin"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^austin[\\s,.]+tx\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:austin tx"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^austin[\\s,.]+texas\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:austin texas"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^denver\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:denver"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^denver[\\s,.]+co\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:denver co"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^denver[\\s,.]+colorado\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:denver colorado"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^seattle\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:seattle"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^seattle[\\s,.]+wa\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:seattle wa"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^seattle[\\s,.]+washington\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:seattle washington"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^san[\\s,.]+francisco\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:san francisco"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^san[\\s,.]+francisco[\\s,.]+ca\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:san francisco ca"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^san[\\s,.]+francisco[\\s,.]+california\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:san francisco california"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^sf\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:sf"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^los[\\s,.]+angeles\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:los angeles"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^los[\\s,.]+angeles[\\s,.]+ca\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:los angeles ca"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^los[\\s,.]+angeles[\\s,.]+california\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:los angeles california"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^la\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:la"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^l[\\s,.]+a\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:l a"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^las[\\s,.]+vegas\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:las vegas"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^las[\\s,.]+vegas[\\s,.]+nv\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:las vegas nv"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^las[\\s,.]+vegas[\\s,.]+nevada\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:las vegas nevada"
+      ],
+      "replacements": []
+    },
+    {
+      "pattern": "^vegas\\b",
+      "flags": 34,
+      "origins": [
+        "app.tools.candidate_data:100:alias:vegas"
+      ],
+      "replacements": []
+    }
+  ],
+  "query_count": 228,
+  "manual_count": 116
+}
