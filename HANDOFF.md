@@ -54,7 +54,7 @@ travel-agent-kmp/
 Python 在 `backend/app/tools/mock.py:money` 中执行 `Decimal(...).quantize(Decimal("0.01"))`，使用默认 context（`ROUND_HALF_EVEN`，精度 28），结果立即转为 `float`。Kotlin 侧规则如下：
 
 1. **所有金额在 Kotlin 内部一律用 `BigDecimal`。** 禁止用 `Double` 表示或中转金额。
-2. **禁止使用 `BigDecimal(Double)` 构造器。** 金额只能从字符串构造：JSON 里的价格读成文本再转 `BigDecimal`，解析器从正则捕获的文本直接转 `BigDecimal`。
+2. **禁止使用 `BigDecimal(Double)` 构造器**（例外只有第 8 条的 D5 和 UI 显示格式化）。 金额只能从字符串构造：JSON 里的价格读成文本再转 `BigDecimal`，解析器从正则捕获的文本直接转 `BigDecimal`。
 3. **量化点必须与 Python 一一对应。** 只在 SPEC“Decimal 及舍入”一节列出的调用位置（`calculate_budget`、`compose_draft`、`validate_itinerary`）执行 `setScale(2, RoundingMode.HALF_EVEN)`，不多加也不少加。
 4. **累加和除法的顺序照搬 Python。** 先读 `mock.py:calculate_budget` 和酒店上限预过滤的代码，确认每一步运算是用 `Decimal` 还是 `float` 完成的：
    - 若为 `Decimal` 除法，Kotlin 使用 `MathContext(28, RoundingMode.HALF_EVEN)`。
@@ -70,8 +70,29 @@ Python 在 `backend/app/tools/mock.py:money` 中执行 `Decimal(...).quantize(De
    - 输入从字符串用 `toDouble()` 得到，int 用 `toDouble()` 转换。
    - 比较也在 `Double` 域内进行。例如 Python 是 `price > ceiling`（两边都是 float），Kotlin 就写成 `price.toDouble() > ceiling`，不要把 ceiling 转回 `BigDecimal` 再比较。
    - 这类函数统一命名为 `pyFloat...` 前缀并集中放在一个文件中，注释写明 Python 源位置。
-   - 如果某个 float 结果会出现在输出字段或 warning 文本里（需要转成字符串），先在汇报中列出，不要自行实现，因为 JDK 17 的 `Double.toString` 不保证与 Python `repr(float)` 一致。
-   - P1b 开始时，先审计金额路径上所有在 `float` 上运算的步骤，在汇报中列出完整清单。
+   - P1b 开始时，先审计金额路径上所有在 `float` 上运算的步骤，在汇报中列出完整清单（已完成，见 `docs/P1B_FLOAT_AUDIT.md`）。
+
+8. **float 审计后的决定（D1–D6）**
+
+   **D1：不复刻 `repr(float)` 的字符串格式。** Kotlin 没有 JSON 接口，float 结果只以 `Double` 存在于模型中，再由 UI 格式化显示。golden 比较时，把 fixture 中的 Python `repr` 字符串用 `toDouble()` 解析，再与 Kotlin 的 `Double` 用 `toRawBits()` 比较是否相等。
+   *依据*：Python `repr(float)` 输出的是能还原到同一个 binary64 的最短十进制串，`toDouble()` 是正确舍入的解析，因此会得到与 Python 完全相同的二进制值。比较值本身已经足够，不需要比较格式。
+
+   **D2：`Decimal → float → Decimal(str(float))` 这段往返，Kotlin 不做 float 中转，全程保持 `BigDecimal`。**
+   *依据*：设 q 是有效数字不超过 15 位的十进制数（binary64 的 DBL_DIG = 15）。q 转成 double 后再取 15 位有效数字，一定能还原出 q；所以任何不超过 15 位、且与 q 不同的十进制数，都不会和 q 映射到同一个 double。`repr` 取的是能还原到该 double 的最短串，它必然在数值上等于 q。因此 `Decimal(str(float(q)))` 在数值上等于 q，float 中转没有损失。
+   *适用范围*：量化到 2 位小数的金额，只要绝对值小于 10^13，就满足 15 位有效数字的条件。B 类输入（JSON 价格、查询中的金额文本）同样要求有效数字不超过 15 位。超过 15 位时两边可能不一致，作为**已接受的例外**登记到 `PARITY_EXCEPTIONS.md`，并写一个测试固定 Kotlin 在这种情况下的行为。不要为此实现最短 repr 算法。
+
+   **D3：Python 在 float 上做的比较、筛选、排序（`candidates_for`、`select_option`、`validate_itinerary` 中的比较），Kotlin 用 `pyFloat` 函数在 `Double` 上做**，操作数用 `BigDecimal.toDouble()` 或字符串 `toDouble()` 得到。比较结果决定的是后续分支，输出的金额仍用 D2 的 `BigDecimal`。
+
+   **D4：`hotel_price_ceiling`（`planner.py:139`）**：Python 是 `constraint.value / (travelers * nights)`，其中乘法是整数运算（精确），然后做一次 float 除法。Kotlin 写成 `value.toDouble() / (travelers.toLong() * nights).toDouble()`，结果以 `Double` 存入工具记录的 `maxPrice`。验证用例：760、1 人、3 晚，应得到 `253.33333333333334` 对应的 binary64。
+
+   **D5：`savings`（`service.py:201`）**：Python 是 `max(round(initial_total - final_total, 2), 0)`。Kotlin 实现如下：
+   1. `d = initialTotal.toDouble() - finalTotal.toDouble()`（float 减法，与 Python 一致）；
+   2. `r = BigDecimal(d).setScale(2, RoundingMode.HALF_EVEN).toDouble()`。这里**必须**用 `BigDecimal(Double)` 构造器（取 double 的精确二进制值），这是全项目唯一允许使用这个构造器的地方。CPython 的 `round(float, 2)` 也是对精确二进制值做正确舍入、平局取偶，然后取最接近的 double，所以结果相同；
+   3. 若 `r < 0.0`，结果为 `0.0`；否则为 `r`。（Python 在 r 为负时返回整数 `0`，数值上等于 `0.0`。`-0.0` 的情况在这里不会出现：两个总额若是同一个 double，相减得 `+0.0`；若不同，它们相差至少约 0.01，舍入后不可能是 `-0.0`。）
+
+   **D6：补充 golden（`golden-v1.1`）。** 现有 e2e fixtures 不包含工具记录里的 `max_price`，也不包含 `plan()` 响应中的 `execution.repair.savings`，所以 D4、D5 目前没有标准答案可对照。在 Python 仓库中**只新增文件**：扩展导出脚本，输出到新目录 `golden/e2e-ext/`（现有 `golden/` 文件一律不改）。对 28 个用例，以及至少一个触发酒店上限且除不尽的用例（例如 760 美元、1 人、3 晚），导出公开工具记录（含 `max_price`）和 `plan()` 的 `execution.repair`（含 `savings`）。float 值存为 Python `repr` 字符串，并在 SPEC 中注明该目录的 float 字段格式。完成后单独提交，打 tag `golden-v1.1`，再用 `tools/sync_golden` 同步到新仓库。
+
+   **UI 显示**（不属于一致性测试）：金额统一显示为 2 位小数。`Double` 值先用 `BigDecimal(d)` 取精确值，再 `setScale(2, HALF_EVEN)`，与 Python 的 `format(x, ".2f")` 一致；`BigDecimal` 值直接 `setScale(2, HALF_EVEN)`。
 
    **为什么这样能逐位一致**：Python `float` 和 JVM `double` 都是 IEEE 754 binary64，`/`、`*`、`+`、`-` 都按 round-to-nearest-even 正确舍入；Python `float(str)` 和 Java `Double.parseDouble` 都是正确舍入的十进制转二进制；绝对值小于 2^53 的整数转浮点是精确的。因此在输入相同、运算顺序相同的前提下，两边每一步的结果在二进制上完全相同。
 
