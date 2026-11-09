@@ -33,7 +33,8 @@ internal object SnapshotValidation {
         val value = o[key]
         if (optional && (value == null || value is JsonNull)) return
         val primitive = value as? JsonPrimitive ?: error("Invalid $key")
-        val raw = primitive.content.trim()
+        val raw = primitive.content
+        require(raw == raw.trim())
         val numeric = raw.toDoubleOrNull()
         if (numeric != null) {
             require(numeric.isFinite())

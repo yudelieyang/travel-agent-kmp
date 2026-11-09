@@ -15,6 +15,7 @@ def mutations(d):
         'bool_price': lambda: row.update(price=True),
         'epoch_timestamp': lambda: d.update(snapshot_fetched_at=0),
         'compact_timezone': lambda: d.update(snapshot_fetched_at='2026-09-16T12:00:00+0000'),
+        'padded_timestamp': lambda: d.update(snapshot_fetched_at=' 2026-09-16T06:26:35Z '),
         'negative_price': lambda: row.update(price=-1),
         'bad_latitude': lambda: row.update(latitude=91),
         'missing_longitude': lambda: row.pop('longitude'),
