@@ -6,6 +6,6 @@
 
 ## Unresolved parity exceptions
 
-P1a verification is incomplete.
+- Alias lookup `Boſton`: closed; Python casefold mapping now resolves it to `Boston`.
 
-- Alias lookup: input `Boſton` is normalized by Python casefold to `Boston`; current JVM loader uses lowercase and does not match it. Fixture: none; field: destination alias. Python `Boston`; Kotlin `null`. Full Unicode casefold remains unresolved.
+- `PyStr.lower` context-sensitive Greek final sigma: fixture none; input `ΟΣ`; Python `ος` (U+03BF U+03C2), Kotlin `οσ` (U+03BF U+03C3). The handoff prescribes per-code-point lower mappings, which cannot express this contextual Python behavior. Pending user decision.
