@@ -17,6 +17,10 @@ internal object SnapshotValidation {
         return p.content.trim()
     }
     private fun required(o: JsonObject, key: String) = requireNotNull(string(o, key)).also { require(it.isNotEmpty()) { "Empty $key" } }
+    private fun literal(o: JsonObject, key: String): String {
+        val value = o[key] as? JsonPrimitive ?: error("Missing $key")
+        require(value.isString); return value.content
+    }
     private fun nonemptyOptional(o: JsonObject, key: String) { string(o, key, true)?.let { require(it.isNotEmpty()) } }
     private fun number(o: JsonObject, key: String, optional: Boolean = false): Double? {
         val v = o[key]
@@ -82,7 +86,7 @@ internal object SnapshotValidation {
         val routes = data["routes"]!!.jsonArray.map { obj(it) }; require(routes.isNotEmpty())
         val seen = mutableSetOf<Pair<String, String>>()
         routes.forEach { r ->
-            allowed(r, setOf("city", "category", "snapshot")); val city = required(r, "city"); val cat = required(r, "category")
+            allowed(r, setOf("city", "category", "snapshot")); val city = required(r, "city"); val cat = literal(r, "category")
             require(cat in categories); required(r, "snapshot"); require(seen.add(PyStr.casefold(city) to cat))
         }
         return routes
@@ -91,7 +95,7 @@ internal object SnapshotValidation {
         allowed(data, setOf("snapshot_version", "snapshot_fetched_at", "provider", "source", "provider_data_timestamp", "record_count", "category_map_version", "cost_method_version", "attribution", "license", "cities"))
         require(version.matches(required(data, "snapshot_version")))
         timestamp(data, "snapshot_fetched_at"); timestamp(data, "provider_data_timestamp", true)
-        val provider = required(data, "provider"); require(version.matches(provider)); require(required(data, "source") == "real_snapshot")
+        val provider = required(data, "provider"); require(version.matches(provider)); require(literal(data, "source") == "real_snapshot")
         listOf("category_map_version", "cost_method_version", "attribution", "license").forEach { nonemptyOptional(data, it) }
         val count = number(data, "record_count", true); if (count != null) require(count >= 1 && count % 1.0 == 0.0)
         val cities = data["cities"]!!.jsonArray; require(cities.isNotEmpty())
@@ -112,11 +116,11 @@ internal object SnapshotValidation {
                     require(number(row, "latitude")!! in -90.0..90.0); require(number(row, "longitude")!! in -180.0..180.0)
                     require(strings(row, "provider_category_ids").isNotEmpty()); strings(row, "provider_category_labels", false); strings(row, "tags")
                     timestamp(row, "provider_refreshed_at", true); require(number(row, "price")!! >= 0.0)
-                    require((if ("currency" in row) string(row, "currency") else "USD") == "USD"); require(required(row, "unit") == categories[cat])
+                    require((if ("currency" in row) literal(row, "currency") else "USD") == "USD"); require(literal(row, "unit") == categories[cat])
                     number(row, "rating", true)?.let { require(it in 0.0..5.0) }
                     number(row, "review_count", true)?.let { require(it >= 0 && it % 1.0 == 0.0) }
                     listOf("address", "image_url", "description").forEach { string(row, it, true) }
-                    require(required(row, "cost_origin") == "planner_estimate"); required(row, "cost_method"); required(row, "cost_version")
+                    require(literal(row, "cost_origin") == "planner_estimate"); required(row, "cost_method"); required(row, "cost_version")
                 }
             }
         }
