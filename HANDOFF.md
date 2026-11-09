@@ -74,7 +74,7 @@ Python 在 `backend/app/tools/mock.py:money` 中执行 `Decimal(...).quantize(De
 
 8. **float 审计后的决定（D1–D6）**
 
-   **D1：不复刻 `repr(float)` 的字符串格式。** Kotlin 没有 JSON 接口，float 结果只以 `Double` 存在于模型中，再由 UI 格式化显示。golden 比较时，把 fixture 中的 Python `repr` 字符串用 `toDouble()` 解析，再与 Kotlin 的 `Double` 用 `toRawBits()` 比较是否相等。
+   **D1：不复刻 `repr(float)` 的字符串格式。** Kotlin 没有 JSON 接口，float 结果只以 `Double` 存在于模型中，再由 UI 格式化显示。golden 比较时，把 fixture 中的 Python `repr` 字符串用 `toDouble()` 解析，再与 Kotlin 的 `Double` 用 IEEE 754 相等（Kotlin 原始类型 `Double` 的 `==`）比较，同时断言两边都不是 NaN。这种比较把 `-0.0` 和 `+0.0` 视为相等，这是有意为之，原因见 D7。
    *依据*：Python `repr(float)` 输出的是能还原到同一个 binary64 的最短十进制串，`toDouble()` 是正确舍入的解析，因此会得到与 Python 完全相同的二进制值。比较值本身已经足够，不需要比较格式。
 
    **D2：`Decimal → float → Decimal(str(float))` 这段往返，Kotlin 不做 float 中转，全程保持 `BigDecimal`。**
@@ -93,6 +93,10 @@ Python 在 `backend/app/tools/mock.py:money` 中执行 `Decimal(...).quantize(De
    3. 若 `r < 0.0`，结果为 `0.0`；否则为 `r`。（Python 在 r 为负时返回整数 `0`，数值上等于 `0.0`。`-0.0` 的情况在这里不会出现：两个总额若是同一个 double，相减得 `+0.0`；若不同，它们相差至少约 0.01，舍入后不可能是 `-0.0`。）
 
    **D6：补充 golden（`golden-v1.1`）。** 现有 e2e fixtures 不包含工具记录里的 `max_price`，也不包含 `plan()` 响应中的 `execution.repair.savings`，所以 D4、D5 目前没有标准答案可对照。在 Python 仓库中**只新增文件**：扩展导出脚本，输出到新目录 `golden/e2e-ext/`（现有 `golden/` 文件一律不改）。对 28 个用例，以及至少一个触发酒店上限且除不尽的用例（例如 760 美元、1 人、3 晚），导出公开工具记录（含 `max_price`）和 `plan()` 的 `execution.repair`（含 `savings`）。float 值存为 Python `repr` 字符串，并在 SPEC 中注明该目录的 float 字段格式。完成后单独提交，打 tag `golden-v1.1`，再用 `tools/sync_golden` 同步到新仓库。
+
+   **D7：零的符号（`-0.0` 与 `+0.0`）不要求一致，列为已接受例外。** `BigDecimal` 不保留零的符号，所以 Python 中由 `-0` 或 `-0.0` 输入产生的负零，在 Kotlin 中会变成 `+0.0`。
+   *依据*：两个符号的零在 IEEE 754 中比较相等，加、减、乘、比较、`max`/`min` 的结果在数值上也都相同。符号只在三种情况下能被观察到：(1) 除以零：在 IEEE 754 中 `x / ±0` 会得到符号不同的 `±inf`，但 Python 的 float 除以零（不论正负）都会直接抛出 `ZeroDivisionError`，符号不会传播成无穷大；(2) `math.copysign`、`math.atan2` 这类读取符号的函数；(3) 字符串格式化（`-0.0` 与 `0.0`）。所以只要 Python 金额路径上没有用到 (2)，符号差异就只影响输出文本，不影响任何分支、筛选或计算结果。
+   *要做的事*：(a) 在 Python 源码中确认金额和预算路径上没有 `copysign`、`atan2` 或其他读取零符号的调用，并确认除以预算派生值的地方在除数为零时 Python 会抛错，Kotlin 也以相同方式失败；结果写进汇报。(b) 登记到 `PARITY_EXCEPTIONS.md`，并加一个测试：输入 `-0.0` 预算时，Kotlin 的输出在数值上与 Python 相等，仅零的符号不同。(c) UI 显示时把 `-0.00` 统一显示为 `0.00`。
 
    **UI 显示**（不属于一致性测试）：金额统一显示为 2 位小数。`Double` 值先用 `BigDecimal(d)` 取精确值，再 `setScale(2, HALF_EVEN)`，与 Python 的 `format(x, ".2f")` 一致；`BigDecimal` 值直接 `setScale(2, HALF_EVEN)`。
 
