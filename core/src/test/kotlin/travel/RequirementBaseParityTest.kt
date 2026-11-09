@@ -27,6 +27,14 @@ class RequirementBaseParityTest {
             assertEquals(row["budget_strength"]!!.jsonPrimitive.content, functions.budgetStrength(row["query"]!!.jsonPrimitive.content))
         }
     }
+    @TestFactory fun extractBudgetConstraints(): List<DynamicTest> = records.map { entry ->
+        val row = entry.jsonObject; DynamicTest.dynamicTest(row["id"]!!.jsonPrimitive.content) {
+            val q = row["query"]!!.jsonPrimitive.content
+            val result = functions.extractBudgetConstraints(q, functions.recognizedMoneyExpressions(q))
+            val actual = JsonArray(listOf(JsonArray(result.first.map { json.encodeToJsonElement(BudgetConstraint.serializer(), it) }), JsonArray(result.second.map { json.encodeToJsonElement(RequirementAmbiguity.serializer(), it) })))
+            assertNull(GoldenComparator.difference(row["extract_budget_constraints"]!!.jsonObject["value"]!!, actual))
+        }
+    }
     @TestFactory fun monetaryScope(): List<DynamicTest> = records.map { entry ->
         val row = entry.jsonObject; DynamicTest.dynamicTest(row["id"]!!.jsonPrimitive.content) {
             for (context in row["amount_context"]!!.jsonArray) {

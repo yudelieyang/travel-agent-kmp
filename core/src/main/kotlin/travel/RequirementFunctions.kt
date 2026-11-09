@@ -66,6 +66,55 @@ class RequirementFunctions {
         if (req(612).search(head) != null || req(624).match(tail) != null) return "TOTAL_TRIP"
         return null
     }
+    // Port of requirements.py:unsupported_money_scope and ambiguous_hotel_budget_phrase (L631–656).
+    fun unsupportedMoneyScope(prefix: String, suffix: String): String? {
+        val text = "$prefix ${suffix.take(30)}"
+        if (req(642, 1).search(text) != null && req(642, 0).search(text) != null) return "HOTEL_PER_NIGHT"
+        if (req(646).search(text) != null) return "FOOD_TOTAL"
+        if (req(648).search(text) != null) return "TRANSPORT_TOTAL"
+        if (req(650).search(text) != null) return "ATTRACTIONS_TOTAL"
+        return null
+    }
+    private fun ambiguousHotelBudget(prefix: String, intro: String, suffix: String): Boolean {
+        val text = "$prefix $intro ${suffix.take(30)}"
+        return req(635).search(text) != null && req(636).search(text) == null
+    }
+    // Port of requirements.py:extract_budget_constraints (L518–584).
+    fun extractBudgetConstraints(query: String, amounts: List<PyRegex.Match>): Pair<List<BudgetConstraint>, List<RequirementAmbiguity>> {
+        val candidates = mutableListOf<BudgetConstraint>()
+        val ambiguities = mutableListOf<RequirementAmbiguity>()
+        var previousScope: String? = null; var previousEnd: Int? = null
+        for (amount in amounts) {
+            var created = false
+            val (prefix, suffix) = budgetContext(query, amount)
+            val intro = amount.named["intro"]?.value ?: ""
+            val text = "$prefix ${amount.groups[0].value} $suffix".trim()
+            var scope = monetaryScope(prefix, suffix, intro)
+            val start = amount.groups[0].span[0]
+            val correction = previousEnd != null && req(590).fullmatch(substring(query, previousEnd, start)) != null
+            if (scope == null && previousScope != null && correction) scope = previousScope
+            var strength = budgetStrength("$prefix $intro $suffix")
+            if (scope == "TOTAL_TRIP" && req(537).search(prefix) != null) strength = "HARD"
+            if (correction && strength == "UNSPECIFIED") strength = "HARD"
+            val number = (amount.named["amount"]!!.value!!.replace(",", "")).toBigDecimal()
+                .multiply(if (amount.named["multiplier"]?.value != null) java.math.BigDecimal("1000") else java.math.BigDecimal.ONE)
+            val unsupported = unsupportedMoneyScope(prefix, suffix)
+            if (scope == "HOTEL_TOTAL" && ambiguousHotelBudget(prefix, intro, suffix)) {
+                ambiguities.add(RequirementAmbiguity("BLOCKING", "Hotel budget does not specify a hard limit or a nightly/total policy", text))
+            } else if (scope != null && strength == "HARD") {
+                require(number.signum() >= 0)
+                candidates.add(BudgetConstraint(1.0, budgetCurrency(amount), "deterministic", "BUDGET", "LTE", scope, text, "HARD", number))
+                previousScope = scope; created = true
+            } else if (unsupported != null) {
+                ambiguities.add(RequirementAmbiguity(if (strength == "HARD") "BLOCKING" else "ASSUMABLE", "$unsupported budget is not supported by the deterministic planner", text))
+            } else if (scope == "HOTEL_TOTAL" && strength == "UNSPECIFIED") {
+                ambiguities.add(RequirementAmbiguity("BLOCKING", "Hotel amount does not specify a hard limit or a nightly/total policy", text))
+            }
+            if (!created) previousScope = null
+            previousEnd = amount.groups[0].span[1]
+        }
+        return mergeBudgetConstraints(candidates) to ambiguities
+    }
     fun mergeBudgetConstraints(items: List<BudgetConstraint>): List<BudgetConstraint> {
         val merged = linkedMapOf<String, BudgetConstraint>()
         for (item in items) merged[item.scope] = item
