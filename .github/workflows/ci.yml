@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+      - uses: android-actions/setup-android@v3
+      - name: Install Android SDK
+        run: sdkmanager 'platforms;android-37.0' 'build-tools;36.0.0'
+      - name: Install virtual display for Compose Desktop tests
+        run: sudo apt-get update && sudo apt-get install -y xvfb libgl1
+      - name: Core golden and differential tests
+        run: bash ./gradlew :core:test --no-daemon
+      - name: Desktop tests
+        run: xvfb-run -a bash ./gradlew :composeApp:desktopTest --no-daemon
+      - name: Android debug build
+        run: bash ./gradlew :androidApp:assembleDebug --no-daemon
+      # Python reference regeneration/evaluation and physical-device instrumented
+      # tests run locally, not on this runner; see README for commands and setup.
