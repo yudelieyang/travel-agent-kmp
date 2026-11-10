@@ -23,6 +23,24 @@ class InputGuidanceTest {
         assertEquals("3 days in Boston", selectCity("3 days in", "Boston"))
     }
 
+    @Test fun previewWarnsAndCanReplaceUnknownCity() {
+        compose.setContent { Box(Modifier.size(400.dp, 800.dp)) { App(12, 114, 150) } }
+        compose.onNode(hasSetTextAction()).performTextReplacement("I wanna have a 4 Days trip to wonderland. And i prefer Fried chicken.")
+        compose.waitUntil(20_000) { compose.onAllNodesWithText("City: wonderland — not found").fetchSemanticsNodes().isNotEmpty() }
+        compose.onNodeWithText("✓ Days · 4 days").assertExists()
+        compose.onNodeWithText("Boston").performScrollTo().performClick()
+        compose.waitUntil(20_000) { compose.onAllNodesWithText("✓ City · Boston").fetchSemanticsNodes().isNotEmpty() }
+        compose.onNodeWithText("City: wonderland — not found").assertDoesNotExist()
+    }
+
+    @Test fun coverageWarningQuotesEvidence() {
+        compose.setContent { Box(Modifier.size(400.dp, 800.dp)) { App(12, 114, 150) } }
+        compose.onNode(hasSetTextAction()).performTextReplacement("Boston is fine, but do not include zoos.")
+        compose.waitUntil(20_000) { compose.onAllNodesWithText("Some details may be ignored offline", substring = true).fetchSemanticsNodes().isNotEmpty() }
+        compose.onNode(hasText("Some details may be ignored offline", substring = true) and hasText("zoos", substring = true)).assertExists()
+        compose.onNodeWithText("Plan trip").assertIsEnabled()
+    }
+
     @Test fun showsGuidanceAndInsertsCity() {
         compose.setContent { Box(Modifier.size(400.dp, 800.dp)) { App(12, 114, 150) } }
         compose.onNodeWithText("e.g. 3 days in Boston for 2 people, under $800 total. We like museums.").assertExists()

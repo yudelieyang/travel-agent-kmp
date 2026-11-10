@@ -92,6 +92,17 @@ private fun presets(): List<Preset> {
 @Composable internal fun Home(cities: Int, query: String, onQuery: (String) -> Unit, run: (String) -> Unit, running: Boolean, failed: Boolean, onAbout: () -> Unit) {
     val c = LocalTravelColors.current; val fonts = LocalTravelFonts.current
     var showCities by remember { mutableStateOf(false) }
+    var preview by remember { mutableStateOf<InputPreview?>(null) }
+    var previewError by remember { mutableStateOf(false) }
+    LaunchedEffect(query) {
+        preview = null; previewError = false
+        if (query.isNotBlank()) {
+            delay(300)
+            val parsed = withContext(Dispatchers.Default) { runCatching { parseInputPreview(query) } }
+            coroutineContext.ensureActive()
+            preview = parsed.getOrNull(); previewError = parsed.isFailure
+        }
+    }
     val scenarios = remember { presets() }; val featured = scenarios.first { it.id == "repair" }
     if (showCities) ModalBottomSheet(onDismissRequest = { showCities = false }, containerColor = c.surface) {
         Column(Modifier.fillMaxWidth().navigationBarsPadding().verticalScroll(rememberScrollState()).padding(horizontal = 20.dp, vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -117,7 +128,9 @@ private fun presets(): List<Preset> {
             Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 Text(stringResource(Res.string.your_trip), fontFamily = fonts.body, fontWeight = FontWeight.SemiBold, color = c.text)
                 BasicTextField(value = query, onValueChange = onQuery, modifier = Modifier.fillMaxWidth().heightIn(min = 100.dp).border(1.dp, c.inputBorder, RoundedCornerShape(12.dp)).padding(14.dp), textStyle = androidx.compose.ui.text.TextStyle(color = c.text, fontFamily = fonts.body, fontSize = 16.sp, letterSpacing = 0.sp, fontFeatureSettings = "tnum"), decorationBox = { inner -> Box { if (query.isEmpty()) Text(stringResource(Res.string.input_hint), color = c.textMuted, fontFamily = fonts.body); inner() } })
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                preview?.let { PreviewContent(it, onCity = { city -> onQuery(selectCity(query, city)) }, onAllCities = { showCities = true }) }
+                if (previewError) Text("We couldn't preview this request. You can still plan it.", color = c.warning, fontSize = 12.sp)
+                if (query.isEmpty()) FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                     listOf("City *", "Days *", "Travelers", "Budget", "Interests").forEach { label ->
                         Text(label, Modifier.clip(RoundedCornerShape(50)).background(c.segmentTrack).padding(horizontal = 10.dp, vertical = 7.dp), color = c.textMuted, fontFamily = fonts.body, fontSize = 12.sp)
                     }

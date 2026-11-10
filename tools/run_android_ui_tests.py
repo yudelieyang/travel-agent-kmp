@@ -10,7 +10,9 @@ import sys
 
 sdk = os.environ.get("ANDROID_HOME") or os.environ.get("ANDROID_SDK_ROOT")
 adb = str(Path(sdk) / "platform-tools" / ("adb.exe" if os.name == "nt" else "adb")) if sdk else "adb"
-command = [adb, "shell", "am", "instrument", "-w", "-r", "-e", "class", "travel.android.AssistedPlanUiTest", "travel.android.test/androidx.test.runner.AndroidJUnitRunner"]
+test_class = sys.argv[1] if len(sys.argv) > 1 else "travel.android.AssistedPlanUiTest"
+expected = int(sys.argv[2]) if len(sys.argv) > 2 else 8
+command = [adb, "shell", "am", "instrument", "-w", "-r", "-e", "class", test_class, "travel.android.test/androidx.test.runner.AndroidJUnitRunner"]
 proc = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, encoding="utf-8", errors="replace", bufsize=1)
 assert proc.stdout is not None
 passes = 0
@@ -24,5 +26,5 @@ for line in proc.stdout:
     elif line.strip() in {"INSTRUMENTATION_STATUS_CODE: -1", "INSTRUMENTATION_STATUS_CODE: -2"}:
         failures += 1
 code = proc.wait()
-print(f"P3 Compose: {passes}/8 passed; {failures} failures")
-sys.exit(0 if code == 0 and passes == 8 and failures == 0 else 1)
+print(f"P3 Compose: {passes}/{expected} passed; {failures} failures")
+sys.exit(0 if code == 0 and passes == expected and failures == 0 else 1)
