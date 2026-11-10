@@ -4,11 +4,11 @@
 
 ## 0. 背景与目标
 
-把 `Travel-Agent-Project/travel-planning-agent`（Python + FastAPI + LangGraph + Vue）的**确定性规划核心**移植成一个可离线运行的 Kotlin 应用，目标平台为 Android 和 Desktop，最终作为独立开源项目发布到 GitHub。
+把 a private Python reference implementation 的**确定性规划核心**移植成一个可离线运行的 Kotlin 应用，目标平台为 Android 和 Desktop，最终作为独立开源项目发布到 GitHub。
 
-- **Python 仓库（只读标准答案）**：`C:/Users/24832/Desktop/Travel-Agent-Project/travel-planning-agent`，以 tag `golden-v1`（commit `0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd`）为准。
-- **新仓库**：`C:/Users/24832/Desktop/Travel-Agent-Project/travel-agent-kmp`（新建，独立 git 仓库）。
-- **规格**：Python 仓库内的 `golden/SPEC.md`。本文与 SPEC 冲突时，以 Python 源码在 `golden-v1` 上的实际行为为准，并在汇报中指出冲突。
+- **Python 仓库（只读标准答案）**：a private Python reference implementation，以 tag `golden-v1`（commit `0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd`）为准。
+- **新仓库**：`.`（新建，独立 git 仓库）。
+- **规格**：`core/src/test/resources/golden/SPEC.md`。本文与 SPEC 冲突时，以 Python 源码在 `golden-v1` 上的实际行为为准，并在汇报中指出冲突。
 
 ### 非目标（任何阶段都不做）
 

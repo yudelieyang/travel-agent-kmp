@@ -3,7 +3,8 @@
 The snapshots in this directory contain data derived from OpenStreetMap.
 
 © OpenStreetMap contributors. OpenStreetMap data is available under the Open Database License
-(ODbL): https://www.openstreetmap.org/copyright
+(ODbL): https://opendatacommons.org/licenses/odbl/. Attribution and further details:
+https://www.openstreetmap.org/copyright
 
 The Boston attractions snapshot was acquired through the public Overpass API on
 2026-09-16 at 05:36:07 UTC. The one-time query selected named visitor POIs inside the Boston,
@@ -58,4 +59,10 @@ Candidate prices are project-generated planner estimates preserved for determini
 They are not OpenStreetMap data, admission prices, room rates, meal prices, or current ticket prices.
 # Fonts
 
-Space Grotesk, Inter and JetBrains Mono are distributed under the SIL Open Font License 1.1. Their individual copyright and license notices are in `licenses/fonts/`.
+The bundled fonts are distributed under the SIL Open Font License 1.1. Their copyright and complete license notices are:
+
+- Inter: `licenses/fonts/OFL-Inter.txt` (© 2020 The Inter Project Authors).
+- JetBrains Mono: `licenses/fonts/OFL-JetBrainsMono.txt` (© 2020 The JetBrains Mono Project Authors).
+- Space Grotesk: `licenses/fonts/OFL-SpaceGrotesk.txt` (© 2020 The Space Grotesk Project Authors).
+
+These fonts and the OpenStreetMap-derived data are not covered by the code MIT license.
