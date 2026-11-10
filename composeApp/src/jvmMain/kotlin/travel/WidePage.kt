@@ -45,7 +45,7 @@ import travel_agent_kmp.composeapp.generated.resources.*
                     }
                 }
             }
-            if (run == null) Box(Modifier.weight(1f).fillMaxHeight()) { CityRouteBackground(Modifier.fillMaxSize()); Home(cities, query, onQuery, onRun, running, failed, onAbout, showBackground = false) }
+            if (run == null) Box(Modifier.weight(1f).fillMaxHeight()) { Home(cities, query, onQuery, onRun, running, failed, onAbout) }
             else Column(Modifier.weight(1f).fillMaxHeight().verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(16.dp)) {
                 if (selected >= 0 && selected < 5) {
                     Text(names[selected], color = c.text, fontFamily = f.title, fontSize = 22.sp, fontWeight = FontWeight.SemiBold)
