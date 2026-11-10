@@ -89,7 +89,7 @@ private fun presets(): List<Preset> {
 }
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
-@Composable internal fun Home(cities: Int, query: String, onQuery: (String) -> Unit, run: (String) -> Unit, running: Boolean, failed: Boolean, onAbout: () -> Unit) {
+@Composable internal fun Home(cities: Int, query: String, onQuery: (String) -> Unit, run: (String) -> Unit, running: Boolean, failed: Boolean, onAbout: () -> Unit, showBackground: Boolean = true) {
     val c = LocalTravelColors.current; val fonts = LocalTravelFonts.current
     var showCities by remember { mutableStateOf(false) }
     var preview by remember { mutableStateOf<InputPreview?>(null) }
@@ -115,14 +115,21 @@ private fun presets(): List<Preset> {
     val featuredRequirements = remember(featured.query) { RequirementsParser().parse(featured.query) }
     val featuredDescription = listOfNotNull(featuredRequirements.destination, featuredRequirements.duration_days?.let { stringResource(Res.string.days, it) }, featuredRequirements.travelers?.let { if (it == 1) stringResource(Res.string.one_traveler) else stringResource(Res.string.travelers, it) }, featuredRequirements.budget_amount?.let { "$${MoneyFormatting.format(it)}" }).joinToString(" · ")
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal = 16.dp, vertical = 20.dp), verticalArrangement = Arrangement.spacedBy(18.dp)) {
-        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
-            Text(stringResource(Res.string.offline), Modifier.clip(RoundedCornerShape(50)).background(c.primaryContainer).padding(horizontal = 14.dp, vertical = 10.dp), color = c.primary, fontFamily = fonts.body, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
-            val aboutDescription = stringResource(Res.string.about)
-            TextButton(onClick = onAbout, modifier = Modifier.semantics { contentDescription = aboutDescription }) { Text("ⓘ", color = c.text, fontSize = 22.sp) }
-        }
-        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-            Text(stringResource(Res.string.home_title), fontFamily = fonts.title, fontSize = 34.sp, fontWeight = FontWeight.Bold, letterSpacing = (-0.5).sp, color = c.text)
-            Text(stringResource(Res.string.home_subtitle), fontFamily = fonts.body, fontSize = 15.sp, lineHeight = 22.sp, color = c.textMuted)
+        Box(Modifier.fillMaxWidth()) {
+            if (showBackground) Box(Modifier.matchParentSize(), contentAlignment = Alignment.CenterEnd) {
+                CityRouteBackground(Modifier.fillMaxWidth(.60f).fillMaxHeight())
+            }
+            Column(verticalArrangement = Arrangement.spacedBy(18.dp)) {
+            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
+                Text(stringResource(Res.string.offline), Modifier.clip(RoundedCornerShape(50)).background(c.primaryContainer).padding(horizontal = 14.dp, vertical = 10.dp), color = c.primary, fontFamily = fonts.body, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+                val aboutDescription = stringResource(Res.string.about)
+                TextButton(onClick = onAbout, modifier = Modifier.semantics { contentDescription = aboutDescription }) { Text("ⓘ", color = c.text, fontSize = 22.sp) }
+            }
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text(stringResource(Res.string.home_title), modifier = Modifier.background(c.background), fontFamily = fonts.title, fontSize = 34.sp, fontWeight = FontWeight.Bold, letterSpacing = (-0.5).sp, color = c.text)
+                Text(stringResource(Res.string.home_subtitle), modifier = Modifier.background(c.background), fontFamily = fonts.body, fontSize = 15.sp, lineHeight = 22.sp, color = c.textMuted)
+            }
+            }
         }
         Surface(shape = RoundedCornerShape(20.dp), color = c.surface, shadowElevation = 3.dp) {
             Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {

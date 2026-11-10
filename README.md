@@ -10,6 +10,10 @@ An offline travel-planning demo for Android and Desktop, built with Kotlin and C
 
 [More screenshots](docs/screenshots/)
 
+<img src="docs/media/p37-routes.gif" alt="Animated city routes on the offline home screen" width="280">
+
+[Watch the eight-second device recording](docs/media/p37-routes.mp4).
+
 ## Features
 
 - Plan from an English natural-language request using bundled data for 12 US cities, without a network connection or an LLM.
@@ -83,6 +87,8 @@ Requirements: JDK 17, the Android SDK with platform 37 and build tools 36.0.0, a
 # One golden fixture
 .\gradlew.bat :core:test -Pfixture=SEM200-001 --tests "travel.GoldenTest.fixtures"
 ```
+
+On Desktop, set `JAVA_TOOL_OPTIONS=-Dtravel.routes.motion=false` before launching to show the static city-route background. Remove the setting to restore animation. Android uses the system animator duration scale and pauses the animation when the app is not resumed.
 
 On a headless Linux machine, run Desktop tests under a virtual display, for example `xvfb-run -a bash ./gradlew :composeApp:desktopTest`. GitHub Actions runs the full core suite, Desktop suite under Xvfb, and Android debug build on pushes and pull requests. The CI badge requires access to this private repository.
 
