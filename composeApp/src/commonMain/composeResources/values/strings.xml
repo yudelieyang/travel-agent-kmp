@@ -4,7 +4,7 @@
     <string name="home_title">Plan a trip</string>
     <string name="home_subtitle">Tell us what you have in mind. Your plan stays on this device.</string>
     <string name="your_trip">Your trip</string>
-    <string name="input_hint">Where would you like to go?</string>
+    <string name="input_hint">e.g. 3 days in Boston for 2 people, under $800 total. We like museums.</string>
     <string name="plan_trip">Plan trip</string>
     <string name="scenarios">Try a scenario</string>
     <string name="featured">BUDGET REPAIR</string>

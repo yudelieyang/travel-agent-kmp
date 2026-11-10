@@ -88,9 +88,19 @@ private fun presets(): List<Preset> {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable internal fun Home(cities: Int, query: String, onQuery: (String) -> Unit, run: (String) -> Unit, running: Boolean, failed: Boolean, onAbout: () -> Unit) {
     val c = LocalTravelColors.current; val fonts = LocalTravelFonts.current
+    var showCities by remember { mutableStateOf(false) }
     val scenarios = remember { presets() }; val featured = scenarios.first { it.id == "repair" }
+    if (showCities) ModalBottomSheet(onDismissRequest = { showCities = false }, containerColor = c.surface) {
+        Column(Modifier.fillMaxWidth().navigationBarsPadding().verticalScroll(rememberScrollState()).padding(horizontal = 20.dp, vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text("Offline cities", color = c.text, fontFamily = fonts.title, fontSize = 22.sp, fontWeight = FontWeight.SemiBold)
+            CitySuggestions.all.forEach { city ->
+                Text(city, Modifier.fillMaxWidth().clickable { onQuery(selectCity(query, city)); showCities = false }.padding(vertical = 12.dp), color = c.text, fontFamily = fonts.body)
+            }
+        }
+    }
     val featuredRequirements = remember(featured.query) { RequirementsParser().parse(featured.query) }
     val featuredDescription = listOfNotNull(featuredRequirements.destination, featuredRequirements.duration_days?.let { stringResource(Res.string.days, it) }, featuredRequirements.travelers?.let { if (it == 1) stringResource(Res.string.one_traveler) else stringResource(Res.string.travelers, it) }, featuredRequirements.budget_amount?.let { "$${MoneyFormatting.format(it)}" }).joinToString(" · ")
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal = 16.dp, vertical = 20.dp), verticalArrangement = Arrangement.spacedBy(18.dp)) {
@@ -107,6 +117,16 @@ private fun presets(): List<Preset> {
             Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 Text(stringResource(Res.string.your_trip), fontFamily = fonts.body, fontWeight = FontWeight.SemiBold, color = c.text)
                 BasicTextField(value = query, onValueChange = onQuery, modifier = Modifier.fillMaxWidth().heightIn(min = 100.dp).border(1.dp, c.inputBorder, RoundedCornerShape(12.dp)).padding(14.dp), textStyle = androidx.compose.ui.text.TextStyle(color = c.text, fontFamily = fonts.body, fontSize = 16.sp, letterSpacing = 0.sp, fontFeatureSettings = "tnum"), decorationBox = { inner -> Box { if (query.isEmpty()) Text(stringResource(Res.string.input_hint), color = c.textMuted, fontFamily = fonts.body); inner() } })
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    listOf("City *", "Days *", "Travelers", "Budget", "Interests").forEach { label ->
+                        Text(label, Modifier.clip(RoundedCornerShape(50)).background(c.segmentTrack).padding(horizontal = 10.dp, vertical = 7.dp), color = c.textMuted, fontFamily = fonts.body, fontSize = 12.sp)
+                    }
+                }
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(4.dp), verticalArrangement = Arrangement.Center, itemVerticalAlignment = Alignment.CenterVertically) {
+                    Text("* needed to plan · works offline for $cities US cities", color = c.textMuted, fontFamily = fonts.body, fontSize = 12.sp)
+                    Text("·", color = c.textMuted, fontSize = 12.sp)
+                    Text("See cities", Modifier.clickable { showCities = true }.padding(vertical = 8.dp), color = c.primary, fontFamily = fonts.body, fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
+                }
                 Button(onClick = { run(query) }, enabled = query.isNotBlank() && !running, modifier = Modifier.fillMaxWidth().height(52.dp), shape = RoundedCornerShape(14.dp), colors = ButtonDefaults.buttonColors(disabledContainerColor = c.segmentTrack, disabledContentColor = c.textMuted)) { Text(stringResource(Res.string.plan_trip), fontFamily = fonts.body, fontWeight = FontWeight.SemiBold); Spacer(Modifier.weight(1f)); Text("→") }
                 if (failed) Text(stringResource(Res.string.error), color = c.error)
             }

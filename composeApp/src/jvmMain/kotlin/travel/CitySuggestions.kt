@@ -12,6 +12,7 @@ internal object CitySuggestions {
         }
     }
     val all: List<String> get() = cities.map { it.name }
+    fun aliases(name: String): List<String> = cities.firstOrNull { it.name == name }?.let { listOf(it.name) + it.aliases } ?: listOf(name)
     private fun key(value: String) = Regex("[a-z0-9]+").findAll(PyStr.casefold(value)).joinToString(" ") { it.value }
     // Unrestricted Damerau–Levenshtein distance, including adjacent transpositions.
     private fun distance(a: String, b: String): Int {
