@@ -33,10 +33,10 @@ data class TravelColors(
 
 val LightColors = TravelColors(
     Color(0xFFF4F6F8), Color.White, Color(0xFFDDE3E8), Color(0xFFEEF1F4), Color(0xFFCBD2D9), Color(0xFFE4E8EC),
-    Color(0xFF13202B), Color(0xFF52606D), Color(0xFF0F6E6E), Color.White, Color(0xFFDDEFEE),
+    Color(0xFF13202B), Color(0xFF455360), Color(0xFF0A5A5A), Color.White, Color(0xFFDDEFEE),
     Color(0xFF13202B), Color.White, Color(0xFFC5CED6), Color(0xFF8FD3C9), Color(0xFFF2B66D),
-    Color(0xFFB42318), Color(0xFFFDECEA), Color(0xFF7A1A12), Color(0xFF1E7B4F), Color(0xFFE3F2EA), Color(0xFF15573A),
-    Color(0xFFB45309), Color(0xFFFFF4E5), Color(0xFF8A4B0E), Color(0xFFE2C9A6), Color(0xFFEEF3F2),
+    Color(0xFF961911), Color(0xFFFDECEA), Color(0xFF7A1A12), Color(0xFF125B34), Color(0xFFE3F2EA), Color(0xFF15573A),
+    Color(0xFF8C3900), Color(0xFFFFF4E5), Color(0xFF8A4B0E), Color(0xFFE2C9A6), Color(0xFFEEF3F2),
 )
 val DarkColors = TravelColors(
     Color(0xFF0E161D), Color(0xFF16212B), Color(0xFF263440), Color(0xFF263440), Color(0xFF637582), Color(0xFF263440),

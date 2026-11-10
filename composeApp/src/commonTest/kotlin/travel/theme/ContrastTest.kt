@@ -2,6 +2,7 @@ package travel.theme
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.luminance
+import androidx.compose.ui.graphics.compositeOver
 import kotlin.test.Test
 import kotlin.test.assertTrue
 
@@ -31,6 +32,14 @@ class ContrastTest {
                 val (foreground, background) = pair
                 val contrast = contrast(foreground, background)
                 assertTrue(contrast >= 4.5, "$name $label contrast was $contrast")
+            }
+        }
+    }
+    @Test fun textOnIndexContourMeetsWcag() {
+        for ((name, c) in listOf("light" to LightColors, "dark" to DarkColors)) {
+            val overlay = c.primary.copy(alpha = if (name == "light") .20f else .22f).compositeOver(c.background)
+            for ((label, foreground) in listOf("text" to c.text, "muted" to c.textMuted, "primary" to c.primary, "error" to c.error, "success" to c.success, "warning" to c.warning)) {
+                assertTrue(contrast(foreground, overlay) >= 4.5, "$name $label on contour: ${contrast(foreground, overlay)}")
             }
         }
     }
