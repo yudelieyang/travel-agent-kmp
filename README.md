@@ -2,11 +2,11 @@
 
 [![CI](https://github.com/yudelieyang/travel-agent-kmp/actions/workflows/ci.yml/badge.svg)](https://github.com/yudelieyang/travel-agent-kmp/actions/workflows/ci.yml)
 
-An offline travel-planning demo for Android and Desktop, built with Kotlin and Compose Multiplatform.
+A Kotlin Multiplatform port of a Python travel-planning agent that runs fully offline on Android and Desktop. Behavior is verified against the Python reference with 3,591 golden and differential tests and 49,536 regex checks on a real Android device.
 
 | Plan a trip | Live preview | Planning stages | Budget repair | Final plan |
 |:---:|:---:|:---:|:---:|:---:|
-| <img src="docs/screenshots/11-input-guidance.png" alt="Trip input guidance" width="180"> | <img src="docs/screenshots/12-input-preview.png" alt="Live preview and unknown destination" width="180"> | <img src="docs/screenshots/02-run.png" alt="Planning stages and validation" width="180"> | <img src="docs/screenshots/03-repair.png" alt="Budget repair comparison" width="180"> | <img src="docs/screenshots/04-result.png" alt="Final itinerary and offline sketch" width="180"> |
+| <img src="docs/screenshots/11-input-guidance.png" alt="Trip input guidance" width="180"> | <img src="docs/screenshots/12-input-preview.png" alt="Live preview of recognized trip details" width="180"> | <img src="docs/screenshots/02-run.png" alt="Planning stages and validation" width="180"> | <img src="docs/screenshots/03-repair.png" alt="Budget repair comparison" width="180"> | <img src="docs/screenshots/04-result.png" alt="Final itinerary and offline sketch" width="180"> |
 
 [More screenshots](docs/screenshots/)
 
@@ -26,8 +26,8 @@ An offline travel-planning demo for Android and Desktop, built with Kotlin and C
 
 ```mermaid
 flowchart LR
-    Android["androidApp\nAndroid entry point"] --> UI["composeApp\nCompose UI and desktop entry point"]
-    Android --> Core["core\nKotlin/JVM engine and bundled data"]
+    Android["androidApp<br/>Android entry point"] --> UI["composeApp<br/>Compose UI and desktop entry point"]
+    Android --> Core["core<br/>Kotlin/JVM engine and bundled data"]
     UI --> Core
 ```
 
@@ -35,26 +35,29 @@ The UI presents five stages; clarification can stop the run before retrieval, an
 
 ```mermaid
 flowchart LR
-    A["1. Request"] --> B["2. Requirements\nparse and coverage"]
+    A["Request"] --> B["Requirements"]
     B -->|"missing fields"| C["Clarification"]
-    B -->|"sufficient"| D["3. Candidate retrieval\nand draft"]
-    D --> E["4. Validation"]
-    E -->|"eligible budget violation"| F["5. Repair if eligible, then final"]
-    F -->|"revalidate after one repair"| E
-    E -->|"otherwise"| F
+    B -->|"sufficient"| D["Candidate retrieval and draft"]
+    D --> E["Validation"]
+    E -->|"eligible budget violation"| F["Repair (once)"]
+    F --> G["Revalidate"]
+    G --> H["Final"]
+    E -->|"otherwise"| H
 ```
 
 `core` contains the deterministic engine, models, bundled city data and snapshots, and parity tests. `composeApp` provides the shared interface and Desktop application. `androidApp` packages the Android application and instrumented tests.
 
-## Consistency porting method
+## How parity is verified
 
-The behavioral baseline is a private Python reference implementation. Its deterministic outputs were frozen as JSON golden fixtures, including 28 end-to-end cases, 200 requirements and coverage cases, and extended money cases. Kotlin tests compare outputs with the frozen data; semantic dataset annotations are kept separately from the reference's actual outputs.
+The behavioral baseline is the [Python reference implementation](https://github.com/yudelieyang/travel-planning-agent). Runtime comparisons use commit `0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd`; extended fixtures use `5d8983d3e4abc3c914a562f232a5ac060c6864be`. These commits and their expected tags are not currently available from the public repository; see the regeneration notes below. Its deterministic outputs were frozen as JSON golden fixtures, including 28 end-to-end cases, 200 requirements and coverage cases, and extended money cases. Kotlin tests compare outputs with the frozen data; semantic dataset annotations are kept separately from the reference's actual outputs.
 
 Regular expressions are tested against recorded Python search, match, full-match, iteration, split and substitution results, including captures and spans. Parser helpers also have function-level differential fixtures. `PyStr` reproduces the relevant Python case conversion behavior, and `PyRegex` handles JVM and Android regex differences.
 
 Money uses `BigDecimal` with the reference's two-decimal, half-even rounding where the reference quantizes. Operations that the reference performs with binary floating point, including hotel price ceilings and repair savings, follow corresponding `Double` operations. Accepted edge-case differences, including signed zero and extreme numeric values, are documented in [PARITY_EXCEPTIONS.md](PARITY_EXCEPTIONS.md); the full field-level details are in the [fixture specification](core/src/test/resources/golden/SPEC.md).
 
-Recorded P3 results:
+### Verification results
+
+The following results were recorded for commit `ed7f40c`:
 
 | Check | Result |
 | --- | ---: |
@@ -67,7 +70,7 @@ Recorded P3 results:
 | iQOO 15 Android requirements and coverage fixtures | 200 / 200 |
 | iQOO 15 assisted city-selection and preview flows | 2 / 2 |
 
-The 200-case semantic dataset's annotation score was 76 / 200 (38%) for both implementations, with no difference in failure categories. This score is distinct from the 200 / 200 parity result: matching the reference does not establish that an itinerary is feasible. See [semantic comparison](docs/P2_GOLD_COMPARISON.md), [Android parity](docs/P2_ANDROID_PARITY.md), and [P3 acceptance](docs/P3_ACCEPTANCE.md).
+The 200-case semantic dataset's annotation score was 76 / 200 (38%) for both implementations, with no difference in failure categories. This score is distinct from the 200 / 200 parity result: matching the reference does not establish that an itinerary is feasible. See [semantic comparison](docs/P2_GOLD_COMPARISON.md), [Android parity](docs/P2_ANDROID_PARITY.md), and [acceptance report](docs/P3_ACCEPTANCE.md).
 
 ## Run and test
 
@@ -90,7 +93,7 @@ Requirements: JDK 17, the Android SDK with platform 37 and build tools 36.0.0, a
 
 On Desktop, set `JAVA_TOOL_OPTIONS=-Dtravel.background.motion=false` before launching to keep the contour background static; remove the setting to restore animation. On Android, the background follows the system animator duration setting and pauses when the app is not resumed.
 
-On a headless Linux machine, run Desktop tests under a virtual display, for example `xvfb-run -a bash ./gradlew :composeApp:desktopTest`. GitHub Actions runs the full core suite, Desktop suite under Xvfb, and Android debug build on pushes and pull requests. The CI badge requires access to this private repository.
+On a headless Linux machine, run Desktop tests under a virtual display, for example `xvfb-run -a bash ./gradlew :composeApp:desktopTest`. GitHub Actions runs the full core suite, Desktop suite under Xvfb, and Android debug build on pushes and pull requests.
 
 For device tests, set `ANDROID_HOME`, connect and authorize the device, then install both APKs and run the desired suite:
 
@@ -103,15 +106,23 @@ python tools/run_android_ui_tests.py travel.android.AssistedGuidanceUiTest 2
 
 On the tested iQOO 15, direct instrumentation-triggered Activity startup hung; the assisted script launches the Activity externally. The exact system cause was not established. Device tests are not run in CI.
 
-Reference regeneration and live semantic comparison require access to a private Python reference implementation and its dependencies; they are not run in CI. The commands below invoke the repository's generators using an appropriately configured Python environment. The generators verify their pinned reference source and write their outputs in this repository.
+### Regenerating reference data
+
+The generators expect a checkout of the [Python reference](https://github.com/yudelieyang/travel-planning-agent) in a sibling directory named `travel-planning-agent`, beside this repository. They require the local tags `golden-v1` at `0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd` and `golden-v1.1` at `5d8983d3e4abc3c914a562f232a5ac060c6864be`. Neither tag nor commit is currently obtainable from the public repository, so regeneration from a fresh public clone is blocked until those references are made available. Existing fixtures and tests do not need the Python checkout.
+
+Once both commits are available, run the following from this repository's root. These commands create tags only in the local reference checkout; they do not publish them. The Python environment must have the reference's dependencies installed.
 
 ```powershell
+git clone https://github.com/yudelieyang/travel-planning-agent.git ../travel-planning-agent
+git -C ../travel-planning-agent checkout --detach 0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd
+git -C ../travel-planning-agent tag golden-v1 0f498003c365c8a6d1bb1f066dc3afbd3bdb23fd
+git -C ../travel-planning-agent tag golden-v1.1 5d8983d3e4abc3c914a562f232a5ac060c6864be
 python tools/generate_regex_parity.py
 python tools/generate_function_parity.py
 python tools/generate_errors_parity.py
-.\gradlew.bat :core:test --tests travel.P2GoldExportTest
-python tools/evaluate_p2_gold.py
 ```
+
+The generators verify the fixed tag and relevant checked-out source before writing fixtures here. `tools/sync_golden.py` reads the extended fixtures from the second fixed commit. Reference regeneration is not run in CI.
 
 ## Limitations
 
